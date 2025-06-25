@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
-				'inter': ['Inter', 'sans-serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'serif': ['Georgia', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -29,8 +29,11 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				'porsche-red': '#DC143C',
-				'charcoal': '#1a1a1a',
+				'porsche-black': '#000000',
+				'porsche-white': '#ffffff',
+				'porsche-gray': '#f5f5f5',
+				'porsche-dark-gray': '#333333',
+				'porsche-light-gray': '#e5e5e5',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

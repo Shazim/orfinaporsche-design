@@ -8,33 +8,31 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
-          }}
-        />
-        
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+      <section className="relative h-screen flex items-center justify-center bg-porsche-gray">
+        <div className="text-center max-w-4xl mx-auto px-4">
+          {/* Logo placeholder - will be replaced when logo is uploaded */}
+          <div className="w-24 h-24 bg-porsche-light-gray rounded-full mx-auto mb-8 flex items-center justify-center">
+            <span className="text-sm text-porsche-dark-gray font-medium">LOGO</span>
+          </div>
+          
+          <h1 className="font-sans text-4xl md:text-6xl font-light text-porsche-black mb-8 tracking-wider uppercase">
             Porsche Watch
             <br />
-            <span className="text-porsche-red">Collection</span>
+            Collection
           </h1>
-          <p className="font-inter text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg md:text-xl font-light text-porsche-dark-gray mb-12 max-w-2xl mx-auto leading-relaxed">
             A curated documentation of Porsche-inspired timepieces, celebrating the intersection of automotive excellence and horological precision.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               to="/story" 
-              className="bg-porsche-red text-white px-8 py-4 font-inter font-medium rounded-md hover:bg-red-700 transition-colors"
+              className="bg-porsche-black text-white px-8 py-4 font-sans font-normal text-sm uppercase tracking-wider hover:bg-porsche-dark-gray transition-colors"
             >
               Discover Our Story
             </Link>
             <Link 
               to="/references/7750" 
-              className="border-2 border-white text-white px-8 py-4 font-inter font-medium rounded-md hover:bg-white hover:text-charcoal transition-all"
+              className="border border-porsche-black text-porsche-black px-8 py-4 font-sans font-normal text-sm uppercase tracking-wider hover:bg-porsche-black hover:text-white transition-all"
             >
               Explore References
             </Link>
@@ -43,29 +41,29 @@ const Index = () => {
       </section>
 
       {/* Featured References */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-charcoal mb-4">
+          <div className="text-center mb-20">
+            <h2 className="font-sans text-3xl md:text-4xl font-light text-porsche-black mb-6 uppercase tracking-wider">
               Featured References
             </h2>
-            <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-sans text-lg text-porsche-dark-gray max-w-2xl mx-auto leading-relaxed">
               Each timepiece represents a unique chapter in the story of Porsche's influence on horological design.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-12">
             <Link to="/references/7750" className="group">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform group-hover:scale-105">
-                <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                  <span className="font-playfair text-white text-2xl">REF. 7750</span>
+              <div className="bg-white border border-porsche-light-gray overflow-hidden transition-all group-hover:shadow-sm">
+                <div className="h-80 bg-porsche-gray flex items-center justify-center">
+                  <span className="font-sans text-porsche-black text-2xl font-light uppercase tracking-wider">REF. 7750</span>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-playfair text-xl font-bold text-charcoal mb-2">Reference 7750</h3>
-                  <p className="font-inter text-gray-600 mb-4">
+                <div className="p-8">
+                  <h3 className="font-sans text-xl font-normal text-porsche-black mb-4 uppercase tracking-wide">Reference 7750</h3>
+                  <p className="font-sans text-porsche-dark-gray mb-6 leading-relaxed">
                     The quintessential chronograph inspired by Porsche's racing heritage.
                   </p>
-                  <span className="font-inter text-porsche-red font-medium group-hover:underline">
+                  <span className="font-sans text-porsche-black font-normal text-sm uppercase tracking-wider group-hover:underline">
                     Explore Details →
                   </span>
                 </div>
@@ -73,16 +71,16 @@ const Index = () => {
             </Link>
             
             <Link to="/references/7176" className="group">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform group-hover:scale-105">
-                <div className="h-64 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                  <span className="font-playfair text-white text-2xl">REF. 7176</span>
+              <div className="bg-white border border-porsche-light-gray overflow-hidden transition-all group-hover:shadow-sm">
+                <div className="h-80 bg-porsche-gray flex items-center justify-center">
+                  <span className="font-sans text-porsche-black text-2xl font-light uppercase tracking-wider">REF. 7176</span>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-playfair text-xl font-bold text-charcoal mb-2">Reference 7176</h3>
-                  <p className="font-inter text-gray-600 mb-4">
+                <div className="p-8">
+                  <h3 className="font-sans text-xl font-normal text-porsche-black mb-4 uppercase tracking-wide">Reference 7176</h3>
+                  <p className="font-sans text-porsche-dark-gray mb-6 leading-relaxed">
                     Classic elegance meets automotive precision in this timeless piece.
                   </p>
-                  <span className="font-inter text-porsche-red font-medium group-hover:underline">
+                  <span className="font-sans text-porsche-black font-normal text-sm uppercase tracking-wider group-hover:underline">
                     Explore Details →
                   </span>
                 </div>
@@ -90,16 +88,16 @@ const Index = () => {
             </Link>
             
             <Link to="/references/7177" className="group">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform group-hover:scale-105">
-                <div className="h-64 bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
-                  <span className="font-playfair text-white text-2xl">REF. 7177</span>
+              <div className="bg-white border border-porsche-light-gray overflow-hidden transition-all group-hover:shadow-sm">
+                <div className="h-80 bg-porsche-gray flex items-center justify-center">
+                  <span className="font-sans text-porsche-black text-2xl font-light uppercase tracking-wider">REF. 7177</span>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-playfair text-xl font-bold text-charcoal mb-2">Reference 7177</h3>
-                  <p className="font-inter text-gray-600 mb-4">
+                <div className="p-8">
+                  <h3 className="font-sans text-xl font-normal text-porsche-black mb-4 uppercase tracking-wide">Reference 7177</h3>
+                  <p className="font-sans text-porsche-dark-gray mb-6 leading-relaxed">
                     Contemporary design language inspired by modern Porsche aesthetics.
                   </p>
-                  <span className="font-inter text-porsche-red font-medium group-hover:underline">
+                  <span className="font-sans text-porsche-black font-normal text-sm uppercase tracking-wider group-hover:underline">
                     Explore Details →
                   </span>
                 </div>
@@ -110,18 +108,18 @@ const Index = () => {
       </section>
 
       {/* Components Preview */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-porsche-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-charcoal mb-4">
+          <div className="text-center mb-20">
+            <h2 className="font-sans text-3xl md:text-4xl font-light text-porsche-black mb-6 uppercase tracking-wider">
               Premium Components
             </h2>
-            <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-sans text-lg text-porsche-dark-gray max-w-2xl mx-auto leading-relaxed">
               Every element crafted with the same attention to detail that defines Porsche engineering.
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {[
               { name: 'Bracelets', path: '/components/bracelets' },
               { name: 'Hands', path: '/components/hands' },
@@ -132,12 +130,12 @@ const Index = () => {
               <Link 
                 key={component.name}
                 to={component.path}
-                className="group text-center p-6 rounded-lg border border-gray-200 hover:border-porsche-red transition-colors"  
+                className="group text-center p-8 bg-white border border-porsche-light-gray hover:shadow-sm transition-all"  
               >
-                <div className="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-porsche-red transition-colors">
-                  <span className="w-8 h-8 bg-gray-300 rounded group-hover:bg-white transition-colors"></span>
+                <div className="w-16 h-16 bg-porsche-light-gray mx-auto mb-6 flex items-center justify-center group-hover:bg-porsche-black transition-colors">
+                  <span className="w-8 h-8 bg-porsche-dark-gray group-hover:bg-white transition-colors"></span>
                 </div>
-                <h3 className="font-inter font-medium text-charcoal group-hover:text-porsche-red transition-colors">
+                <h3 className="font-sans font-normal text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors">
                   {component.name}
                 </h3>
               </Link>
