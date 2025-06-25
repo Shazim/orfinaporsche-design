@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 
@@ -10,10 +9,12 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-porsche-gray">
         <div className="text-center max-w-4xl mx-auto px-4">
-          {/* Logo placeholder - will be replaced when logo is uploaded */}
-          <div className="w-24 h-24 bg-porsche-light-gray rounded-full mx-auto mb-8 flex items-center justify-center">
-            <span className="text-sm text-porsche-dark-gray font-medium">LOGO</span>
-          </div>
+          {/* Your Logo */}
+          <img 
+            src="/lovable-uploads/57816da8-ef5b-41e9-bb98-a818b25ffa69.png" 
+            alt="OPD Logo" 
+            className="w-24 h-24 mx-auto mb-8 object-contain"
+          />
           
           <h1 className="font-sans text-4xl md:text-6xl font-light text-porsche-black mb-8 tracking-wider uppercase">
             Porsche Watch

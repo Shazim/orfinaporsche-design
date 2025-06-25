@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 
@@ -8,14 +7,14 @@ const Reference7750 = () => {
       <Navigation />
       
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4">
+      <div className="bg-porsche-gray py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="font-inter text-sm">
-            <Link to="/" className="text-gray-500 hover:text-porsche-red">Home</Link>
-            <span className="mx-2 text-gray-400">/</span>
-            <span className="text-gray-500">References</span>
-            <span className="mx-2 text-gray-400">/</span>
-            <span className="text-charcoal font-medium">Ref. 7750</span>
+          <nav className="font-sans text-sm">
+            <Link to="/" className="text-porsche-dark-gray hover:text-porsche-black">Home</Link>
+            <span className="mx-2 text-porsche-dark-gray">/</span>
+            <span className="text-porsche-dark-gray">References</span>
+            <span className="mx-2 text-porsche-dark-gray">/</span>
+            <span className="text-porsche-black font-medium">Ref. 7750</span>
           </nav>
         </div>
       </div>
@@ -25,27 +24,80 @@ const Reference7750 = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-6">
-                Reference <span className="text-porsche-red">7750</span>
+              <h1 className="font-sans text-5xl md:text-6xl font-light text-porsche-black mb-6 uppercase tracking-wider">
+                Reference <span className="text-porsche-black">7750</span>
               </h1>
-              <p className="font-inter text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="font-sans text-xl text-porsche-dark-gray leading-relaxed mb-8">
                 The quintessential racing chronograph that embodies Porsche's motorsport heritage through precision engineering and timeless design.
               </p>
               <div className="flex flex-wrap gap-4">
-                <span className="bg-gray-100 px-4 py-2 rounded-full font-inter text-sm font-medium text-gray-700">
+                <span className="bg-porsche-light-gray px-4 py-2 font-sans text-sm font-medium text-porsche-dark-gray uppercase tracking-wide">
                   Chronograph
                 </span>
-                <span className="bg-gray-100 px-4 py-2 rounded-full font-inter text-sm font-medium text-gray-700">
+                <span className="bg-porsche-light-gray px-4 py-2 font-sans text-sm font-medium text-porsche-dark-gray uppercase tracking-wide">
                   Automatic Movement
                 </span>
-                <span className="bg-gray-100 px-4 py-2 rounded-full font-inter text-sm font-medium text-gray-700">
+                <span className="bg-porsche-light-gray px-4 py-2 font-sans text-sm font-medium text-porsche-dark-gray uppercase tracking-wide">
                   Racing Heritage
                 </span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg aspect-square flex items-center justify-center">
-              <span className="font-playfair text-white text-4xl">REF. 7750</span>
+            <div className="bg-porsche-gray aspect-square flex items-center justify-center">
+              <span className="font-sans text-porsche-black text-4xl font-light uppercase tracking-wider">REF. 7750</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sub-Pages Navigation */}
+      <section className="py-16 bg-porsche-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-sans text-3xl font-light text-porsche-black mb-12 text-center uppercase tracking-wider">Explore Details</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Link to="/references/7750/case-finishes" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 text-center transition-all group-hover:shadow-sm">
+                <div className="w-16 h-16 bg-porsche-light-gray mx-auto mb-6 flex items-center justify-center group-hover:bg-porsche-black transition-colors">
+                  <span className="w-8 h-8 bg-porsche-dark-gray group-hover:bg-white transition-colors"></span>
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors">
+                  Case & Finishes
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7750/caseback" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 text-center transition-all group-hover:shadow-sm">
+                <div className="w-16 h-16 bg-porsche-light-gray mx-auto mb-6 flex items-center justify-center group-hover:bg-porsche-black transition-colors">
+                  <span className="w-8 h-8 bg-porsche-dark-gray group-hover:bg-white transition-colors"></span>
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors">
+                  Caseback
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7750/rehaut" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 text-center transition-all group-hover:shadow-sm">
+                <div className="w-16 h-16 bg-porsche-light-gray mx-auto mb-6 flex items-center justify-center group-hover:bg-porsche-black transition-colors">
+                  <span className="w-8 h-8 bg-porsche-dark-gray group-hover:bg-white transition-colors"></span>
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors">
+                  Rehaut Variations
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7750/dial" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 text-center transition-all group-hover:shadow-sm">
+                <div className="w-16 h-16 bg-porsche-light-gray mx-auto mb-6 flex items-center justify-center group-hover:bg-porsche-black transition-colors">
+                  <span className="w-8 h-8 bg-porsche-dark-gray group-hover:bg-white transition-colors"></span>
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors">
+                  Dial Variations
+                </h3>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -169,11 +221,11 @@ const Reference7750 = () => {
       </section>
 
       {/* Back to References */}
-      <div className="py-8 bg-white border-t border-gray-200">
+      <div className="py-8 bg-white border-t border-porsche-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
             to="/" 
-            className="inline-flex items-center font-inter text-porsche-red hover:text-red-700 transition-colors"
+            className="inline-flex items-center font-sans text-porsche-dark-gray hover:text-porsche-black transition-colors"
           >
             ← Back to References
           </Link>

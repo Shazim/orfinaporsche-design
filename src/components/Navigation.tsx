@@ -18,10 +18,12 @@ const Navigation = () => {
             PORSCHE WATCH COLLECTION
           </Link>
           
-          {/* Logo placeholder - will be replaced when logo is uploaded */}
-          <div className="w-12 h-12 bg-porsche-light-gray rounded flex items-center justify-center">
-            <span className="text-xs text-porsche-dark-gray font-medium">LOGO</span>
-          </div>
+          {/* Your Logo */}
+          <img 
+            src="/lovable-uploads/57816da8-ef5b-41e9-bb98-a818b25ffa69.png" 
+            alt="OPD Logo" 
+            className="w-12 h-12 object-contain"
+          />
           
           <div className="hidden md:flex items-center space-x-12">
             <Link 
