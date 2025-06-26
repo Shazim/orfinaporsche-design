@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 
 const Story = () => {
@@ -53,50 +52,6 @@ const Story = () => {
                 This documentation project serves not only as a celebration of these remarkable timepieces but as a preservation of the stories, specifications, and craftsmanship details that make each reference unique. It is our contribution to the broader horological community and a testament to the enduring influence of Porsche's design philosophy.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-24 bg-porsche-gray">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-sans text-3xl font-light text-porsche-black text-center mb-20 uppercase tracking-wider">Our Journey</h2>
-          
-          <div className="space-y-16">
-            {[
-              {
-                year: '2019',
-                title: 'First Acquisition',
-                description: 'The journey began with the acquisition of our first Porsche Design timepiece, sparking a passion for the intersection of automotive and horological excellence.'
-              },
-              {
-                year: '2020',
-                title: 'Research & Documentation',
-                description: 'Extensive research into the historical context and technical specifications of each reference, building the foundation for comprehensive documentation.'
-              },
-              {
-                year: '2021',
-                title: 'Component Analysis',
-                description: 'Deep dive into individual components, movements, and manufacturing techniques, uncovering the craftsmanship behind each timepiece.'
-              },
-              {
-                year: '2022',
-                title: 'Digital Archive',
-                description: 'Development of this comprehensive digital platform to preserve and share our findings with the global horological community.'
-              }
-            ].map((milestone, index) => (
-              <div key={index} className="flex items-start space-x-12">
-                <div className="flex-shrink-0">
-                  <div className="w-24 h-24 bg-porsche-black flex items-center justify-center">
-                    <span className="font-sans text-white font-light text-lg">{milestone.year}</span>
-                  </div>
-                </div>
-                <div className="flex-grow">
-                  <h3 className="font-sans text-xl font-normal text-porsche-black mb-4 uppercase tracking-wide">{milestone.title}</h3>
-                  <p className="font-sans text-porsche-dark-gray leading-relaxed text-lg">{milestone.description}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

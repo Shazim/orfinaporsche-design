@@ -1,0 +1,203 @@
+import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation';
+
+const Reference7177 = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      
+      {/* Breadcrumb */}
+      <div className="bg-porsche-gray py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="font-sans text-sm">
+            <Link to="/" className="text-porsche-dark-gray hover:text-porsche-black">Home</Link>
+            <span className="mx-2 text-porsche-dark-gray">/</span>
+            <span className="text-porsche-dark-gray">References</span>
+            <span className="mx-2 text-porsche-dark-gray">/</span>
+            <span className="text-porsche-black font-medium">Ref. 7177</span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Hero Section - Heading Top Left with Room for Picture */}
+      <section className="pt-12 pb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            {/* Left: Heading, text, historical context */}
+            <div className="flex-1">
+              <h1 className="font-sans text-5xl md:text-6xl font-light text-porsche-black mb-4 uppercase tracking-wider text-left">
+                Reference <span className="text-porsche-black">7177</span>
+              </h1>
+              <div className="mb-8">
+                <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
+                  The 7177 Military Chronograph was introduced in 1977 and was likely produced until 1983, when Porsche Design ended its partnership with Orfina, in which, subsequently, the PWI pieces emerged.
+                </p>
+                <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
+                  The 7177 was available over the counter for retail purchase as well as issued directly through military organizations as seen through the multiple military variants. ​​However, these watches are often considered quasi-issued as the Baseline military dial was made available to the public to capitalize on the potential military affiliation.
+                </p>
+                <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
+                  There are ten main 7177 or military variants. These variants each feature the three dial elements noted on the Baseline dial (having "MILITARY", "PORSCHE DESIGN", and the "circle-3H logo" printed on the dial) but have additional dial printing, and/or caseback engravings unique to each.
+                </p>
+                <p className="font-inter text-gray-700 leading-relaxed mb-4 text-left">
+                  The 7177 military variants were identical to the civilian 7176s variant, including the case, except in 5 main ways:
+                </p>
+                <ul className="list-disc ml-8 mb-8 text-gray-700">
+                  <li>Available Finishes</li>
+                  <li>Caseback Engravings</li>
+                  <li>Central Chronograph-Minutes Hand and Hour Chronograph Hands</li>
+                  <li>Rehaut</li>
+                  <li>Dial</li>
+                </ul>
+              </div>
+            </div>
+            {/* Right: Picture placeholder */}
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <img 
+                src="/lovable-uploads/7177-baseline.jpg" 
+                alt="Baseline Dial Ref. 7177" 
+                className="w-[28rem] h-[28rem] object-contain bg-porsche-gray rounded shadow mb-2"
+              />
+              <span className="text-base md:text-lg text-gray-600 mt-4">Baseline Dial Ref. 7177</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sub-Pages Navigation */}
+      <section className="py-8 bg-porsche-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-sans text-3xl font-light text-porsche-black mb-8 text-center uppercase tracking-wider">Explore Details</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <Link to="/references/7177/case-finishes" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 min-h-[18rem] flex flex-col justify-between text-center transition-all group-hover:shadow-lg group-hover:-translate-y-1 duration-200">
+                <div className="flex-1 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/7177-case-finishes.jpg" 
+                    alt="Case & Finishes" 
+                    className="w-full h-full max-h-40 object-contain"
+                  />
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors mt-4 mb-0 flex items-end justify-center min-h-[2.5rem]">
+                  Case & Finishes
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7177/caseback" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 min-h-[18rem] flex flex-col justify-between text-center transition-all group-hover:shadow-lg group-hover:-translate-y-1 duration-200">
+                <div className="flex-1 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/7177-caseback.jpg" 
+                    alt="Caseback" 
+                    className="w-full h-full max-h-40 object-contain"
+                  />
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors mt-4 mb-0 flex items-end justify-center min-h-[2.5rem]">
+                  Caseback
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7177/rehaut" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 min-h-[18rem] flex flex-col justify-between text-center transition-all group-hover:shadow-lg group-hover:-translate-y-1 duration-200">
+                <div className="flex-1 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/7177-standard-rehaut.jpg" 
+                    alt="Rehaut Variations" 
+                    className="w-full h-full max-h-40 object-contain"
+                  />
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors mt-4 mb-0 flex items-end justify-center min-h-[2.5rem]">
+                  Rehaut Variations
+                </h3>
+              </div>
+            </Link>
+            
+            <Link to="/references/7177/dial" className="group">
+              <div className="bg-white border border-porsche-light-gray p-8 min-h-[18rem] flex flex-col justify-between text-center transition-all group-hover:shadow-lg group-hover:-translate-y-1 duration-200">
+                <div className="flex-1 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/7177-baseline.jpg" 
+                    alt="Dial Variations" 
+                    className="w-full h-full max-h-40 object-contain"
+                  />
+                </div>
+                <h3 className="font-sans font-medium text-sm uppercase tracking-wider text-porsche-black group-hover:text-porsche-dark-gray transition-colors mt-4 mb-0 flex items-end justify-center min-h-[2.5rem]">
+                  Dial Variations
+                </h3>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Specifications - Now at Bottom */}
+      <section className="py-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-playfair text-4xl font-bold text-charcoal mb-8 text-center">Technical Specifications</h2>
+          
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="px-8 py-4 bg-charcoal">
+              <h3 className="font-playfair text-2xl font-bold text-white">Reference 7177 Specifications</h3>
+            </div>
+            <div className="p-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Reference Number</span>
+                    <span className="font-inter text-charcoal">7177</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Production Years</span>
+                    <span className="font-inter text-charcoal">1978-1995</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Case Material</span>
+                    <span className="font-inter text-charcoal">Stainless Steel</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Water Resistance</span>
+                    <span className="font-inter text-charcoal">100m</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Movement</span>
+                    <span className="font-inter text-charcoal">Valjoux 7750</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Jewels</span>
+                    <span className="font-inter text-charcoal">25</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Functions</span>
+                    <span className="font-inter text-charcoal">Hours, Minutes, Seconds, Chronograph, Date</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-200">
+                    <span className="font-inter font-medium text-gray-700">Serial Range</span>
+                    <span className="font-inter text-charcoal">3000–6000 (approx.)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Back to References */}
+      <div className="py-8 bg-white border-t border-porsche-light-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link 
+            to="/" 
+            className="inline-flex items-center font-sans text-porsche-dark-gray hover:text-porsche-black transition-colors"
+          >
+            ← Back to References
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Reference7177; 
