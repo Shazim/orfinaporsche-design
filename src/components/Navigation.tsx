@@ -81,7 +81,7 @@ const Navigation = () => {
                     
                     <div className="px-4 py-2 border-b border-gray-100">
                       <Link to="/references/7176" className="block font-medium text-sm text-black hover:text-gray-600">
-                        Reference 7176
+                        Reference 7176, 7176 Military, 7176D, 7176S
                       </Link>
                       <div className="ml-4 mt-1 space-y-1">
                         <Link to="/references/7176/case-finishes" className="block text-xs text-gray-600 hover:text-black">

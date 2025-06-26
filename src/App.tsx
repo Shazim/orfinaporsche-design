@@ -34,6 +34,11 @@ import Straps from "./pages/Straps";
 import Hands from "./pages/Hands";
 import Crowns from "./pages/Crowns";
 import Movements from "./pages/Movements";
+import Reference7176 from "./pages/Reference7176";
+import Reference7176CaseFinishes from "./pages/Reference7176CaseFinishes";
+import Reference7176Rehaut from "./pages/Reference7176Rehaut";
+import Reference7176Caseback from "./pages/Reference7176Caseback";
+import Reference7176Dial from "./pages/Reference7176Dial";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +71,11 @@ const App = () => (
           <Route path="/references/7177/dial/royal-navy" element={<Reference7177DialRoyalNavy />} />
           <Route path="/references/7177/dial/uae" element={<Reference7177DialUAE />} />
           <Route path="/references/7177/dial/by-orfina" element={<Reference7177DialByOrfina />} />
+          <Route path="/references/7176" element={<Reference7176 />} />
+          <Route path="/references/7176/case-finishes" element={<Reference7176CaseFinishes />} />
+          <Route path="/references/7176/caseback" element={<Reference7176Caseback />} />
+          <Route path="/references/7176/dial" element={<Reference7176Dial />} />
+          <Route path="/references/7176/rehaut" element={<Reference7176Rehaut />} />
           <Route path="/about" element={<About />} />
           <Route path="/components/bracelets" element={<Bracelets />} />
           <Route path="/components/straps" element={<Straps />} />

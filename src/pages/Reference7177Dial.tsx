@@ -36,17 +36,24 @@ const Reference7177Dial = () => (
         Reference 7177 - Dial Variations
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {dialVariations.map(variation => (
+        {dialVariations.map((variation, idx) => (
           <Link
             key={variation.path}
             to={variation.path}
-            className="block p-6 bg-white border border-porsche-light-gray rounded shadow hover:shadow-md transition flex flex-col items-center text-center hover:bg-porsche-gray"
+            className="group block p-6 bg-white border border-porsche-light-gray rounded shadow hover:shadow-md transition flex flex-col items-center text-center hover:bg-porsche-gray"
           >
-            <img
-              src={placeholderImg}
-              alt="OPD Watch Placeholder"
-              className="w-20 h-20 object-contain mb-3"
-            />
+            <div className="relative w-20 h-20 flex items-center justify-center">
+              <img
+                src={placeholderImg}
+                alt="OPD Watch Placeholder"
+                className="w-20 h-20 object-contain transition-opacity duration-300 absolute inset-0 z-10 group-hover:opacity-0"
+              />
+              <img
+                src={idx % 2 === 0 ? '/lovable-uploads/7177-baseline.jpg' : '/lovable-uploads/7177-caseback.jpg'}
+                alt="Dial Hover"
+                className="w-20 h-20 object-contain transition-opacity duration-300 absolute inset-0 z-0"
+              />
+            </div>
             <span className="font-sans text-base text-porsche-black font-medium mt-1">{variation.name} Dial</span>
           </Link>
         ))}

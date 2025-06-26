@@ -35,11 +35,18 @@ const Reference7177DialBaseline = () => {
             </div>
             {/* Right: Image */}
             <div className="flex flex-col items-center">
-              <img 
-                src="/lovable-uploads/7177-baseline.jpg" 
-                alt="Baseline Dial" 
-                className="w-64 h-64 object-cover rounded shadow mb-2 mx-auto"
-              />
+              <div className="relative w-64 h-64 mb-2">
+                <img 
+                  src="/lovable-uploads/7177-baseline.jpg" 
+                  alt="Baseline Dial" 
+                  className="w-64 h-64 object-cover rounded shadow mx-auto transition-opacity duration-300 absolute inset-0 z-10 hover:opacity-0"
+                />
+                <img 
+                  src="/lovable-uploads/7177-caseback.jpg" 
+                  alt="Baseline Dial Hover" 
+                  className="w-64 h-64 object-cover rounded shadow mx-auto transition-opacity duration-300 absolute inset-0 z-0"
+                />
+              </div>
               <span className="block text-base md:text-lg text-gray-600 text-center">Baseline Dial</span>
             </div>
           </div>

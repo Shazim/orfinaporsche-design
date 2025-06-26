@@ -39,8 +39,19 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-12 justify-items-center">
             <Link to="/references/7750" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all group-hover:shadow-lg">
-                <div className="h-80 bg-gray-50 flex items-center justify-center">
-                  <span className="text-black text-2xl font-light uppercase tracking-wider">REF. 7750</span>
+                <div className="h-80 bg-gray-50 flex items-center justify-center relative">
+                  <div className="relative w-full h-full">
+                    <img
+                      src="/lovable-uploads/7177-caseback.jpg"
+                      alt="7750 Main"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-10 group-hover:opacity-0"
+                    />
+                    <img
+                      src="/lovable-uploads/7177-baseline.jpg"
+                      alt="7750 Hover"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-0"
+                    />
+                  </div>
                 </div>
                 <div className="p-8">
                   <h3 className="text-xl font-normal text-black mb-4 uppercase tracking-wide">Reference 7750</h3>
@@ -56,8 +67,19 @@ const Index = () => {
             
             <Link to="/references/7176" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all group-hover:shadow-lg">
-                <div className="h-80 bg-gray-50 flex items-center justify-center">
-                  <span className="text-black text-2xl font-light uppercase tracking-wider">REF. 7176</span>
+                <div className="h-80 bg-gray-50 flex items-center justify-center relative">
+                  <div className="relative w-full h-full">
+                    <img
+                      src="/lovable-uploads/7177-baseline.jpg"
+                      alt="7176 Main"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-10 group-hover:opacity-0"
+                    />
+                    <img
+                      src="/lovable-uploads/7177-caseback.jpg"
+                      alt="7176 Hover"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-0"
+                    />
+                  </div>
                 </div>
                 <div className="p-8">
                   <h3 className="text-xl font-normal text-black mb-4 uppercase tracking-wide">Reference 7176</h3>
@@ -73,8 +95,19 @@ const Index = () => {
             
             <Link to="/references/7177" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all group-hover:shadow-lg">
-                <div className="h-80 bg-gray-50 flex items-center justify-center">
-                  <span className="text-black text-2xl font-light uppercase tracking-wider">REF. 7177</span>
+                <div className="h-80 bg-gray-50 flex items-center justify-center relative">
+                  <div className="relative w-full h-full">
+                    <img
+                      src="/lovable-uploads/opd-watch.png"
+                      alt="7177 Main"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-10 group-hover:opacity-0"
+                    />
+                    <img
+                      src="/lovable-uploads/7177-caseback.jpg"
+                      alt="7177 Hover"
+                      className="w-full h-full object-contain transition-opacity duration-300 absolute inset-0 z-0"
+                    />
+                  </div>
                 </div>
                 <div className="p-8">
                   <h3 className="text-xl font-normal text-black mb-4 uppercase tracking-wide">Reference 7177</h3>
