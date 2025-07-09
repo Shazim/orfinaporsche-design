@@ -25,24 +25,94 @@ const Reference7176 = () => {
               </h1>
               <div className="mb-8">
                 <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
-                  The 7176 Military Chronograph was introduced in 1976 and was likely produced until 1983, when Porsche Design ended its partnership with Orfina, in which, subsequently, the PWI pieces emerged.
+                  The reference 7176 entered production in circa 1976 and continued onward. The new model (ref: 7176) came in three versions Black PVD, Silver/Sable, and Green PVD - which was exclusively found on 7176 Military. 
+                  The “upgraded” Lemania 5100 movement also had a 24-hour totaliser at 12 and a white central minutes hand with a lollypop tip.
                 </p>
-                <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
-                  The 7176 was available over the counter for retail purchase as well as issued directly through military organizations as seen through the multiple military variants. ​​However, these watches are often considered quasi-issued as the Baseline military dial was made available to the public to capitalize on the potential military affiliation.
-                </p>
-                <p className="font-inter text-gray-700 leading-relaxed mb-6 text-left">
-                  There are several main 7176 or military variants. These variants each feature the three dial elements noted on the Baseline dial (having "MILITARY", "PORSCHE DESIGN", and the "circle-3H logo" printed on the dial) but have additional dial printing, and/or caseback engravings unique to each.
-                </p>
-                <p className="font-inter text-gray-700 leading-relaxed mb-4 text-left">
-                  The 7176 military variants were identical to the civilian 7176s variant, including the case, except in 5 main ways:
-                </p>
-                <ul className="list-disc ml-8 mb-8 text-gray-700">
-                  <li>Available Finishes</li>
-                  <li>Caseback Engravings</li>
-                  <li>Central Chronograph-Minutes Hand and Hour Chronograph Hands</li>
-                  <li>Rehaut</li>
-                  <li>Dial</li>
-                </ul>
+                <h3 className="font-sans text-2xl font-bold text-porsche-black mb-4 mt-8">There Are Four Known References</h3>
+                {/* 7176 */}
+                <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+                  <div className="flex-1">
+                    <h4 className="font-sans text-xl font-semibold text-porsche-black mb-2">7176</h4>
+                    <ul className="list-disc ml-6 text-gray-700 mb-2">
+                      <li><span className="font-bold">Production Years:</span> 1976-On</li>
+                      <li><span className="font-bold">Finishes:</span> Black PVD and Silver/Sable</li>
+                      <li><span className="font-bold">Caseback:</span> 7176 Mk. 1 Caseback</li>
+                      <li><span className="font-bold">Rehaut:</span> Yellow Triangle</li>
+                      <li><span className="font-bold">Dial:</span> PD Dial</li>
+                    </ul>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <img 
+                      src="/public/placeholder.svg" 
+                      alt="7176" 
+                      className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2"
+                    />
+                    <span className="text-base md:text-lg text-gray-600 mt-2">7176</span>
+                  </div>
+                </div>
+                {/* 7176 Military */}
+                <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+                  <div className="flex-1">
+                    <h4 className="font-sans text-xl font-semibold text-porsche-black mb-2">7176 Military</h4>
+                    <ul className="list-disc ml-6 text-gray-700 mb-2">
+                      <li><span className="font-bold">Production Years:</span> 1976-On</li>
+                      <li><span className="font-bold">Finishes:</span> Black PVD, Silver/Sable, and Green PVD</li>
+                      <li><span className="font-bold">Caseback:</span> 7176 Mk. 1 Caseback</li>
+                      <li><span className="font-bold">Rehaut:</span> Yellow Triangle</li>
+                      <li><span className="font-bold">Dial:</span> Military Dial</li>
+                    </ul>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <img 
+                      src="/public/placeholder.svg" 
+                      alt="7176 Military" 
+                      className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2"
+                    />
+                    <span className="text-base md:text-lg text-gray-600 mt-2">7176 Military</span>
+                  </div>
+                </div>
+                {/* 7176 D */}
+                <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+                  <div className="flex-1">
+                    <h4 className="font-sans text-xl font-semibold text-porsche-black mb-2">7176 D</h4>
+                    <ul className="list-disc ml-6 text-gray-700 mb-2">
+                      <li><span className="font-bold">Production Years:</span> 1976-On</li>
+                      <li><span className="font-bold">Finishes:</span> Black PVD and Silver/Sable</li>
+                      <li><span className="font-bold">Caseback:</span> 7176 D Caseback</li>
+                      <li><span className="font-bold">Rehaut:</span> Yellow Triangle and Tachymetre</li>
+                      <li><span className="font-bold">Dial:</span> PD Dial and Military Dial</li>
+                    </ul>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <img 
+                      src="/public/placeholder.svg" 
+                      alt="7176 D" 
+                      className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2"
+                    />
+                    <span className="text-base md:text-lg text-gray-600 mt-2">7176 D</span>
+                  </div>
+                </div>
+                {/* 7176 S */}
+                <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+                  <div className="flex-1">
+                    <h4 className="font-sans text-xl font-semibold text-porsche-black mb-2">7176 S</h4>
+                    <ul className="list-disc ml-6 text-gray-700 mb-2">
+                      <li><span className="font-bold">Production Years:</span> 1976-On</li>
+                      <li><span className="font-bold">Finishes:</span> Black PVD and Silver/Sable</li>
+                      <li><span className="font-bold">Caseback:</span> 7176 S Caseback</li>
+                      <li><span className="font-bold">Rehaut:</span> Tachymetre</li>
+                      <li><span className="font-bold">Dial:</span> PD Dial</li>
+                    </ul>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <img 
+                      src="/public/placeholder.svg" 
+                      alt="7176 S" 
+                      className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2"
+                    />
+                    <span className="text-base md:text-lg text-gray-600 mt-2">7176 S</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center">

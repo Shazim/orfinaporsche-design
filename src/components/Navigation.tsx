@@ -179,11 +179,13 @@ const Navigation = () => {
             </Link>
           </div>
           
-          <img 
-            src="/lovable-uploads/opd-watch.png" 
-            alt="OPD Watch Logo" 
-            className="w-20 h-20 object-contain ml-8"
-          />
+          <Link to="/">
+            <img 
+              src="/lovable-uploads/opd-watch.png" 
+              alt="OPD Watch Logo" 
+              className="w-20 h-20 object-contain ml-8"
+            />
+          </Link>
         </div>
       </div>
     </nav>

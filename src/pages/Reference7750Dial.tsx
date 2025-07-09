@@ -26,39 +26,47 @@ const Reference7750Dial = () => {
           <h1 className="font-sans text-4xl md:text-5xl font-light text-porsche-black mb-8 uppercase tracking-wider">
             Reference 7750 - Dial Variations
           </h1>
-          
-          <div className="grid lg:grid-cols-2 gap-12">
+          <p className="font-sans text-lg text-porsche-dark-gray leading-relaxed mb-8">
+            There are two dial variations found on the Reference 7750.
+          </p>
+
+          {/* Orfina Dial Section */}
+          <div className="mb-12 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="font-sans text-lg text-porsche-dark-gray leading-relaxed mb-8">
-                The Reference 7750 was produced with several dial configurations, each reflecting 
-                different aesthetic preferences and functional requirements.
-              </p>
-              
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-sans text-xl font-medium text-porsche-black mb-4 uppercase tracking-wide">Standard Dials</h3>
-                  <ul className="space-y-2 text-porsche-dark-gray">
-                    <li>• Black Matte Finish</li>
-                    <li>• White Luminous Indices</li>
-                    <li>• Three Sub-Dials</li>
-                    <li>• Date Window at 4:30</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-sans text-xl font-medium text-porsche-black mb-4 uppercase tracking-wide">Special Editions</h3>
-                  <ul className="space-y-2 text-porsche-dark-gray">
-                    <li>• Silver Dial Variants</li>
-                    <li>• Different Hand Configurations</li>
-                    <li>• Alternative Logo Placements</li>
-                    <li>• Limited Production Runs</li>
-                  </ul>
-                </div>
-              </div>
+              <h2 className="font-sans text-2xl font-bold text-porsche-black mb-4 mt-8">Orfina Dial (Found Mk. 1 Case with Mk. 1 Caseback)</h2>
+              <ul className="mb-6 text-porsche-dark-gray list-disc ml-6">
+                <li>The First is the Orfina Dial, and this is the dial that started it all. “ORFINA” is printed above the Day/Date windows and “PORSCHE DESIGN” is printed below the windows.</li>
+                <li>It is solely found on the Mk. 1 Case with a Mk. 1 Caseback and either rehaut.</li>
+              </ul>
             </div>
-            
-            <div className="bg-porsche-gray aspect-square flex items-center justify-center">
-              <span className="font-sans text-porsche-black text-2xl font-light uppercase tracking-wider">DIAL DETAILS</span>
+            <div className="flex flex-col items-center justify-center h-full">
+              <img 
+                src="/lovable-uploads/mk-1-service-dial.jpg" 
+                alt="7750 Orfina Dial" 
+                className="w-full max-w-xs rounded shadow mb-2 object-contain mx-auto"
+                style={{ maxHeight: '350px' }}
+              />
+              <span className="block text-base md:text-lg text-gray-600 text-center">7750 Orfina Dial</span>
+            </div>
+          </div>
+
+          {/* PD Dial Section */}
+          <div className="mb-12 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-sans text-2xl font-bold text-porsche-black mb-4 mt-8">PD Dial (Found across all case marks and Mk. 2 Casebacks)</h2>
+              <ul className="mb-6 text-porsche-dark-gray list-disc ml-6">
+                <li>“PD” is printed above the Day/Date windows and “PORSCHE DESIGN” is printed below the windows.</li>
+                <li>This dial can be found on any 7750 case, caseback or rehaut variation except for the original Mk. 1 Caseback found exclusively paired with an Orfina dial.</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center justify-center h-full">
+              <img 
+                src="/lovable-uploads/mk-2-service-dial.jpg" 
+                alt="7750 PD Dial" 
+                className="w-full max-w-xs rounded shadow mb-2 object-contain mx-auto"
+                style={{ maxHeight: '350px' }}
+              />
+              <span className="block text-base md:text-lg text-gray-600 text-center">7750 PD Dial</span>
             </div>
           </div>
         </div>

@@ -21,9 +21,36 @@ const Reference7176Rehaut = () => {
           <h1 className="font-sans text-4xl md:text-5xl font-light text-porsche-black mb-8 uppercase tracking-wider">
             Reference 7176 - Rehaut Variations
           </h1>
-          <p className="font-sans text-lg text-porsche-dark-gray leading-relaxed mb-6">
-            Content coming soon.
-          </p>
+          <div className="flex flex-col gap-12">
+            {/* Yellow Triangle Rehaut */}
+            <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+              <div className="flex-1">
+                <h2 className="font-sans text-2xl font-bold text-porsche-black mb-2">Yellow Triangle Rehaut</h2>
+                <ul className="list-disc ml-6 text-gray-700 mb-4">
+                  <li>The Yellow Triangle rehaut features a Yellow Triangle Rehaut with the word “TACHYMETER” printed between 12 and 2 O'clock</li>
+                  <li>Found On: 7176, 7176 Military</li>
+                </ul>
+              </div>
+              <div className="flex-1 flex flex-col items-center justify-center">
+                <img src="/placeholder.svg" alt="Yellow Triangle Rehaut" className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2" />
+                <span className="text-base md:text-lg text-gray-600 mt-2">Yellow Triangle Rehaut</span>
+              </div>
+            </div>
+            {/* TACHYMETRE Rehaut */}
+            <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 mb-8">
+              <div className="flex-1">
+                <h2 className="font-sans text-2xl font-bold text-porsche-black mb-2">TACHYMETRE Rehaut</h2>
+                <ul className="list-disc ml-6 text-gray-700 mb-4">
+                  <li>The TACHYMETRE rehaut removes the the triangle at twelve o’clock, possesses an overall thicker font, and the word “TACHYMETRE” is printed between 12 and 2 O'clock.</li>
+                  <li>Found On: 7176 D, 7176 S</li>
+                </ul>
+              </div>
+              <div className="flex-1 flex flex-col items-center justify-center">
+                <img src="/placeholder.svg" alt="TACHYMETRE Rehaut" className="w-64 h-64 object-contain bg-porsche-gray rounded shadow mb-2" />
+                <span className="text-base md:text-lg text-gray-600 mt-2">TACHYMETRE Rehaut</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div className="py-8 bg-white border-t border-porsche-light-gray">
