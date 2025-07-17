@@ -42,13 +42,13 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
             <Link to="/references/7750" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
-                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
                   <img
                     src="/images/main-page-photos/Ref-7750.jpg"
                     alt="Reference 7750"
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
@@ -80,13 +80,13 @@ const Index = () => {
 
             <Link to="/references/7176" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
-                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
                   <img
                     src="/images/main-page-photos/Ref-7176.jpg"
                     alt="Reference 7176"
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
@@ -121,13 +121,13 @@ const Index = () => {
               className="group md:col-span-2 lg:col-span-1"
             >
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
-                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
                   <img
                     src="/images/main-page-photos/Ref-7177.jpg"
                     alt="Reference 7177"
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">

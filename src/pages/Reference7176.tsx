@@ -160,18 +160,18 @@ const Reference7176 = () => {
 
             {/* Main Content Slider */}
             <div className="relative">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="flex flex-col lg:flex-row gap-16 items-start">
                 {/* Image Section */}
-                <div className="relative group">
+                <div className="relative group lg:w-auto lg:flex-shrink-0">
                   <div className="relative overflow-hidden transform group-hover:scale-105 transition-all duration-500">
-                    <div className="aspect-square flex items-center justify-center">
+                    <div className="w-full max-w-md mx-auto lg:mx-0">
                       <img
                         src={currentVar.image}
                         alt={`${currentVar.title} ${currentVar.subtitle}`}
-                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-auto object-contain transform group-hover:scale-110 transition-transform duration-700 rounded-lg shadow-lg"
                       />
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6 rounded-b-lg">
                       <p className="text-white font-light text-sm">
                         {currentVar.description}
                       </p>
@@ -180,7 +180,7 @@ const Reference7176 = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="space-y-8">
+                <div className="space-y-8 lg:flex-1">
                   <div className="transform transition-all duration-500 delay-100">
                     <h2 className="text-4xl font-light text-gray-900 mb-2">
                       {currentVar.title}

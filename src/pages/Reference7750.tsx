@@ -149,18 +149,18 @@ const Reference7750 = () => {
 
             {/* Main Content Slider */}
             <div className="relative">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="flex flex-col lg:flex-row gap-16 items-start">
                 {/* Image Section */}
-                <div className="relative group">
+                <div className="relative group lg:w-auto lg:flex-shrink-0">
                   <div className="relative overflow-hidden transform group-hover:scale-105 transition-all duration-500">
-                    <div className="aspect-square flex items-center justify-center">
+                    <div className="w-full max-w-md mx-auto lg:mx-0">
                       <img
                         src={currentGen.image}
                         alt={`${currentGen.title} ${currentGen.subtitle}`}
-                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-auto object-contain transform group-hover:scale-110 transition-transform duration-700 rounded-lg shadow-lg"
                       />
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6 rounded-b-lg">
                       <p className="text-white font-light text-sm">
                         {currentGen.description}
                       </p>
@@ -169,7 +169,7 @@ const Reference7750 = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="space-y-8">
+                <div className="space-y-8 lg:flex-1">
                   <div className="transform transition-all duration-500 delay-100">
                     <h2 className="text-4xl font-light text-gray-900 mb-2">
                       {currentGen.title}
@@ -273,13 +273,13 @@ const Reference7750 = () => {
                 className="group h-full"
               >
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <img
                       src="/images/7750-photos/7750-Mk.3-Casecrop.jpg"
                       alt="Case & Finishes"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
@@ -294,13 +294,13 @@ const Reference7750 = () => {
 
               <Link to="/references/7750/caseback" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <img
                       src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                       alt="Caseback"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
@@ -315,13 +315,13 @@ const Reference7750 = () => {
 
               <Link to="/references/7750/rehaut" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <img
                       src="/images/7750-photos/7750-Rehaut-1KM.jpg"
                       alt="Rehaut Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
@@ -336,13 +336,13 @@ const Reference7750 = () => {
 
               <Link to="/references/7750/dial" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <img
                       src="/images/7750-photos/7750-Orfina.jpg"
                       alt="Dial Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
