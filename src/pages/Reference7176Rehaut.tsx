@@ -1,7 +1,56 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navigation from "../components/Navigation";
 
 const Reference7176Rehaut = () => {
+  const [yellowTriangleImageIndex, setYellowTriangleImageIndex] = useState(0);
+  const [tachymetreImageIndex, setTachymetreImageIndex] = useState(0);
+
+  const yellowTriangleImages = [
+    {
+      src: "/images/7176-photos/7176 Military.png",
+      alt: "Yellow Triangle Rehaut",
+      caption: "Yellow Triangle Rehaut",
+    },
+  ];
+
+  const tachymetreImages = [
+    {
+      src: "/images/7176-photos/7176Scrop.jpg",
+      alt: "TACHYMETRE Rehaut",
+      caption: "TACHYMETRE Rehaut",
+    },
+    {
+      src: "/images/7176-photos/TACHYMETRE Rehaut - Close-Up.jpg",
+      alt: "TACHYMETRE Rehaut Close-Up",
+      caption: "TACHYMETRE Rehaut Close-Up",
+    },
+  ];
+
+  const nextYellowTriangleImage = () => {
+    setYellowTriangleImageIndex(
+      (prev) => (prev + 1) % yellowTriangleImages.length
+    );
+  };
+
+  const prevYellowTriangleImage = () => {
+    setYellowTriangleImageIndex(
+      (prev) =>
+        (prev - 1 + yellowTriangleImages.length) % yellowTriangleImages.length
+    );
+  };
+
+  const nextTachymetreImage = () => {
+    setTachymetreImageIndex((prev) => (prev + 1) % tachymetreImages.length);
+  };
+
+  const prevTachymetreImage = () => {
+    setTachymetreImageIndex(
+      (prev) => (prev - 1 + tachymetreImages.length) % tachymetreImages.length
+    );
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -44,8 +93,7 @@ const Reference7176Rehaut = () => {
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              The Reference 7176 features two distinct rehaut variations, each
-              with specific design elements and model applications.
+              There are two variations of Rehaut found across the 7176 range.
             </p>
           </div>
 
@@ -66,34 +114,27 @@ const Reference7176Rehaut = () => {
 
                   <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found on: 7176, 7176 Military
+                      The Yellow Triangle rehaut features a Yellow Triangle
+                      Rehaut with the word "TACHYMETER" printed between 12 and 2
+                      O'clock
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Found On:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Distinctive marker:</strong> Features a yellow
-                          triangle at 12 o'clock position
+                          <strong>7176</strong>
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Text placement:</strong> "TACHYMETER" printed
-                          between 12 and 2 o'clock
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Design heritage:</strong> Maintains classic
-                          tachymeter functionality with visual distinction
+                          <strong>7176 Military</strong>
                         </span>
                       </li>
                     </ul>
@@ -103,14 +144,51 @@ const Reference7176Rehaut = () => {
                 <div className="flex flex-col items-center justify-center">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
-                      src="/public/images/7176-photos/TACHYMETRE Rehaut - Close-Up.jpg"
-                      alt="Yellow Triangle Rehaut"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                    />
+                    <div className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
+                      <img
+                        src={yellowTriangleImages[yellowTriangleImageIndex].src}
+                        alt={yellowTriangleImages[yellowTriangleImageIndex].alt}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Navigation Arrows */}
+                    {yellowTriangleImages.length > 1 && (
+                      <>
+                        <button
+                          onClick={prevYellowTriangleImage}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                        >
+                          <ChevronLeft className="w-4 h-4 text-gray-700" />
+                        </button>
+                        <button
+                          onClick={nextYellowTriangleImage}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                        >
+                          <ChevronRight className="w-4 h-4 text-gray-700" />
+                        </button>
+                      </>
+                    )}
+
+                    {/* Image Indicators */}
+                    {yellowTriangleImages.length > 1 && (
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                        {yellowTriangleImages.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setYellowTriangleImageIndex(index)}
+                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                              index === yellowTriangleImageIndex
+                                ? "bg-yellow-500"
+                                : "bg-white/50 hover:bg-white/80"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Yellow Triangle Rehaut
+                    {yellowTriangleImages[yellowTriangleImageIndex].caption}
                   </span>
                 </div>
               </div>
@@ -122,14 +200,51 @@ const Reference7176Rehaut = () => {
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <img
-                      src="/public/images/7176-photos/TACHYMETRE Rehaut - Close-Up.jpg"
-                      alt="TACHYMETRE Rehaut"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                    />
+                    <div className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
+                      <img
+                        src={tachymetreImages[tachymetreImageIndex].src}
+                        alt={tachymetreImages[tachymetreImageIndex].alt}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Navigation Arrows */}
+                    {tachymetreImages.length > 1 && (
+                      <>
+                        <button
+                          onClick={prevTachymetreImage}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                        >
+                          <ChevronLeft className="w-4 h-4 text-gray-700" />
+                        </button>
+                        <button
+                          onClick={nextTachymetreImage}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                        >
+                          <ChevronRight className="w-4 h-4 text-gray-700" />
+                        </button>
+                      </>
+                    )}
+
+                    {/* Image Indicators */}
+                    {tachymetreImages.length > 1 && (
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                        {tachymetreImages.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setTachymetreImageIndex(index)}
+                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                              index === tachymetreImageIndex
+                                ? "bg-black"
+                                : "bg-white/50 hover:bg-white/80"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    TACHYMETRE Rehaut
+                    {tachymetreImages[tachymetreImageIndex].caption}
                   </span>
                 </div>
 
@@ -145,34 +260,27 @@ const Reference7176Rehaut = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found on: 7176 D, 7176 S
+                      The TACHYMETRE rehaut removes the triangle at twelve
+                      o'clock, possesses an overall thicker font, and the word
+                      "TACHYMETRE" is printed between 12 and 2 O'clock.
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Found On:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Clean design:</strong> Removes the triangle at
-                          twelve o'clock for a cleaner appearance
+                          <strong>7176 D</strong>
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Enhanced typography:</strong> Features overall
-                          thicker font for better readability
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Text placement:</strong> "TACHYMETRE" printed
-                          between 12 and 2 o'clock
+                          <strong>7176 S</strong>
                         </span>
                       </li>
                     </ul>

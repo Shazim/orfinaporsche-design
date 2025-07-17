@@ -67,7 +67,9 @@ const Reference7176Caseback = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Standard caseback for 7176 and 7176 Military models
+                      The 7176 and 7176 Military casebacks follow the design
+                      language change of the caseback first seen on the 7750 Mk.
+                      2 caseback
                     </p>
                   </div>
 
@@ -76,13 +78,6 @@ const Reference7176Caseback = () => {
                       Key Features:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Design evolution:</strong> Follows the design
-                          language change first seen on the 7750 Mk. 2 caseback
-                        </span>
-                      </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
@@ -106,7 +101,7 @@ const Reference7176Caseback = () => {
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/public/images/7176-photos/7176s-caseback.jpg"
+                      src="/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
                       alt="7176 Mk. 1 Caseback"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
@@ -125,7 +120,7 @@ const Reference7176Caseback = () => {
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/public/images/7176-photos/7176D Caseback (Wes)crop.jpg"
+                      src="/images/7176-photos/7176D Caseback (Wes)crop.jpg"
                       alt="7176 D Caseback"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
@@ -147,7 +142,8 @@ const Reference7176Caseback = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Variant for the 7176 D model with additional designation
+                      The casebacks are identical to that of the 7176 Mk. 1, but
+                      with an additional "D" next to 7176
                     </p>
                   </div>
 
@@ -191,7 +187,8 @@ const Reference7176Caseback = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Variant for the 7176 S model with additional designation
+                      The casebacks are identical to that of the 7176 Mk. 1, but
+                      with an additional "S" next to 7176
                     </p>
                   </div>
 
@@ -222,7 +219,7 @@ const Reference7176Caseback = () => {
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/public/images/7176-photos/7176s-caseback.jpg"
+                      src="/images/7176-photos/7176s-caseback.jpg"
                       alt="7176 S Caseback"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
@@ -241,7 +238,7 @@ const Reference7176Caseback = () => {
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/public/images/7176-photos/7176 Prototype Caseback.jpg"
+                      src="/images/7176-photos/7176 Prototype Caseback.jpg"
                       alt="7176 Prototype Caseback"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
@@ -263,7 +260,8 @@ const Reference7176Caseback = () => {
 
                   <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Special prototype version with unique design elements
+                      On select 7176 variants, usually those identified as
+                      prototypes, a different caseback has been identified
                     </p>
                   </div>
 
@@ -282,9 +280,9 @@ const Reference7176Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Text:</strong> "7176 S CHRONOGRAPH AUTOMATIC
-                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS
-                          STEEL SWISS MADE"
+                          <strong>Perimeter text:</strong> "7176 S CHRONOGRAPH
+                          AUTOMATIC WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED
+                          STAINLESS STEEL SWISS MADE" in one continuous circle
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">

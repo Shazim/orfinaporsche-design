@@ -37,13 +37,13 @@ const Reference7176 = () => {
       title: "7176 Military",
       subtitle: "The Military Edition",
       years: "1976-On",
-      finishes: "Black PVD, Silver/Sable, and Green PVD",
+      finishes: "Silver/Sable, Nato Grey PVD, and Green PVD",
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
       dial: "Military Dial",
       image: "/images/7176-photos/Alan-7176-Militarycrop.jpg",
       description:
-        "Exclusive military variant featuring unique Green PVD finish and specialized military dial.",
+        "Exclusive military variant featuring unique Nato Grey PVD and Green PVD finishes with specialized military dial.",
     },
     {
       id: 3,
@@ -124,9 +124,12 @@ const Reference7176 = () => {
                 </h1>
                 <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-                  The reference 7176 entered production in circa 1976 with the
-                  upgraded Lemania 5100 movement, featuring a 24-hour totaliser
-                  and distinctive white central minutes hand with lollypop tip.
+                  The reference 7176 entered production in circa 1976 and
+                  continued onward. The new model came in a variety of finishes
+                  including Black PVD, Silver/Sable, and Nato Grey PVD and Green
+                  PVD - which were both exclusively found on 7176 Military. The
+                  "upgraded" Lemania 5100 movement also had a 24-hour totaliser
+                  at 12 and a white central minutes hand with a lollypop tip.
                 </p>
               </div>
             </div>
@@ -160,13 +163,12 @@ const Reference7176 = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Image Section */}
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-900/10 to-transparent rounded-2xl transform rotate-1 group-hover:rotate-2 transition-transform duration-500"></div>
-                  <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden transform group-hover:scale-105 transition-all duration-500">
-                    <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
+                  <div className="relative overflow-hidden transform group-hover:scale-105 transition-all duration-500">
+                    <div className="aspect-square flex items-center justify-center">
                       <img
                         src={currentVar.image}
                         alt={`${currentVar.title} ${currentVar.subtitle}`}
-                        className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                       />
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
@@ -262,14 +264,14 @@ const Reference7176 = () => {
               Explore Details
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <Link to="/references/7176/case-finishes" className="group">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/references/7750/case-finishes" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
                       src="/lovable-uploads/7177-case-finishes.jpg"
                       alt="Case & Finishes"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6">
@@ -286,7 +288,7 @@ const Reference7176 = () => {
                     <img
                       src="/lovable-uploads/7177-caseback.jpg"
                       alt="Caseback"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6">
@@ -297,13 +299,13 @@ const Reference7176 = () => {
                 </div>
               </Link>
 
-              <Link to="/references/7176/rehaut" className="group">
+              <Link to="/references/7177/caseback" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
                       src="/lovable-uploads/7177-standard-rehaut.jpg"
                       alt="Rehaut Variations"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6">
@@ -314,13 +316,13 @@ const Reference7176 = () => {
                 </div>
               </Link>
 
-              <Link to="/references/7176/dial" className="group">
+              <Link to="/references/7177/caseback" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
                       src="/lovable-uploads/7177-baseline.jpg"
                       alt="Dial Variations"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6">

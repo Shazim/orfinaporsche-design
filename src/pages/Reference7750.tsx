@@ -255,77 +255,102 @@ const Reference7750 = () => {
         </section>
 
         {/* Sub-Pages Navigation */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
-              Explore Details
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
+                Explore Details
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Discover the intricate details and variations of the Reference
+                7750
+              </p>
+            </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <Link to="/references/7750/case-finishes" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link
+                to="/references/7750/case-finishes"
+                className="group h-full"
+              >
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                     <img
-                      src="/lovable-uploads/7177-case-finishes.jpg"
+                      src="/images/7750-photos/7750-Mk.3-Casecrop.jpg"
                       alt="Case & Finishes"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Case & Finishes
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Three case variations with different finishes
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7750/caseback" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <Link to="/references/7750/caseback" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                     <img
-                      src="/lovable-uploads/7177-caseback.jpg"
+                      src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                       alt="Caseback"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Caseback
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Different caseback designs and markings
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7750/rehaut" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <Link to="/references/7750/rehaut" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                     <img
-                      src="/lovable-uploads/7177-standard-rehaut.jpg"
+                      src="/images/7750-photos/7750-Rehaut-1KM.jpg"
                       alt="Rehaut Variations"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Rehaut Variations
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Three known rehaut variations
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7750/dial" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <Link to="/references/7750/dial" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                     <img
-                      src="/lovable-uploads/7177-baseline.jpg"
+                      src="/images/7750-photos/7750-Orfina.jpg"
                       alt="Dial Variations"
-                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Dial Variations
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Orfina and PD dial variations
+                    </p>
                   </div>
                 </div>
               </Link>

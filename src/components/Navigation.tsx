@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [referencesOpen, setReferencesOpen] = useState(false);
@@ -8,11 +8,43 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileReferencesOpen, setMobileReferencesOpen] = useState(false);
   const [mobileComponentsOpen, setMobileComponentsOpen] = useState(false);
+
+  // Sub-dropdown states
+  const [ref7750Open, setRef7750Open] = useState(false);
+  const [ref7176Open, setRef7176Open] = useState(false);
+  const [ref7177Open, setRef7177Open] = useState(false);
+
+  // Timeout refs for delayed closing
+  const ref7750TimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const ref7176TimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const ref7177TimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
   const location = useLocation();
   const referencesRef = useRef<HTMLDivElement>(null);
   const componentsRef = useRef<HTMLDivElement>(null);
 
   const isActive = (path: string) => location.pathname === path;
+
+  // Helper functions for sub-dropdown hover management
+  const handleSubDropdownEnter = (
+    setOpen: (open: boolean) => void,
+    timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>
+  ) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setOpen(true);
+  };
+
+  const handleSubDropdownLeave = (
+    setOpen: (open: boolean) => void,
+    timeoutRef: React.MutableRefObject<NodeJS.Timeout | null>
+  ) => {
+    timeoutRef.current = setTimeout(() => {
+      setOpen(false);
+    }, 200);
+  };
 
   // Close dropdowns on outside click
   useEffect(() => {
@@ -22,6 +54,9 @@ const Navigation = () => {
         !referencesRef.current.contains(event.target as Node)
       ) {
         setReferencesOpen(false);
+        setRef7750Open(false);
+        setRef7176Open(false);
+        setRef7177Open(false);
       }
       if (
         componentsRef.current &&
@@ -45,6 +80,14 @@ const Navigation = () => {
     setComponentsOpen(false);
     setMobileReferencesOpen(false);
     setMobileComponentsOpen(false);
+    setRef7750Open(false);
+    setRef7176Open(false);
+    setRef7177Open(false);
+
+    // Clear any pending timeouts
+    if (ref7750TimeoutRef.current) clearTimeout(ref7750TimeoutRef.current);
+    if (ref7176TimeoutRef.current) clearTimeout(ref7176TimeoutRef.current);
+    if (ref7177TimeoutRef.current) clearTimeout(ref7177TimeoutRef.current);
   }, [location.pathname]);
 
   const handleMobileMenuToggle = () => {
@@ -52,6 +95,9 @@ const Navigation = () => {
     // Close desktop dropdowns when opening mobile menu
     setReferencesOpen(false);
     setComponentsOpen(false);
+    setRef7750Open(false);
+    setRef7176Open(false);
+    setRef7177Open(false);
   };
 
   const handleMobileReferencesToggle = () => {
@@ -102,132 +148,232 @@ const Navigation = () => {
               </button>
 
               {referencesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-2xl border border-gray-200 rounded-lg z-50 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200">
-                  <div className="py-4">
-                    <div className="px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                      <Link
-                        to="/references/7750"
-                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors mb-2"
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl border border-gray-200 rounded-lg z-50 animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="py-2">
+                    {/* Reference 7750 */}
+                    <div className="relative">
+                      <div
+                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
+                        onMouseEnter={() =>
+                          handleSubDropdownEnter(
+                            setRef7750Open,
+                            ref7750TimeoutRef
+                          )
+                        }
+                        onMouseLeave={() =>
+                          handleSubDropdownLeave(
+                            setRef7750Open,
+                            ref7750TimeoutRef
+                          )
+                        }
                       >
-                        Reference 7750
-                      </Link>
-                      <p className="text-xs text-gray-500 mb-3">
-                        Complete reference guide
-                      </p>
-                      <div className="grid grid-cols-2 gap-2">
                         <Link
-                          to="/references/7750/case-finishes"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
+                          to="/references/7750"
+                          className="font-medium text-sm text-black hover:text-gray-600 transition-colors flex-1"
                         >
-                          Case & Finishes
+                          Reference 7750
                         </Link>
-                        <Link
-                          to="/references/7750/caseback"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Caseback
-                        </Link>
-                        <Link
-                          to="/references/7750/rehaut"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Rehaut Variations
-                        </Link>
-                        <Link
-                          to="/references/7750/dial"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Dial Variations
-                        </Link>
+                        <ChevronRight className="w-4 h-4 text-gray-400" />
                       </div>
+
+                      {ref7750Open && (
+                        <div
+                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          onMouseEnter={() =>
+                            handleSubDropdownEnter(
+                              setRef7750Open,
+                              ref7750TimeoutRef
+                            )
+                          }
+                          onMouseLeave={() =>
+                            handleSubDropdownLeave(
+                              setRef7750Open,
+                              ref7750TimeoutRef
+                            )
+                          }
+                        >
+                          <div className="py-2">
+                            <Link
+                              to="/references/7750/case-finishes"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Case & Finishes
+                            </Link>
+                            <Link
+                              to="/references/7750/caseback"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Caseback
+                            </Link>
+                            <Link
+                              to="/references/7750/rehaut"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Rehaut Variations
+                            </Link>
+                            <Link
+                              to="/references/7750/dial"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Dial Variations
+                            </Link>
+                          </div>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                      <Link
-                        to="/references/7176"
-                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors mb-2"
+                    {/* Reference 7176 */}
+                    <div className="relative">
+                      <div
+                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
+                        onMouseEnter={() =>
+                          handleSubDropdownEnter(
+                            setRef7176Open,
+                            ref7176TimeoutRef
+                          )
+                        }
+                        onMouseLeave={() =>
+                          handleSubDropdownLeave(
+                            setRef7176Open,
+                            ref7176TimeoutRef
+                          )
+                        }
                       >
-                        Reference 7176, 7176 Military, 7176D, 7176S
-                      </Link>
-                      <p className="text-xs text-gray-500 mb-3">
-                        Military and variant models
-                      </p>
-                      <div className="grid grid-cols-2 gap-2">
                         <Link
-                          to="/references/7176/case-finishes"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
+                          to="/references/7176"
+                          className="font-medium text-sm text-black hover:text-gray-600 transition-colors flex-1"
                         >
-                          Case & Finishes
+                          Reference 7176
                         </Link>
-                        <Link
-                          to="/references/7176/caseback"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Caseback
-                        </Link>
-                        <Link
-                          to="/references/7176/rehaut"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Rehaut Variations
-                        </Link>
-                        <Link
-                          to="/references/7176/dial"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Dial Variations
-                        </Link>
+                        <ChevronRight className="w-4 h-4 text-gray-400" />
                       </div>
+
+                      {ref7176Open && (
+                        <div
+                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          onMouseEnter={() =>
+                            handleSubDropdownEnter(
+                              setRef7176Open,
+                              ref7176TimeoutRef
+                            )
+                          }
+                          onMouseLeave={() =>
+                            handleSubDropdownLeave(
+                              setRef7176Open,
+                              ref7176TimeoutRef
+                            )
+                          }
+                        >
+                          <div className="py-2">
+                            <Link
+                              to="/references/7176/case-finishes"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Case & Finishes
+                            </Link>
+                            <Link
+                              to="/references/7176/caseback"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Caseback
+                            </Link>
+                            <Link
+                              to="/references/7176/rehaut"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Rehaut Variations
+                            </Link>
+                            <Link
+                              to="/references/7176/dial"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Dial Variations
+                            </Link>
+                          </div>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                      <Link
-                        to="/references/7177"
-                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors mb-2"
+                    {/* Reference 7177 */}
+                    <div className="relative">
+                      <div
+                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
+                        onMouseEnter={() =>
+                          handleSubDropdownEnter(
+                            setRef7177Open,
+                            ref7177TimeoutRef
+                          )
+                        }
+                        onMouseLeave={() =>
+                          handleSubDropdownLeave(
+                            setRef7177Open,
+                            ref7177TimeoutRef
+                          )
+                        }
                       >
-                        Reference 7177
-                      </Link>
-                      <p className="text-xs text-gray-500 mb-3">
-                        Specialized reference model
-                      </p>
-                      <div className="grid grid-cols-2 gap-2">
                         <Link
-                          to="/references/7177/case-finishes"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
+                          to="/references/7177"
+                          className="font-medium text-sm text-black hover:text-gray-600 transition-colors flex-1"
                         >
-                          Case & Finishes
+                          Reference 7177
                         </Link>
-                        <Link
-                          to="/references/7177/caseback"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Caseback
-                        </Link>
-                        <Link
-                          to="/references/7177/rehaut"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Rehaut Variations
-                        </Link>
-                        <Link
-                          to="/references/7177/dial"
-                          className="block text-xs text-gray-600 hover:text-black transition-colors py-1 px-2 rounded hover:bg-gray-100"
-                        >
-                          Dial Variations
-                        </Link>
+                        <ChevronRight className="w-4 h-4 text-gray-400" />
                       </div>
+
+                      {ref7177Open && (
+                        <div
+                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          onMouseEnter={() =>
+                            handleSubDropdownEnter(
+                              setRef7177Open,
+                              ref7177TimeoutRef
+                            )
+                          }
+                          onMouseLeave={() =>
+                            handleSubDropdownLeave(
+                              setRef7177Open,
+                              ref7177TimeoutRef
+                            )
+                          }
+                        >
+                          <div className="py-2">
+                            <Link
+                              to="/references/7177/case-finishes"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Case & Finishes
+                            </Link>
+                            <Link
+                              to="/references/7177/caseback"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Caseback
+                            </Link>
+                            <Link
+                              to="/references/7177/rehaut"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Rehaut Variations
+                            </Link>
+                            <Link
+                              to="/references/7177/dial"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                            >
+                              Dial Variations
+                            </Link>
+                          </div>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="px-6 py-4 hover:bg-gray-50 transition-colors duration-200">
+                    {/* Prototypes */}
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors duration-200">
                       <Link
                         to="/references/prototypes"
-                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors mb-2"
+                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors"
                       >
                         Prototypes
                       </Link>
-                      <p className="text-xs text-gray-500">
-                        Rare and experimental models
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -258,7 +404,7 @@ const Navigation = () => {
                       </h3>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-1 px-4 py-2">
+                    <div className="px-4 py-2">
                       <Link
                         to="/components/bracelets"
                         className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
@@ -398,119 +544,33 @@ const Navigation = () => {
 
               {mobileReferencesOpen && (
                 <div className="pl-4 space-y-2 bg-gray-50 rounded-md py-3 animate-in slide-in-from-top-1 duration-200">
-                  <div className="space-y-2">
-                    <Link
-                      to="/references/7750"
-                      className="block py-2 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
-                    >
-                      Reference 7750
-                    </Link>
-                    <div className="pl-4 space-y-1">
-                      <Link
-                        to="/references/7750/case-finishes"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Case & Finishes
-                      </Link>
-                      <Link
-                        to="/references/7750/caseback"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Caseback
-                      </Link>
-                      <Link
-                        to="/references/7750/rehaut"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Rehaut Variations
-                      </Link>
-                      <Link
-                        to="/references/7750/dial"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Dial Variations
-                      </Link>
-                    </div>
-                  </div>
+                  <Link
+                    to="/references/7750"
+                    className="block py-3 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
+                  >
+                    Reference 7750
+                  </Link>
 
-                  <div className="space-y-2 pt-2 border-t border-gray-200">
-                    <Link
-                      to="/references/7176"
-                      className="block py-2 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
-                    >
-                      Reference 7176
-                    </Link>
-                    <div className="pl-4 space-y-1">
-                      <Link
-                        to="/references/7176/case-finishes"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Case & Finishes
-                      </Link>
-                      <Link
-                        to="/references/7176/caseback"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Caseback
-                      </Link>
-                      <Link
-                        to="/references/7176/rehaut"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Rehaut Variations
-                      </Link>
-                      <Link
-                        to="/references/7176/dial"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Dial Variations
-                      </Link>
-                    </div>
-                  </div>
+                  <Link
+                    to="/references/7176"
+                    className="block py-3 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
+                  >
+                    Reference 7176
+                  </Link>
 
-                  <div className="space-y-2 pt-2 border-t border-gray-200">
-                    <Link
-                      to="/references/7177"
-                      className="block py-2 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
-                    >
-                      Reference 7177
-                    </Link>
-                    <div className="pl-4 space-y-1">
-                      <Link
-                        to="/references/7177/case-finishes"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Case & Finishes
-                      </Link>
-                      <Link
-                        to="/references/7177/caseback"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Caseback
-                      </Link>
-                      <Link
-                        to="/references/7177/rehaut"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Rehaut Variations
-                      </Link>
-                      <Link
-                        to="/references/7177/dial"
-                        className="block py-2 px-3 text-xs text-gray-600 hover:text-black hover:bg-gray-100 rounded transition-colors touch-manipulation"
-                      >
-                        Dial Variations
-                      </Link>
-                    </div>
-                  </div>
+                  <Link
+                    to="/references/7177"
+                    className="block py-3 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
+                  >
+                    Reference 7177
+                  </Link>
 
-                  <div className="pt-2 border-t border-gray-200">
-                    <Link
-                      to="/references/prototypes"
-                      className="block py-2 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
-                    >
-                      Prototypes
-                    </Link>
-                  </div>
+                  <Link
+                    to="/references/prototypes"
+                    className="block py-3 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
+                  >
+                    Prototypes
+                  </Link>
                 </div>
               )}
             </div>
