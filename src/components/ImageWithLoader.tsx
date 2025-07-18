@@ -65,7 +65,10 @@ const ImageWithLoader: React.FC<ImageWithLoaderProps> = ({
     <img
       src={imageSrc}
       alt={alt}
-      className={cn("transition-opacity duration-300 ease-in-out", className)}
+      className={cn(
+        "w-full h-full object-cover transition-opacity duration-300 ease-in-out",
+        className
+      )}
       {...props}
     />
   );
