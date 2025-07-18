@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 
 const Reference7750Caseback = () => {
   return (
@@ -113,10 +114,11 @@ const Reference7750Caseback = () => {
                 <div className="flex flex-col items-center justify-center">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="/images/7750-photos/7750Mk1Casebackcrop.jpg"
                       alt="7750 Caseback Mk. 1"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative max-w-sm h-80 rounded-lg"
                     />
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
@@ -132,10 +134,11 @@ const Reference7750Caseback = () => {
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                       alt="7750 Caseback Mk. 2"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative max-w-sm h-80 rounded-lg"
                     />
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">

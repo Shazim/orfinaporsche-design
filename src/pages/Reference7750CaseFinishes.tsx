@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 import { useState } from "react";
 
 const Reference7750CaseFinishes = () => {
@@ -48,34 +49,107 @@ const Reference7750CaseFinishes = () => {
 
   const ImageSlider = ({ images, currentImage, setCurrentImage, title }) => (
     <div className="flex flex-col items-center justify-center">
-      <div className="space-y-4 mb-4">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`relative group cursor-pointer transition-all duration-300 ${
-              index === currentImage
-                ? "opacity-100"
-                : "opacity-60 hover:opacity-80"
-            }`}
-            onClick={() => setCurrentImage(index)}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="relative w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-            />
+      {/* Main Image Display */}
+      <div className="relative group mb-6">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+        <ImageWithLoader
+          src={images[currentImage].src}
+          alt={images[currentImage].alt}
+          className="relative w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+          skeletonClassName="relative w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
+        />
 
-            {/* Active indicator */}
-            {index === currentImage && (
-              <div className="absolute top-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded-full text-xs font-medium">
-                {image.title}
-              </div>
-            )}
-          </div>
-        ))}
+        {/* Image Title Overlay */}
+        <div className="absolute top-3 right-3 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm font-medium">
+          {images[currentImage].title}
+        </div>
+
+        {/* Navigation Buttons */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={() =>
+                setCurrentImage(
+                  currentImage === 0 ? images.length - 1 : currentImage - 1
+                )
+              }
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-70 hover:bg-opacity-90 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              onClick={() =>
+                setCurrentImage(
+                  currentImage === images.length - 1 ? 0 : currentImage + 1
+                )
+              }
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-70 hover:bg-opacity-90 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </>
+        )}
       </div>
 
+      {/* Thumbnail Navigation */}
+      {images.length > 1 && (
+        <div className="flex space-x-2 mb-4">
+          {images.map((image, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={`relative overflow-hidden rounded-lg transition-all duration-300 ${
+                index === currentImage
+                  ? "ring-2 ring-black opacity-100"
+                  : "opacity-60 hover:opacity-80"
+              }`}
+            >
+              <ImageWithLoader
+                src={image.src}
+                alt={image.alt}
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
+                skeletonClassName="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
+              />
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Image Counter */}
+      {images.length > 1 && (
+        <div className="text-center mb-4">
+          <span className="text-sm text-gray-500">
+            {currentImage + 1} of {images.length}
+          </span>
+        </div>
+      )}
+
+      {/* Title and Description */}
       <div className="text-center">
         <span className="text-base sm:text-lg text-gray-600 font-medium block mb-1">
           {title}
