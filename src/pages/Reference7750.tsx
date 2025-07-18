@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 
 const Reference7750 = () => {
   const [currentGeneration, setCurrentGeneration] = useState(0);
@@ -274,10 +275,11 @@ const Reference7750 = () => {
               >
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
-                    <img
+                    <ImageWithLoader
                       src="/images/7750-photos/7750-Mk.3-Casecrop.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>

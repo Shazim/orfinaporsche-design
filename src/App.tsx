@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import { LoadingProvider, useLoading } from "./contexts/LoadingContext";
+import GlobalLoader from "./components/GlobalLoader";
 import Index from "./pages/Index";
 import Story from "./pages/Story";
 import Reference7750 from "./pages/Reference7750";
@@ -43,111 +45,125 @@ import Reference7176Dial from "./pages/Reference7176Dial";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  const { isInitialLoad } = useLoading();
+
+  if (isInitialLoad) {
+    return <GlobalLoader />;
+  }
+
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/references/7750" element={<Reference7750 />} />
+        <Route
+          path="/references/7750/case-finishes"
+          element={<Reference7750CaseFinishes />}
+        />
+        <Route
+          path="/references/7750/caseback"
+          element={<Reference7750Caseback />}
+        />
+        <Route
+          path="/references/7750/rehaut"
+          element={<Reference7750Rehaut />}
+        />
+        <Route path="/references/7750/dial" element={<Reference7750Dial />} />
+        <Route path="/references/7177" element={<Reference7177 />} />
+        <Route
+          path="/references/7177/case-finishes"
+          element={<Reference7177CaseFinishes />}
+        />
+        <Route
+          path="/references/7177/caseback"
+          element={<Reference7177Caseback />}
+        />
+        <Route
+          path="/references/7177/rehaut"
+          element={<Reference7177Rehaut />}
+        />
+        <Route path="/references/7177/dial" element={<Reference7177Dial />} />
+        <Route
+          path="/references/7177/dial/four-logo"
+          element={<Reference7177DialFourLogo />}
+        />
+        <Route
+          path="/references/7177/dial/baseline"
+          element={<Reference7177DialBaseline />}
+        />
+        <Route
+          path="/references/7177/dial/nato"
+          element={<Reference7177DialNato />}
+        />
+        <Route
+          path="/references/7177/dial/swiss-shield"
+          element={<Reference7177DialSwissShield />}
+        />
+        <Route
+          path="/references/7177/dial/venezuelan-mod"
+          element={<Reference7177DialVenezuelanMOD />}
+        />
+        <Route
+          path="/references/7177/dial/bund"
+          element={<Reference7177DialBUND />}
+        />
+        <Route
+          path="/references/7177/dial/flying-tiger"
+          element={<Reference7177DialFlyingTiger />}
+        />
+        <Route
+          path="/references/7177/dial/royal-navy"
+          element={<Reference7177DialRoyalNavy />}
+        />
+        <Route
+          path="/references/7177/dial/uae"
+          element={<Reference7177DialUAE />}
+        />
+        <Route
+          path="/references/7177/dial/by-orfina"
+          element={<Reference7177DialByOrfina />}
+        />
+        <Route path="/references/7176" element={<Reference7176 />} />
+        <Route
+          path="/references/7176/case-finishes"
+          element={<Reference7176CaseFinishes />}
+        />
+        <Route
+          path="/references/7176/caseback"
+          element={<Reference7176Caseback />}
+        />
+        <Route path="/references/7176/dial" element={<Reference7176Dial />} />
+        <Route
+          path="/references/7176/rehaut"
+          element={<Reference7176Rehaut />}
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/components/bracelets" element={<Bracelets />} />
+        <Route path="/components/straps" element={<Straps />} />
+        <Route path="/components/hands" element={<Hands />} />
+        <Route path="/components/crowns" element={<Crowns />} />
+        <Route path="/components/movements" element={<Movements />} />
+        <Route path="/components/date-wheels" element={<DateWheels />} />
+        <Route path="/components/boxes" element={<Boxes />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/story" element={<Story />} />
-          <Route path="/references/7750" element={<Reference7750 />} />
-          <Route
-            path="/references/7750/case-finishes"
-            element={<Reference7750CaseFinishes />}
-          />
-          <Route
-            path="/references/7750/caseback"
-            element={<Reference7750Caseback />}
-          />
-          <Route
-            path="/references/7750/rehaut"
-            element={<Reference7750Rehaut />}
-          />
-          <Route path="/references/7750/dial" element={<Reference7750Dial />} />
-          <Route path="/references/7177" element={<Reference7177 />} />
-          <Route
-            path="/references/7177/case-finishes"
-            element={<Reference7177CaseFinishes />}
-          />
-          <Route
-            path="/references/7177/caseback"
-            element={<Reference7177Caseback />}
-          />
-          <Route
-            path="/references/7177/rehaut"
-            element={<Reference7177Rehaut />}
-          />
-          <Route path="/references/7177/dial" element={<Reference7177Dial />} />
-          <Route
-            path="/references/7177/dial/four-logo"
-            element={<Reference7177DialFourLogo />}
-          />
-          <Route
-            path="/references/7177/dial/baseline"
-            element={<Reference7177DialBaseline />}
-          />
-          <Route
-            path="/references/7177/dial/nato"
-            element={<Reference7177DialNato />}
-          />
-          <Route
-            path="/references/7177/dial/swiss-shield"
-            element={<Reference7177DialSwissShield />}
-          />
-          <Route
-            path="/references/7177/dial/venezuelan-mod"
-            element={<Reference7177DialVenezuelanMOD />}
-          />
-          <Route
-            path="/references/7177/dial/bund"
-            element={<Reference7177DialBUND />}
-          />
-          <Route
-            path="/references/7177/dial/flying-tiger"
-            element={<Reference7177DialFlyingTiger />}
-          />
-          <Route
-            path="/references/7177/dial/royal-navy"
-            element={<Reference7177DialRoyalNavy />}
-          />
-          <Route
-            path="/references/7177/dial/uae"
-            element={<Reference7177DialUAE />}
-          />
-          <Route
-            path="/references/7177/dial/by-orfina"
-            element={<Reference7177DialByOrfina />}
-          />
-          <Route path="/references/7176" element={<Reference7176 />} />
-          <Route
-            path="/references/7176/case-finishes"
-            element={<Reference7176CaseFinishes />}
-          />
-          <Route
-            path="/references/7176/caseback"
-            element={<Reference7176Caseback />}
-          />
-          <Route path="/references/7176/dial" element={<Reference7176Dial />} />
-          <Route
-            path="/references/7176/rehaut"
-            element={<Reference7176Rehaut />}
-          />
-          <Route path="/about" element={<About />} />
-          <Route path="/components/bracelets" element={<Bracelets />} />
-          <Route path="/components/straps" element={<Straps />} />
-          <Route path="/components/hands" element={<Hands />} />
-          <Route path="/components/crowns" element={<Crowns />} />
-          <Route path="/components/movements" element={<Movements />} />
-          <Route path="/components/date-wheels" element={<DateWheels />} />
-          <Route path="/components/boxes" element={<Boxes />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <LoadingProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <AppContent />
+      </TooltipProvider>
+    </LoadingProvider>
   </QueryClientProvider>
 );
 

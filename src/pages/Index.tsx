@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Instagram, Twitter, Facebook } from "lucide-react";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 
 const Index = () => {
   return (
@@ -10,10 +11,12 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center bg-gray-50">
         <div className="w-full mb-8 sm:mb-12 lg:mb-16">
-          <img
+          <ImageWithLoader
             src="/images/main-page-photos/Hero-Shot-2.jpg"
             alt="OPD Logo"
             className="w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] xl:h-[90vh] object-cover"
+            skeletonClassName="w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] xl:h-[90vh]"
+            priority
           />
         </div>
 
@@ -43,10 +46,11 @@ const Index = () => {
             <Link to="/references/7750" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
                 <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
-                  <img
+                  <ImageWithLoader
                     src="/images/main-page-photos/Ref-7750.jpg"
                     alt="Reference 7750"
                     className="w-full h-full object-cover object-center"
+                    skeletonClassName="w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -81,10 +85,11 @@ const Index = () => {
             <Link to="/references/7176" className="group">
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
                 <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
-                  <img
+                  <ImageWithLoader
                     src="/images/main-page-photos/Ref-7176.jpg"
                     alt="Reference 7176"
                     className="w-full h-full object-cover object-center"
+                    skeletonClassName="w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -122,10 +127,11 @@ const Index = () => {
             >
               <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1">
                 <div className="h-64 sm:h-72 lg:h-80 bg-gray-50 relative overflow-hidden">
-                  <img
+                  <ImageWithLoader
                     src="/images/main-page-photos/Ref-7177.jpg"
                     alt="Reference 7177"
                     className="w-full h-full object-cover object-center"
+                    skeletonClassName="w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
