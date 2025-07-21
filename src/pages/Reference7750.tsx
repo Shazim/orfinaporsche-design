@@ -1,23 +1,36 @@
 import React, { useState, useEffect } from "react";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Clock,
-  Calendar,
-  Settings,
-  Layers,
-} from "lucide-react";
+import { Clock, Calendar, Settings, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
 
 const Reference7750 = () => {
-  const [currentGeneration, setCurrentGeneration] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
 
   const generations = [
     {
@@ -63,18 +76,6 @@ const Reference7750 = () => {
         "The pinnacle of 7750 engineering with advanced PVD coating technology.",
     },
   ];
-
-  const nextGeneration = () => {
-    setCurrentGeneration((prev) => (prev + 1) % generations.length);
-  };
-
-  const prevGeneration = () => {
-    setCurrentGeneration(
-      (prev) => (prev - 1 + generations.length) % generations.length
-    );
-  };
-
-  const currentGen = generations[currentGeneration];
 
   return (
     <div className="min-h-screen bg-white">
@@ -126,131 +127,145 @@ const Reference7750 = () => {
           </div>
         </section>
 
-        {/* Interactive Generation Slider */}
+        {/* Generations Overview */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Generation Navigation */}
-            <div className="flex justify-center mb-12">
-              <div className="flex space-x-2 bg-gray-100 rounded-full p-2">
-                {generations.map((gen, index) => (
-                  <button
-                    key={gen.id}
-                    onClick={() => setCurrentGeneration(index)}
-                    className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                      currentGeneration === index
-                        ? "bg-gray-900 text-white shadow-lg"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-                    }`}
-                  >
-                    {gen.title}
-                  </button>
-                ))}
-              </div>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
+                Three Generations
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Discover the evolution of the Reference 7750 through three
+                distinct generations of horological excellence.
+              </p>
             </div>
 
-            {/* Main Content Slider */}
-            <div className="relative">
-              <div className="flex flex-col lg:flex-row gap-16 items-start">
-                {/* Image Section */}
-                <div className="relative group lg:w-auto lg:flex-shrink-0">
-                  <div className="relative overflow-hidden transform group-hover:scale-105 transition-all duration-500">
-                    <div className="w-full max-w-md mx-auto lg:mx-0">
-                      <img
-                        src={currentGen.image}
-                        alt={`${currentGen.title} ${currentGen.subtitle}`}
-                        className="w-full h-auto object-contain transform group-hover:scale-110 transition-transform duration-700 rounded-lg shadow-lg"
-                      />
+            {/* All Generations Displayed */}
+            <div className="space-y-24 sm:space-y-32 lg:space-y-40">
+              {generations.map((gen, index) => (
+                <div
+                  key={gen.id}
+                  className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
+                >
+                  <div className="flex items-center space-x-4 mb-8 sm:mb-12">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      {index + 1}
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6 rounded-b-lg">
-                      <p className="text-white font-light text-sm">
-                        {currentGen.description}
+                    <div>
+                      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                        {gen.title}
+                      </h2>
+                      <p className="text-lg text-gray-600 font-light">
+                        {gen.subtitle}
                       </p>
                     </div>
                   </div>
-                </div>
 
-                {/* Content Section */}
-                <div className="space-y-8 lg:flex-1">
-                  <div className="transform transition-all duration-500 delay-100">
-                    <h2 className="text-4xl font-light text-gray-900 mb-2">
-                      {currentGen.title}
-                    </h2>
-                    <p className="text-xl text-gray-600 font-light mb-6">
-                      {currentGen.subtitle}
-                    </p>
-                    <p className="text-gray-700 leading-relaxed mb-8">
-                      {currentGen.description}
-                    </p>
-                  </div>
+                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start mb-12">
+                    {/* Image Section */}
+                    <div className="relative group lg:w-auto lg:flex-shrink-0">
+                      <div
+                        className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: gen.image,
+                            alt: `${gen.title} ${gen.subtitle}`,
+                            title: gen.title,
+                            subtitle: gen.subtitle,
+                          })
+                        }
+                      >
+                        <div className="w-full max-w-md mx-auto lg:mx-0">
+                          <ImageWithLoader
+                            src={gen.image}
+                            alt={`${gen.title} ${gen.subtitle}`}
+                            className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                            skeletonClassName="w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
+                          />
+                        </div>
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
 
-                  {/* Specifications Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                      <div className="flex items-center mb-3">
-                        <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                        <h3 className="font-medium text-gray-900">
-                          Production Years
+                      {/* Image Title Below */}
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
+                          {gen.title}
                         </h3>
+                        <p className="text-sm text-gray-600">{gen.subtitle}</p>
                       </div>
-                      <p className="text-gray-700">{currentGen.years}</p>
                     </div>
 
-                    <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                      <div className="flex items-center mb-3">
-                        <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                        <h3 className="font-medium text-gray-900">Case</h3>
+                    {/* Content Section */}
+                    <div className="space-y-8 lg:flex-1">
+                      <div className="transform transition-all duration-500 delay-100">
+                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
+                          {gen.description}
+                        </p>
                       </div>
-                      <p className="text-gray-700">{currentGen.case}</p>
-                    </div>
 
-                    <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                      <div className="flex items-center mb-3">
-                        <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                        <h3 className="font-medium text-gray-900">Finishes</h3>
+                      {/* Specifications Grid */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                          <div className="flex items-center mb-3">
+                            <Calendar className="w-5 h-5 text-gray-600 mr-3" />
+                            <h3 className="font-medium text-gray-900">
+                              Production Years
+                            </h3>
+                          </div>
+                          <p className="text-gray-700">{gen.years}</p>
+                        </div>
+
+                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                          <div className="flex items-center mb-3">
+                            <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                            <h3 className="font-medium text-gray-900">Case</h3>
+                          </div>
+                          <p className="text-gray-700">{gen.case}</p>
+                        </div>
+
+                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                          <div className="flex items-center mb-3">
+                            <Layers className="w-5 h-5 text-gray-600 mr-3" />
+                            <h3 className="font-medium text-gray-900">
+                              Finishes
+                            </h3>
+                          </div>
+                          <p className="text-gray-700">{gen.finishes}</p>
+                        </div>
+
+                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                          <div className="flex items-center mb-3">
+                            <Clock className="w-5 h-5 text-gray-600 mr-3" />
+                            <h3 className="font-medium text-gray-900">Dial</h3>
+                          </div>
+                          <p className="text-gray-700">{gen.dial}</p>
+                        </div>
                       </div>
-                      <p className="text-gray-700">{currentGen.finishes}</p>
-                    </div>
 
-                    <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                      <div className="flex items-center mb-3">
-                        <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                        <h3 className="font-medium text-gray-900">Dial</h3>
+                      {/* Additional Details */}
+                      <div className="space-y-4 pt-6 border-t border-gray-200">
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600 font-medium">
+                            Caseback:
+                          </span>
+                          <span className="text-gray-900">{gen.caseback}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600 font-medium">
+                            Rehaut:
+                          </span>
+                          <span className="text-gray-900">{gen.rehaut}</span>
+                        </div>
                       </div>
-                      <p className="text-gray-700">{currentGen.dial}</p>
-                    </div>
-                  </div>
-
-                  {/* Additional Details */}
-                  <div className="space-y-4 pt-6 border-t border-gray-200">
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600 font-medium">
-                        Caseback:
-                      </span>
-                      <span className="text-gray-900">
-                        {currentGen.caseback}
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600 font-medium">Rehaut:</span>
-                      <span className="text-gray-900">{currentGen.rehaut}</span>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Navigation Arrows */}
-              <button
-                onClick={prevGeneration}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300 group"
-              >
-                <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
-              </button>
-              <button
-                onClick={nextGeneration}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300 group"
-              >
-                <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
-              </button>
+              ))}
             </div>
           </div>
         </section>
@@ -361,7 +376,7 @@ const Reference7750 = () => {
         </section>
 
         {/* Timeline Section */}
-        <section className="py-16 bg-gray-900 text-white">
+        {/* <section className="py-16 bg-gray-900 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-light mb-6">Legacy Timeline</h2>
@@ -400,7 +415,7 @@ const Reference7750 = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Technical Specifications */}
         <section className="py-16 bg-white">
@@ -508,6 +523,59 @@ const Reference7750 = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <div className="relative max-w-full max-h-full flex flex-col items-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setFullScreenImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src={fullScreenImage.src}
+              alt={fullScreenImage.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image Info */}
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-light mb-1">
+                {fullScreenImage.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {fullScreenImage.subtitle}
+              </p>
+            </div>
+
+            {/* Instructions */}
+            <div className="mt-8 text-white text-sm opacity-75 text-center">
+              Press ESC or click outside to close
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

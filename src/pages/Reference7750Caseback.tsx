@@ -1,8 +1,32 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import { useState, useEffect } from "react";
 
 const Reference7750Caseback = () => {
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  // Handle escape key for full screen modal
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -112,7 +136,17 @@ const Reference7750Caseback = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div className="relative group">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "/images/7750-photos/7750Mk1Casebackcrop.jpg",
+                        alt: "7750 Caseback Mk. 1",
+                        title: "Caseback Mk. 1",
+                        subtitle: "Reference 7750",
+                      })
+                    }
+                  >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
                       src="/images/7750-photos/7750Mk1Casebackcrop.jpg"
@@ -120,6 +154,13 @@ const Reference7750Caseback = () => {
                       className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative max-w-sm h-80 rounded-lg"
                     />
+
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7750 Caseback Mk. 1
@@ -132,7 +173,17 @@ const Reference7750Caseback = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div className="relative group">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
+                        alt: "7750 Caseback Mk. 2",
+                        title: "Caseback Mk. 2",
+                        subtitle: "Reference 7750",
+                      })
+                    }
+                  >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
                       src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
@@ -140,6 +191,13 @@ const Reference7750Caseback = () => {
                       className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative max-w-sm h-80 rounded-lg"
                     />
+
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7750 Caseback Mk. 2
@@ -230,6 +288,59 @@ const Reference7750Caseback = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <div className="relative max-w-full max-h-full flex flex-col items-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setFullScreenImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src={fullScreenImage.src}
+              alt={fullScreenImage.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image Info */}
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-light mb-1">
+                {fullScreenImage.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {fullScreenImage.subtitle}
+              </p>
+            </div>
+
+            {/* Instructions */}
+            <div className="mt-8 text-white text-sm opacity-75 text-center">
+              Press ESC or click outside to close
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
