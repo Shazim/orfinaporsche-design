@@ -32,58 +32,46 @@ const Reference7176 = () => {
     };
   }, [fullScreenImage]);
 
-  const variants = [
+  const references = [
     {
       id: 1,
       title: "7176",
-      subtitle: "The Standard Model",
       years: "1976-On",
-      finishes: "Black PVD and Silver/Sable",
+      finishes: "Black PVD, Silver/Sablé, and Polished",
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
-      dial: "PD Dial",
-      image: "/images/7176-photos/Alan-7176-1crop.jpg",
-      description:
-        "The foundational model that established the 7176 lineage with upgraded Lemania 5100 movement.",
+      dial: "Civilian Dial",
+      image: "/images/7176 Photos/Alan-7176-1crop.jpg",
     },
     {
       id: 2,
       title: "7176 Military",
-      subtitle: "The Military Edition",
       years: "1976-On",
-      finishes: "Silver/Sable, Nato Grey PVD, and Green PVD",
+      finishes: "Silver/Sablé, Grey PVD, and Green PVD",
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
       dial: "Military Dial",
-      image: "/images/7176-photos/Alan-7176-Militarycrop.jpg",
-      description:
-        "Exclusive military variant featuring unique Nato Grey PVD and Green PVD finishes with specialized military dial.",
+      image: "/images/7176 Photos/Alan-7176-Militarycrop.jpg",
     },
     {
       id: 3,
       title: "7176 D",
-      subtitle: "The Enhanced Model",
       years: "1976-On",
-      finishes: "Black PVD and Silver/Sable",
+      finishes: "Black PVD, Silver/Sablé, and Cadet Grey PVD",
       caseback: "7176 D Caseback",
       rehaut: "Yellow Triangle and Tachymetre",
-      dial: "PD Dial and Military Dial",
-      image: "/images/7176-photos/7176D Front (wes)crop.jpg",
-      description:
-        "Advanced variant with dual rehaut options and enhanced caseback design.",
+      dial: "Civilian Dial, Military Dial, and Blue by Orfina Dial",
+      image: "/images/7176 Photos/7176D Front (wes)crop.jpg",
     },
     {
       id: 4,
       title: "7176 S",
-      subtitle: "The Sport Model",
       years: "1976-On",
-      finishes: "Black PVD and Silver/Sable",
+      finishes: "Black PVD, Silver/Sablé, and NTS PVD",
       caseback: "7176 S Caseback",
       rehaut: "Tachymetre",
-      dial: "PD Dial",
-      image: "/images/7176-photos/7176Scrop.jpg",
-      description:
-        "Sport-focused variant with dedicated tachymetre rehaut for performance timing.",
+      dial: "Civilian Dial and Blue by Orfina Dial",
+      image: "/images/7176 Photos/7176Scrop.jpg",
     },
   ];
 
@@ -122,43 +110,42 @@ const Reference7176 = () => {
               }`}
             >
               <div className="text-center mb-8">
-                <h1 className="font-light text-5xl md:text-7xl text-gray-900 mb-6 tracking-tight">
+                <h1 className="font-light text-6xl md:text-8xl text-gray-900 mb-6 tracking-tight">
                   Reference{" "}
                   <span className="font-normal text-gray-700">7176</span>
                 </h1>
                 <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
+                {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                   The reference 7176 entered production in circa 1976 and
-                  continued onward. The new model came in a variety of finishes
-                  including Black PVD, Silver/Sable, and Nato Grey PVD and Green
-                  PVD - which were both exclusively found on 7176 Military. The
-                  "upgraded" Lemania 5100 movement also had a 24-hour totaliser
-                  at 12 and a white central minutes hand with a lollypop tip.
-                </p>
+                  continued onward. The new model (ref: 7176) came in a variety
+                  of finishes including Black PVD, Silver/Sablé, Grey PVD and
+                  Green PVD. The "upgraded" Lemania 5100 movement also featured
+                  a 24-hour totalizer at 12 and a white central minutes hand
+                  with a lollipop tip.
+                </p> */}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Variants Overview */}
+        {/* Four Known References */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
-                Four Variants
+                Four Known References
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Discover the evolution of the Reference 7176 through four
-                distinct variants, each with unique characteristics and
-                specifications.
+                Discover the four distinct references of the 7176, each with
+                unique characteristics and specifications.
               </p>
             </div>
 
-            {/* All Variants Displayed */}
+            {/* All References Displayed */}
             <div className="space-y-24 sm:space-y-32 lg:space-y-40">
-              {variants.map((variant, index) => (
+              {references.map((ref, index) => (
                 <div
-                  key={variant.id}
+                  key={ref.id}
                   className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
                 >
                   <div className="flex items-center space-x-4 mb-8 sm:mb-12">
@@ -167,11 +154,8 @@ const Reference7176 = () => {
                     </div>
                     <div>
                       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                        {variant.title}
+                        {ref.title}
                       </h2>
-                      <p className="text-lg text-gray-600 font-light">
-                        {variant.subtitle}
-                      </p>
                     </div>
                   </div>
 
@@ -182,17 +166,17 @@ const Reference7176 = () => {
                         className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
                         onClick={() =>
                           setFullScreenImage({
-                            src: variant.image,
-                            alt: `${variant.title} ${variant.subtitle}`,
-                            title: variant.title,
-                            subtitle: variant.subtitle,
+                            src: ref.image,
+                            alt: ref.title,
+                            title: ref.title,
+                            subtitle: "Reference 7176",
                           })
                         }
                       >
                         <div className="w-full max-w-md mx-auto lg:mx-0">
                           <ImageWithLoader
-                            src={variant.image}
-                            alt={`${variant.title} ${variant.subtitle}`}
+                            src={ref.image}
+                            alt={ref.title}
                             className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
                             skeletonClassName="w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
                           />
@@ -208,22 +192,13 @@ const Reference7176 = () => {
                       {/* Image Title Below */}
                       <div className="mt-4 text-center">
                         <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
-                          {variant.title}
+                          {ref.title}
                         </h3>
-                        <p className="text-sm text-gray-600">
-                          {variant.subtitle}
-                        </p>
                       </div>
                     </div>
 
                     {/* Content Section */}
                     <div className="space-y-8 lg:flex-1">
-                      <div className="transform transition-all duration-500 delay-100">
-                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
-                          {variant.description}
-                        </p>
-                      </div>
-
                       {/* Specifications Grid */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
@@ -233,7 +208,7 @@ const Reference7176 = () => {
                               Production Years
                             </h3>
                           </div>
-                          <p className="text-gray-700">{variant.years}</p>
+                          <p className="text-gray-700">{ref.years}</p>
                         </div>
 
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
@@ -243,7 +218,7 @@ const Reference7176 = () => {
                               Finishes
                             </h3>
                           </div>
-                          <p className="text-gray-700">{variant.finishes}</p>
+                          <p className="text-gray-700">{ref.finishes}</p>
                         </div>
 
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
@@ -253,7 +228,7 @@ const Reference7176 = () => {
                               Caseback
                             </h3>
                           </div>
-                          <p className="text-gray-700">{variant.caseback}</p>
+                          <p className="text-gray-700">{ref.caseback}</p>
                         </div>
 
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
@@ -261,7 +236,7 @@ const Reference7176 = () => {
                             <Clock className="w-5 h-5 text-gray-600 mr-3" />
                             <h3 className="font-medium text-gray-900">Dial</h3>
                           </div>
-                          <p className="text-gray-700">{variant.dial}</p>
+                          <p className="text-gray-700">{ref.dial}</p>
                         </div>
                       </div>
 
@@ -271,9 +246,7 @@ const Reference7176 = () => {
                           <span className="text-gray-600 font-medium">
                             Rehaut:
                           </span>
-                          <span className="text-gray-900">
-                            {variant.rehaut}
-                          </span>
+                          <span className="text-gray-900">{ref.rehaut}</span>
                         </div>
                       </div>
                     </div>
@@ -285,125 +258,108 @@ const Reference7176 = () => {
         </section>
 
         {/* Sub-Pages Navigation */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
-              Explore Details
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
+                Explore Details
+              </h2>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/references/7750/case-finishes" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="/lovable-uploads/7177-case-finishes.jpg"
+              <Link
+                to="/references/7176/case-finishes"
+                className="group h-full"
+              >
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
+                    <ImageWithLoader
+                      src="/images/7176 Photos/7176s-PVD.jpg"
                       alt="Case & Finishes"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Case & Finishes
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Seven case finishes across four variants
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7176/caseback" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="/lovable-uploads/7177-caseback.jpg"
+              <Link to="/references/7176/caseback" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
+                    <ImageWithLoader
+                      src="/images/7176 Photos/7176s-caseback.jpg"
                       alt="Caseback"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Caseback
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Different caseback designs and markings
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7177/caseback" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="/lovable-uploads/7177-standard-rehaut.jpg"
+              <Link to="/references/7176/rehaut" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
+                    <ImageWithLoader
+                      src="/images/7176 Photos/TACHYMETRE Rehaut - Close-Up.jpg"
                       alt="Rehaut Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Rehaut Variations
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Two rehaut variations across the range
+                    </p>
                   </div>
                 </div>
               </Link>
 
-              <Link to="/references/7177/caseback" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="/lovable-uploads/7177-baseline.jpg"
+              <Link to="/references/7176/dial" className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
+                  <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
+                    <ImageWithLoader
+                      src="/images/7176 Photos/7176Button-Dial.jpg"
                       alt="Dial Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Dial Variations
                     </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      Five dial variations including military specifications
+                    </p>
                   </div>
                 </div>
               </Link>
             </div>
           </div>
         </section>
-
-        {/* Timeline Section */}
-        {/* <section className="py-16 bg-gray-900 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-light mb-6">Variant Timeline</h2>
-              <p className="text-xl text-gray-300 font-light max-w-2xl mx-auto">
-                Explore the evolution of the Reference 7176 through its four
-                distinct variants
-              </p>
-            </div>
-
-            <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-700"></div>
-              {variants.map((variant, index) => (
-                <div
-                  key={variant.id}
-                  className={`relative flex items-center mb-16 ${
-                    index % 2 === 0 ? "justify-start" : "justify-end"
-                  }`}
-                >
-                  <div
-                    className={`w-5/12 ${
-                      index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
-                    }`}
-                  >
-                    <div className="group cursor-pointer">
-                      <h3 className="text-2xl font-light mb-2 group-hover:text-gray-300 transition-colors">
-                        {variant.title}
-                      </h3>
-                      <p className="text-gray-400 mb-4">{variant.years}</p>
-                      <p className="text-gray-300 leading-relaxed">
-                        {variant.description}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full border-4 border-gray-900"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
 
         {/* Technical Specifications */}
         <section className="py-16 bg-white">

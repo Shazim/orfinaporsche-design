@@ -5,11 +5,11 @@ import ImageWithLoader from "../components/ImageWithLoader";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#F1EFE8]">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center bg-gray-50">
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#F1EFE8]">
         <div className="w-full mb-8 sm:mb-12 lg:mb-16">
           <ImageWithLoader
             src="/images/main-page-photos/Hero-Shot-2.jpg"
@@ -27,14 +27,14 @@ const Index = () => {
             Design
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-gray-600 mb-8 sm:mb-12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto leading-relaxed">
-            A curated documentation of Porsche-inspired timepieces, celebrating
-            the intersection of automotive excellence and horological precision.
+            A documentation across the Orfina Porsche Design production,
+            celebrating the storied collaboration between these two brands.
           </p>
         </div>
       </section>
 
       {/* Featured References */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#F1EFE8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-black mb-4 sm:mb-6 uppercase tracking-wider">
@@ -58,10 +58,10 @@ const Index = () => {
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                     Reference 7750
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
+                  {/* <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
                     The quintessential chronograph inspired by Porsche's racing
                     heritage.
-                  </p>
+                  </p> */}
                   <span className="text-black font-normal text-xs sm:text-sm uppercase tracking-wider group-hover:underline transition-all duration-300 inline-flex items-center">
                     Explore Details
                     <svg
@@ -97,10 +97,10 @@ const Index = () => {
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                     Reference 7176
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
+                  {/* <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
                     Classic elegance meets automotive precision in this timeless
                     piece.
-                  </p>
+                  </p> */}
                   <span className="text-black font-normal text-xs sm:text-sm uppercase tracking-wider group-hover:underline transition-all duration-300 inline-flex items-center">
                     Explore Details
                     <svg
@@ -139,10 +139,10 @@ const Index = () => {
                   <h3 className="text-lg sm:text-xl font-normal text-black mb-3 sm:mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                     Reference 7177
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
+                  {/* <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
                     Contemporary design language inspired by modern Porsche
                     aesthetics.
-                  </p>
+                  </p> */}
                   <span className="text-black font-normal text-xs sm:text-sm uppercase tracking-wider group-hover:underline transition-all duration-300 inline-flex items-center">
                     Explore Details
                     <svg
