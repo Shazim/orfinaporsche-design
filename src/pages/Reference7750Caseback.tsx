@@ -91,44 +91,42 @@ const Reference7750Caseback = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found on the 7750 MK. 1 Case with Orfina Dial (Generation
-                      1)
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7750 Mk. 1 Case with Orfina
+                      Dial (Generation 1)
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Top marking:</strong> "* CHRONOGRAPH PORSCHE
-                          DESIGN 7750 *" followed by "WATERRESISTANT TESTED 10
-                          ATM"
+                          Top marking: "* CHRONOGRAPH PORSCHE DESIGN 7750 *"
+                          followed by "WATERRESISTANT TESTED 10 ATM"
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Center:</strong> Orfina "Flame" logo over
-                          ORFINA brand name with "PORSCHE DESIGN" curved above
+                          Center: Orfina "Flame" logo over ORFINA brand name
+                          with "PORSCHE DESIGN" curved above
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Bottom:</strong> "INCABLOC AUTOMATIC ALL
-                          STAINLESS STEEL SWISS-MADE"
+                          Bottom: "INCABLOC AUTOMATIC ALL STAINLESS STEEL
+                          SWISS-MADE"
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Serial numbers:</strong> Not present on these
-                          models
+                          Serial numbers: Not present on these models
                         </span>
                       </li>
                     </ul>
@@ -215,44 +213,43 @@ const Reference7750Caseback = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found across all 7750 Cases, but only those with a PD Dial
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> all 7750 Cases, but only those
+                      with a PD Dial
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Surrounding text:</strong> "7750 CHRONOGRAPH
-                          AUTOMATIC WATERRESISTANT TESTED 10 ATM INCABLOC ALL
-                          STAINLESS STEEL SWISS MADE"
+                          Surrounding text: "7750 CHRONOGRAPH AUTOMATIC
+                          WATERRESISTANT TESTED 10 ATM INCABLOC ALL STAINLESS
+                          STEEL SWISS MADE"
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Center:</strong> PD logo with "PORSCHE DESIGN"
-                          curved above
+                          Center: PD logo with "PORSCHE DESIGN" curved above
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Serial numbers:</strong> Present on these
-                          models
+                          Serial numbers: Present on these models
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Design significance:</strong> Sets the tone
-                          for caseback design language used in 7176, 7176
-                          Military, 7176 D, and 7176 S
+                          Design significance: Sets the tone for caseback design
+                          language used in 7176, 7176 Military, 7176 D, and 7176
+                          S
                         </span>
                       </li>
                     </ul>

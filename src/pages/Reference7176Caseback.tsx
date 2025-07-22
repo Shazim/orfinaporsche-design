@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 import { useState, useEffect } from "react";
 
 const Reference7176Caseback = () => {
@@ -90,31 +91,34 @@ const Reference7176Caseback = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      The 7176 and 7176 Military casebacks follow the design
-                      language change of the caseback first seen on the 7750 Mk.
-                      2 caseback
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 and 7176 Military
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Perimeter text:</strong> "7176 CHRONOGRAPH
-                          AUTOMATIC WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED
-                          STAINLESS STEEL SWISS MADE" in one continuous circle
+                          Perimeter text: "7176 CHRONOGRAPH AUTOMATIC
+                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS
+                          STEEL SWISS MADE" in one continuous circle
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Center:</strong> PD logo with "PORSCHE DESIGN"
-                          curved above
+                          Center: PD logo with "PORSCHE DESIGN" curved above
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Serial numbers: Present on all variations
                         </span>
                       </li>
                     </ul>
@@ -134,10 +138,11 @@ const Reference7176Caseback = () => {
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
                       alt="7176 Mk. 1 Caseback"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -162,7 +167,7 @@ const Reference7176Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7176-photos/7176D Caseback (Wes)crop.jpg",
+                        src: "/images/7176 Photos/7176D-Blue-Casebackcrop.jpg",
                         alt: "7176 D Caseback",
                         title: "7176 D Caseback",
                         subtitle: "Reference 7176",
@@ -170,10 +175,11 @@ const Reference7176Caseback = () => {
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <img
-                      src="/images/7176-photos/7176D Caseback (Wes)crop.jpg"
+                    <ImageWithLoader
+                      src="/images/7176 Photos/7176D-Blue-Casebackcrop.jpg"
                       alt="7176 D Caseback"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -199,29 +205,26 @@ const Reference7176Caseback = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      The casebacks are identical to that of the 7176 Mk. 1, but
-                      with an additional "D" next to 7176
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 D
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Design:</strong> Identical to 7176 Mk. 1
-                          caseback
+                          Design: Identical to 7176 Mk. 1 caseback
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Distinction:</strong> Additional "D"
-                          designation next to 7176
+                          Distinction: Additional "D" designation next to 7176
                         </span>
                       </li>
                     </ul>
@@ -244,29 +247,26 @@ const Reference7176Caseback = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      The casebacks are identical to that of the 7176 Mk. 1, but
-                      with an additional "S" next to 7176
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 S
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Design:</strong> Identical to 7176 Mk. 1
-                          caseback
+                          Design: Identical to 7176 Mk. 1 caseback
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Distinction:</strong> Additional "S"
-                          designation next to 7176
+                          Distinction: Additional "S" designation next to 7176
                         </span>
                       </li>
                     </ul>
@@ -286,10 +286,11 @@ const Reference7176Caseback = () => {
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="/images/7176-photos/7176s-caseback.jpg"
                       alt="7176 S Caseback"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -322,10 +323,11 @@ const Reference7176Caseback = () => {
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="/images/7176-photos/7176 Prototype Caseback.jpg"
                       alt="7176 Prototype Caseback"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -342,7 +344,7 @@ const Reference7176Caseback = () => {
 
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                       P
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -350,38 +352,44 @@ const Reference7176Caseback = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      On select 7176 variants, usually those identified as
-                      prototypes, a different caseback has been identified
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-600">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> Select 7176 variants (usually
+                      prototypes)
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Caseback Markings:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Unique design:</strong> Features a black
-                          acrylic disk indented into the steel caseback
+                          Unique design: Features a black acrylic disk embedded
+                          into the steel caseback
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Perimeter text:</strong> "7176 S CHRONOGRAPH
-                          AUTOMATIC WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED
-                          STAINLESS STEEL SWISS MADE" in one continuous circle
+                          Perimeter text: "7176 S CHRONOGRAPH AUTOMATIC
+                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS
+                          STEEL SWISS MADE" in one continuous circle
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Center:</strong> Sizeable PD logo with
-                          "PORSCHE DESIGN" curved above
+                          Center: Sizeable PD logo with "PORSCHE DESIGN" curved
+                          above
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Serial numbers: Not present on these variants
                         </span>
                       </li>
                     </ul>

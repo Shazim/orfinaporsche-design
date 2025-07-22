@@ -108,7 +108,7 @@ const Reference7176Rehaut = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-400">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
                       The Yellow Triangle rehaut features a Yellow Triangle
                       Rehaut with the word "TACHYMETER" printed between 12 and 2

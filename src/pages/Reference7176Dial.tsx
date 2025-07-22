@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
 import { useState, useEffect } from "react";
 
 const Reference7176Dial = () => {
@@ -25,6 +26,22 @@ const Reference7176Dial = () => {
       document.body.style.overflow = "unset";
     };
   }, [fullScreenImage]);
+
+  const PlaceholderImage = ({ title }) => (
+    <div className="flex justify-center">
+      <div className="max-w-xs w-full">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1"></div>
+          <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+            <div className="text-center text-gray-500">
+              <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
+              <div className="text-xs">{title}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-white">
@@ -68,15 +85,16 @@ const Reference7176Dial = () => {
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              There are two main dials produced across the 7176 generation.
+              There are multiple dial variations found across the 7176
+              generation.
             </p>
             <div className="mt-8 bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                The 7176 dial is an update of the 7750 PD dial to match subdial
-                placement of the Lemania 5100. Notable changes include a
-                12-oclock 24-hour dial, no lume or marker at 12-oclock because
+                The 7176 dial is an update of the 7750 PD dial to match the
+                subdial placement of the Lemania 5100. Notable changes include a
+                12-o'clock 24-hour dial, no lume or marker at 12 o'clock because
                 of the position of the subdial, and different ring printing of
-                the small seconds subdial at 9-oclock.
+                the small seconds subdial at 9 o'clock.
               </p>
             </div>
           </div>
@@ -97,43 +115,31 @@ const Reference7176Dial = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found on: 7176, 7176 D, 7176 S
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176, 7176 D, 7176 S
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
+                      Description:
                     </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Branding:</strong> As with the 7750 PD dial,
-                          the PD logo is printed above Day/Date windows and
-                          PORSCHE DESIGN is printed below Day/Date windows
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>New handset:</strong> The 7176 ushered in a
-                          new hand set differentiated from the 7750 with new
-                          hour and pointed minute hands
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Chronograph hands:</strong> Red central chrono
-                          sweep hand and "Lollipop" chrono totalizer hand
-                        </span>
-                      </li>
-                    </ul>
+                    <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <p>
+                        As with the 7750 PD dial, the PD logo is printed above
+                        Day/Date windows and PORSCHE DESIGN is printed below
+                        Day/Date windows.
+                      </p>
+                      <p>
+                        The also 7176 ushered in a new hand set differentiated
+                        from the 7750 with new hour and pointed minute hands,
+                        red central chrono sweep hand, and "Lollipop" chrono
+                        totalizer hand.
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
                     <h4 className="font-semibold text-black mb-2">
                       Specific Note - 7176 D:
                     </h4>
@@ -150,18 +156,19 @@ const Reference7176Dial = () => {
                       className="relative group cursor-pointer"
                       onClick={() =>
                         setFullScreenImage({
-                          src: "/images/7176-photos/7176Scrop.jpg",
-                          alt: "7176 with Civilian Dial",
-                          title: "7176 with Civilian Dial",
+                          src: "/images/7176 Photos/7176S-PVD.jpg",
+                          alt: "7176 S with Civilian Dial",
+                          title: "7176 S with Civilian Dial",
                           subtitle: "Reference 7176",
                         })
                       }
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <img
-                        src="/images/7176-photos/7176Scrop.jpg"
-                        alt="7176 with Civilian Dial"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      <ImageWithLoader
+                        src="/images/7176 Photos/7176s-PVD.jpg"
+                        alt="7176 S with Civilian Dial"
+                        className="relative w-full h-64 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="relative w-full h-64 rounded-lg"
                       />
 
                       {/* Click indicator */}
@@ -172,7 +179,7 @@ const Reference7176Dial = () => {
                       </div>
                     </div>
                     <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
-                      7176 with Civilian Dial
+                      7176 S with Civilian Dial
                     </span>
                   </div>
                   <div className="flex flex-col items-center">
@@ -188,10 +195,11 @@ const Reference7176Dial = () => {
                       }
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                      <img
+                      <ImageWithLoader
                         src="/images/7176-photos/7176D Front (wes)crop.jpg"
                         alt="7176 D with Civilian Dial"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="relative w-full h-64 rounded-lg"
                       />
 
                       {/* Click indicator */}
@@ -209,10 +217,127 @@ const Reference7176Dial = () => {
               </div>
             </div>
 
-            {/* Military Dial */}
+            {/* Civilian Dial - "Short Lume" */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "/images/7176 Photos/7176 - Polished -3crop.jpg",
+                          alt: "7176 D with Civilian Dial",
+                          title: "7176 D with Civilian Dial",
+                          subtitle: "Reference 7176",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="/images/7176 Photos/7176 - Polished -3crop.jpg"
+                        alt="7176 D with Civilian Dial"
+                        className="relative w-full h-64 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="relative w-full h-64 rounded-lg"
+                      />
+
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
+                      7176 D with Civilian Dial
+                    </span>
+                  </div>
+                </div>
+
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      2
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Civilian Dial - "Short Lume"
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-600">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      Examples of the 7176 Dial have been found with shorter
+                      lume indices and shorter minute markers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Military Dial */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      3
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Military Dial
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-green-600">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 Military, 7176 D
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
+                    <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <p>
+                        The 7176 Military features the first appearance of the
+                        Military dial. The dial is an update of the 7176
+                        Civilian dial. Notable changes include the introduction
+                        of the 3H logo to meet military specifications, watches
+                        in the field utilizing Tritium (3H) lume must carry a
+                        marking on the dial indicating its use. This logo is
+                        printed in RED at 1:30 on the dial.
+                      </p>
+                      <p>
+                        The Military dial also includes a Military handset with
+                        hour and minutes hands same as 7176 Civilian, red
+                        central chrono sweep hand, red painted "Airplane" on a
+                        black chrono totalizer hand, and red hand used for 6
+                        o'clock subdial.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                    <h4 className="font-semibold text-black mb-2">
+                      Specific Note - 7176 D:
+                    </h4>
+                    <p className="text-sm sm:text-base text-gray-700">
+                      The 7176 D exclusively features German Day/Date Wheels, as
+                      it was only sold in German Markets.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col items-center">
                     <div
                       className="relative group cursor-pointer"
@@ -226,10 +351,11 @@ const Reference7176Dial = () => {
                       }
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <img
+                      <ImageWithLoader
                         src="/images/7176-photos/7176 Military.png"
                         alt="7176 Military with Military Dial"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="relative w-full h-64 rounded-lg"
                       />
 
                       {/* Click indicator */}
@@ -243,155 +369,34 @@ const Reference7176Dial = () => {
                       7176 Military with Military Dial
                     </span>
                   </div>
-                  {/* <div className="flex flex-col items-center">
-                    <div className="relative group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                      <img
-                        src="/images/7176-photos/7176D-Bluecrop.jpg"
-                        alt="7176 D with Military Dial"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      />
-                    </div>
-                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
-                      7176 D with Military Dial
-                    </span>
-                  </div> */}
-                </div>
-
-                <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Military Dial
-                    </h2>
-                  </div>
-
-                  <div className="bg-green-50 p-6 sm:p-8 rounded-lg border-l-4 border-green-400">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Found on: 7176 Military, 7176 D
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      The 7176 Military features the first appearance of the
-                      Military dial
-                    </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Military specification:</strong> The dial is
-                          an update of the 7176 Civilian dial. Notable changes
-                          include the introduction of the 3H logo to meet
-                          military specifications
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>3H logo:</strong> Watches in the field
-                          utilizing Tritium (3H) lume must carry a marking on
-                          the dial indicating its use. This logo is printed in
-                          RED at 1:30 on the dial
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Military handset:</strong> Hour and minutes
-                          hands same as 7176 Civilian, red central chrono sweep
-                          hand, red painted "Airplane" on a black chrono
-                          totalizer hand, and red hand used for 6-oclock subdial
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
-                    <h4 className="font-semibold text-black mb-2">
-                      Specific Note - 7176 D:
-                    </h4>
-                    <p className="text-sm sm:text-base text-gray-700">
-                      The 7176 D exclusively features German Day/Date Wheels, as
-                      it was only sold in German Markets.
-                    </p>
+                  <div className="flex flex-col items-center">
+                    <PlaceholderImage title="7176 D with Military Dial" />
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Blue Civilian Dial */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+            {/* Blue by Orfina Dial */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      3
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Blue Civilian Dial
-                    </h2>
-                  </div>
-
-                  <div className="bg-blue-50 p-6 sm:p-8 rounded-lg border-l-4 border-blue-400">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      An important note is that prototype Blue Civilian Dial's
-                      have been found on the market. These exist on both 7176 D
-                      and 7176 S variants, and due to the quantity that has
-                      emerged, it is possible they are later production
-                      examples.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Features:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Common traits:</strong> They feature two
-                          common traits found commonly on 7177 examples - the
-                          additional "by ORFINA" text under PORSCHE DESIGN and
-                          their Grey PVD coating
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Caseback variations:</strong> They have been
-                          found with 7176 D, 7176 S, and 7176 Prototype
-                          Casebacks
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center justify-center">
+                <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
                   <div
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
                         src: "/images/7176-photos/7176D-Bluecrop.jpg",
-                        alt: "7176 D with Blue Civilian Dial",
-                        title: "7176 D with Blue Civilian Dial",
+                        alt: "7176 D with Blue by Orfina Dial",
+                        title: "7176 D with Blue by Orfina Dial",
                         subtitle: "Reference 7176",
                       })
                     }
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                    <ImageWithLoader
                       src="/images/7176-photos/7176D-Bluecrop.jpg"
-                      alt="7176 D with Blue Civilian Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      alt="7176 D with Blue by Orfina Dial"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -402,43 +407,122 @@ const Reference7176Dial = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176 D with Blue Civilian Dial
+                    7176 D with Blue by Orfina Dial
                   </span>
+                </div>
+
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      4
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Blue by Orfina Dial
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-blue-600">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
+                    <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <p>
+                        It is worth noting that Blue by Orfina Dials have been
+                        found on the market. These exist on both 7176 D and 7176
+                        S variants. They feature two common traits found on 7177
+                        examples. The additional "by ORFINA" text under PORSCHE
+                        DESIGN and their Cadet Grey PVD coating, which differs
+                        from that of the 7176 Military's Grey PVD coating.
+                      </p>
+                      <p>
+                        They have been found with 7176 D, 7176 S, and 7176
+                        Prototype Casebacks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Black by Orfina Dial */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      5
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Black by Orfina Dial
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-900">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> All 7176 variants (likely
+                      service dials)
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
+                    <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <p>
+                        Black by Orfina dials have emerged as likely service
+                        dials for all 7176 variants.
+                      </p>
+                      <p>
+                        The font of these dials is different than both the
+                        Civilian and Military dials. However, it is uniform with
+                        the Blue by Orfina Dial.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "/images/7176 Photos/7176-byOrfina-Black-Dial.jpg",
+                          alt: "7176 D with Blue by Orfina Dial",
+                          title: "7176 D with Blue by Orfina Dial",
+                          subtitle: "Reference 7176",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="/images/7176 Photos/7176-byOrfina-Black-Dial.jpg"
+                        alt="7176 D with Blue by Orfina Dial"
+                        className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                      />
+
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 D with Blue by Orfina Dial
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Comparison Section */}
-          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
-              <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
-                Dial Evolution
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                <div className="space-y-4">
-                  <div className="text-lg font-medium text-black">
-                    Civilian Application
-                  </div>
-                  <div className="text-gray-700 leading-relaxed">
-                    Standard PD branding with updated subdial layout for the
-                    Lemania 5100 movement, featuring new handset design and red
-                    chronograph accents.
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="text-lg font-medium text-black">
-                    Military Specification
-                  </div>
-                  <div className="text-gray-700 leading-relaxed">
-                    First military dial with tritium marking requirements,
-                    featuring specialized military handset with distinctive red
-                    airplane chronograph hand.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
 

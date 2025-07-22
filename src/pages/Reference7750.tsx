@@ -117,11 +117,11 @@ const Reference7750 = () => {
                   <span className="font-normal text-gray-700">7750</span>
                 </h1>
                 <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
+                {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                   Discover the legendary chronograph that defined an era. Three
                   distinct generations of horological excellence, each
                   representing a milestone in precision timekeeping.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -277,10 +277,10 @@ const Reference7750 = () => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
                 Explore Details
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Discover the intricate details and variations of the Reference
                 7750
-              </p>
+              </p> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -291,7 +291,7 @@ const Reference7750 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7750-photos/7750-Mk.3-Casecrop.jpg"
+                      src="/images/7750-photos/7750-Flat-PD.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
