@@ -1,11 +1,30 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import Navigation from "../components/Navigation";
 
 const Reference7176Rehaut = () => {
-  const [yellowTriangleImageIndex, setYellowTriangleImageIndex] = useState(0);
-  const [tachymetreImageIndex, setTachymetreImageIndex] = useState(0);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  // Handle escape key for full screen modal
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
 
   const yellowTriangleImages = [
     {
@@ -27,29 +46,6 @@ const Reference7176Rehaut = () => {
       caption: "TACHYMETRE Rehaut Close-Up",
     },
   ];
-
-  const nextYellowTriangleImage = () => {
-    setYellowTriangleImageIndex(
-      (prev) => (prev + 1) % yellowTriangleImages.length
-    );
-  };
-
-  const prevYellowTriangleImage = () => {
-    setYellowTriangleImageIndex(
-      (prev) =>
-        (prev - 1 + yellowTriangleImages.length) % yellowTriangleImages.length
-    );
-  };
-
-  const nextTachymetreImage = () => {
-    setTachymetreImageIndex((prev) => (prev + 1) % tachymetreImages.length);
-  };
-
-  const prevTachymetreImage = () => {
-    setTachymetreImageIndex(
-      (prev) => (prev - 1 + tachymetreImages.length) % tachymetreImages.length
-    );
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -116,7 +112,10 @@ const Reference7176Rehaut = () => {
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
                       The Yellow Triangle rehaut features a Yellow Triangle
                       Rehaut with the word "TACHYMETER" printed between 12 and 2
-                      O'clock
+                      O'clock<br></br>
+                      Yellow Triangle Rehaut found on original 7176 and 7176
+                      Military models, featuring distinctive yellow triangle
+                      marker and standard typography.
                     </p>
                   </div>
 
@@ -142,54 +141,40 @@ const Reference7176Rehaut = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <div className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
-                      <img
-                        src={yellowTriangleImages[yellowTriangleImageIndex].src}
-                        alt={yellowTriangleImages[yellowTriangleImageIndex].alt}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-
-                    {/* Navigation Arrows */}
-                    {yellowTriangleImages.length > 1 && (
-                      <>
-                        <button
-                          onClick={prevYellowTriangleImage}
-                          className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                  <div className="flex flex-col gap-6 justify-center items-center">
+                    {yellowTriangleImages.map((image, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() =>
+                            setFullScreenImage({
+                              src: image.src,
+                              alt: image.alt,
+                              title: image.caption,
+                              subtitle: "Reference 7176 Rehaut",
+                            })
+                          }
                         >
-                          <ChevronLeft className="w-4 h-4 text-gray-700" />
-                        </button>
-                        <button
-                          onClick={nextYellowTriangleImage}
-                          className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
-                        >
-                          <ChevronRight className="w-4 h-4 text-gray-700" />
-                        </button>
-                      </>
-                    )}
-
-                    {/* Image Indicators */}
-                    {yellowTriangleImages.length > 1 && (
-                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-                        {yellowTriangleImages.map((_, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setYellowTriangleImageIndex(index)}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                              index === yellowTriangleImageIndex
-                                ? "bg-yellow-500"
-                                : "bg-white/50 hover:bg-white/80"
-                            }`}
+                          <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           />
-                        ))}
+
+                          {/* Click indicator */}
+                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                              Click to zoom
+                            </div>
+                          </div>
+                        </div>
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          {image.caption}
+                        </span>
                       </div>
-                    )}
+                    ))}
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    {yellowTriangleImages[yellowTriangleImageIndex].caption}
-                  </span>
                 </div>
               </div>
             </div>
@@ -198,54 +183,40 @@ const Reference7176Rehaut = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <div className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
-                      <img
-                        src={tachymetreImages[tachymetreImageIndex].src}
-                        alt={tachymetreImages[tachymetreImageIndex].alt}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-
-                    {/* Navigation Arrows */}
-                    {tachymetreImages.length > 1 && (
-                      <>
-                        <button
-                          onClick={prevTachymetreImage}
-                          className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
+                  <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
+                    {tachymetreImages.map((image, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() =>
+                            setFullScreenImage({
+                              src: image.src,
+                              alt: image.alt,
+                              title: image.caption,
+                              subtitle: "Reference 7176 Rehaut",
+                            })
+                          }
                         >
-                          <ChevronLeft className="w-4 h-4 text-gray-700" />
-                        </button>
-                        <button
-                          onClick={nextTachymetreImage}
-                          className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-all duration-300 group"
-                        >
-                          <ChevronRight className="w-4 h-4 text-gray-700" />
-                        </button>
-                      </>
-                    )}
-
-                    {/* Image Indicators */}
-                    {tachymetreImages.length > 1 && (
-                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-                        {tachymetreImages.map((_, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setTachymetreImageIndex(index)}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                              index === tachymetreImageIndex
-                                ? "bg-black"
-                                : "bg-white/50 hover:bg-white/80"
-                            }`}
+                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           />
-                        ))}
+
+                          {/* Click indicator */}
+                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                              Click to zoom
+                            </div>
+                          </div>
+                        </div>
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          {image.caption}
+                        </span>
                       </div>
-                    )}
+                    ))}
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    {tachymetreImages[tachymetreImageIndex].caption}
-                  </span>
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
@@ -263,6 +234,10 @@ const Reference7176Rehaut = () => {
                       The TACHYMETRE rehaut removes the triangle at twelve
                       o'clock, possesses an overall thicker font, and the word
                       "TACHYMETRE" is printed between 12 and 2 O'clock.
+                      <br></br>
+                      TACHYMETRE Rehaut on 7176 D and 7176 S models, with
+                      cleaner design, enhanced typography, and removal of the
+                      triangle marker.
                     </p>
                   </div>
 
@@ -291,7 +266,7 @@ const Reference7176Rehaut = () => {
           </div>
 
           {/* Comparison Section */}
-          <div className="mt-20 sm:mt-24 lg:mt-32">
+          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
               <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
                 Rehaut Evolution
@@ -319,7 +294,7 @@ const Reference7176Rehaut = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -347,6 +322,59 @@ const Reference7176Rehaut = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <div className="relative max-w-full max-h-full flex flex-col items-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setFullScreenImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src={fullScreenImage.src}
+              alt={fullScreenImage.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image Info */}
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-light mb-1">
+                {fullScreenImage.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {fullScreenImage.subtitle}
+              </p>
+            </div>
+
+            {/* Instructions */}
+            <div className="mt-8 text-white text-sm opacity-75 text-center">
+              Press ESC or click outside to close
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

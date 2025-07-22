@@ -1,12 +1,31 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Reference7750CaseFinishes = () => {
-  const [mk1CurrentImage, setMk1CurrentImage] = useState(0);
-  const [mk2CurrentImage, setMk2CurrentImage] = useState(0);
-  const [mk3CurrentImage, setMk3CurrentImage] = useState(0);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  // Handle escape key for full screen modal
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
 
   const mk1Images = [
     {
@@ -47,116 +66,54 @@ const Reference7750CaseFinishes = () => {
     },
   ];
 
-  const ImageSlider = ({ images, currentImage, setCurrentImage, title }) => (
+  const ImageSlider = ({ images, title }) => (
     <div className="flex flex-col items-center justify-center">
-      {/* Main Image Display */}
-      <div className="relative group mb-6">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-        <ImageWithLoader
-          src={images[currentImage].src}
-          alt={images[currentImage].alt}
-          className="relative w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-          skeletonClassName="relative w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
-        />
-
-        {/* Image Title Overlay */}
-        <div className="absolute top-3 right-3 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm font-medium">
-          {images[currentImage].title}
-        </div>
-
-        {/* Navigation Buttons */}
-        {images.length > 1 && (
-          <>
-            <button
-              onClick={() =>
-                setCurrentImage(
-                  currentImage === 0 ? images.length - 1 : currentImage - 1
-                )
-              }
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-70 hover:bg-opacity-90 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-
-            <button
-              onClick={() =>
-                setCurrentImage(
-                  currentImage === images.length - 1 ? 0 : currentImage + 1
-                )
-              }
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-70 hover:bg-opacity-90 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </>
-        )}
+      {/* Section Title */}
+      <div className="text-center mb-8">
+        <h3 className="text-base sm:text-lg text-gray-600 font-medium">
+          {title}
+        </h3>
       </div>
 
-      {/* Thumbnail Navigation */}
-      {images.length > 1 && (
-        <div className="flex space-x-2 mb-4">
-          {images.map((image, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImage(index)}
-              className={`relative overflow-hidden rounded-lg transition-all duration-300 ${
-                index === currentImage
-                  ? "ring-2 ring-black opacity-100"
-                  : "opacity-60 hover:opacity-80"
-              }`}
+      {/* Images Side by Side */}
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
+        {images.map((image, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <div
+              className="relative group cursor-pointer"
+              onClick={() =>
+                setFullScreenImage({
+                  src: image.src,
+                  alt: image.alt,
+                  title: image.title,
+                  subtitle: title,
+                })
+              }
             >
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
               <ImageWithLoader
                 src={image.src}
                 alt={image.alt}
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
-                skeletonClassName="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
+                className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                skeletonClassName="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 rounded-lg"
               />
-            </button>
-          ))}
-        </div>
-      )}
 
-      {/* Image Counter */}
-      {images.length > 1 && (
-        <div className="text-center mb-4">
-          <span className="text-sm text-gray-500">
-            {currentImage + 1} of {images.length}
-          </span>
-        </div>
-      )}
+              {/* Click indicator */}
+              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                  Click to zoom
+                </div>
+              </div>
+            </div>
 
-      {/* Title and Description */}
-      <div className="text-center">
-        <span className="text-base sm:text-lg text-gray-600 font-medium block mb-1">
-          {title}
-        </span>
-        <span className="text-sm text-gray-500">
-          {images[currentImage].title}
-        </span>
+            {/* Image Title Below */}
+            <div className="mt-4 text-center">
+              <h4 className="text-sm sm:text-base font-semibold text-black">
+                {image.title}
+              </h4>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -301,8 +258,6 @@ const Reference7750CaseFinishes = () => {
 
                 <ImageSlider
                   images={mk1Images}
-                  currentImage={mk1CurrentImage}
-                  setCurrentImage={setMk1CurrentImage}
                   title="Orfina 7750 Flat Top – Mk. 1"
                 />
               </div>
@@ -400,8 +355,6 @@ const Reference7750CaseFinishes = () => {
 
                 <ImageSlider
                   images={mk2Images}
-                  currentImage={mk2CurrentImage}
-                  setCurrentImage={setMk2CurrentImage}
                   title="Orfina 7750 Transitional Thin Top – Mk. 2"
                 />
               </div>
@@ -489,8 +442,6 @@ const Reference7750CaseFinishes = () => {
 
                 <ImageSlider
                   images={mk3Images}
-                  currentImage={mk3CurrentImage}
-                  setCurrentImage={setMk3CurrentImage}
                   title="Orfina 7750 Flat-Face Service – Mk. 3"
                 />
               </div>
@@ -564,6 +515,59 @@ const Reference7750CaseFinishes = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <div className="relative max-w-full max-h-full flex flex-col items-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setFullScreenImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src={fullScreenImage.src}
+              alt={fullScreenImage.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image Info */}
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-light mb-1">
+                {fullScreenImage.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {fullScreenImage.subtitle}
+              </p>
+            </div>
+
+            {/* Instructions */}
+            <div className="mt-8 text-white text-sm opacity-75 text-center">
+              Press ESC or click outside to close
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

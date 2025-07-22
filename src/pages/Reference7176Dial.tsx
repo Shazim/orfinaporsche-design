@@ -1,7 +1,31 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { useState, useEffect } from "react";
 
 const Reference7176Dial = () => {
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  // Handle escape key for full screen modal
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -122,26 +146,60 @@ const Reference7176Dial = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="relative group">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "/images/7176-photos/7176Scrop.jpg",
+                          alt: "7176 with Civilian Dial",
+                          title: "7176 with Civilian Dial",
+                          subtitle: "Reference 7176",
+                        })
+                      }
+                    >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                       <img
                         src="/images/7176-photos/7176Scrop.jpg"
                         alt="7176 with Civilian Dial"
                         className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
+
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
                     </div>
                     <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
                       7176 with Civilian Dial
                     </span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <div className="relative group">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "/images/7176-photos/7176D Front (wes)crop.jpg",
+                          alt: "7176 D with Civilian Dial",
+                          title: "7176 D with Civilian Dial",
+                          subtitle: "Reference 7176",
+                        })
+                      }
+                    >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                       <img
                         src="/images/7176-photos/7176D Front (wes)crop.jpg"
                         alt="7176 D with Civilian Dial"
                         className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
+
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
                     </div>
                     <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
                       7176 D with Civilian Dial
@@ -156,13 +214,30 @@ const Reference7176Dial = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="relative group">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "/images/7176-photos/7176 Military.png",
+                          alt: "7176 Military with Military Dial",
+                          title: "7176 Military with Military Dial",
+                          subtitle: "Reference 7176",
+                        })
+                      }
+                    >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                       <img
                         src="/images/7176-photos/7176 Military.png"
                         alt="7176 Military with Military Dial"
                         className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
+
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
                     </div>
                     <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
                       7176 Military with Military Dial
@@ -301,13 +376,30 @@ const Reference7176Dial = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div className="relative group">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "/images/7176-photos/7176D-Bluecrop.jpg",
+                        alt: "7176 D with Blue Civilian Dial",
+                        title: "7176 D with Blue Civilian Dial",
+                        subtitle: "Reference 7176",
+                      })
+                    }
+                  >
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
                       src="/images/7176-photos/7176D-Bluecrop.jpg"
                       alt="7176 D with Blue Civilian Dial"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
+
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7176 D with Blue Civilian Dial
@@ -374,6 +466,59 @@ const Reference7176Dial = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <div className="relative max-w-full max-h-full flex flex-col items-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setFullScreenImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src={fullScreenImage.src}
+              alt={fullScreenImage.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Image Info */}
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-light mb-1">
+                {fullScreenImage.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {fullScreenImage.subtitle}
+              </p>
+            </div>
+
+            {/* Instructions */}
+            <div className="mt-8 text-white text-sm opacity-75 text-center">
+              Press ESC or click outside to close
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
