@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import CloudinaryImage from "../components/CloudinaryImage";
+import ImageWithLoader from "../components/ImageWithLoader";
 import { useState, useEffect } from "react";
 
 const Reference7750CaseFinishes = () => {
@@ -80,12 +80,11 @@ const Reference7750CaseFinishes = () => {
         }
       >
         <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-        <CloudinaryImage
+        <ImageWithLoader
           src={image.src}
           alt={image.alt}
           className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
           skeletonClassName="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg"
-          transform="medium"
         />
 
         {/* Click indicator */}
