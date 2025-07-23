@@ -256,7 +256,7 @@ const Reference7176Dial = () => {
 
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       2
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -264,7 +264,7 @@ const Reference7176Dial = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-600">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176
                     </p>
@@ -288,7 +288,7 @@ const Reference7176Dial = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       3
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -296,7 +296,7 @@ const Reference7176Dial = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-green-600">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 Military, 7176 D
                     </p>
@@ -413,7 +413,7 @@ const Reference7176Dial = () => {
 
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       4
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -421,7 +421,7 @@ const Reference7176Dial = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-blue-600">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 D, 7176 S variants
                     </p>
@@ -455,7 +455,7 @@ const Reference7176Dial = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       5
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -463,7 +463,7 @@ const Reference7176Dial = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-900">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> All 7176 variants (likely
                       service dials)

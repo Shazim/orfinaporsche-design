@@ -1,7 +1,69 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { useEffect, useState } from "react";
+import { X } from "lucide-react";
+
+const FullScreenModal = ({ image, onClose }) => {
+  if (!image) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 z-60 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200"
+      >
+        <X size={24} />
+      </button>
+
+      {/* Image container */}
+      <div className="relative max-w-full max-h-full flex flex-col items-center">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+
+        {/* Image info */}
+        <div className="mt-4 text-center text-white">
+          <h3 className="text-xl font-semibold mb-1">{image.title}</h3>
+          {image.subtitle && <p className="text-gray-300">{image.subtitle}</p>}
+        </div>
+      </div>
+
+      {/* Click outside to close */}
+      <div className="absolute inset-0 -z-10" onClick={onClose}></div>
+    </div>
+  );
+};
 
 const Reference7177Rehaut = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -77,123 +139,140 @@ const Reference7177Rehaut = () => {
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           <strong>Military variants:</strong> All 7177 or
-                          "military" variants feature a 12-hour rehaut ring
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Civilian variants:</strong> Non-military
-                          civilian variants have a tachymetric rehaut ring
+                          "military" variants feature a 12-hour rehaut ring,
+                          while the non-military civilian variants have a
+                          tachymetric rehaut ring.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Production evolution:</strong> Two known
-                          variations of the 12-hour rehaut ring exist
+                          <strong>
+                            Two known variations of the 12-hr rehaut ring:
+                          </strong>{" "}
+                          A slightly larger font "crooked seven rehaut" found on
+                          the first 7177’s ever produced, and a slightly smaller
+                          rehaut found on all other 7177 variants. Civilian
+                          variants have a tachymetric rehaut ring.
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
 
+                {/* Image grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col items-center">
                     <div className="relative group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <img
-                        src="/lovable-uploads/7177-crooked-seven-rehaut.jpg"
-                        alt="Crooked Seven Rehaut"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      />
+                      <div className="flex flex-col items-center justify-center">
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() =>
+                            setFullScreenImage({
+                              src: "/images/7177 Photos/7177-Silvercrop.jpg",
+                              alt: "7177 Standard Rehaut",
+                              title: "7177 Standard Rehaut",
+                              subtitle: "Reference 7177",
+                            })
+                          }
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                          <img
+                            src="/images/7177 Photos/7177-Silvercrop.jpg"
+                            alt="7177 Standard Rehaut"
+                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          />
+                          {/* Click indicator */}
+                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                              Click to zoom
+                            </div>
+                          </div>
+                        </div>
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          7177 Standard Rehaut{" "}
+                        </span>
+                      </div>
                     </div>
-                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
-                      Crooked Seven Rehaut
-                    </span>
                   </div>
                   <div className="flex flex-col items-center">
                     <div className="relative group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                      <img
-                        src="/lovable-uploads/7177-standard-rehaut.jpg"
-                        alt="Standard Rehaut"
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      />
-                    </div>
-                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
-                      Standard Rehaut
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Variations */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    2
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                    12-Hour Rehaut Variations
-                  </h2>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                  <div className="space-y-4">
-                    <div className="text-lg font-medium text-black">
-                      Crooked Seven Rehaut
-                    </div>
-                    <div className="text-gray-700 leading-relaxed">
-                      Features a slightly larger font with a distinctive
-                      "crooked seven" character. Found on the first 7177's ever
-                      produced, making it a rare early production variant.
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="text-lg font-medium text-black">
-                      Standard Rehaut
-                    </div>
-                    <div className="text-gray-700 leading-relaxed">
-                      Features a slightly smaller, more refined font. Found on
-                      all other 7177 variants after the initial production run,
-                      representing the standard production specification.
+                      <div className="flex flex-col items-center justify-center">
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() =>
+                            setFullScreenImage({
+                              src: "/images/7177 Photos/7177-4Logocrop.jpg",
+                              alt: "7177 Crooked Seven Rehaut",
+                              title: "7177 Crooked Seven Rehaut",
+                              subtitle: "Reference 7177",
+                            })
+                          }
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                          <img
+                            src="/images/7177 Photos/7177-4Logocrop.jpg"
+                            alt="7177 Crooked Seven Rehaut"
+                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          />
+                          {/* Click indicator */}
+                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                              Click to zoom
+                            </div>
+                          </div>
+                        </div>
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          7177 Crooked Seven Rehaut{" "}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Prototype Note */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="bg-yellow-50 p-8 sm:p-12 rounded-lg border-l-4 border-yellow-400">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    P
+                {/* Last Image Spanning Both Columns */}
+                <div className="lg:col-2 flex flex-col items-right  ">
+                  <div className="relative group">
+                    <div className="flex flex-col items-center justify-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "/images/7177 Photos/7177-Crooked Seven Rehaut-Close-Up-.jpg",
+                            alt: "7177 Crooked Seven Rehaut - Close-Up",
+                            title: "7177 Crooked Seven Rehaut - Close-Up",
+                            subtitle: "Reference 7177",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <img
+                          src="/images/7177 Photos/7177-Crooked Seven Rehaut-Close-Up-.jpg"
+                          alt="7177 Crooked Seven Rehaut - Close-Up"
+                          className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Crooked Seven Rehaut - Close-Up{" "}
+                      </span>
+                    </div>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                    Prototype Variations
-                  </h2>
                 </div>
-
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  There are a variety of prototype rehauts that have been seen
-                  on examples over the years, but these were not configured on
-                  any "production" watches and thus are not discussed in detail
-                  here. These prototypes represent experimental designs that
-                  never made it to full production.
-                </p>
               </div>
             </div>
           </div>
 
           {/* Comparison Section */}
-          <div className="mt-20 sm:mt-24 lg:mt-32">
+          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
               <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
                 Production Timeline
@@ -221,7 +300,7 @@ const Reference7177Rehaut = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -249,6 +328,12 @@ const Reference7177Rehaut = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Modal - This was missing in your original code! */}
+      <FullScreenModal
+        image={fullScreenImage}
+        onClose={() => setFullScreenImage(null)}
+      />
     </div>
   );
 };

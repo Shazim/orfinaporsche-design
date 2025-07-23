@@ -1,7 +1,72 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "@/components/ImageWithLoader";
+import { useEffect, useState } from "react";
+import { X } from "lucide-react";
+
+// Full Screen Modal Component
+const FullScreenModal = ({ image, onClose }) => {
+  if (!image) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 z-60 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200"
+      >
+        <X size={24} />
+      </button>
+
+      {/* Image container */}
+      <div className="relative max-w-full max-h-full flex flex-col items-center">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+
+        {/* Image info */}
+        <div className="mt-4 text-center text-white">
+          <h3 className="text-xl font-semibold mb-1">{image.title}</h3>
+          {image.subtitle && <p className="text-gray-300">{image.subtitle}</p>}
+        </div>
+      </div>
+
+      {/* Click outside to close */}
+      <div className="absolute inset-0 -z-10" onClick={onClose}></div>
+    </div>
+  );
+};
 
 const Reference7177Caseback = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -67,7 +132,8 @@ const Reference7177Caseback = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Complete departure from 7176 caseback design language
+                      WATERRESISTANT TESTED 10 ATM AUTOMATIC SHOCKPROTECTED
+                      STAINLESS STEEL SWISS MADE{" "}
                     </p>
                   </div>
 
@@ -102,13 +168,29 @@ const Reference7177Caseback = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div className="relative group">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "/images/7177 Photos/7176s-caseback.jpg",
+                        alt: "7177 Caseback Engraving",
+                        title: "7177 Caseback Engraving",
+                        subtitle: "Reference 7177",
+                      })
+                    }
+                  >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/lovable-uploads/7177-caseback.jpg"
+                      src="/images/7177 Photos/7176s-caseback.jpg"
                       alt="7177 Caseback Engraving"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7177 Caseback Engraving
@@ -120,17 +202,33 @@ const Reference7177Caseback = () => {
             {/* Outer Engraving Comparison */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                <div className="flex flex-col items-center justify-center">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "/images/7177 Photos/7177-SilverCase-3crop.jpg",
+                        alt: "7177 Caseback Engraving",
+                        title: "7177 Caseback Engraving",
+                        subtitle: "Reference 7177",
+                      })
+                    }
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/lovable-uploads/7176s-caseback.jpg"
-                      alt="7176S Caseback Engraving"
+                      src="/images/7177 Photos/7177-SilverCase-3crop.jpg"
+                      alt="7177 Caseback Engraving"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176S Caseback Engraving
+                    7177 Caseback Engraving
                   </span>
                 </div>
 
@@ -152,23 +250,22 @@ const Reference7177Caseback = () => {
                   </div>
 
                   <div className="space-y-6">
-                    <div className="bg-blue-50 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
+                    <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
                       <h4 className="font-semibold text-black mb-2">
                         7176S Outer Engraving:
                       </h4>
                       <p className="text-sm sm:text-base text-gray-700">
-                        "SWISS MADE_ 7176 S CHRONOGRAPH_ AUTOMATIC_WATER
-                        RESISTANT_ TESTED 10 ATM_ SHOCKPROTECTED_STAINLESS
-                        STEEL"
+                        SWISS MADE 7176 S CHRONOGRAPH AUTOMATIC WATER RESISTANT
+                        TESTED 10 ATM SHOCKPROTECTED STAINLESS STEEL
                       </p>
                     </div>
-                    <div className="bg-green-50 p-4 sm:p-6 rounded-lg border-l-4 border-green-400">
+                    <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
                       <h4 className="font-semibold text-black mb-2">
                         7177 Outer Engraving:
                       </h4>
                       <p className="text-sm sm:text-base text-gray-700">
-                        "SWISS MADE_WATER RESISTANT_TESTED
-                        10ATM_AUTOMATIC_SHOCKPROTECTED_STAINLESS STEEL"
+                        SWISS MADE WATER RESISTANT TESTED 10 ATM AUTOMATIC
+                        SHOCKPROTECTED STAINLESS STEEL
                       </p>
                     </div>
                   </div>
@@ -178,7 +275,7 @@ const Reference7177Caseback = () => {
 
             {/* Serial Numbers */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
+              <div className="bg-gray-50 p-8 sm:p-12 rounded-lg border-l-4 border-black">
                 <div className="flex items-center space-x-4 mb-8">
                   <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                     3
@@ -193,30 +290,15 @@ const Reference7177Caseback = () => {
                     All 7177 variants include a stamped serial number, which are
                     found in groupings for particular dial configurations.
                   </p>
-
-                  <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black mb-4">
-                      Important Note on Late Production
-                    </h3>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      In 1999 after Umberto Maglioli died, Orfina was sold to
-                      new owners. To clear much of their backstock, they sold
-                      parts to various parties who subsequently "produced" new
-                      watches from put-together surplus parts left on shelves.
-                      The addition of these late 1990s surplus watches has
-                      raised many questions about the correlation of serial
-                      numbers to the unit.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
 
             {/* Special Variants */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
-              <div className="bg-blue-50 p-8 sm:p-12 rounded-lg border-l-4 border-blue-400">
+              <div className="bg-gray-50 p-8 sm:p-12 rounded-lg border-l-4 border-black">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                     4
                   </div>
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -259,6 +341,12 @@ const Reference7177Caseback = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Modal - This was missing in your original code! */}
+      <FullScreenModal
+        image={fullScreenImage}
+        onClose={() => setFullScreenImage(null)}
+      />
     </div>
   );
 };

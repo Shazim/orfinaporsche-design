@@ -1,7 +1,69 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const FullScreenModal = ({ image, onClose }) => {
+  if (!image) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 z-60 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200"
+      >
+        <X size={24} />
+      </button>
+
+      {/* Image container */}
+      <div className="relative max-w-full max-h-full flex flex-col items-center">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+
+        {/* Image info */}
+        <div className="mt-4 text-center text-white">
+          <h3 className="text-xl font-semibold mb-1">{image.title}</h3>
+          {image.subtitle && <p className="text-gray-300">{image.subtitle}</p>}
+        </div>
+      </div>
+
+      {/* Click outside to close */}
+      <div className="absolute inset-0 -z-10" onClick={onClose}></div>
+    </div>
+  );
+};
 
 const Reference7177CaseFinishes = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setFullScreenImage(null);
+      }
+    };
+
+    if (fullScreenImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [fullScreenImage]);
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -92,13 +154,29 @@ const Reference7177CaseFinishes = () => {
               </div>
 
               <div className="flex flex-col items-center justify-center">
-                <div className="relative group">
+                <div
+                  className="relative group cursor-pointer"
+                  onClick={() =>
+                    setFullScreenImage({
+                      src: "/lovable-uploads/7177-case-finishes.jpg",
+                      alt: "7177 Caseback Engraving",
+                      title: "7177 Caseback Engraving",
+                      subtitle: "Reference 7177",
+                    })
+                  }
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                   <img
                     src="/lovable-uploads/7177-case-finishes.jpg"
-                    alt="Reference 7177 Case Finishes"
+                    alt="7177 Caseback Engraving"
                     className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                   />
+                  {/* Click indicator */}
+                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                      Click to zoom
+                    </div>
+                  </div>
                 </div>
                 <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                   All 7177 Finishes
@@ -120,22 +198,6 @@ const Reference7177CaseFinishes = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Sandblasted Steel */}
-              <div className="space-y-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    Sandblasted Steel
-                  </h3>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Non-PVD Sablé or Sandblasted Steel finish, identical to the
-                    7176 finish.
-                  </p>
-                </div>
-              </div>
 
               {/* Black PVD */}
               <div className="space-y-6">
@@ -149,7 +211,22 @@ const Reference7177CaseFinishes = () => {
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Premium black PVD coating, identical to the 7176 finish.
+                    Identical to the 7176 Finish{" "}
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-black">
+                    Non-PVD Silver/Sablé{" "}
+                  </h3>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                    Identical to the 7176 Finish{" "}
                   </p>
                 </div>
               </div>
@@ -157,17 +234,16 @@ const Reference7177CaseFinishes = () => {
               {/* Cadet Grey PVD */}
               <div className="space-y-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-black">
                     Cadet Grey PVD
                   </h3>
                 </div>
-                <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    <strong>Exclusive to 7177:</strong> Unique grey PVD coating
-                    only available on this reference.
+                    Only Available on the 7177
                   </p>
                 </div>
               </div>
@@ -175,17 +251,16 @@ const Reference7177CaseFinishes = () => {
               {/* Olive Green PVD */}
               <div className="space-y-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-black">
                     Olive Green PVD
                   </h3>
                 </div>
-                <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
+                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Military-spec olive green PVD coating, identical to the 7176
-                    Military finish.
+                    Identical to the 7176 Military Finish
                   </p>
                 </div>
               </div>
@@ -193,18 +268,16 @@ const Reference7177CaseFinishes = () => {
               {/* NTS PVD */}
               <div className="space-y-6 md:col-span-2 lg:col-span-1">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-black">
                     NTS PVD
                   </h3>
                 </div>
-                <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-400">
+                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    <strong>Exclusive to 7177:</strong> Special NTS (Night
-                    Training School) PVD coating only available on this
-                    reference.
+                    Only Available on the 7177
                   </p>
                 </div>
               </div>
@@ -212,7 +285,7 @@ const Reference7177CaseFinishes = () => {
           </div>
 
           {/* Comparison Section */}
-          <div className="mt-20 sm:mt-24 lg:mt-32">
+          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
               <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
                 Finish Comparison
@@ -239,7 +312,7 @@ const Reference7177CaseFinishes = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -267,6 +340,12 @@ const Reference7177CaseFinishes = () => {
           </Link>
         </div>
       </div>
+
+      {/* Full Screen Modal - This was missing in your original code! */}
+      <FullScreenModal
+        image={fullScreenImage}
+        onClose={() => setFullScreenImage(null)}
+      />
     </div>
   );
 };

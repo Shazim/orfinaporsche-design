@@ -189,7 +189,7 @@ const Reference7176CaseFinishes = () => {
             {/* Silver/Sablé */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-gray-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -200,7 +200,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-400">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         <strong>Found On:</strong> 7176, 7176 Military, 7176 D,
                         7176 S
@@ -222,7 +222,7 @@ const Reference7176CaseFinishes = () => {
             {/* Polished */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-gray-300 text-gray-800 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -233,7 +233,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-300">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
                         <strong>Found On:</strong> 7176 (Exclusive)
                       </p>
@@ -260,7 +260,7 @@ const Reference7176CaseFinishes = () => {
             {/* Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   4
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -271,7 +271,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-600">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         <strong>Found On:</strong> 7176 Military (Exclusive)
                       </p>
@@ -292,7 +292,7 @@ const Reference7176CaseFinishes = () => {
             {/* Green PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   5
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -303,7 +303,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-green-600">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         <strong>Found On:</strong> 7176 Military (Exclusive)
                       </p>
@@ -324,7 +324,7 @@ const Reference7176CaseFinishes = () => {
             {/* Cadet Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-900">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-slate-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   6
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -335,7 +335,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-slate-500">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         <strong>Found On:</strong> 7176 D (Exclusive)
                       </p>
@@ -356,7 +356,7 @@ const Reference7176CaseFinishes = () => {
             {/* NTS PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-1000">
               <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   7
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -367,7 +367,7 @@ const Reference7176CaseFinishes = () => {
               <div className="space-y-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-center">
                   <div className="space-y-6 text-center lg:text-left">
-                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-blue-600">
+                    <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         <strong>Found On:</strong> 7176 S (Exclusive)
                       </p>

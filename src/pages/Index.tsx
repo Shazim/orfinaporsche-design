@@ -5,11 +5,11 @@ import ImageWithLoader from "../components/ImageWithLoader";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#F1EFE8]">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#F1EFE8]">
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-gray-50">
         <div className="w-full mb-8 sm:mb-12 lg:mb-16">
           <ImageWithLoader
             src="/images/main-page-photos/Hero-Shot-2.jpg"
@@ -34,7 +34,7 @@ const Index = () => {
       </section>
 
       {/* Featured References */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-[#F1EFE8]">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-black mb-4 sm:mb-6 uppercase tracking-wider">

@@ -222,20 +222,22 @@ const Reference7750 = () => {
 
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
                           <div className="flex items-center mb-3">
-                            <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">Case</h3>
-                          </div>
-                          <p className="text-gray-700">{gen.case}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
                             <Layers className="w-5 h-5 text-gray-600 mr-3" />
                             <h3 className="font-medium text-gray-900">
                               Finishes
                             </h3>
                           </div>
                           <p className="text-gray-700">{gen.finishes}</p>
+                        </div>
+
+                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                          <div className="flex items-center mb-3">
+                            <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                            <h3 className="font-medium text-gray-900">
+                              Caseback
+                            </h3>
+                          </div>
+                          <p className="text-gray-700">{gen.case}</p>
                         </div>
 
                         <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
@@ -249,12 +251,6 @@ const Reference7750 = () => {
 
                       {/* Additional Details */}
                       <div className="space-y-4 pt-6 border-t border-gray-200">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600 font-medium">
-                            Caseback:
-                          </span>
-                          <span className="text-gray-900">{gen.caseback}</span>
-                        </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600 font-medium">
                             Rehaut:
@@ -491,25 +487,6 @@ const Reference7750 = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-light text-gray-900 mb-6">
-              Explore the Complete Collection
-            </h2>
-            <p className="text-xl text-gray-600 mb-8 font-light">
-              Discover detailed specifications, variations, and the complete
-              history of each Reference 7750 generation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                View All Variations
-              </button>
-              <button className="px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-lg font-medium hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105">
-                Technical Specifications
-              </button>
-            </div>
-          </div>
-        </section>
       </div>
 
       {/* Back to References */}
