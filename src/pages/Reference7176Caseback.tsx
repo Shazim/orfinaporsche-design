@@ -344,7 +344,7 @@ const Reference7176Caseback = () => {
 
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       P
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
@@ -352,7 +352,7 @@ const Reference7176Caseback = () => {
                     </h2>
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-600">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> Select 7176 variants (usually
                       prototypes)

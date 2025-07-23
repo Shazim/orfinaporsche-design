@@ -100,16 +100,21 @@ const Reference7176Rehaut = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       1
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
                       Yellow Triangle Rehaut
                     </h2>
                   </div>
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                    </p>
+                  </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-gray-400">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                  <div className="">
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
                       The Yellow Triangle rehaut features a Yellow Triangle
                       Rehaut with the word "TACHYMETER" printed between 12 and 2
                       O'clock<br></br>
@@ -119,25 +124,25 @@ const Reference7176Rehaut = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4">
+                  {/* <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
                       Found On:
                     </h3>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           <strong>7176</strong>
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           <strong>7176 Military</strong>
                         </span>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
@@ -155,7 +160,6 @@ const Reference7176Rehaut = () => {
                             })
                           }
                         >
-                          <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                           <img
                             src={image.src}
                             alt={image.alt}
@@ -228,9 +232,14 @@ const Reference7176Rehaut = () => {
                       TACHYMETRE Rehaut
                     </h2>
                   </div>
-
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p className="text-base sm:text-lg  leading-relaxed mb-4">
                       The TACHYMETRE rehaut removes the triangle at twelve
                       o'clock, possesses an overall thicker font, and the word
                       "TACHYMETRE" is printed between 12 and 2 O'clock.
@@ -241,7 +250,7 @@ const Reference7176Rehaut = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4">
+                  {/* <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
                       Found On:
                     </h3>
@@ -259,7 +268,7 @@ const Reference7176Rehaut = () => {
                         </span>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

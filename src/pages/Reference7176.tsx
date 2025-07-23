@@ -435,25 +435,6 @@ const Reference7176 = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-light text-gray-900 mb-6">
-              Explore the Complete Collection
-            </h2>
-            <p className="text-xl text-gray-600 mb-8 font-light">
-              Discover detailed specifications, variations, and the complete
-              history of each Reference 7176 variant.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                View All Variations
-              </button>
-              <button className="px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-lg font-medium hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105">
-                Technical Specifications
-              </button>
-            </div>
-          </div>
-        </section>
       </div>
 
       {/* Back to References */}

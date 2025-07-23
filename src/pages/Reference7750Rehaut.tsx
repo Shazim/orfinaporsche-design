@@ -72,7 +72,7 @@ const Reference7750Rehaut = () => {
               range. These can be found across all 7750 case marks and dial
               variations.
             </p>
-            <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
+            {/* <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 <strong>Interesting comparison:</strong> Despite being different
                 measurements - the 1Mile and 1km have the same marks throughout
@@ -81,7 +81,7 @@ const Reference7750Rehaut = () => {
                 just put "Tachymetre" solely on the rehaut without either "unit"
                 designation.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Rehaut Variations */}
@@ -301,6 +301,24 @@ const Reference7750Rehaut = () => {
                       7750 Advertisement Rehaut
                     </span>
                   </div>
+                  <div className="flex flex-col items-center">
+                    <div className="relative group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 transition-transform duration-300"></div>
+                      <div className="relative w-full h-48 sm:h-56 lg:h-64 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 shadow-lg flex items-center justify-center">
+                        <div className="text-center text-gray-500">
+                          <div className="text-sm font-medium mb-2">
+                            Photo Coming Soon
+                          </div>
+                          <div className="text-xs">
+                            Advertisement Rehaut Close-Up
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
+                      7750 Advertisement Rehaut - Close-Up
+                    </span>
+                  </div>
                   {/* <div className="flex flex-col items-center">
                     <div className="relative group">
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
@@ -316,7 +334,7 @@ const Reference7750Rehaut = () => {
                   </div> */}
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       The Advertisement version had neither 1Mile or 1km marks,
                       but all tach scale markings. Likely unreleased in this way

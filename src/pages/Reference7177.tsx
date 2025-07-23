@@ -127,19 +127,19 @@ const Reference7177 = () => {
                   <span className="font-normal text-gray-700">7177</span>
                 </h1>
                 <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+                {/* <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
                   The 7177 Military Chronograph, introduced in 1977, represents
                   the pinnacle of military timepieces. Available both
                   commercially and through direct military organizations,
                   featuring ten distinct variants.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
         </section>
 
         {/* Key Differences Section */}
-        <section className="py-16 bg-white">
+        {/* <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-light text-gray-900 mb-6">
@@ -218,7 +218,7 @@ const Reference7177 = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Military Variants Overview */}
         <section className="py-16 bg-gray-50">
@@ -582,7 +582,7 @@ const Reference7177 = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 bg-gray-50">
+        {/* <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-light text-gray-900 mb-6">
               Explore the Military Legacy
@@ -600,7 +600,7 @@ const Reference7177 = () => {
               </button>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
 
       {/* Back to References */}

@@ -2,16 +2,57 @@ import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 
 const dialVariations = [
-  { name: "Four-Logo", path: "/references/7177/dial/four-logo" },
-  { name: "Baseline", path: "/references/7177/dial/baseline" },
-  { name: "Nato", path: "/references/7177/dial/nato" },
-  { name: "Swiss Shield", path: "/references/7177/dial/swiss-shield" },
-  { name: "Venezuelan MOD", path: "/references/7177/dial/venezuelan-mod" },
-  { name: "BUND", path: "/references/7177/dial/bund" },
-  { name: "Flying Tiger", path: "/references/7177/dial/flying-tiger" },
-  { name: "Royal Navy", path: "/references/7177/dial/royal-navy" },
-  { name: "UAE", path: "/references/7177/dial/uae" },
-  { name: "By Orfina", path: "/references/7177/dial/by-orfina" },
+  {
+    name: "Four-Logo",
+    path: "/references/7177/dial/four-logo",
+    img: "/images/7177 Photos/7177-4Logocrop.jpg",
+  },
+  {
+    name: "Baseline",
+    path: "/references/7177/dial/baseline",
+    img: "/images/7177 Photos/7177-Silvercrop.jpg",
+  },
+  {
+    name: "Nato",
+    path: "/references/7177/dial/nato",
+    img: "/images/7177 Photos/7177-Nato-Proper-BUNDcrop.jpg",
+  },
+
+  {
+    name: "Venezuelan MOD",
+    path: "/references/7177/dial/venezuelan-mod",
+    img: "/images/7177 Photos/7177-VMODcrop.jpg",
+  },
+  {
+    name: "BUND",
+    path: "/references/7177/dial/bund",
+    img: "/images/7177 Photos/7177-BUNDcrop.jpg",
+  },
+  {
+    name: "Flying Tiger",
+    path: "/references/7177/dial/flying-tiger",
+    img: "/images/7177 Photos/7177-Tiger-Silvercrop.jpg",
+  },
+  {
+    name: "Royal Navy",
+    path: "/references/7177/dial/royal-navy",
+    img: "/images/7177 Photos/7177-RoyalNavy-NTScrop.jpg",
+  },
+  {
+    name: "By Orfina",
+    path: "/references/7177/dial/by-orfina",
+    img: "/images/7177 Photos/7177-ByOrfinacrop.jpg",
+  },
+  {
+    name: "UAE",
+    path: "/references/7177/dial/uae",
+    img: "/images/7177 Photos/7177-UAE-Mk.2crop.jpg",
+  },
+  {
+    name: "Swiss Shield",
+    path: "/references/7177/dial/swiss-shield",
+    img: "/images/7177 Photos/7177 Swiss Shieldcrop.jpg",
+  },
 ];
 
 const placeholderImg = "/lovable-uploads/opd-watch.png";
@@ -84,17 +125,14 @@ const Reference7177Dial = () => {
                   className="group block animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
                   style={{ animationDelay: `${500 + idx * 100}ms` }}
                 >
-                  <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
-                    <div className="p-6 flex flex-col items-center text-center">
-                      <div className="relative w-20 h-20 mb-4 flex items-center justify-center">
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-full transform group-hover:rotate-12 transition-transform duration-300"></div>
-                        <img
-                          src={placeholderImg}
-                          alt={`${variation.name} Dial`}
-                          className="relative w-16 h-16 object-contain z-10"
-                        />
-                      </div>
-                      <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gray-700 transition-colors">
+                  <div className="bg-white border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
+                    <div className="flex flex-col items-center text-center">
+                      <img
+                        src={variation.img}
+                        alt={`${variation.name} Dial`}
+                        className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      />
+                      <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gray-700 transition-colors mt-2">
                         {variation.name}
                       </h3>
                       <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent group-hover:via-black transition-colors duration-300"></div>
@@ -106,7 +144,7 @@ const Reference7177Dial = () => {
           </div>
 
           {/* Information Section */}
-          <div className="mt-20 sm:mt-24 lg:mt-32">
+          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
               <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
                 Military Heritage
@@ -135,7 +173,7 @@ const Reference7177Dial = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
