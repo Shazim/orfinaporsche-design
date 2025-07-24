@@ -172,7 +172,7 @@ const Reference7177Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7176s-caseback.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg",
                         alt: "7177 Caseback Engraving",
                         title: "7177 Caseback Engraving",
                         subtitle: "Reference 7177",
@@ -181,7 +181,7 @@ const Reference7177Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/images/7177 Photos/7176s-caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg"
                       alt="7177 Caseback Engraving"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
@@ -207,7 +207,7 @@ const Reference7177Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-SilverCase-3crop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg",
                         alt: "7177 Caseback Engraving",
                         title: "7177 Caseback Engraving",
                         subtitle: "Reference 7177",
@@ -216,7 +216,7 @@ const Reference7177Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <img
-                      src="/images/7177 Photos/7177-SilverCase-3crop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg"
                       alt="7177 Caseback Engraving"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />

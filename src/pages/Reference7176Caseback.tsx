@@ -130,7 +130,7 @@ const Reference7176Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg",
                         alt: "7176 Mk. 1 Caseback",
                         title: "7176 Mk. 1 Caseback",
                         subtitle: "Reference 7176",
@@ -139,7 +139,7 @@ const Reference7176Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
                       alt="7176 Mk. 1 Caseback"
                       className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
@@ -167,7 +167,7 @@ const Reference7176Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7176 Photos/7176D-Blue-Casebackcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg",
                         alt: "7176 D Caseback",
                         title: "7176 D Caseback",
                         subtitle: "Reference 7176",
@@ -176,7 +176,7 @@ const Reference7176Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7176 Photos/7176D-Blue-Casebackcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg"
                       alt="7176 D Caseback"
                       className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
@@ -278,7 +278,7 @@ const Reference7176Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7176-photos/7176s-caseback.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg",
                         alt: "7176 S Caseback",
                         title: "7176 S Caseback",
                         subtitle: "Reference 7176",
@@ -287,7 +287,7 @@ const Reference7176Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7176-photos/7176s-caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg"
                       alt="7176 S Caseback"
                       className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
@@ -315,7 +315,7 @@ const Reference7176Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7176-photos/7176 Prototype Caseback.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg",
                         alt: "7176 Prototype Caseback",
                         title: "7176 Prototype Caseback",
                         subtitle: "Reference 7176",
@@ -324,7 +324,7 @@ const Reference7176Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7176-photos/7176 Prototype Caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg"
                       alt="7176 Prototype Caseback"
                       className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"

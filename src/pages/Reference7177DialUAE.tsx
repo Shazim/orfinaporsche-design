@@ -151,7 +151,7 @@ const Reference7177DialUAE = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177 UAE Mk. 1 Dial.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20UAE%20Mk.%201%20Dial.jpg",
                         alt: "UAE Mk. 1 Dial",
                         title: "UAE Mk. 1 Dial",
                         subtitle: "With Tricolor Motif",
@@ -159,7 +159,7 @@ const Reference7177DialUAE = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177 UAE Mk. 1 Dial.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20UAE%20Mk.%201%20Dial.jpg"
                       alt="UAE Mk. 1 Dial"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
@@ -177,7 +177,7 @@ const Reference7177DialUAE = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-UAE-Mk.2crop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
                         alt: "UAE Mk. 2 Dial",
                         title: "UAE Mk. 2 Dial",
                         subtitle: "With Central Air Base Text",
@@ -185,7 +185,7 @@ const Reference7177DialUAE = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-UAE-Mk.2crop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg"
                       alt="UAE Mk. 2 Dial"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
@@ -301,7 +301,7 @@ const Reference7177DialUAE = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-UAE-Midcaseserial.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg",
                         alt: "UAE Mid-Caseback Serial",
                         title: "UAE Mid-Caseback Serial",
                         subtitle: "Unique Serial Number Placement",
@@ -310,7 +310,7 @@ const Reference7177DialUAE = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-UAE-Midcaseserial.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg"
                       alt="UAE Mid-Caseback Serial"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full max-w-sm h-80 rounded-lg"

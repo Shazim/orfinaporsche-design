@@ -41,7 +41,8 @@ const Reference7176 = () => {
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
       dial: "Civilian Dial",
-      image: "/images/7176 Photos/Alan-7176-1crop.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-1crop.jpg",
     },
     {
       id: 2,
@@ -51,7 +52,8 @@ const Reference7176 = () => {
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
       dial: "Military Dial",
-      image: "/images/7176 Photos/Alan-7176-Militarycrop.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-Militarycrop.jpg",
     },
     {
       id: 3,
@@ -61,7 +63,8 @@ const Reference7176 = () => {
       caseback: "7176 D Caseback",
       rehaut: "Yellow Triangle and Tachymetre",
       dial: "Civilian Dial, Military Dial, and Blue by Orfina Dial",
-      image: "/images/7176 Photos/7176D Front (wes)crop.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D%20Front%20(wes)crop.jpg",
     },
     {
       id: 4,
@@ -71,7 +74,8 @@ const Reference7176 = () => {
       caseback: "7176 S Caseback",
       rehaut: "Tachymetre",
       dial: "Civilian Dial and Blue by Orfina Dial",
-      image: "/images/7176 Photos/7176Scrop.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Scrop.jpg",
     },
   ];
 
@@ -199,55 +203,77 @@ const Reference7176 = () => {
 
                     {/* Content Section */}
                     <div className="space-y-8 lg:flex-1">
-                      {/* Specifications Grid */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Production Years
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{ref.years}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Finishes
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{ref.finishes}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Caseback
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{ref.caseback}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">Dial</h3>
-                          </div>
-                          <p className="text-gray-700">{ref.dial}</p>
-                        </div>
-                      </div>
-
-                      {/* Additional Details */}
-                      <div className="space-y-4 pt-6 border-t border-gray-200">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600 font-medium">
-                            Rehaut:
-                          </span>
-                          <span className="text-gray-900">{ref.rehaut}</span>
-                        </div>
+                      {/* Specifications Table */}
+                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                        <table className="w-full">
+                          <tbody className="divide-y divide-gray-200">
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Calendar className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Production Years
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {ref.years}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Layers className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Finishes
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {ref.finishes}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Caseback
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {ref.caseback}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Dial
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {ref.dial}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Rehaut
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {ref.rehaut}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -274,7 +300,7 @@ const Reference7176 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7176 Photos/7176s-PVD.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-PVD.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
@@ -296,7 +322,7 @@ const Reference7176 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7176 Photos/7176s-caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-caseback.jpg"
                       alt="Caseback"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
@@ -318,7 +344,7 @@ const Reference7176 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7176 Photos/TACHYMETRE Rehaut - Close-Up.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg"
                       alt="Rehaut Variations"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
@@ -340,7 +366,7 @@ const Reference7176 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7176 Photos/7176Button-Dial.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Dial.jpg"
                       alt="Dial Variations"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"

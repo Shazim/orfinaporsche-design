@@ -138,7 +138,7 @@ const Reference7750Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7750-photos/7750Mk1Casebackcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg",
                         alt: "7750 Caseback Mk. 1",
                         title: "Caseback Mk. 1",
                         subtitle: "Reference 7750",
@@ -147,7 +147,7 @@ const Reference7750Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7750-photos/7750Mk1Casebackcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg"
                       alt="7750 Caseback Mk. 1"
                       className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative max-w-sm h-80 rounded-lg"
@@ -175,7 +175,7 @@ const Reference7750Caseback = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
                         alt: "7750 Caseback Mk. 2",
                         title: "Caseback Mk. 2",
                         subtitle: "Reference 7750",
@@ -184,7 +184,7 @@ const Reference7750Caseback = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                       alt="7750 Caseback Mk. 2"
                       className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="relative max-w-sm h-80 rounded-lg"

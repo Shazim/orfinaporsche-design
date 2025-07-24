@@ -38,52 +38,150 @@ const Reference7177 = () => {
       title: "Baseline Military",
       subtitle: "The Foundation",
       description:
-        "The standard military variant featuring the iconic three dial elements: 'MILITARY', 'PORSCHE DESIGN', and the 'circle-3H logo'.",
+        "The standard military variant featuring the iconic three dial elements: 'MILITARY', 'PORSCHE DESIGN', and the 'circle-3H logo'. Available for both retail purchase and military issue.",
       features: [
         "Standard Military Dial",
         "Baseline Configuration",
-        "Public Availability",
+        "Public & Military Availability",
+        "Three Key Dial Elements",
       ],
-      image: "/lovable-uploads/7177-baseline.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
     },
     {
       id: 2,
       title: "By Orfina",
       subtitle: "The Manufacturer's Mark",
       description:
-        "Distinctive variant with manufacturer identification, showcasing the partnership between Porsche Design and Orfina.",
+        "Distinctive variant with manufacturer identification, showcasing the partnership between Porsche Design and Orfina with additional dial printing.",
       features: [
         "Orfina Branding",
         "Manufacturer Identification",
-        "Limited Production",
+        "Additional Dial Printing",
+        "Partnership Heritage",
       ],
-      image: "/lovable-uploads/7177-baseline.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
     },
     {
       id: 3,
       title: "BUND",
       subtitle: "German Federal Forces",
       description:
-        "Issued to German Federal Forces, featuring specialized markings and enhanced durability specifications.",
+        "Issued to German Federal Forces (Bundeswehr), featuring specialized markings and unique caseback engravings specific to German military requirements.",
       features: [
         "German Military Issue",
-        "Enhanced Durability",
-        "Specialized Markings",
+        "Bundeswehr Specifications",
+        "Specialized Caseback Engravings",
+        "Military-Specific Markings",
       ],
-      image: "/lovable-uploads/bund-with-baseline-dial.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
     },
     {
       id: 4,
       title: "NATO",
       subtitle: "Alliance Standard",
       description:
-        "NATO-issued variant with alliance-specific markings and standardized military specifications.",
+        "NATO-issued variant with alliance-specific markings, unique dial printing, and standardized military specifications for international deployment.",
       features: [
         "NATO Specifications",
         "Alliance Markings",
-        "Standardized Issue",
+        "International Standard",
+        "Additional Dial Elements",
       ],
-      image: "/lovable-uploads/7177-baseline.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
+    },
+    {
+      id: 5,
+      title: "Flying Tiger",
+      subtitle: "Aviation Heritage",
+      description:
+        "Aviation-focused variant with specialized markings and unique caseback engravings related to military aviation operations.",
+      features: [
+        "Aviation Specifications",
+        "Flying Tiger Markings",
+        "Specialized Aviation Features",
+        "Unique Caseback Design",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Silvercrop.jpg",
+    },
+    {
+      id: 6,
+      title: "Royal Navy",
+      subtitle: "British Naval Forces",
+      description:
+        "British Royal Navy variant featuring naval-specific markings, specialized dial printing, and unique caseback engravings for maritime operations.",
+      features: [
+        "Royal Navy Issue",
+        "Maritime Specifications",
+        "Naval Markings",
+        "Specialized Caseback",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
+    },
+    {
+      id: 7,
+      title: "Swiss Shield",
+      subtitle: "Swiss Military",
+      description:
+        "Swiss military variant with national insignia and specialized markings unique to Swiss armed forces requirements.",
+      features: [
+        "Swiss Military Issue",
+        "National Shield Insignia",
+        "Swiss-Specific Markings",
+        "Military Grade Specifications",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
+    },
+    {
+      id: 8,
+      title: "UAE",
+      subtitle: "United Arab Emirates",
+      description:
+        "United Arab Emirates military variant with regional-specific markings and unique caseback engravings for Middle Eastern deployment.",
+      features: [
+        "UAE Military Issue",
+        "Regional Specifications",
+        "Arabic Markings",
+        "Desert Operation Features",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
+    },
+    {
+      id: 9,
+      title: "Venezuelan MOD",
+      subtitle: "Ministry of Defense",
+      description:
+        "Venezuelan Ministry of Defense variant with nation-specific markings and specialized caseback engravings for South American military operations.",
+      features: [
+        "Venezuelan MOD Issue",
+        "Ministry Specifications",
+        "National Military Markings",
+        "Regional Deployment Features",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+    },
+    {
+      id: 10,
+      title: "Four Logo",
+      subtitle: "Multi-Organization",
+      description:
+        "Unique variant featuring four different organizational logos, representing multi-national or multi-service deployment capabilities.",
+      features: [
+        "Four Organizational Logos",
+        "Multi-Service Compatibility",
+        "Complex Dial Configuration",
+        "International Deployment",
+      ],
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
     },
   ];
 
@@ -128,10 +226,11 @@ const Reference7177 = () => {
                 </h1>
                 <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
                 {/* <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-                  The 7177 Military Chronograph, introduced in 1977, represents
-                  the pinnacle of military timepieces. Available both
-                  commercially and through direct military organizations,
-                  featuring ten distinct variants.
+                  The 7177 Military Chronograph, introduced in 1977 and produced
+                  until 1983 when Porsche Design ended its partnership with
+                  Orfina. Available for both retail purchase and direct military
+                  issue, these watches are considered "quasi-issued" as the
+                  baseline military dial was made available to the public.
                 </p> */}
               </div>
             </div>
@@ -220,17 +319,102 @@ const Reference7177 = () => {
           </div>
         </section> */}
 
+        {/* Key Differences Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
+                Military Distinctions
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                The 7177 military variants were identical to the civilian 7176s,
+                including the case, except in five main ways that distinguished
+                them for military use.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="group p-8 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-center mb-4">
+                  <Layers className="w-6 h-6 text-gray-600 mr-3" />
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Available Finishes
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Specialized military finishes including unique coatings not
+                  available in civilian models.
+                </p>
+              </div>
+
+              <div className="group p-8 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-center mb-4">
+                  <Settings className="w-6 h-6 text-gray-600 mr-3" />
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Caseback Engravings
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Military-specific engravings and markings unique to each
+                  variant and organization.
+                </p>
+              </div>
+
+              <div className="group p-8 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-center mb-4">
+                  <Clock className="w-6 h-6 text-gray-600 mr-3" />
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Chronograph Hands
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Enhanced central chronograph-minutes hand and specialized hour
+                  chronograph hands.
+                </p>
+              </div>
+
+              <div className="group p-8 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-center mb-4">
+                  <Globe className="w-6 h-6 text-gray-600 mr-3" />
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Rehaut Design
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Military-specific rehaut configurations optimized for tactical
+                  timing requirements.
+                </p>
+              </div>
+
+              <div className="group p-8 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg lg:col-span-2">
+                <div className="flex items-center mb-4">
+                  <Shield className="w-6 h-6 text-gray-600 mr-3" />
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Military Dial
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Distinctive dial featuring the three core elements:
+                  "MILITARY", "PORSCHE DESIGN", and "circle-3H logo", plus
+                  additional unique printing for each variant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Military Variants Overview */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
-                Military Variants
+                Ten Military Variants
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Explore the distinguished military variants of the Reference
-                7177, each with unique characteristics and military
-                specifications.
+                Discover all ten distinguished military variants of the
+                Reference 7177, each featuring the iconic three dial elements
+                ('MILITARY', 'PORSCHE DESIGN', and 'circle-3H logo') plus unique
+                additional markings and caseback engravings.
               </p>
             </div>
 
@@ -320,26 +504,37 @@ const Reference7177 = () => {
                       </div>
 
                       {/* Military Specifications */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                            <h4 className="font-medium text-gray-900">
-                              Production Period
-                            </h4>
-                          </div>
-                          <p className="text-gray-700">1977-1983</p>
-                        </div>
-
-                        <div className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Shield className="w-5 h-5 text-gray-600 mr-3" />
-                            <h4 className="font-medium text-gray-900">
-                              Military Issue
-                            </h4>
-                          </div>
-                          <p className="text-gray-700">Direct & Commercial</p>
-                        </div>
+                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                        <table className="w-full">
+                          <tbody className="divide-y divide-gray-200">
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Calendar className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Production Period
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                1977-1983
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Shield className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Military Issue
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                Direct & Commercial
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -357,11 +552,11 @@ const Reference7177 = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/references/7750/case-finishes" className="group">
+              <Link to="/references/7177/case-finishes" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
-                      src="/lovable-uploads/7177-case-finishes.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
@@ -378,7 +573,7 @@ const Reference7177 = () => {
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
-                      src="/lovable-uploads/7177-caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Black-Casebackcrop.jpg"
                       alt="Caseback"
                       className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
@@ -391,11 +586,11 @@ const Reference7177 = () => {
                 </div>
               </Link>
 
-              <Link to="/references/7177/caseback" className="group">
+              <Link to="/references/7177/rehaut" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
-                      src="/lovable-uploads/7177-standard-rehaut.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
                       alt="Rehaut Variations"
                       className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
@@ -408,11 +603,11 @@ const Reference7177 = () => {
                 </div>
               </Link>
 
-              <Link to="/references/7177/caseback" className="group">
+              <Link to="/references/7177/dial" className="group">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <img
-                      src="/lovable-uploads/7177-baseline.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MilitaryGroup-2crop.jpg"
                       alt="Dial Variations"
                       className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     />
@@ -576,6 +771,20 @@ const Reference7177 = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Additional Historical Note */}
+                {/* <div className="mt-8 p-6 bg-gray-100 rounded-xl">
+                  <h4 className="text-lg font-medium text-gray-900 mb-3">
+                    Historical Note
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    After 1983, when Porsche Design ended its partnership with
+                    Orfina, "Prestige Watch International" signed pieces
+                    emerged, marking the end of the original 7177 production era
+                    and the beginning of a new chapter in the timepiece's
+                    legacy.
+                  </p>
+                </div> */}
               </div>
             </div>
           </div>

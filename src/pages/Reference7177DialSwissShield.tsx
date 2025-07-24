@@ -177,7 +177,7 @@ const Reference7177DialSwissShield = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177 Swiss Shieldcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
                         alt: "Swiss Shield Dial",
                         title: "Swiss Shield Dial",
                         subtitle: "Swiss Military Issue",
@@ -186,7 +186,7 @@ const Reference7177DialSwissShield = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177 Swiss Shieldcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg"
                       alt="Swiss Shield Dial"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full max-w-sm h-80 rounded-lg"
@@ -224,7 +224,7 @@ const Reference7177DialSwissShield = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-Green-2crop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg",
                         alt: "7177 Baseline Olive Green PVD",
                         title: "7177 Baseline Olive Green PVD",
                         subtitle: "Standard Configuration",
@@ -232,7 +232,7 @@ const Reference7177DialSwissShield = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-Green-2crop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg"
                       alt="7177 Baseline Olive Green PVD"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
@@ -258,7 +258,7 @@ const Reference7177DialSwissShield = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177 Swiss Shield Setcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg",
                         alt: "Swiss Shield Set",
                         title: "Swiss Shield Set",
                         subtitle: "Complete Military Configuration",
@@ -266,7 +266,7 @@ const Reference7177DialSwissShield = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177 Swiss Shield Setcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg"
                       alt="Swiss Shield Set"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"

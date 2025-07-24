@@ -170,7 +170,7 @@ const Reference7177DialFourLogo = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-4Logocrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
                         alt: "Four-Logo Dial",
                         title: "Four-Logo Dial",
                         subtitle: "First ~500 Serial Numbers",
@@ -179,7 +179,7 @@ const Reference7177DialFourLogo = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-4Logocrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
                       alt="Four-Logo Dial"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full max-w-sm h-80 rounded-lg"
@@ -206,7 +206,7 @@ const Reference7177DialFourLogo = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-4Logo-Casebackcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg",
                         alt: "Four-Logo Caseback",
                         title: "Four-Logo Caseback",
                         subtitle: "Serialized Caseback",
@@ -215,7 +215,7 @@ const Reference7177DialFourLogo = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-4Logo-Casebackcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg"
                       alt="Four-Logo Caseback"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full max-w-sm h-80 rounded-lg"

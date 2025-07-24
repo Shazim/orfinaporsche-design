@@ -176,7 +176,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/7176S-PVDcrop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-PVDcrop.jpg",
                       alt: "7176 S Black PVD",
                       title: "Black PVD",
                     }}
@@ -209,7 +209,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176-photos/7176Scrop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176Scrop.jpg",
                       alt: "7176 S Silver/Sablé",
                       title: "Silver/Sablé",
                     }}
@@ -247,7 +247,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/7176 - Polished -3crop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20-%20Polished%20-3crop.jpg",
                       alt: "7176 S Polished",
                       title: "Polished",
                     }}
@@ -279,7 +279,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/Alan-7176-Militarycrop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-Militarycrop.jpg",
                       alt: "7176 Military Grey PVD",
                       title: "Grey PVD",
                     }}
@@ -311,7 +311,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/7176 Military.png",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20Military.png",
                       alt: "7176 Military Green PVD",
                       title: "Green PVD",
                     }}
@@ -343,7 +343,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/7176D-Bluecrop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Bluecrop.jpg",
                       alt: "7176 D Cadet Grey PVD",
                       title: "Cadet Grey PVD",
                     }}
@@ -375,7 +375,7 @@ const Reference7176CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={{
-                      src: "/images/7176 Photos/7176S-NTS.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-NTS.jpg",
                       alt: "7176 S NTS PVD",
                       title: "NTS PVD",
                     }}
