@@ -278,7 +278,7 @@ const Reference7177DialRoyalNavy = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/Royal Navy Bracelet -1.png",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
                         alt: "Royal Navy on Issued Bracelet",
                         title: "Royal Navy on Issued Bracelet",
                         subtitle: "Standard Configuration",
@@ -287,7 +287,7 @@ const Reference7177DialRoyalNavy = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/Royal Navy Bracelet -1.png"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
                       alt="Royal Navy on Issued Bracelet"
                       className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-80 rounded-lg"
@@ -315,7 +315,7 @@ const Reference7177DialRoyalNavy = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-RoyalNavy-NTScrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
                         alt: "Royal Navy with NTS PVD Case",
                         title: "Royal Navy with NTS PVD Case",
                         subtitle: "Alternative Configuration",
@@ -324,7 +324,7 @@ const Reference7177DialRoyalNavy = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-RoyalNavy-NTScrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
                       alt="Royal Navy with NTS PVD Case"
                       className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-80 rounded-lg"
@@ -348,125 +348,7 @@ const Reference7177DialRoyalNavy = () => {
               </div>
             </div>
 
-            {/* Bracelet Details */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
-              <div className="bg-gray-50 p-8 sm:p-12 rounded-lg border-l-4 border-black">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    ⚓
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-semibold text-black">
-                    Issued Bracelet Style
-                  </h2>
-                </div>
-
-                <div className="space-y-6">
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    The Royal Navy variants were typically issued with a
-                    distinctive bracelet style that differs from other 7177
-                    military variants, suggesting a specific procurement or
-                    configuration requirement.
-                  </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    {[
-                      {
-                        src: "/images/7177 Photos/Royal Navy Bracelet - 2.png",
-                        title: "Bracelet Detail 1",
-                        subtitle: "Link Configuration",
-                      },
-                      {
-                        src: "/images/7177 Photos/Royal Navy Bracelet - 3.png",
-                        title: "Bracelet Detail 2",
-                        subtitle: "Clasp Mechanism",
-                      },
-                      {
-                        src: "/images/7177 Photos/Royal Navy Bracelet -1.png",
-                        title: "Complete Configuration",
-                        subtitle: "Full Setup",
-                      },
-                    ].map((image, index) => (
-                      <div key={index} className="flex flex-col items-center">
-                        <div
-                          className="relative group cursor-pointer"
-                          onClick={() =>
-                            setFullScreenImage({
-                              src: image.src,
-                              alt: image.title,
-                              title: image.title,
-                              subtitle: image.subtitle,
-                            })
-                          }
-                        >
-                          <ImageWithLoader
-                            src={image.src}
-                            alt={image.title}
-                            className="w-full h-48 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                            skeletonClassName="w-full h-48 rounded-lg"
-                          />
-                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                            <div className="bg-white bg-opacity-90 text-gray-900 px-3 py-1 rounded-full text-xs font-medium">
-                              Click to zoom
-                            </div>
-                          </div>
-                        </div>
-                        <span className="block text-sm text-gray-600 text-center mt-2">
-                          {image.title}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Historical Context */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  4
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Historical Context
-                </h2>
-              </div>
-
-              <div className="bg-gray-50 p-8 sm:p-12 rounded-lg border-l-4 border-black">
-                <div className="space-y-6">
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    The Royal Navy has a long tradition of precision timekeeping
-                    for naval operations, making the procurement of Swiss
-                    chronographs a natural extension of their equipment
-                    requirements.
-                  </p>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-white p-6 rounded-lg border border-gray-200">
-                      <h4 className="font-semibold text-black mb-3">
-                        Naval Timing Requirements
-                      </h4>
-                      <p className="text-sm text-gray-600 leading-relaxed">
-                        Naval operations require precise timing for navigation,
-                        communications, and tactical coordination. The Royal
-                        Navy's interest in the 7177 chronograph reflects these
-                        operational needs.
-                      </p>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-lg border border-gray-200">
-                      <h4 className="font-semibold text-black mb-3">
-                        NATO Evaluation Program
-                      </h4>
-                      <p className="text-sm text-gray-600 leading-relaxed">
-                        If issued as NATO evaluation pieces, these watches would
-                        represent part of a broader alliance-wide assessment of
-                        Swiss chronograph technology for military applications.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

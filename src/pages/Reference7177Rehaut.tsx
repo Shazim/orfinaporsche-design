@@ -172,7 +172,7 @@ const Reference7177Rehaut = () => {
                           className="relative group cursor-pointer"
                           onClick={() =>
                             setFullScreenImage({
-                              src: "/images/7177 Photos/7177-Silvercrop.jpg",
+                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
                               alt: "7177 Standard Rehaut",
                               title: "7177 Standard Rehaut",
                               subtitle: "Reference 7177",
@@ -181,7 +181,7 @@ const Reference7177Rehaut = () => {
                         >
                           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                           <img
-                            src="/images/7177 Photos/7177-Silvercrop.jpg"
+                            src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg"
                             alt="7177 Standard Rehaut"
                             className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           />
@@ -205,7 +205,7 @@ const Reference7177Rehaut = () => {
                           className="relative group cursor-pointer"
                           onClick={() =>
                             setFullScreenImage({
-                              src: "/images/7177 Photos/7177-4Logocrop.jpg",
+                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
                               alt: "7177 Crooked Seven Rehaut",
                               title: "7177 Crooked Seven Rehaut",
                               subtitle: "Reference 7177",
@@ -214,7 +214,7 @@ const Reference7177Rehaut = () => {
                         >
                           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                           <img
-                            src="/images/7177 Photos/7177-4Logocrop.jpg"
+                            src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
                             alt="7177 Crooked Seven Rehaut"
                             className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           />
@@ -241,7 +241,7 @@ const Reference7177Rehaut = () => {
                         className="relative group cursor-pointer"
                         onClick={() =>
                           setFullScreenImage({
-                            src: "/images/7177 Photos/7177-Crooked Seven Rehaut-Close-Up-.jpg",
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg",
                             alt: "7177 Crooked Seven Rehaut - Close-Up",
                             title: "7177 Crooked Seven Rehaut - Close-Up",
                             subtitle: "Reference 7177",
@@ -250,7 +250,7 @@ const Reference7177Rehaut = () => {
                       >
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                         <img
-                          src="/images/7177 Photos/7177-Crooked Seven Rehaut-Close-Up-.jpg"
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
                           alt="7177 Crooked Seven Rehaut - Close-Up"
                           className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                         />

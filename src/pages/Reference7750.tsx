@@ -43,7 +43,8 @@ const Reference7750 = () => {
       caseback: "Mk. 1",
       rehaut: "1Mile, 1KM, Advertisement",
       dial: "Orfina Dial",
-      image: "/images/7750-photos/7750-Orfina.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg",
       description:
         "The inaugural generation that established the legendary 7750 lineage.",
     },
@@ -57,7 +58,8 @@ const Reference7750 = () => {
       caseback: "Mk. 2",
       rehaut: "1Mile, 1KM, Advertisement",
       dial: "PD Dial",
-      image: "/images/7750-photos/7750-Flat-PD.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
       description:
         "A refined iteration with enhanced dial configuration and improved mechanics.",
     },
@@ -71,7 +73,8 @@ const Reference7750 = () => {
       caseback: "Mk. 2, Mk. 3",
       rehaut: "1Mile, 1KM, Advertisement",
       dial: "PD Dial",
-      image: "/images/7750-photos/7750-PD-Thin.jpg",
+      image:
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
       description:
         "The pinnacle of 7750 engineering with advanced PVD coating technology.",
     },
@@ -208,55 +211,77 @@ const Reference7750 = () => {
                         </p>
                       </div>
 
-                      {/* Specifications Grid */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Production Years
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{gen.years}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Finishes
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{gen.finishes}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">
-                              Caseback
-                            </h3>
-                          </div>
-                          <p className="text-gray-700">{gen.case}</p>
-                        </div>
-
-                        <div className="group p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
-                          <div className="flex items-center mb-3">
-                            <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                            <h3 className="font-medium text-gray-900">Dial</h3>
-                          </div>
-                          <p className="text-gray-700">{gen.dial}</p>
-                        </div>
-                      </div>
-
-                      {/* Additional Details */}
-                      <div className="space-y-4 pt-6 border-t border-gray-200">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600 font-medium">
-                            Rehaut:
-                          </span>
-                          <span className="text-gray-900">{gen.rehaut}</span>
-                        </div>
+                      {/* Specifications Table */}
+                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                        <table className="w-full">
+                          <tbody className="divide-y divide-gray-200">
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Calendar className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Production Years
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.years}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Layers className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Finishes
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.finishes}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Caseback
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.case}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Dial
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.dial}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Rehaut
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.rehaut}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -287,7 +312,7 @@ const Reference7750 = () => {
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
                     <ImageWithLoader
-                      src="/images/7750-photos/7750-Flat-PD.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.3-Casecrop.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
@@ -308,10 +333,11 @@ const Reference7750 = () => {
               <Link to="/references/7750/caseback" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
-                    <img
-                      src="/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg"
                       alt="Caseback"
                       className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
@@ -329,10 +355,11 @@ const Reference7750 = () => {
               <Link to="/references/7750/rehaut" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
-                    <img
-                      src="/images/7750-photos/7750-Rehaut-1KM.jpg"
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
                       alt="Rehaut Variations"
                       className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
@@ -350,10 +377,11 @@ const Reference7750 = () => {
               <Link to="/references/7750/dial" className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0">
-                    <img
-                      src="/images/7750-photos/7750-Orfina.jpg"
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
                       alt="Dial Variations"
                       className="w-full h-full object-cover object-center"
+                      skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>

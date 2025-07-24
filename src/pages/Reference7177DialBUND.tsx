@@ -212,7 +212,7 @@ const Reference7177DialBUND = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177 BUND Singe-Struck Caseback.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg",
                         alt: "BUND Single-Struck Caseback",
                         title: "BUND Single-Struck Caseback",
                         subtitle: "Initial NSN 6645-12-182-1763",
@@ -220,7 +220,7 @@ const Reference7177DialBUND = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177 BUND Singe-Struck Caseback.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg"
                       alt="BUND Single-Struck Caseback"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
@@ -239,7 +239,7 @@ const Reference7177DialBUND = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/Double-Strike-Bundcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg",
                         alt: "BUND Double-Struck Caseback",
                         title: "BUND Double-Struck Caseback",
                         subtitle: "Original NSN Crossed Out, New NSN Added",
@@ -247,7 +247,7 @@ const Reference7177DialBUND = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/Double-Strike-Bundcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg"
                       alt="BUND Double-Struck Caseback"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
@@ -291,7 +291,7 @@ const Reference7177DialBUND = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-BUNDcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
                         alt: "BUND with Baseline Dial",
                         title: "BUND with Baseline Dial",
                         subtitle: "Original Configuration",
@@ -299,7 +299,7 @@ const Reference7177DialBUND = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-BUNDcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg"
                       alt="BUND with Baseline Dial"
                       className="w-full h-56 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-56 rounded-lg"
@@ -325,7 +325,7 @@ const Reference7177DialBUND = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-MK2-ServiceDialcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg",
                         alt: "Mk. 1 Service Dial",
                         title: "Mk. 1 Service Dial",
                         subtitle: "Porsche Design Replaced with CHRONOGRAPH",
@@ -333,7 +333,7 @@ const Reference7177DialBUND = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-MK2-ServiceDialcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg"
                       alt="Mk. 1 Service Dial"
                       className="w-full h-56 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-56 rounded-lg"
@@ -359,7 +359,7 @@ const Reference7177DialBUND = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "/images/7177 Photos/7177-ByOrfinacrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
                         alt: "Mk. 2 Service Dial",
                         title: "Mk. 2 Service Dial",
                         subtitle: "Luminova, No 3H Marking",
@@ -367,7 +367,7 @@ const Reference7177DialBUND = () => {
                     }
                   >
                     <ImageWithLoader
-                      src="/images/7177 Photos/7177-ByOrfinacrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg"
                       alt="Mk. 2 Service Dial"
                       className="w-full h-56 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-56 rounded-lg"
@@ -413,7 +413,7 @@ const Reference7177DialBUND = () => {
                   className="relative group cursor-pointer"
                   onClick={() =>
                     setFullScreenImage({
-                      src: "/images/7177 Photos/7177-Bund-Box-2crop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg",
                       alt: "BUND Box 1",
                       title: "BUND Box",
                       subtitle: "NSN 6645-12-182-1763",
@@ -421,7 +421,7 @@ const Reference7177DialBUND = () => {
                   }
                 >
                   <ImageWithLoader
-                    src="/images/7177 Photos/7177-Bund-Box-2crop.jpg"
+                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg"
                     alt="BUND Box 1"
                     className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     skeletonClassName="w-full h-64 rounded-lg"
@@ -437,7 +437,7 @@ const Reference7177DialBUND = () => {
                   className="relative group cursor-pointer"
                   onClick={() =>
                     setFullScreenImage({
-                      src: "/images/7177 Photos/7177-Bund-Box-3crop.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg",
                       alt: "BUND Box 2",
                       title: "BUND Box Interior",
                       subtitle: "Military Issue Packaging",
@@ -445,7 +445,7 @@ const Reference7177DialBUND = () => {
                   }
                 >
                   <ImageWithLoader
-                    src="/images/7177 Photos/7177-Bund-Box-3crop.jpg"
+                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg"
                     alt="BUND Box 2"
                     className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     skeletonClassName="w-full h-64 rounded-lg"

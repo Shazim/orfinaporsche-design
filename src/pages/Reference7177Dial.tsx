@@ -5,53 +5,53 @@ const dialVariations = [
   {
     name: "Four-Logo",
     path: "/references/7177/dial/four-logo",
-    img: "/images/7177 Photos/7177-4Logocrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
   },
   {
     name: "Baseline",
     path: "/references/7177/dial/baseline",
-    img: "/images/7177 Photos/7177-Silvercrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
   },
   {
     name: "Nato",
     path: "/references/7177/dial/nato",
-    img: "/images/7177 Photos/7177-Nato-Proper-BUNDcrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
   },
 
   {
     name: "Venezuelan MOD",
     path: "/references/7177/dial/venezuelan-mod",
-    img: "/images/7177 Photos/7177-VMODcrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
   },
   {
     name: "BUND",
     path: "/references/7177/dial/bund",
-    img: "/images/7177 Photos/7177-BUNDcrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
   },
   {
     name: "Flying Tiger",
     path: "/references/7177/dial/flying-tiger",
-    img: "/images/7177 Photos/7177-Tiger-Silvercrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Silvercrop.jpg",
   },
   {
     name: "Royal Navy",
     path: "/references/7177/dial/royal-navy",
-    img: "/images/7177 Photos/7177-RoyalNavy-NTScrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
   },
   {
     name: "By Orfina",
     path: "/references/7177/dial/by-orfina",
-    img: "/images/7177 Photos/7177-ByOrfinacrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
   },
   {
     name: "UAE",
     path: "/references/7177/dial/uae",
-    img: "/images/7177 Photos/7177-UAE-Mk.2crop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
   },
   {
     name: "Swiss Shield",
     path: "/references/7177/dial/swiss-shield",
-    img: "/images/7177 Photos/7177 Swiss Shieldcrop.jpg",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
   },
 ];
 
