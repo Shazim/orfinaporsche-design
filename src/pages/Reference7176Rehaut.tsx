@@ -109,7 +109,7 @@ const Reference7176Rehaut = () => {
                   </div>
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                      <strong>Found On:</strong> 7176, 7176 Military
                     </p>
                   </div>
 
@@ -234,19 +234,13 @@ const Reference7176Rehaut = () => {
                   </div>
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                      <strong>Found On:</strong> 7176 D, 7176 S
                     </p>
                   </div>
 
                   <div className="">
                     <p className="text-base sm:text-lg  leading-relaxed mb-4">
-                      The TACHYMETRE rehaut removes the triangle at twelve
-                      o'clock, possesses an overall thicker font, and the word
-                      "TACHYMETRE" is printed between 12 and 2 O'clock.
-                      <br></br>
-                      TACHYMETRE Rehaut on 7176 D and 7176 S models, with
-                      cleaner design, enhanced typography, and removal of the
-                      triangle marker.
+                      The TACHYMETRE rehaut removes the triangle at twelve o'clock, possesses an overall thicker font, and the word "TACHYMETRE" is printed between 12 and 2 O'clock. Additionally, the number 500 is included in the Rehaut count, while the numbers 65 and 75 are excluded. The yellow triangle above 60 is replaced with a white dot.
                     </p>
                   </div>
 

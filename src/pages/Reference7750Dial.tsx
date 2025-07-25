@@ -89,7 +89,7 @@ const Reference7750Dial = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      Found on Mk. 1 Case with Mk. 1 Caseback
+                      <b>Found On:</b> Mk. 1 Case with Mk. 1 caseback
                     </p>
                   </div>
 
@@ -185,7 +185,7 @@ const Reference7750Dial = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      Found across all case marks and Mk. 2 Casebacks
+                      <b>Found On:</b> All case marks and Mk. 2 caseback
                     </p>
                   </div>
 

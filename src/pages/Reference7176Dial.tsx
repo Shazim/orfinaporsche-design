@@ -337,41 +337,36 @@ const Reference7176Dial = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="flex flex-col items-center">
-                    <div
-                      className="relative group cursor-pointer"
-                      onClick={() =>
-                        setFullScreenImage({
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Military.png",
-                          alt: "7176 Military with Military Dial",
-                          title: "7176 Military with Military Dial",
-                          subtitle: "Reference 7176",
-                        })
-                      }
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Military.png"
-                        alt="7176 Military with Military Dial"
-                        className="relative w-full h-64 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="relative w-full h-64 rounded-lg"
-                      />
+                <div className="flex flex-col items-center justify-center">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Military.png",
+                        alt: "7176 Military with Military Dial",
+                        title: "7176 Military with Military Dial",
+                        subtitle: "Reference 7176",
+                      })
+                    }
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Military.png"
+                      alt="7176 Military with Military Dial"
+                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                    />
 
-                      {/* Click indicator */}
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
                       </div>
                     </div>
-                    <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
-                      7176 Military with Military Dial
-                    </span>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <PlaceholderImage title="7176 D with Military Dial" />
-                  </div>
+                  <span className="block text-sm sm:text-base text-gray-600 text-center mt-4 font-medium">
+                    7176 Military with Military Dial
+                  </span>
                 </div>
               </div>
             </div>
@@ -423,7 +418,7 @@ const Reference7176Dial = () => {
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      <strong>Found On:</strong> 7176 D, 7176 S variants
+                      <strong>Found On:</strong> 7176 D, 7176 S
                     </p>
                   </div>
 
@@ -433,16 +428,7 @@ const Reference7176Dial = () => {
                     </h3>
                     <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                       <p>
-                        It is worth noting that Blue by Orfina Dials have been
-                        found on the market. These exist on both 7176 D and 7176
-                        S variants. They feature two common traits found on 7177
-                        examples. The additional "by ORFINA" text under PORSCHE
-                        DESIGN and their Cadet Grey PVD coating, which differs
-                        from that of the 7176 Military's Grey PVD coating.
-                      </p>
-                      <p>
-                        They have been found with 7176 D, 7176 S, and 7176
-                        Prototype Casebacks.
+                        It is worth noting that Blue by Orfina Dials have been found on the market. These exist on both 7176 D and 7176 S variants. They feature two common traits found on 7177 examples. The additional "by ORFINA" text under PORSCHE DESIGN and their Cadet Grey PVD coating, which differs from that of the 7176 Military's Grey PVD coating.
                       </p>
                     </div>
                   </div>
