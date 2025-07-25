@@ -169,71 +169,73 @@ const Reference7177DialFourLogo = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
-                        alt: "Four-Logo Dial",
-                        title: "Four-Logo Dial",
-                        subtitle: "First ~500 Serial Numbers",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
-                      alt="Four-Logo Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full max-w-sm h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                {/* Images Side by Side */}
+                <div className="space-y-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* Four-Logo Dial Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
+                            alt: "Four-Logo Dial",
+                            title: "Four-Logo Dial",
+                            subtitle: "First ~500 Serial Numbers",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
+                          alt="Four-Logo Dial"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        Four-Logo Dial
+                      </span>
                     </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Four-Logo Dial
-                  </span>
-                </div>
-              </div>
-            </div>
 
-            {/* Caseback Details */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="flex flex-col items-center justify-center order-2 lg:order-1">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg",
-                        alt: "Four-Logo Caseback",
-                        title: "Four-Logo Caseback",
-                        subtitle: "Serialized Caseback",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg"
-                      alt="Four-Logo Caseback"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full max-w-sm h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                    {/* Four-Logo Caseback Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg",
+                            alt: "Four-Logo Caseback",
+                            title: "Four-Logo Caseback",
+                            subtitle: "Serialized Caseback",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logo-Casebackcrop.jpg"
+                          alt="Four-Logo Caseback"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        Four-Logo Caseback
+                      </span>
                     </div>
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Four-Logo Caseback
-                  </span>
                 </div>
               </div>
             </div>

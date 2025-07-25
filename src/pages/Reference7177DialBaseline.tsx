@@ -113,45 +113,73 @@ const Reference7177DialBaseline = () => {
             </p>
           </div>
 
-          {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-4">
-                All 7177 or military variants have "MILITARY", "PORSCHE DESIGN",
-                and the “circle-3H logo” printed on the dial. This dial is
-                considered the Baseline Mk. 1 variation.
-              </p>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                There are ten main 7177 or military variants. These variants
-                feature the three elements noted on the Baseline dial, plus dial
-                printing, and/or caseback engraving unique to each.
-              </p>
-            </div>
-          </div>
-
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Key Features */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  The Baseline Configuration{" "}
-                </h2>
-              </div>
+            {/* The Baseline Configuration */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      1
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      The Baseline Configuration
+                    </h2>
+                  </div>
 
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  <strong>Availability:</strong> The Baseline dial is found in
-                  all five of the 7177 finishes.
-                </p>
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                      All 7177 or military variants have "MILITARY", "PORSCHE DESIGN", and the "circle-3H logo" printed on the dial. This dial is considered the Baseline Mk. 1 variation.
+                    </p>
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                      There are ten main 7177 or military variants. These variants feature the three elements noted on the Baseline dial, plus dial printing, and/or caseback engraving unique to each.
+                    </p>
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      The Baseline dial is found in all five of the 7177 finishes.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Group Image on Right */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg",
+                          alt: "7177 Baseline Group",
+                          title: "7177 Baseline Group",
+                          subtitle: "All Five Finishes",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
+                        alt="7177 Baseline Group"
+                        className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 rounded-lg"
+                      />
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7177 Baseline Group - All Five Finishes
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Finish Variations */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                   2
@@ -161,32 +189,32 @@ const Reference7177DialBaseline = () => {
                 </h2>
               </div>
 
-              {/* Individual Finish Examples */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              {/* Individual Finish Examples Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                 {[
                   {
                     src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Blackcrop.jpg",
-                    title: "7177 Baseline Black",
+                    title: "Black PVD",
                     finish: "Black PVD",
                   },
                   {
                     src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
-                    title: "7177 Baseline Silver",
+                    title: "Silver/Sablé",
                     finish: "Silver/Sablé",
                   },
                   {
                     src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg",
-                    title: "7177 Baseline Green",
+                    title: "Olive Green PVD",
                     finish: "Olive Green PVD",
                   },
                   {
                     src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-NatoGreycrop.jpg",
-                    title: "7177 Baseline Cadet Grey",
+                    title: "Cadet Grey PVD",
                     finish: "Cadet Grey PVD",
                   },
                   {
                     src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-NTScrop.jpg",
-                    title: "7177 Baseline NTS",
+                    title: "NTS PVD",
                     finish: "NTS PVD",
                   },
                 ].map((image, index) => (
@@ -206,8 +234,8 @@ const Reference7177DialBaseline = () => {
                       <ImageWithLoader
                         src={image.src}
                         alt={image.title}
-                        className="relative w-full max-w-xs h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full max-w-xs h-64 rounded-lg"
+                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-64 rounded-lg"
                       />
                       {/* Click indicator */}
                       <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -220,50 +248,11 @@ const Reference7177DialBaseline = () => {
                       <span className="block text-sm sm:text-base font-medium text-gray-800">
                         {image.title}
                       </span>
-                      <span className="block text-xs sm:text-sm text-gray-600 mt-1">
-                        {image.finish}
-                      </span>
                     </div>
                   </div>
                 ))}
               </div>
-
-              {/* Group Photo */}
-              <div className="flex justify-center">
-                <div className="flex flex-col items-center max-w-md">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg",
-                        alt: "7177 Baseline Group",
-                        title: "7177 Baseline Group",
-                        subtitle: "All Five Finishes",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
-                      alt="7177 Baseline Group"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7177 Baseline Group - All Five Finishes
-                  </span>
-                </div>
-              </div>
             </div>
-
-            {/* Available Finishes List */}
           </div>
         </div>
       </section>

@@ -113,242 +113,209 @@ const Reference7177DialRoyalNavy = () => {
             </p>
           </div>
 
-          {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                The Royal Navy variant has two debated origins and unique
-                characteristics that distinguish it from other 7177 military
-                variants.
-              </p>
-            </div>
-          </div>
-
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Debated Origins */}
+            {/* Two Debated Origins */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      1
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Two Debated Origins
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <ul className="space-y-4 text-gray-700">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          <strong>Theory 1: Quasi-Issued</strong> - the first is that these are quasi-issued and were not issued to NATO stock, as they lack the traditional caseback broad arrow marking and any typical MOD markings.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          <strong>Theory 2: Issued</strong> - the other theory is that they were, in fact, issued to NATO stock but only a small number for evaluation by the Royal Navy - all of which were marked and issued with a NATO stock code on their caseback.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Royal Navy Bracelet Images */}
+                <div className="space-y-8">
+                  {/* First two bracelet images side by side */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* First Bracelet Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
+                            alt: "Royal Navy Bracelet View 1",
+                            title: "Royal Navy Bracelet",
+                            subtitle: "Standard Configuration",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
+                          alt="Royal Navy Bracelet View 1"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Royal Navy Bracelet
+                      </span>
+                    </div>
+
+                    {/* Second Bracelet Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20- 2.png",
+                            alt: "Royal Navy Bracelet View 2",
+                            title: "Royal Navy Bracelet",
+                            subtitle: "Detailed View",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20- 2.png"
+                          alt="Royal Navy Bracelet View 2"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Royal Navy Bracelet
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Third bracelet image centered below */}
+                  <div className="flex justify-center">
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal Navy Bracelet - 3.png",
+                            alt: "Royal Navy Bracelet View 3",
+                            title: "Royal Navy Bracelet",
+                            subtitle: "Complete Set",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal Navy Bracelet - 3.png"
+                          alt="Royal Navy Bracelet View 3"
+                          className="relative w-full max-w-sm h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full max-w-sm h-64 rounded-lg"
+                        />
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Royal Navy Bracelet
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Key Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Two Debated Origins
-                </h2>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                  <h3 className="text-lg font-semibold text-black mb-4">
-                    Theory 1: Quasi-Issued
-                  </h3>
-                  <div className="space-y-4">
-                    <p className="text-base text-gray-700 leading-relaxed">
-                      These are quasi-issued and were not issued to NATO stock,
-                      as they lack the traditional caseback broad arrow marking
-                      and any typical MOD markings.
-                    </p>
-                    <div className="bg-white p-4 rounded-lg border border-black">
-                      <h4 className="font-semibold text-black mb-2">
-                        Evidence:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• No broad arrow marking</li>
-                        <li>• Absence of MOD markings</li>
-                        <li>• Non-standard issue patterns</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                  <h3 className="text-lg font-semibold text-black mb-4">
-                    Theory 2: NATO Evaluation
-                  </h3>
-                  <div className="space-y-4">
-                    <p className="text-base text-gray-700 leading-relaxed">
-                      They were, in fact, issued to NATO stock but only a small
-                      number for evaluation by the Royal Navy - all of which
-                      were marked and issued with a NATO stock code on their
-                      caseback.
-                    </p>
-                    <div className="bg-white p-4 rounded-lg border border-black">
-                      <h4 className="font-semibold text-black mb-2">
-                        Evidence:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• NATO stock code present</li>
-                        <li>• Limited evaluation quantity</li>
-                        <li>• Royal Navy specific markings</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Configuration Details */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Configuration Details
-                </h2>
-              </div>
-
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  It is also believed that most, if not all, were issued on a
-                  specific style bracelet and have a sandblasted steel finish.
-                  However, examples have been seen in an NTS PVD case.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h4 className="font-semibold text-black mb-4">
-                    Standard Configuration:
-                  </h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        Sandblasted steel finish
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        Issued with specific bracelet style
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        Royal Navy dial markings
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h4 className="font-semibold text-black mb-4">
-                    Alternative Configuration:
-                  </h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        NTS PVD case finish
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        Non-reflective tactical coating
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm leading-relaxed">
-                        Rare variant examples
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Visual Examples */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Visual Examples
-                </h2>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
                 <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
-                        alt: "Royal Navy on Issued Bracelet",
-                        title: "Royal Navy on Issued Bracelet",
-                        subtitle: "Standard Configuration",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
-                      alt="Royal Navy on Issued Bracelet"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      2
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Key Notes
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <ul className="space-y-4 text-gray-700">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          The dial of this variant bears the inscription "Royal Navy" below the PORSCHE DESIGN text at 3 o'clock.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          It is believed that most, if not all, were issued on the following style bracelet and have a sandblasted steel finish. However, examples have been seen in an NTS PVD case.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Royal Navy Dial Image */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
+                          alt: "Royal Navy Dial",
+                          title: "Royal Navy Dial",
+                          subtitle: "Inscription below PORSCHE DESIGN text",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg"
+                        alt="Royal Navy Dial"
+                        className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full max-w-sm h-80 rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Standard Configuration
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Royal Navy on issued bracelet with sandblasted steel
-                      finish
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
-                        alt: "Royal Navy with NTS PVD Case",
-                        title: "Royal Navy with NTS PVD Case",
-                        subtitle: "Alternative Configuration",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
-                      alt="Royal Navy with NTS PVD Case"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      NTS PVD Variant
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Royal Navy with non-reflective tactical coating
-                    </p>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7177 Royal Navy Dial
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Historical Context */}
           </div>
         </div>
       </section>

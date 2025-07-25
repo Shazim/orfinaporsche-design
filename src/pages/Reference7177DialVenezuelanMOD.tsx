@@ -96,7 +96,7 @@ const Reference7177DialVenezuelanMOD = () => {
               Dial Variations
             </Link>
             <span className="mx-2 text-gray-400">/</span>
-            <span className="text-black font-medium">Venezuelan MOD</span>
+            <span className="text-black font-medium">VZMOD</span>
           </nav>
         </div>
       </div>
@@ -109,76 +109,135 @@ const Reference7177DialVenezuelanMOD = () => {
               Reference 7177
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Venezuelan MOD Dial
+              VZMOD Dial
             </p>
-          </div>
-
-          {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                The Venezuelan-issued watches were produced for the Venezuelan
-                Ministry of Defense (VZMOD. These watches feature Baseline Mk.
-                1,Baseline Mk. 2, and Four-Logo Dials (further discussed in the
-                Reference 7177 - Four-Logo, and Reference 7177 - BUND Dial
-                pages). These have also been found with Service Dials.
-              </p>
-            </div>
           </div>
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Baseline Configuration */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Key Notes */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       1
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Ministry of Defense
+                      Key Notes
                     </h2>
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    Examples of the Venezuela variant are known to come in
-                    multiple of the 7177 finishes and were delivered with a
-                    unique printed box. Typically, examples of these watches are
-                    generally in poor condition as they were worn extensively
-                    throughout their service careers.
+                    <ul className="space-y-4 text-gray-700">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          The Venezuelan-issued watches were produced for the Venezuelan Ministry of Defense (VZMOD).
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          These watches feature Baseline Mk. 1,Baseline Mk. 2, and Four-Logo Dials (further discussed in the Reference 7177 - Four-Logo, and Reference 7177 - BUND Dial pages). These have also been found with Service Dials.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          Examples of the Venezuela variant are known to come in multiple of the 7177 finishes and were delivered with a unique printed box.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          Typically, examples of these watches are generally in poor condition as they were worn extensively throughout their service careers.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed font-semibold">
+                          Caseback
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-4">
+                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          The Venezuelan variant watches are known to come in two batches, one stamped "EJERCITO DE VENEZUELA" and the other stamped "REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA" on the caseback. For both batches, an issue number is also engraved on the caseback.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
-                        alt: "Venezuelan MOD Baseline Dial",
-                        title: "Venezuelan MOD Baseline Dial",
-                        subtitle: "Ministry of Defense Issue",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg"
-                      alt="Venezuelan MOD Baseline Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full max-w-sm h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                {/* Images Side by Side */}
+                <div className="space-y-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* Venezuelan MOD Dial Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+                            alt: "Venezuelan MOD Dial",
+                            title: "Venezuelan MOD Dial",
+                            subtitle: "Ministry of Defense Issue",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg"
+                          alt="Venezuelan MOD Dial"
+                          className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        Venezuelan MOD Dial
+                      </span>
+                    </div>
+
+                    {/* Venezuelan Variant Box */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/VMOD%20Boxcrop.jpg",
+                            alt: "Venezuelan Variant Box",
+                            title: "Venezuelan Variant Box",
+                            subtitle: "Unique Printed Packaging",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/VMOD%20Boxcrop.jpg"
+                          alt="Venezuelan Variant Box"
+                          className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        Venezuelan Variant Box
+                      </span>
                     </div>
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Venezuelan MOD Baseline Dial
-                  </span>
                 </div>
               </div>
             </div>
@@ -190,7 +249,7 @@ const Reference7177DialVenezuelanMOD = () => {
                   2
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Two Production Batches
+                  Caseback Examples
                 </h2>
               </div>
 

@@ -96,7 +96,7 @@ const Reference7177DialSwissShield = () => {
               Dial Variations
             </Link>
             <span className="mx-2 text-gray-400">/</span>
-            <span className="text-black font-medium">Swiss Shield</span>
+            <span className="text-black font-medium">Swiss Coat of Arms</span>
           </nav>
         </div>
       </div>
@@ -109,184 +109,155 @@ const Reference7177DialSwissShield = () => {
               Reference 7177
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Swiss Coat of Arms Dial{" "}
+              Swiss Coat of Arms Dial
             </p>
-          </div>
-
-          {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                The Swiss Military variant was supposedly issued to
-                Switzerland's military. The dial of this variant bears a “Swiss
-                Coat of Arms” as well as an additional line of text “by ORFINA”.
-                This variant was always produced in Olive Green PVD, and bears a
-                German Day Disk. It is estimated that a total of 200-500 Olive
-                Green PVD 7177s were produced, with approximately 33 bearing a
-                Swiss Coat of Arms.
-              </p>
-            </div>
           </div>
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Swiss Shield Features */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Key Notes */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
                       1
                     </div>
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Swiss Military Issue
+                      Key Notes
                     </h2>
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Distinctive Features:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-4 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Swiss Shield:</strong> National emblem on dial
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          The Swiss Military variant was supposedly issued to Switzerland's military. The dial of this variant bears a "Swiss Shield" as well as an additional line of text "by ORFINA".
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Text:</strong> Additional "by ORFINA" line
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          This variant was always produced in Olive Green PVD, bears an Italian Day Disk (Easily identifiable by the word GIO - which stands for Thursday in Italian), and came in a set with a matching Green PVD BUND-style leather strap, Green PVD bracelet, and a Green Leather Box.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Finish:</strong> Always Olive Green PVD
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          It is thought that the Swiss Military also ordered all Baseline Variant Olive Green PVD 7177s, and these examples should bear an Italian day disk as well.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Day Disk:</strong> Italian language
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          It is estimated that a total of 200-500 Olive Green PVD 7177s were produced, with approximately 33 bearing a Swiss Shield.
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
-                        alt: "Swiss Shield Dial",
-                        title: "7177 Swiss Military Dial",
-                        subtitle: "Swiss Military Issue",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg"
-                      alt="Swiss Shield Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full max-w-sm h-80 rounded-lg"
-                    />
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                {/* Images Side by Side */}
+                <div className="space-y-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* 7177 Swiss Coat of Arms Dial Image (Top) */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
+                            alt: "7177 Swiss Coat of Arms Dial",
+                            title: "7177 Swiss Coat of Arms Dial",
+                            subtitle: "Swiss Military Issue",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg"
+                          alt="7177 Swiss Coat of Arms Dial"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Swiss Coat of Arms Dial
+                      </span>
+                    </div>
+
+                    {/* 7177 Swiss Coat of Arms Set Image */}
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg",
+                            alt: "7177 Swiss Coat of Arms Set",
+                            title: "7177 Swiss Coat of Arms Set",
+                            subtitle: "Complete Military Configuration",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg"
+                          alt="7177 Swiss Coat of Arms Set"
+                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-64 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Swiss Coat of Arms Set
+                      </span>
                     </div>
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7177 Swiss Military Dial{" "}
-                  </span>
-                </div>
-              </div>
-            </div>
 
-            {/* Complete Set Configuration */}
-
-            {/* Dial Comparison */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg",
-                        alt: "7177 Baseline Olive Green PVD",
-                        title: "7177 Baseline Olive Green PVD",
-                        subtitle: "Standard Configuration",
-                      })
-                    }
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg"
-                      alt="7177 Baseline Olive Green PVD"
-                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-64 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                  {/* 7177 Olive Green PVD Baseline below */}
+                  <div className="flex justify-center">
+                    <div className="flex flex-col items-center">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg",
+                            alt: "7177 Olive Green PVD Baseline",
+                            title: "7177 Olive Green PVD Baseline",
+                            subtitle: "Baseline Configuration",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <ImageWithLoader
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg"
+                          alt="7177 Olive Green PVD Baseline"
+                          className="relative w-full max-w-sm h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full max-w-sm h-64 rounded-lg"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg",
-                        alt: "Swiss Shield Set",
-                        title: "Swiss Shield Set",
-                        subtitle: "Complete Military Configuration",
-                      })
-                    }
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg"
-                      alt="Swiss Shield Set"
-                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-64 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/IMG_3314.jpg",
-                        alt: " Italian Day Disk",
-                        title: " Italian Day Disk",
-                        subtitle: "Standard Configuration",
-                      })
-                    }
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/IMG_3314.jpg"
-                      alt="7177 Baseline Olive Green PVD"
-                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-64 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Olive Green PVD Baseline
+                      </span>
                     </div>
                   </div>
                 </div>
