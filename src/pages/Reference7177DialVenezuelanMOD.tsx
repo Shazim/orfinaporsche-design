@@ -118,8 +118,10 @@ const Reference7177DialVenezuelanMOD = () => {
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 The Venezuelan-issued watches were produced for the Venezuelan
-                Ministry of Defense and feature the "baseline" watch's standard
-                three logo dial with unique caseback engravings.
+                Ministry of Defense (VZMOD. These watches feature Baseline Mk.
+                1,Baseline Mk. 2, and Four-Logo Dials (further discussed in the
+                Reference 7177 - Four-Logo, and Reference 7177 - BUND Dial
+                pages). These have also been found with Service Dials.
               </p>
             </div>
           </div>
@@ -140,32 +142,11 @@ const Reference7177DialVenezuelanMOD = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Dial Configuration:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Layout:</strong> Standard "baseline" three
-                          logo dial
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Markings:</strong> "MILITARY", "PORSCHE
-                          DESIGN", "3H logo"
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Purpose:</strong> Venezuelan Ministry of
-                          Defense issue
-                        </span>
-                      </li>
-                    </ul>
+                    Examples of the Venezuela variant are known to come in
+                    multiple of the 7177 finishes and were delivered with a
+                    unique printed box. Typically, examples of these watches are
+                    generally in poor condition as they were worn extensively
+                    throughout their service careers.
                   </div>
                 </div>
 
@@ -215,9 +196,11 @@ const Reference7177DialVenezuelanMOD = () => {
 
               <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  The Venezuelan variant watches are known to come in two
-                  batches, differentiated by their caseback engravings. For both
-                  batches, an issue number is also engraved on the case back.
+                  he Venezuelan variant watches are known to come in two
+                  batches, one stamped "EJERCITO DE VENEZUELA" and the other
+                  stamped “REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA” on
+                  the caseback. For both batches, an issue number is also
+                  engraved on the caseback.
                 </p>
               </div>
 
@@ -278,45 +261,8 @@ const Reference7177DialVenezuelanMOD = () => {
 
             {/* Case Finishes and Packaging */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Specifications & Packaging
-                </h2>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-center">
                 <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Available Finishes:
-                    </h3>
-                    <p className="text-base text-gray-700 leading-relaxed mb-4">
-                      Examples of the Venezuela variant are known to come in
-                      multiple of the 7177 finishes.
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {[
-                        "Sandblasted Steel",
-                        "Black PVD",
-                        "NTS PVD",
-                        "Cadet Grey PVD",
-                        "Olive Green PVD",
-                      ].map((finish, index) => (
-                        <div
-                          key={index}
-                          className="bg-white p-3 rounded border"
-                        >
-                          <span className="text-sm font-medium text-gray-800">
-                            {finish}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
                   {/* <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
                     <h3 className="text-lg font-semibold text-black mb-3">
                       Unique Packaging

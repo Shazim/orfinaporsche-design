@@ -117,10 +117,47 @@ const Reference7177DialFlyingTiger = () => {
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                The Flying Tiger Watches were issued for the U.S. Air Force's
-                23rd Tactical Fighter Group, the home of the Air Force's
-                legendary Flying Tigers stationed at Moody Air Force Base.
+                The Flying Tiger Watches were Issued for the U.S. Air Force’s
+                23rd Tactical Fighter Group. The 23rd Fighter Group is the home
+                of the Air Force's legendary Flying Tigers and is stationed at
+                Moody Air Force Base. The 23rd Fighter Group's primary mission
+                is forward air control, close-air support, interdiction, and
+                combat search and rescue operations.
               </p>
+            </div>
+          </div>
+
+          <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
+            <div className="flex justify-center">
+              <div className="flex flex-col items-center max-w-2xl">
+                <div
+                  className="relative group cursor-pointer"
+                  onClick={() =>
+                    setFullScreenImage({
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Group-2crop.jpg",
+                      alt: "Flying Tiger Group Photo",
+                      title: "Flying Tiger Group Photo",
+                      subtitle: "Multiple Flying Tiger Variants",
+                    })
+                  }
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                  <ImageWithLoader
+                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Group-2crop.jpg"
+                    alt="Flying Tiger Group Photo"
+                    className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                    skeletonClassName="w-full h-80 rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                      Click to zoom
+                    </div>
+                  </div>
+                </div>
+                <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                  Flying Tiger Group Photo
+                </span>
+              </div>
             </div>
           </div>
 
@@ -133,52 +170,24 @@ const Reference7177DialFlyingTiger = () => {
                   1
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  23rd Tactical Fighter Group
+                  History{" "}
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Mission:
-                    </h3>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      The 23rd Fighter Group's primary mission is forward air
-                      control, close-air support, interdiction, and combat
-                      search and rescue operations.
-                    </p>
-                    <div className="bg-white p-4 rounded-lg border border-gray-200">
-                      <p className="text-sm text-gray-600">
-                        <strong>Formation:</strong> December 17, 1941 - just 10
-                        days after Pearl Harbor
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-3">
-                      Squadrons:
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      <div className="bg-white p-3 rounded text-center">
-                        <span className="font-semibold text-black">74th</span>
-                        <p className="text-xs text-gray-600">
-                          Fighter Squadron
-                        </p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <span className="font-semibold text-black">75th</span>
-                        <p className="text-xs text-gray-600">
-                          Fighter Squadron
-                        </p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <span className="font-semibold text-black">76th</span>
-                        <p className="text-xs text-gray-600">
-                          Fighter Squadron
-                        </p>
-                      </div>
+                  <div className="bg-gray-50 sm:p-8 rounded-lg border-l-4 border-black">
+                    The 23rd Fighter Group traces its roots back to the 23rd
+                    Pursuit Group, which was formed on December 17, 1941, just
+                    10 days after the Japanese attack on Pearl Harbor. The group
+                    had three squadrons assigned to carry out their mission: the
+                    74th, 75th, and 76th Fighter Squadrons.
+                    <div>
+                      A particularly interesting note is that the aircraft
+                      assigned to the group has the unique "Shark Teeth" nose
+                      art. The Flying Tigers are the only Air Force unit
+                      authorized to carry this distinctive and historical
+                      aircraft marking.
                     </div>
                   </div>
                 </div>
@@ -229,9 +238,7 @@ const Reference7177DialFlyingTiger = () => {
 
               <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  The Flying Tiger watches were produced in two batches with
-                  distinct dial configurations, both featuring the iconic Flying
-                  Tiger logo.
+                  The Flying Tiger watches were produced in two batches:
                 </p>
               </div>
 
@@ -239,83 +246,11 @@ const Reference7177DialFlyingTiger = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div className="bg-white p-6 rounded-lg border border-gray-200">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Mk. 1 Flying Tiger Dial
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Features "U.S. Airforce" printing
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Includes the "Flying Tiger logo"
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          First production batch
-                        </span>
-                      </li>
-                    </ul>
+                    <p className="text-lg text-black mb-4">
+                      The Mk. 1 Flying Tiger Dial possessing “U.S. Airforce”
+                      printing and the “Flying Tiger logo"{" "}
+                    </p>
                   </div>
-
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Mk.%202crop.jpg",
-                        alt: "Flying Tiger Mk. 1 Dial",
-                        title: "Flying Tiger Mk. 1 Dial",
-                        subtitle: "First Batch with U.S. Airforce Printing",
-                      })
-                    }
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Mk. 2crop.jpg"
-                      alt="Flying Tiger Mk. 1 Dial"
-                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-64 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div className="bg-white p-6 rounded-lg border border-gray-200">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Mk. 2 Flying Tiger Dial
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          No "U.S. Airforce" printing
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Retains the "Flying Tiger logo"
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Second production batch
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-
                   <div
                     className="relative group cursor-pointer"
                     onClick={() =>
@@ -330,6 +265,38 @@ const Reference7177DialFlyingTiger = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Silvercrop.jpg"
                       alt="Flying Tiger Mk. 2 Dial"
+                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full h-64 rounded-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="bg-white p-6 rounded-lg border border-gray-200">
+                    <p className="text-lg text-black mb-4">
+                      The Mk. 2 Flying Tiger Dial without “U.S. Airforce”
+                      printing but still retaining the “Flying Tiger logo”{" "}
+                    </p>
+                  </div>
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Mk.%202crop.jpg",
+                        alt: "Flying Tiger Mk. 1 Dial",
+                        title: "Flying Tiger Mk. 1 Dial",
+                        subtitle: "First Batch with U.S. Airforce Printing",
+                      })
+                    }
+                  >
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Mk. 2crop.jpg"
+                      alt="Flying Tiger Mk. 1 Dial"
                       className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full h-64 rounded-lg"
                     />
@@ -361,73 +328,11 @@ const Reference7177DialFlyingTiger = () => {
                     baseline 7177, and the majority of these watches were
                     finished in either Sandblasted Steel, Black PVD, or NTS PVD.
                   </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    {[
-                      {
-                        name: "Sandblasted Steel",
-                        description: "Matte finish for reduced glare",
-                      },
-                      {
-                        name: "Black PVD",
-                        description: "Physical Vapor Deposition coating",
-                      },
-                      {
-                        name: "NTS PVD",
-                        description: "Non-reflective tactical coating",
-                      },
-                    ].map((finish, index) => (
-                      <div
-                        key={index}
-                        className="bg-white p-4 rounded-lg border border-gray-200"
-                      >
-                        <h4 className="font-semibold text-black mb-2">
-                          {finish.name}
-                        </h4>
-                        <p className="text-sm text-gray-600">
-                          {finish.description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
 
             {/* Group Photo */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
-              <div className="flex justify-center">
-                <div className="flex flex-col items-center max-w-2xl">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Group-2crop.jpg",
-                        alt: "Flying Tiger Group Photo",
-                        title: "Flying Tiger Group Photo",
-                        subtitle: "Multiple Flying Tiger Variants",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Group-2crop.jpg"
-                      alt="Flying Tiger Group Photo"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Flying Tiger Group Photo
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
