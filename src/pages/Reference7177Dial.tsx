@@ -17,17 +17,23 @@ const dialVariations = [
     path: "/references/7177/dial/nato",
     img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
   },
-
   {
-    name: "Venezuelan MOD",
-    path: "/references/7177/dial/venezuelan-mod",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+    name: "Swiss Shield",
+    path: "/references/7177/dial/swiss-shield",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
   },
   {
     name: "BUND",
     path: "/references/7177/dial/bund",
     img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
   },
+
+  {
+    name: "Venezuelan MOD",
+    path: "/references/7177/dial/venezuelan-mod",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+  },
+
   {
     name: "Flying Tiger",
     path: "/references/7177/dial/flying-tiger",
@@ -38,20 +44,17 @@ const dialVariations = [
     path: "/references/7177/dial/royal-navy",
     img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
   },
-  {
-    name: "By Orfina",
-    path: "/references/7177/dial/by-orfina",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
-  },
+
   {
     name: "UAE",
     path: "/references/7177/dial/uae",
     img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
   },
+
   {
-    name: "Swiss Shield",
-    path: "/references/7177/dial/swiss-shield",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
+    name: "By Orfina",
+    path: "/references/7177/dial/by-orfina",
+    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
   },
 ];
 
@@ -98,13 +101,13 @@ const Reference7177Dial = () => {
           </div>
 
           {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
+          {/* <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               The Reference 7177 features an extensive range of dial variations,
               each designed for specific military and governmental organizations
               worldwide.
             </p>
-          </div>
+          </div> */}
 
           {/* Dial Variations Grid */}
           <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
@@ -119,13 +122,8 @@ const Reference7177Dial = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
               {dialVariations.map((variation, idx) => (
-                <Link
-                  key={variation.path}
-                  to={variation.path}
-                  className="group block animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
-                  style={{ animationDelay: `${500 + idx * 100}ms` }}
-                >
-                  <div className="bg-white border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 group-hover:scale-105 overflow-hidden">
+                <Link key={variation.path} to={variation.path}>
+                  <div className="bg-white border border-gray-200 shadow-md  overflow-hidden">
                     <div className="flex flex-col items-center text-center">
                       <img
                         src={variation.img}

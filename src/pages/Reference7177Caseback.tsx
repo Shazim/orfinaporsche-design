@@ -109,81 +109,37 @@ const Reference7177Caseback = () => {
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              The caseback engravings on the 7177 differ entirely from that of
-              the 7176 variants, featuring unique military specifications and
-              design elements.
+              The caseback engravings on the 7177 differ entirely from those of
+              the 7176 variants. For the center of the caseback, the 7177
+              swapped a large Porsche Design logo for a smaller one, added
+              Orfina to the text, and had “Military Chronograph 7177 MOD. DEP.
+              INT. ” stamped on the back.
             </p>
           </div>
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Design Differences */}
+            {/* Caseback Images - Two Original Images */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Design Evolution
-                    </h2>
-                  </div>
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      WATERRESISTANT TESTED 10 ATM AUTOMATIC SHOCKPROTECTED
-                      STAINLESS STEEL SWISS MADE{" "}
-                    </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Changes:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Center logo:</strong> Smaller Porsche Design
-                          logo compared to 7176
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Orfina addition:</strong> Added "Orfina" to
-                          the center text
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Military designation:</strong> "Military
-                          Chronograph 7177 MOD. DEP. INT." stamped on back
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div className="flex flex-col items-center">
                   <div
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg",
-                        alt: "7177 Caseback Engraving",
-                        title: "7177 Caseback Engraving",
-                        subtitle: "Reference 7177",
+                        alt: "7176S Caseback",
+                        title: "7176S Caseback",
+                        subtitle: "Reference 7176S",
                       })
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg"
-                      alt="7177 Caseback Engraving"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      alt="7176S Caseback"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full max-w-sm h-96 rounded-lg"
                     />
                     {/* Click indicator */}
                     <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -193,32 +149,28 @@ const Reference7177Caseback = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7177 Caseback Engraving
+                    7176S Caseback
                   </span>
                 </div>
-              </div>
-            </div>
 
-            {/* Outer Engraving Comparison */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center">
                   <div
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg",
-                        alt: "7177 Caseback Engraving",
-                        title: "7177 Caseback Engraving",
+                        alt: "7177 Caseback",
+                        title: "7177 Caseback",
                         subtitle: "Reference 7177",
                       })
                     }
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <img
+                    <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg"
-                      alt="7177 Caseback Engraving"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      alt="7177 Caseback"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full max-w-sm h-96 rounded-lg"
                     />
                     {/* Click indicator */}
                     <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -228,46 +180,42 @@ const Reference7177Caseback = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7177 Caseback Engraving
+                    7177 Caseback
                   </span>
                 </div>
+              </div>
+            </div>
 
-                <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Outer Engraving
-                    </h2>
+            {/* Content Section */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
+              <div className="max-w-4xl mx-auto space-y-8">
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    1
                   </div>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                    Outer Engraving Differences
+                  </h2>
+                </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Significant differences in perimeter text layout and
-                      content
+                <div className="space-y-6">
+                  <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
+                    <h4 className="font-semibold text-black mb-2">
+                      7176S Outer Engraving:
+                    </h4>
+                    <p className="text-sm sm:text-base text-gray-700">
+                      7176 S CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10 ATM
+                      SHOCKPROTECTED STAINLESS STEEL SWISS MADE
                     </p>
                   </div>
-
-                  <div className="space-y-6">
-                    <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
-                      <h4 className="font-semibold text-black mb-2">
-                        7176S Outer Engraving:
-                      </h4>
-                      <p className="text-sm sm:text-base text-gray-700">
-                        SWISS MADE 7176 S CHRONOGRAPH AUTOMATIC WATER RESISTANT
-                        TESTED 10 ATM SHOCKPROTECTED STAINLESS STEEL
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
-                      <h4 className="font-semibold text-black mb-2">
-                        7177 Outer Engraving:
-                      </h4>
-                      <p className="text-sm sm:text-base text-gray-700">
-                        SWISS MADE WATER RESISTANT TESTED 10 ATM AUTOMATIC
-                        SHOCKPROTECTED STAINLESS STEEL
-                      </p>
-                    </div>
+                  <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
+                    <h4 className="font-semibold text-black mb-2">
+                      7177 Outer Engraving:
+                    </h4>
+                    <p className="text-sm sm:text-base text-gray-700">
+                      WATERRESISTANT TESTED 10 ATM AUTOMATIC SHOCKPROTECTED
+                      STAINLESS STEEL SWISS MADE
+                    </p>
                   </div>
                 </div>
               </div>
@@ -287,8 +235,9 @@ const Reference7177Caseback = () => {
 
                 <div className="space-y-6">
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    All 7177 variants include a stamped serial number, which are
-                    found in groupings for particular dial configurations.
+                    All 7177 variants also include a stamped serial number,
+                    which is found in groupings for particular dial
+                    configurations.
                   </p>
                 </div>
               </div>
@@ -307,9 +256,9 @@ const Reference7177Caseback = () => {
                 </div>
 
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Specifically for the Venezuelan, UAE, and Bund-issued
+                  Specifically for the Venezuelan, UAE, and BUND-issued
                   variants, there are unique caseback engravings, which will be
-                  discussed in their respective sections.
+                  discussed in their respective headings.
                 </p>
               </div>
             </div>

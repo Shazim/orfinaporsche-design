@@ -118,8 +118,9 @@ const Reference7177DialBUND = () => {
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 The BUND variant is short for "Bundeswehr", the German Federal
-                Defense Force to whom they were issued. The dial has no special
-                dial printing beyond that found on the "baseline" configuration.
+                Defense Force to whom they were issued. UND examples are seen in
+                a variety of finishes and were always issued on a BUND-style
+                strap.
               </p>
             </div>
           </div>
@@ -127,69 +128,32 @@ const Reference7177DialBUND = () => {
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {/* BUND Overview */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Bundeswehr Issue
-                </h2>
-              </div>
-
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
-                <div className="space-y-4">
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    However, the caseback does have "BUND" and an appropriate
-                    NSN engraving. BUND variants also do not have the "7177"
-                    ref# engraving on the caseback.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <h4 className="font-semibold text-black mb-2">
-                      Identification Features:
-                    </h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li>• BUND marking on caseback</li>
-                      <li>• NATO Stock Number (NSN) engraving</li>
-                      <li>• No "7177" reference number</li>
-                      <li>• Baseline dial configuration</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* NSN Variations */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
+                  1
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  NATO Stock Numbers
+                  Caseback Markings{" "}
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                    <h3 className="text-lg font-semibold text-black mb-4">
-                      Known NSNs:
-                    </h3>
                     <div className="space-y-3">
                       <div className="bg-white p-4 rounded border">
-                        <div className="font-mono text-sm font-semibold text-black">
-                          6645-12-182-1763
+                        <div className="font-mono text-sm  text-black">
+                          On these examples, the caseback does have "BUND" and
+                          an appropriate NSN engraving.
                         </div>
-                        <p className="text-xs text-gray-600 mt-1">
-                          Initial NSN
-                        </p>
-                      </div>
-                      <div className="bg-white p-4 rounded border">
-                        <div className="font-mono text-sm font-semibold text-black">
-                          6645-12-194-8642
+                        <div className="font-mono text-sm  text-black">
+                          <strong> Known NSNs:</strong> Two known NSNs are found
+                          on the BUND variant: the initial NSN is
+                          6645-12-182-1763, and the second is 6645-12-194-8642.{" "}
                         </div>
-                        <p className="text-xs text-gray-600 mt-1">Second NSN</p>
                       </div>
                     </div>
                   </div>
@@ -202,7 +166,8 @@ const Reference7177DialBUND = () => {
                       Some BUND examples are "double-struck," meaning the
                       initial NSN is crossed out, and the second NSN is added.
                       This was presumably done at some maintenance event during
-                      the watch's lifetime.
+                      the watch’s lifetime. BUND variants also do not have the
+                      "7177" ref# engraving on the caseback.
                     </p>
                   </div>
                 </div>
@@ -269,18 +234,25 @@ const Reference7177DialBUND = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
+                  2
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Service Dial Replacements
+                  Dial Variations{" "}
                 </h2>
               </div>
 
               <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Some BUND examples over their service career, when sent in for
-                  service, had their dials replaced with service dials. These
-                  examples bear double-struck casebacks.
+                  BUND examples have been found to be produced with both the
+                  Baseline Mk. 1 Dial and Baseline Mk. 2 Dials. The Baseline Mk.
+                  2 Dials Dials lacked “Porsche Design” text, which was replaced
+                  with “CHRONOGRAPH” text and these examples bear double-struck
+                  casebacks. n addition, some BUND examples also sent in for
+                  service, had their dials replaced with Mk 2. Service Dials.
+                  These used early Luminova and lacked “Porsche Design” text,
+                  again replaced by “CHRONOGRAPH” text, but also lacked the “3H”
+                  marking because the dials did not use tritium. Luminova dial
+                  examples will also bear double-struck casebacks.
                 </p>
               </div>
 
@@ -394,10 +366,10 @@ const Reference7177DialBUND = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  4
+                  3
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Issue Packaging
+                  Accessories{" "}
                 </h2>
               </div>
 

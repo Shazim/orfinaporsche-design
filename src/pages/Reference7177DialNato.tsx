@@ -118,8 +118,13 @@ const Reference7177DialNato = () => {
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 The 7177 NATO variant was reportedly issued to individuals at
-                NATO headquarters in Brussels and features a Baseline dial with
-                the addition of "NATO" at 4 O'Clock.
+                NATO headquarters in Brussels and features a Baseline dial, with
+                the addition of “NATO” at 4 O’Clock. The NATO variant was always
+                coated in Cadet Grey PVD and came on a matching grey BUND-style
+                leather strap. A noteworthy detail is that the 7177 NATO Dial is
+                believed to be the only variant of the 7177 reference to feature
+                a factory white day and date wheel - a characteristic observed
+                on select examples of this model.
               </p>
             </div>
           </div>
@@ -203,7 +208,7 @@ const Reference7177DialNato = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    NATO Dial
+                    7177 Nato Dial{" "}
                   </span>
                 </div>
               </div>
@@ -217,7 +222,7 @@ const Reference7177DialNato = () => {
                     className="relative group cursor-pointer"
                     onClick={() =>
                       setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Magazinecrop.jpg",
                         alt: "NATO BUND Strap",
                         title: "NATO BUND Strap",
                         subtitle: "Matching Grey BUND-style Leather",
@@ -226,7 +231,7 @@ const Reference7177DialNato = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Magazinecrop.jpg"
                       alt="NATO BUND Strap"
                       className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       skeletonClassName="w-full max-w-sm h-80 rounded-lg"
@@ -239,7 +244,7 @@ const Reference7177DialNato = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    NATO BUND Strap
+                    7177 Nato Magazine Feature{" "}
                   </span>
                 </div>
 

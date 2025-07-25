@@ -121,10 +121,10 @@ const Reference7177DialFourLogo = () => {
                 <div className="space-y-6">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      The first circa 500 serials of the 7177's feature a
-                      four-logo dial with an additional "Porsche Design logo"
-                      not present on the Baseline variation and the "PORSCHE
-                      DESIGN" text replaced with "CHRONOGRAPH".
+                      The first circa 500 serials of the 7177’s feature a
+                      four-logo dial with an additional “Porsche Design logo”
+                      not present on the Baseline variation and the “PORSCHE
+                      DESIGN” text replaced with “CHRONOGRAPH” .
                     </p>
                   </div>
 
@@ -136,29 +136,33 @@ const Reference7177DialFourLogo = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
+                          <strong>Unique Rehaut:</strong>
+                          The Four-Logo variant is also the only 7177 where the
+                          Crooked Seven Rehaut is found.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
                           <strong>Serial Range:</strong> Each watch is
-                          serialized between 1 and ~500
+                          serialized, and all are between 1 and ~500.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Finishes:</strong> Only found in Non-PVD
-                          Silver/Sablé or Black PVD
+                          <strong>Finishes:</strong> These watches are only
+                          found in Non-PVD Silver/Sablé or Black PVD.
                         </span>
                       </li>
+
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Unique Feature:</strong> Only 7177 variant
-                          with the Crooked Seven Rehaut
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Day Wheels:</strong> Majority of examples
-                          feature Italian day wheels
+                          <strong>Day Wheels:</strong> It is important to note
+                          that the majority of the four-logo examples seen have
+                          had Italian day wheels. However, we seek further
+                          examples to clarify this for certain.
                         </span>
                       </li>
                     </ul>
@@ -230,29 +234,6 @@ const Reference7177DialFourLogo = () => {
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     Four-Logo Caseback
                   </span>
-                </div>
-
-                <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Caseback Features
-                    </h2>
-                  </div>
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Each Four-Logo variant features a serialized caseback with
-                      numbers ranging from 1 to approximately 500.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      The caseback design is identical to other 7177 variants
-                      but includes the unique serial numbering that
-                      distinguishes these early production pieces.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

@@ -141,28 +141,26 @@ const Reference7177Rehaut = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Military variants:</strong> All 7177 or
-                          "military" variants feature a 12-hour rehaut ring,
-                          while the non-military civilian variants have a
-                          tachymetric rehaut ring.
+                          <strong>
+                            Two known variations of the 12-hr rehaut ring:
+                          </strong>{" "}
+                          a slightly larger font "crooked seven rehaut" found on
+                          the first 7177’s ever produced, and a slightly smaller
+                          rehaut found on all other 7177 variants.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>
-                            Two known variations of the 12-hr rehaut ring:
-                          </strong>{" "}
-                          A slightly larger font "crooked seven rehaut" found on
-                          the first 7177’s ever produced, and a slightly smaller
-                          rehaut found on all other 7177 variants. Civilian
-                          variants have a tachymetric rehaut ring.
+                          There are a variety of prototype rehauts that have
+                          been seen on examples over the years, but these were
+                          not configured on any "production" watches and thus
+                          will not be discussed here.
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
-
                 {/* Image grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col items-center">
@@ -232,7 +230,6 @@ const Reference7177Rehaut = () => {
                     </div>
                   </div>
                 </div>
-
                 {/* Last Image Spanning Both Columns */}
                 <div className="lg:col-2 flex flex-col items-right  ">
                   <div className="relative group">
