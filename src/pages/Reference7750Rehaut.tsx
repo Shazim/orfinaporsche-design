@@ -72,16 +72,15 @@ const Reference7750Rehaut = () => {
               range. These can be found across all 7750 case marks and dial
               variations.
             </p>
-            {/* <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400">
+            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                <strong>Interesting comparison:</strong> Despite being different
-                measurements - the 1Mile and 1km have the same marks throughout
+                Despite being different measurements - the 1Mile and 1km have the same marks throughout
                 their rehaut. This lack of detail might explain that in the next
                 reference of Orfina Porsche Design watches, the manufacturer
                 just put "Tachymetre" solely on the rehaut without either "unit"
                 designation.
               </p>
-            </div> */}
+            </div>
           </div>
 
           {/* Rehaut Variations */}

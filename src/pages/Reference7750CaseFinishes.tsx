@@ -456,7 +456,7 @@ const Reference7750CaseFinishes = () => {
 
               {/* Callout and Description */}
               <div className="mb-12 sm:mb-16">
-                {/* <div className="bg-yellow-50 p-6 sm:p-8 rounded-lg border-l-4 border-yellow-400 mb-6">
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
                   <h3 className="text-lg sm:text-xl font-semibold text-black mb-4">
                     Revised by Orfina Swiss S.A
                   </h3>
@@ -464,7 +464,7 @@ const Reference7750CaseFinishes = () => {
                     Offered by Orfina Swiss SA as a replacement to original
                     damaged or otherwise unusable cases as a modern replacement.
                   </p>
-                </div> */}
+                </div>
 
                 <div className="prose prose-gray max-w-none">
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
