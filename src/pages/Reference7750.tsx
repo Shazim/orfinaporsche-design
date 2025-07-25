@@ -59,7 +59,7 @@ const Reference7750 = () => {
       rehaut: "1Mile, 1KM, Advertisement",
       dial: "PD Dial",
       image:
-        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
+        "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
       description:
         "A refined iteration with enhanced dial configuration and improved mechanics.",
     },
@@ -147,9 +147,10 @@ const Reference7750 = () => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
                 Three Generations
               </h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Discover the evolution of the Reference 7750 through three
-                distinct generations of horological excellence.
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                There are three “hero” generations of the Reference 7750. We
+                will outline a brief overview below, before going into deeper
+                variations across all generations
               </p>
             </div>
 
@@ -168,9 +169,9 @@ const Reference7750 = () => {
                       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
                         {gen.title}
                       </h2>
-                      <p className="text-lg text-gray-700 font-light">
+                      {/* <p className="text-lg text-gray-600 font-light">
                         {gen.subtitle}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
 
@@ -184,14 +185,14 @@ const Reference7750 = () => {
                             src: gen.image,
                             alt: `${gen.title} ${gen.subtitle}`,
                             title: gen.title,
-                            subtitle: gen.subtitle,
+                            subtitle: "",
                           })
                         }
                       >
                         <div className="w-full max-w-md mx-auto lg:mx-0">
                           <ImageWithLoader
                             src={gen.image}
-                            alt={`${gen.title} ${gen.subtitle}`}
+                            alt={`${gen.title}`}
                             className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
                             skeletonClassName="w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
                           />
@@ -209,17 +210,17 @@ const Reference7750 = () => {
                         <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
                           {gen.title}
                         </h3>
-                        <p className="text-sm text-gray-700">{gen.subtitle}</p>
+                        {/* <p className="text-sm text-gray-600">{gen.subtitle}</p> */}
                       </div>
                     </div>
 
                     {/* Content Section */}
                     <div className="space-y-8 lg:flex-1">
-                      <div className="transform transition-all duration-500 delay-100">
-                        <p className="text-base sm:text-lg text-gray-800 leading-relaxed mb-8">
+                      {/* <div className="transform transition-all duration-500 delay-100">
+                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
                           {gen.description}
                         </p>
-                      </div>
+                      </div> */}
 
                       {/* Specifications Table */}
                       <div
@@ -232,25 +233,38 @@ const Reference7750 = () => {
                               <td className="px-6 py-4">
                                 <div className="flex items-center">
                                   <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-black">
+                                  <span className="font-medium text-gray-900">
                                     Production Years
                                   </span>
                                 </div>
                               </td>
-                              <td className="px-6 py-4 text-gray-800 text-right">
+                              <td className="px-6 py-4 text-gray-700 text-right">
                                 {gen.years}
                               </td>
                             </tr>
                             <tr className="hover:bg-gray-50 transition-colors duration-200">
                               <td className="px-6 py-4">
                                 <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Case
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.case}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
                                   <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-black">
+                                  <span className="font-medium text-gray-900">
                                     Finishes
                                   </span>
                                 </div>
                               </td>
-                              <td className="px-6 py-4 text-gray-800 text-right">
+                              <td className="px-6 py-4 text-gray-700 text-right">
                                 {gen.finishes}
                               </td>
                             </tr>
@@ -258,39 +272,39 @@ const Reference7750 = () => {
                               <td className="px-6 py-4">
                                 <div className="flex items-center">
                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-black">
+                                  <span className="font-medium text-gray-900">
                                     Caseback
                                   </span>
                                 </div>
                               </td>
-                              <td className="px-6 py-4 text-gray-800 text-right">
-                                {gen.case}
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-black">
-                                    Dial
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-800 text-right">
-                                {gen.dial}
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.caseback}
                               </td>
                             </tr>
                             <tr className="hover:bg-gray-50 transition-colors duration-200">
                               <td className="px-6 py-4">
                                 <div className="flex items-center">
                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-black">
+                                  <span className="font-medium text-gray-900">
                                     Rehaut
                                   </span>
                                 </div>
                               </td>
-                              <td className="px-6 py-4 text-gray-800 text-right">
+                              <td className="px-6 py-4 text-gray-700 text-right">
                                 {gen.rehaut}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Dial
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.dial}
                               </td>
                             </tr>
                           </tbody>
@@ -318,82 +332,100 @@ const Reference7750 = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                to="/references/7750/case-finishes"
-                className="group h-full"
-              >
-                <div
-                  className="bg-white border overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col"
-                  style={{
-                    borderColor: "#D4CDB8",
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
+              <div className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div
-                    className="h-48 relative overflow-hidden flex-shrink-0"
-                    style={{ backgroundColor: "#FAF9F5" }}
+                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
+                        alt: "Case & Finishes",
+                        title: "Case & Finishes",
+                        subtitle: "Reference 7750",
+                      });
+                    }}
                   >
                     <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750%20Photos/7750-Flat-PD.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    {/* Click to zoom indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/case-finishes"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Case & Finishes
                     </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed flex-grow">
-                      Three case variations with different finishes
-                    </p>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
-              <Link to="/references/7750/caseback" className="group h-full">
-                <div
-                  className="bg-white border overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col"
-                  style={{
-                    borderColor: "#D4CDB8",
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
+              <div className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div
-                    className="h-48 relative overflow-hidden flex-shrink-0"
-                    style={{ backgroundColor: "#FAF9F5" }}
+                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
+                        alt: "Caseback",
+                        title: "Caseback",
+                        subtitle: "Reference 7750",
+                      });
+                    }}
                   >
                     <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750%20Photos/7750-Mk.2-Caseback-1.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                       alt="Caseback"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    {/* Click to zoom indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/caseback"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Caseback
                     </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed flex-grow">
-                      Different caseback designs and markings
-                    </p>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
-              <Link to="/references/7750/rehaut" className="group h-full">
-                <div
-                  className="bg-white border overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col"
-                  style={{
-                    borderColor: "#D4CDB8",
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
+              <div className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div
-                    className="h-48 relative overflow-hidden flex-shrink-0"
-                    style={{ backgroundColor: "#FAF9F5" }}
+                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg",
+                        alt: "Rehaut Variations",
+                        title: "Rehaut Variations",
+                        subtitle: "Reference 7750",
+                      });
+                    }}
                   >
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
@@ -402,29 +434,38 @@ const Reference7750 = () => {
                       skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    {/* Click to zoom indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/rehaut"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Rehaut Variations
                     </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed flex-grow">
-                      Three known rehaut variations
-                    </p>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
-              <Link to="/references/7750/dial" className="group h-full">
-                <div
-                  className="bg-white border overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col"
-                  style={{
-                    borderColor: "#D4CDB8",
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
+              <div className="group h-full">
+                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
                   <div
-                    className="h-48 relative overflow-hidden flex-shrink-0"
-                    style={{ backgroundColor: "#FAF9F5" }}
+                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg",
+                        alt: "Dial Variations",
+                        title: "Dial Variations",
+                        subtitle: "Reference 7750",
+                      });
+                    }}
                   >
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
@@ -433,17 +474,23 @@ const Reference7750 = () => {
                       skeletonClassName="w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    {/* Click to zoom indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/dial"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Dial Variations
                     </h3>
-                    <p className="text-sm text-gray-700 leading-relaxed flex-grow">
-                      Orfina and PD dial variations
-                    </p>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </section>
