@@ -282,14 +282,6 @@ const Reference7177DialBUND = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-white p-4 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Baseline Dial
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Original factory configuration
-                    </p>
-                  </div>
                 </div>
 
                 <div className="space-y-6">
@@ -316,14 +308,6 @@ const Reference7177DialBUND = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-white p-4 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Mk. 1 Service Dial
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      "PORSCHE DESIGN" replaced with "CHRONOGRAPH"
-                    </p>
-                  </div>
                 </div>
 
                 <div className="space-y-6">
@@ -349,14 +333,6 @@ const Reference7177DialBUND = () => {
                         Click to zoom
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Mk. 2 Service Dial
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Early Luminova, lacks "3H" marking
-                    </p>
                   </div>
                 </div>
               </div>
