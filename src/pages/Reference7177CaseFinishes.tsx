@@ -113,17 +113,8 @@ const Reference7177CaseFinishes = () => {
 
           {/* Case Design */}
           <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400 mb-20 sm:mb-24 lg:mb-32">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12 items-center">
               <div className="space-y-6">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    1
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                    Identical Case Design
-                  </h2>
-                </div>
-
                 <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                   <h3 className="text-lg sm:text-xl font-semibold text-black mb-4">
                     Measurements
@@ -143,44 +134,6 @@ const Reference7177CaseFinishes = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="prose prose-gray max-w-none">
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    Shares the same "Round Top" design as the 7176, but
-                    distinguished by its expanded range of finish options
-                    including exclusive military specifications.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center justify-center">
-                <div
-                  className="relative group cursor-pointer"
-                  onClick={() =>
-                    setFullScreenImage({
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg",
-                      alt: "7177 Caseback Engraving",
-                      title: "7177 Caseback Engraving",
-                      subtitle: "Reference 7177",
-                    })
-                  }
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                  <img
-                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
-                    alt="7177 Caseback Engraving"
-                    className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                  />
-                  {/* Click indicator */}
-                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                      Click to zoom
-                    </div>
-                  </div>
-                </div>
-                <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                  All 7177 Finishes
-                </span>
               </div>
             </div>
           </div>
@@ -196,123 +149,134 @@ const Reference7177CaseFinishes = () => {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-              {/* Sandblasted Steel */}
-
-              {/* Black PVD */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Callouts on the left */}
               <div className="space-y-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                {/* Black PVD */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Black PVD
+                    </h3>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    Black PVD
-                  </h3>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      Identical to the 7176 Finish
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Identical to the 7176 Finish{" "}
-                  </p>
+
+                {/* Non-PVD Silver/Sablé */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Non-PVD Silver/Sablé
+                    </h3>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      Identical to the 7176 Finish
+                    </p>
+                  </div>
+                </div>
+
+                {/* Cadet Grey PVD */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Cadet Grey PVD
+                    </h3>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      Only Available on the 7177
+                    </p>
+                  </div>
+                </div>
+
+                {/* Olive Green PVD */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Olive Green PVD
+                    </h3>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      Identical to the 7176 Military Finish
+                    </p>
+                  </div>
+                </div>
+
+                {/* NTS PVD */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      NTS PVD
+                    </h3>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      Only Available on the 7177
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    Non-PVD Silver/Sablé{" "}
-                  </h3>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Identical to the 7176 Finish{" "}
-                  </p>
-                </div>
-              </div>
 
-              {/* Cadet Grey PVD */}
-              <div className="space-y-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
+              {/* Photo on the right */}
+              <div className="flex flex-col items-center justify-center">
+                <div
+                  className="relative group cursor-pointer"
+                  onClick={() =>
+                    setFullScreenImage({
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg",
+                      alt: "All 7177 Finishes",
+                      title: "All 7177 Finishes",
+                      subtitle:
+                        "Left To Right: Black PVD, Non-PVD Silver/Sablé, Cadet Grey PVD, Olive Green PVD, NTS PVD",
+                    })
+                  }
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                  <img
+                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
+                    alt="All 7177 Finishes"
+                    className="relative w-full max-w-lg h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                  />
+                  {/* Click indicator */}
+                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                      Click to zoom
+                    </div>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    Cadet Grey PVD
+                </div>
+                <div className="mt-4 text-center">
+                  <h3 className="text-base sm:text-lg text-black font-semibold mb-1">
+                    All 7177 Finishes
                   </h3>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Only Available on the 7177
-                  </p>
-                </div>
-              </div>
-
-              {/* Olive Green PVD */}
-              <div className="space-y-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    Olive Green PVD
-                  </h3>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Identical to the 7176 Military Finish
-                  </p>
-                </div>
-              </div>
-
-              {/* NTS PVD */}
-              <div className="space-y-6 md:col-span-2 lg:col-span-1">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    NTS PVD
-                  </h3>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    Only Available on the 7177
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Left To Right: Black PVD, Non-PVD Silver/Sablé, Cadet Grey
+                    PVD, Olive Green PVD, NTS PVD
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Comparison Section */}
-          {/* <div className="mt-20 sm:mt-24 lg:mt-32">
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 sm:p-12 rounded-lg">
-              <h3 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
-                Finish Comparison
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                <div className="space-y-4">
-                  <div className="text-lg font-medium text-black">
-                    Shared with 7176
-                  </div>
-                  <ul className="text-gray-700 space-y-2">
-                    <li>• Sandblasted Steel</li>
-                    <li>• Black PVD</li>
-                    <li>• Olive Green PVD (Military)</li>
-                  </ul>
-                </div>
-                <div className="space-y-4">
-                  <div className="text-lg font-medium text-black">
-                    Exclusive to 7177
-                  </div>
-                  <ul className="text-gray-700 space-y-2">
-                    <li>• Cadet Grey PVD</li>
-                    <li>• NTS PVD</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
 

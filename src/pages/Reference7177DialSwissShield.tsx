@@ -109,7 +109,7 @@ const Reference7177DialSwissShield = () => {
               Reference 7177
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Swiss Shield Dial
+              Swiss Coat of Arms Dial{" "}
             </p>
           </div>
 
@@ -118,8 +118,12 @@ const Reference7177DialSwissShield = () => {
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 The Swiss Military variant was supposedly issued to
-                Switzerland's military. The dial of this variant bears a "Swiss
-                Shield" as well as an additional line of text "by ORFINA".
+                Switzerland's military. The dial of this variant bears a “Swiss
+                Coat of Arms” as well as an additional line of text “by ORFINA”.
+                This variant was always produced in Olive Green PVD, and bears a
+                German Day Disk. It is estimated that a total of 200-500 Olive
+                Green PVD 7177s were produced, with approximately 33 bearing a
+                Swiss Coat of Arms.
               </p>
             </div>
           </div>
@@ -179,7 +183,7 @@ const Reference7177DialSwissShield = () => {
                       setFullScreenImage({
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
                         alt: "Swiss Shield Dial",
-                        title: "Swiss Shield Dial",
+                        title: "7177 Swiss Military Dial",
                         subtitle: "Swiss Military Issue",
                       })
                     }
@@ -199,7 +203,7 @@ const Reference7177DialSwissShield = () => {
                     </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    Swiss Shield Dial
+                    7177 Swiss Military Dial{" "}
                   </span>
                 </div>
               </div>
@@ -209,16 +213,7 @@ const Reference7177DialSwissShield = () => {
 
             {/* Dial Comparison */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Baseline vs Swiss Shield
-                </h2>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="space-y-6">
                   <div
                     className="relative group cursor-pointer"
@@ -242,14 +237,6 @@ const Reference7177DialSwissShield = () => {
                         Click to zoom
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Baseline Olive Green PVD
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Standard 7177 configuration in green finish
-                    </p>
                   </div>
                 </div>
 
@@ -277,13 +264,30 @@ const Reference7177DialSwissShield = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-white p-6 rounded-lg border">
-                    <h4 className="font-semibold text-black mb-2">
-                      Swiss Shield Set
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Special military variant with Swiss national emblem
-                    </p>
+                </div>
+                <div className="space-y-6">
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/IMG_3314.jpg",
+                        alt: " Italian Day Disk",
+                        title: " Italian Day Disk",
+                        subtitle: "Standard Configuration",
+                      })
+                    }
+                  >
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/IMG_3314.jpg"
+                      alt="7177 Baseline Olive Green PVD"
+                      className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full h-64 rounded-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -118,8 +118,8 @@ const Reference7177DialBaseline = () => {
             <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-4">
                 All 7177 or military variants have "MILITARY", "PORSCHE DESIGN",
-                and the "circle-3H logo" printed on the dial. This dial is
-                considered the Baseline variation.
+                and the “circle-3H logo” printed on the dial. This dial is
+                considered the Baseline Mk. 1 variation.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 There are ten main 7177 or military variants. These variants
@@ -138,15 +138,14 @@ const Reference7177DialBaseline = () => {
                   1
                 </div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Baseline Features
+                  The Baseline Configuration{" "}
                 </h2>
               </div>
 
               <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   <strong>Availability:</strong> The Baseline dial is found in
-                  all five of the 7177 finishes, making it the most common
-                  variant across the entire 7177 production run.
+                  all five of the 7177 finishes.
                 </p>
               </div>
             </div>

@@ -334,7 +334,7 @@ const Reference7750 = () => {
                     style={{ backgroundColor: "#FAF9F5" }}
                   >
                     <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.3-Casecrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750%20Photos/7750-Flat-PD.jpg"
                       alt="Case & Finishes"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
@@ -365,7 +365,7 @@ const Reference7750 = () => {
                     style={{ backgroundColor: "#FAF9F5" }}
                   >
                     <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg"
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750%20Photos/7750-Mk.2-Caseback-1.jpg"
                       alt="Caseback"
                       className="w-full h-full object-cover object-center"
                       skeletonClassName="w-full h-full"
