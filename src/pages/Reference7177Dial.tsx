@@ -1,66 +1,79 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { useState } from "react";
 
 const dialVariations = [
   {
     name: "Four-Logo",
     path: "/references/7177/dial/four-logo",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-4Logocrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/IMG_3298.jpg"
   },
   {
     name: "Baseline",
     path: "/references/7177/dial/baseline",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Silvercrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Blackcrop.jpg",
   },
   {
     name: "Nato",
     path: "/references/7177/dial/nato",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Nato-Proper-BUNDcrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Natocrop.jpg",
   },
   {
     name: "Swiss Shield",
     path: "/references/7177/dial/swiss-shield",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177%20Swiss%20Shieldcrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177 Swiss Shield Setcrop.jpg",
   },
   {
     name: "BUND",
     path: "/references/7177/dial/bund",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-BUNDcrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/IMG_3256crop.jpg",
   },
 
   {
     name: "Venezuelan MOD",
     path: "/references/7177/dial/venezuelan-mod",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-VMODcrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-VMOD-Casebackcrop.jpg",
   },
 
   {
     name: "Flying Tiger",
     path: "/references/7177/dial/flying-tiger",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Silvercrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Tiger-Silvercrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-Tiger-Patchcrop.jpg",
   },
   {
     name: "Royal Navy",
     path: "/references/7177/dial/royal-navy",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-RoyalNavy-NTScrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/Royal Navy Bracelet -1.png",
   },
 
   {
     name: "UAE",
     path: "/references/7177/dial/uae",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/Pasted Graphic 17crop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-UAE-Mk.2crop.jpg",
   },
 
   {
     name: "By Orfina",
     path: "/references/7177/dial/by-orfina",
-    img: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
+    img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-ByOrfinacrop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-ByOrfinacrop.jpg",
   },
 ];
 
 const placeholderImg = "/lovable-uploads/opd-watch.png";
 
 const Reference7177Dial = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -123,13 +136,30 @@ const Reference7177Dial = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
               {dialVariations.map((variation, idx) => (
                 <Link key={variation.path} to={variation.path}>
-                  <div className="bg-white border border-gray-200 shadow-md  overflow-hidden">
+                  <div 
+                    className="bg-white border border-gray-200 shadow-md overflow-hidden group"
+                    onMouseEnter={() => setHoveredCard(idx)}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
                     <div className="flex flex-col items-center text-center">
-                      <img
-                        src={variation.img}
-                        alt={`${variation.name} Dial`}
-                        className="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      />
+                      <div className="relative w-full h-64 overflow-hidden rounded-lg">
+                        {/* Default image */}
+                        <img
+                          src={variation.img1}
+                          alt={`${variation.name} Dial`}
+                          className={`absolute inset-0 w-full h-full object-cover shadow-lg transition-all duration-300 ${
+                            hoveredCard === idx ? 'opacity-0' : 'opacity-100'
+                          } group-hover:scale-105`}
+                        />
+                        {/* Hover image */}
+                        <img
+                          src={variation.img2}
+                          alt={`${variation.name} Dial Hover`}
+                          className={`absolute inset-0 w-full h-full object-cover shadow-lg transition-all duration-300 ${
+                            hoveredCard === idx ? 'opacity-100' : 'opacity-0'
+                          } group-hover:scale-105`}
+                        />
+                      </div>
                       <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gray-700 transition-colors mt-2">
                         {variation.name}
                       </h3>

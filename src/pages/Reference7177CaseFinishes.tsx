@@ -162,7 +162,7 @@ const Reference7177CaseFinishes = () => {
                       Black PVD
                     </h3>
                   </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black">
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       Identical to the 7176 Finish
                     </p>
@@ -179,7 +179,7 @@ const Reference7177CaseFinishes = () => {
                       Non-PVD Silver/Sablé
                     </h3>
                   </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-black">
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       Identical to the 7176 Finish
                     </p>
