@@ -81,31 +81,41 @@ const Reference7750 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{ backgroundColor: "#F1EFE8" }}>
       <Navigation />
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4 border-b border-gray-200">
+      <div
+        className="py-4 border-b"
+        style={{ backgroundColor: "#E8E4D9", borderColor: "#D4CDB8" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm">
             <Link
               to="/"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-gray-700 hover:text-black transition-colors"
             >
               Home
             </Link>
-            <span className="mx-2 text-gray-400">/</span>
-            <span className="text-gray-600">References</span>
-            <span className="mx-2 text-gray-400">/</span>
-            <span className="text-gray-900 font-medium">Reference 7750</span>
+            <span className="mx-2 text-gray-500">/</span>
+            <span className="text-gray-700">References</span>
+            <span className="mx-2 text-gray-500">/</span>
+            <span className="text-black font-medium">Reference 7750</span>
           </nav>
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100">
+      <div
+        style={{
+          background: "linear-gradient(135deg, #F1EFE8 0%, #E8E4D9 100%)",
+        }}
+      >
         {/* Hero Section */}
         <section className="relative pt-16 pb-12 overflow-hidden">
-          <div className="absolute inset-0 bg-black/5"></div>
+          <div
+            className="absolute inset-0"
+            style={{ backgroundColor: "rgba(139, 69, 19, 0.05)" }}
+          ></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
               className={`transform transition-all duration-1000 ${
@@ -115,11 +125,11 @@ const Reference7750 = () => {
               }`}
             >
               <div className="text-center mb-8">
-                <h1 className="font-light text-6xl md:text-8xl text-gray-900 mb-6 tracking-tight">
+                <h1 className="font-light text-6xl md:text-8xl text-black mb-6 tracking-tight">
                   Reference{" "}
-                  <span className="font-normal text-gray-700">7750</span>
+                  <span className="font-normal text-gray-800">7750</span>
                 </h1>
-                <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
+                <div className="w-24 h-1 bg-black mx-auto mb-8"></div>
                 {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                   Discover the legendary chronograph that defined an era. Three
                   distinct generations of horological excellence, each
@@ -131,15 +141,16 @@ const Reference7750 = () => {
         </section>
 
         {/* Generations Overview */}
-        <section className="py-16 bg-white">
+        <section className="py-16" style={{ backgroundColor: "#FEFCF7" }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
                 Three Generations
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                There are three “hero” generations of the Reference 7750. We will outline a brief
-                overview below, before going into deeper variations across all generations
+                There are three “hero” generations of the Reference 7750. We
+                will outline a brief overview below, before going into deeper
+                variations across all generations
               </p>
             </div>
 
@@ -174,7 +185,7 @@ const Reference7750 = () => {
                             src: gen.image,
                             alt: `${gen.title} ${gen.subtitle}`,
                             title: gen.title,
-                            subtitle: '',
+                            subtitle: "",
                           })
                         }
                       >
@@ -188,7 +199,7 @@ const Reference7750 = () => {
                         </div>
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          <div className="bg-white bg-opacity-90 text-black px-4 py-2 rounded-full text-sm font-medium">
                             Click to zoom
                           </div>
                         </div>
@@ -212,89 +223,92 @@ const Reference7750 = () => {
                       </div> */}
 
                       {/* Specifications Table */}
-                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                      <div
+                        className="bg-white rounded-xl shadow-sm border overflow-hidden"
+                        style={{ borderColor: "#D4CDB8" }}
+                      >
                         <table className="w-full">
-                           <tbody className="divide-y divide-gray-200">
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Production Years
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.years}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Case
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.case}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Finishes
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.finishes}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Caseback
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.caseback}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Rehaut
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.rehaut}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Dial
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.dial}
-                               </td>
-                             </tr>
-                           </tbody>
-                         </table>
+                          <tbody className="divide-y divide-gray-200">
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Calendar className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Production Years
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.years}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Case
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.case}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Layers className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Finishes
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.finishes}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Caseback
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.caseback}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Rehaut
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.rehaut}
+                              </td>
+                            </tr>
+                            <tr className="hover:bg-gray-50 transition-colors duration-200">
+                              <td className="px-6 py-4">
+                                <div className="flex items-center">
+                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
+                                  <span className="font-medium text-gray-900">
+                                    Dial
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-gray-700 text-right">
+                                {gen.dial}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -305,7 +319,7 @@ const Reference7750 = () => {
         </section>
 
         {/* Sub-Pages Navigation */}
-        <section className="py-20 bg-white">
+        <section className="py-20" style={{ backgroundColor: "#FEFCF7" }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
@@ -320,7 +334,7 @@ const Reference7750 = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
+                  <div
                     className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
@@ -347,7 +361,10 @@ const Reference7750 = () => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/references/7750/case-finishes" className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/case-finishes"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Case & Finishes
                     </h3>
@@ -357,7 +374,7 @@ const Reference7750 = () => {
 
               <div className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
+                  <div
                     className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
@@ -384,7 +401,10 @@ const Reference7750 = () => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/references/7750/caseback" className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/caseback"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Caseback
                     </h3>
@@ -394,7 +414,7 @@ const Reference7750 = () => {
 
               <div className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
+                  <div
                     className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
@@ -421,7 +441,10 @@ const Reference7750 = () => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/references/7750/rehaut" className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/rehaut"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Rehaut Variations
                     </h3>
@@ -431,7 +454,7 @@ const Reference7750 = () => {
 
               <div className="group h-full">
                 <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
+                  <div
                     className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
@@ -458,7 +481,10 @@ const Reference7750 = () => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/references/7750/dial" className="p-6 flex-grow flex flex-col">
+                  <Link
+                    to="/references/7750/dial"
+                    className="p-6 flex-grow flex flex-col"
+                  >
                     <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
                       Dial Variations
                     </h3>
@@ -512,14 +538,17 @@ const Reference7750 = () => {
         </section> */}
 
         {/* Technical Specifications */}
-        <section className="py-16 bg-white">
+        <section className="py-16" style={{ backgroundColor: "#FEFCF7" }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
+            <h2 className="text-4xl font-light text-black mb-12 text-center">
               Technical Specifications
             </h2>
 
-            <div className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
-              <div className="px-8 py-6 bg-gray-900">
+            <div
+              className="rounded-2xl shadow-lg overflow-hidden"
+              style={{ backgroundColor: "#F5F2E8" }}
+            >
+              <div className="px-8 py-6 bg-black">
                 <h3 className="text-2xl font-light text-white">
                   Reference 7750 Specifications
                 </h3>
@@ -527,55 +556,79 @@ const Reference7750 = () => {
               <div className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4">
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Reference Number
                       </span>
-                      <span className="text-gray-900">7750</span>
+                      <span className="text-black">7750</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Production Years
                       </span>
-                      <span className="text-gray-900">1973-1976</span>
+                      <span className="text-black">1973-1976</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Case Material
                       </span>
-                      <span className="text-gray-900">Stainless Steel</span>
+                      <span className="text-black">Stainless Steel</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Water Resistance
                       </span>
-                      <span className="text-gray-900">100m</span>
+                      <span className="text-black">100m</span>
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Movement
                       </span>
-                      <span className="text-gray-900">Valjoux 7750</span>
+                      <span className="text-black">Valjoux 7750</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">Jewels</span>
-                      <span className="text-gray-900">25</span>
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">Jewels</span>
+                      <span className="text-black">25</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Functions
                       </span>
-                      <span className="text-gray-900">
+                      <span className="text-black">
                         Hours, Minutes, Seconds, Chronograph, Date
                       </span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
-                      <span className="font-medium text-gray-700">
+                    <div
+                      className="flex justify-between py-3 border-b"
+                      style={{ borderColor: "#D4CDB8" }}
+                    >
+                      <span className="font-medium text-gray-800">
                         Serial Range
                       </span>
-                      <span className="text-gray-900">6000–9000 (approx.)</span>
+                      <span className="text-black">6000–9000 (approx.)</span>
                     </div>
                   </div>
                 </div>
@@ -588,11 +641,14 @@ const Reference7750 = () => {
       </div>
 
       {/* Back to References */}
-      <div className="py-8 bg-white border-t border-gray-200">
+      <div
+        className="py-8 border-t"
+        style={{ backgroundColor: "#FEFCF7", borderColor: "#D4CDB8" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/"
-            className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+            className="inline-flex items-center text-gray-700 hover:text-black transition-colors"
           >
             ← Back to References
           </Link>
