@@ -162,105 +162,111 @@ const Reference7177Rehaut = () => {
                   </div>
                 </div>
                 {/* Image grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="flex flex-col items-center">
-                    <div className="relative group">
-                      <div className="flex flex-col items-center justify-center">
-                        <div
-                          className="relative group cursor-pointer"
-                          onClick={() =>
-                            setFullScreenImage({
-                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
-                              alt: "7177 Standard Rehaut",
-                              title: "7177 Standard Rehaut",
-                              subtitle: "Reference 7177",
-                            })
-                          }
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                          <img
-                            src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg"
-                            alt="7177 Standard Rehaut"
-                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          />
-                          {/* Click indicator */}
-                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                              Click to zoom
+                <div className="space-y-8">
+                  {/* First two images side by side */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="relative group">
+                        <div className="flex flex-col items-center justify-center">
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
+                                alt: "7177 Standard Rehaut",
+                                title: "7177 Standard Rehaut",
+                                subtitle: "Reference 7177",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg"
+                              alt="7177 Standard Rehaut"
+                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
                             </div>
                           </div>
+                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                            7177 Standard Rehaut{" "}
+                          </span>
                         </div>
-                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                          7177 Standard Rehaut{" "}
-                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="relative group">
+                        <div className="flex flex-col items-center justify-center">
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
+                                alt: "7177 Crooked Seven Rehaut",
+                                title: "7177 Crooked Seven Rehaut",
+                                subtitle: "Reference 7177",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
+                              alt="7177 Crooked Seven Rehaut"
+                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
+                            </div>
+                          </div>
+                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                            7177 Crooked Seven Rehaut{" "}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <div className="relative group">
-                      <div className="flex flex-col items-center justify-center">
-                        <div
-                          className="relative group cursor-pointer"
-                          onClick={() =>
-                            setFullScreenImage({
-                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
-                              alt: "7177 Crooked Seven Rehaut",
-                              title: "7177 Crooked Seven Rehaut",
-                              subtitle: "Reference 7177",
-                            })
-                          }
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                          <img
-                            src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
-                            alt="7177 Crooked Seven Rehaut"
-                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          />
-                          {/* Click indicator */}
-                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                              Click to zoom
+                  
+                  {/* Third image centered below */}
+                  <div className="flex justify-center">
+                    <div className="flex flex-col items-center">
+                      <div className="relative group">
+                        <div className="flex flex-col items-center justify-center">
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg",
+                                alt: "7177 Crooked Seven Rehaut - Close-Up",
+                                title: "7177 Crooked Seven Rehaut - Close-Up",
+                                subtitle: "Reference 7177",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
+                              alt="7177 Crooked Seven Rehaut - Close-Up"
+                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                          7177 Crooked Seven Rehaut{" "}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Last Image Spanning Both Columns */}
-                <div className="lg:col-2 flex flex-col items-right  ">
-                  <div className="relative group">
-                    <div className="flex flex-col items-center justify-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg",
-                            alt: "7177 Crooked Seven Rehaut - Close-Up",
-                            title: "7177 Crooked Seven Rehaut - Close-Up",
-                            subtitle: "Reference 7177",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <img
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
-                          alt="7177 Crooked Seven Rehaut - Close-Up"
-                          className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        />
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
+                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                            7177 Crooked Seven Rehaut - Close-Up{" "}
+                          </span>
                         </div>
                       </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Crooked Seven Rehaut - Close-Up{" "}
-                      </span>
                     </div>
                   </div>
                 </div>
