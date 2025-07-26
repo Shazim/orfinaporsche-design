@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -120,39 +121,29 @@ const Reference7177DialSwissShield = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Key Notes
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Key Notes" 
+                    variant="elegant-dark" 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <ul className="space-y-4 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          The Swiss Military variant was supposedly issued to Switzerland's military. The dial of this variant bears a "Swiss Shield" as well as an additional line of text "by ORFINA".
+                          The Swiss Military variant was supposedly issued to Switzerland's military. The dial of this variant bears a "Swiss Coat of Arms" as well as an additional line of text "by ORFINA".
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          This variant was always produced in Olive Green PVD, bears an Italian Day Disk (Easily identifiable by the word GIO - which stands for Thursday in Italian), and came in a set with a matching Green PVD BUND-style leather strap, Green PVD bracelet, and a Green Leather Box.
+                          This variant was always produced in Olive Green PVD, and bears a German Day Disk.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          It is thought that the Swiss Military also ordered all Baseline Variant Olive Green PVD 7177s, and these examples should bear an Italian day disk as well.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          It is estimated that a total of 200-500 Olive Green PVD 7177s were produced, with approximately 33 bearing a Swiss Shield.
+                          It is estimated that a total of 200-500 Olive Green PVD 7177s were produced, with approximately 33 bearing a Swiss Coat of Arms.
                         </span>
                       </li>
                     </ul>
@@ -179,8 +170,8 @@ const Reference7177DialSwissShield = () => {
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shieldcrop.jpg"
                           alt="7177 Swiss Coat of Arms Dial"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
+                          className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -211,8 +202,8 @@ const Reference7177DialSwissShield = () => {
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20Swiss%20Shield%20Setcrop.jpg"
                           alt="7177 Swiss Coat of Arms Set"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
+                          className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -245,8 +236,8 @@ const Reference7177DialSwissShield = () => {
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg"
                           alt="7177 Olive Green PVD Baseline"
-                          className="relative w-full max-w-sm h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full max-w-sm h-64 rounded-lg"
+                          className="relative w-full max-w-sm h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full max-w-sm h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">

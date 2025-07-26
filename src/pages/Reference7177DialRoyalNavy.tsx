@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
+import ImageSlider from "../components/ImageSlider";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -120,14 +122,10 @@ const Reference7177DialRoyalNavy = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Two Debated Origins
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Two Debated Origins" 
+                    variant="elegant-dark" 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <ul className="space-y-4 text-gray-700">
@@ -147,105 +145,25 @@ const Reference7177DialRoyalNavy = () => {
                   </div>
                 </div>
 
-                {/* Royal Navy Bracelet Images */}
-                <div className="space-y-8">
-                  {/* First two bracelet images side by side */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {/* First Bracelet Image */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
-                            alt: "Royal Navy Bracelet View 1",
-                            title: "Royal Navy Bracelet",
-                            subtitle: "Standard Configuration",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png"
-                          alt="Royal Navy Bracelet View 1"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Royal Navy Bracelet
-                      </span>
-                    </div>
-
-                    {/* Second Bracelet Image */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20- 2.png",
-                            alt: "Royal Navy Bracelet View 2",
-                            title: "Royal Navy Bracelet",
-                            subtitle: "Detailed View",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20- 2.png"
-                          alt="Royal Navy Bracelet View 2"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Royal Navy Bracelet
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Third bracelet image centered below */}
-                  <div className="flex justify-center">
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal Navy Bracelet - 3.png",
-                            alt: "Royal Navy Bracelet View 3",
-                            title: "Royal Navy Bracelet",
-                            subtitle: "Complete Set",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal Navy Bracelet - 3.png"
-                          alt="Royal Navy Bracelet View 3"
-                          className="relative w-full max-w-sm h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full max-w-sm h-64 rounded-lg"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Royal Navy Bracelet
-                      </span>
-                    </div>
-                  </div>
+                {/* Royal Navy Bracelet Images - Slider */}
+                <div className="flex flex-col items-center justify-center">
+                  <ImageSlider
+                    images={[
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20-1.png",
+                        alt: "Royal Navy Bracelet View 1",
+                        title: "7177 Royal Navy Bracelet",
+                        subtitle: "Royal Navy Bracelet"
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal%20Navy%20Bracelet%20- 2.png",
+                        alt: "Royal Navy Bracelet View 2", 
+                        title: "7177 Royal Navy Bracelet",
+                        subtitle: "Royal Navy Bracelet"
+                      }
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
               </div>
             </div>
@@ -255,14 +173,10 @@ const Reference7177DialRoyalNavy = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Key Notes
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Key Notes" 
+                    variant="elegant-dark" 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <ul className="space-y-4 text-gray-700">
@@ -282,37 +196,25 @@ const Reference7177DialRoyalNavy = () => {
                   </div>
                 </div>
 
-                {/* Royal Navy Dial Image */}
-                <div className="flex justify-center">
-                  <div className="flex flex-col items-center">
-                    <div
-                      className="relative group cursor-pointer"
-                      onClick={() =>
-                        setFullScreenImage({
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
-                          alt: "Royal Navy Dial",
-                          title: "Royal Navy Dial",
-                          subtitle: "Inscription below PORSCHE DESIGN text",
-                        })
+                {/* Royal Navy Dial and Bracelet Slider */}
+                <div className="flex flex-col items-center justify-center">
+                  <ImageSlider
+                    images={[
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg",
+                        alt: "Royal Navy Dial",
+                        title: "7177 Royal Navy Dial",
+                        subtitle: "Inscription below PORSCHE DESIGN text"
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Royal Navy Bracelet - 3.png",
+                        alt: "Royal Navy Bracelet View 3", 
+                        title: "7177 Royal Navy Bracelet",
+                        subtitle: "Complete Set"
                       }
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-RoyalNavy-NTScrop.jpg"
-                        alt="Royal Navy Dial"
-                        className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full max-w-sm h-80 rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7177 Royal Navy Dial
-                    </span>
-                  </div>
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
               </div>
             </div>

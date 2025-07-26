@@ -123,8 +123,7 @@ const Reference7177DialByOrfina = () => {
                 <div className="space-y-6">
                   <SectionHeading 
                     title="Key Notes" 
-                    variant="numbered" 
-                    number={1} 
+                    variant="elegant-dark" 
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
@@ -169,8 +168,8 @@ const Reference7177DialByOrfina = () => {
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg"
                         alt="By Orfina Service Dial"
-                        className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full max-w-sm h-80 rounded-lg"
+                        className="relative w-full max-w-md h-96 sm:h-[420px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full max-w-md h-96 sm:h-[420px] rounded-lg"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
                         <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">

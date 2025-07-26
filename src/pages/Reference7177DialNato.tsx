@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -120,14 +121,10 @@ const Reference7177DialNato = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Key Notes
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Key Notes" 
+                    variant="elegant-dark" 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <ul className="space-y-4 text-gray-700">
@@ -173,8 +170,8 @@ const Reference7177DialNato = () => {
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Proper-BUNDcrop.jpg"
                           alt="7177 NATO Dial"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
+                          className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -205,8 +202,8 @@ const Reference7177DialNato = () => {
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Nato-Magazinecrop.jpg"
                           alt="7177 NATO Magazine Feature"
-                          className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-64 rounded-lg"
+                          className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                          skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
                         {/* Click indicator */}
                         <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">

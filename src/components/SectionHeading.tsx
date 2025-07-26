@@ -2,7 +2,7 @@ import React from "react";
 
 interface SectionHeadingProps {
   title: string;
-  variant?: "numbered" | "solid";
+  variant?: "numbered" | "solid" | "elegant" | "elegant-dark";
   number?: number;
   className?: string;
 }
@@ -20,6 +20,42 @@ const SectionHeading = ({
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-wide">
             {title}
           </h2>
+        </div>
+      </div>
+    );
+  }
+
+  if (variant === "elegant") {
+    return (
+      <div className={`mb-8 sm:mb-12 ${className}`}>
+        <div className="relative">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 uppercase tracking-wide">
+            {title}
+          </h2>
+          <div className="flex items-center space-x-3">
+            <div className="w-16 h-0.5 bg-black"></div>
+            <div className="w-2 h-2 bg-black rounded-full"></div>
+            <div className="w-8 h-0.5 bg-gray-300"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (variant === "elegant-dark") {
+    return (
+      <div className={`mb-8 sm:mb-12 ${className}`}>
+        <div className="inline-block">
+          <div className="bg-black text-white px-6 py-4 rounded-lg">
+            <h2 className="text-xl sm:text-2xl font-semibold uppercase tracking-wide">
+              {title}
+            </h2>
+          </div>
+          <div className="flex items-center space-x-3 mt-3">
+            <div className="w-16 h-0.5 bg-black"></div>
+            <div className="w-2 h-2 bg-black rounded-full"></div>
+            <div className="w-8 h-0.5 bg-gray-300"></div>
+          </div>
         </div>
       </div>
     );

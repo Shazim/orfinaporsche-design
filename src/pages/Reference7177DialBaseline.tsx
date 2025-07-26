@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -120,14 +121,10 @@ const Reference7177DialBaseline = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      The Baseline Configuration
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="The Baseline Configuration" 
+                    variant="elegant-dark" 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
@@ -180,14 +177,10 @@ const Reference7177DialBaseline = () => {
 
             {/* Finish Variations */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Finish Variations
-                </h2>
-              </div>
+              <SectionHeading 
+                title="Finish Variations" 
+                variant="elegant-dark" 
+              />
 
               {/* Individual Finish Examples Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -234,8 +227,8 @@ const Reference7177DialBaseline = () => {
                       <ImageWithLoader
                         src={image.src}
                         alt={image.title}
-                        className="relative w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full h-64 rounded-lg"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                       />
                       {/* Click indicator */}
                       <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">

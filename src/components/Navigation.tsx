@@ -366,15 +366,6 @@ const Navigation = () => {
                       )}
                     </div>
 
-                    {/* Prototypes */}
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors duration-200">
-                      <Link
-                        to="/references/prototypes"
-                        className="block font-medium text-sm text-black hover:text-gray-600 transition-colors"
-                      >
-                        Prototypes
-                      </Link>
-                    </div>
                   </div>
                 </div>
               )}

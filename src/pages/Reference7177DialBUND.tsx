@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -117,337 +118,335 @@ const Reference7177DialBUND = () => {
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {/* Key Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-                {/* Text Content */}
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Key Notes
-                    </h2>
-                  </div>
+              <SectionHeading 
+                title="Key Notes" 
+                variant="elegant-dark" 
+              />
+              
+              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-base sm:text-lg leading-relaxed">
+                      The BUND variant is short for "Bundeswehr", the German Federal Defense Force to whom they were issued.
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-base sm:text-lg leading-relaxed">
+                      BUND examples are seen in a variety of finishes and were always issued on a BUND-style strap.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
+            {/* Caseback Markings */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
+              <SectionHeading 
+                title="Caseback Markings" 
+                variant="elegant-dark" 
+              />
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <div className="space-y-6">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <ul className="space-y-4 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          The BUND variant is short for "Bundeswehr", the German Federal Defense Force to whom they were issued.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          BUND examples are seen in a variety of finishes and were always issued on a BUND-style strap.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed font-semibold">
-                          (1) Caseback Markings
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
                           On these examples, the caseback does have "BUND" and an appropriate NSN engraving.
                         </span>
                       </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
                           Two known NSNs are found on the BUND variant: the initial NSN is 6645-12-182-1763, and the second is 6645-12-194-8642.
                         </span>
                       </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
                           Some BUND examples are "double-struck," meaning the initial NSN is crossed out, and the second NSN is added. This was presumably done at some maintenance event during the watch's lifetime. BUND variants also do not have the "7177" ref# engraving on the caseback.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed font-semibold">
-                          (2) Dial Variations
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          BUND examples have been found to be produced with both the Baseline Mk. 1 Dial and Baseline Mk. 2 Dials.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The Baseline Mk. 2 Dials Dials lacked "Porsche Design" text, which was replaced with "CHRONOGRAPH" text and these examples bear double-struck casebacks.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          In addition, some BUND examples also sent in for service, had their dials replaced with Service Dials. These used early Luminova and lacked "Porsche Design" text, again replaced by "CHRONOGRAPH" text, but also lacked the "3H" marking because the dials did not use tritium. Luminova dial examples will also bear double-struck casebacks.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed font-semibold">
-                          (3) Accessories
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The BUND examples were also issued in a box that bore the initial NSN 6645-12-182-1763.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          There are also a variety of BUND straps found across examples. Please refer to the Components - BUND page for more information on these straps.
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                {/* Images */}
-                <div className="space-y-8">
-                  {/* Caseback Images */}
-                  <div className="grid grid-cols-1 gap-6">
-                    {/* Single-Struck Caseback */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg",
-                            alt: "BUND Single-Struck Caseback",
-                            title: "BUND Single-Struck Caseback",
-                            subtitle: "Initial NSN 6645-12-182-1763",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg"
-                          alt="BUND Single-Struck Caseback"
-                          className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-80 rounded-lg"
-                        />
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg",
+                          alt: "BUND Single-Struck Caseback",
+                          title: "BUND Single-Struck Caseback",
+                          subtitle: "Initial NSN 6645-12-182-1763",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg"
+                        alt="BUND Single-Struck Caseback"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
                         </div>
                       </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        BUND Single-Struck Caseback
-                      </span>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      BUND Single-Struck Caseback
+                    </span>
+                  </div>
 
-                    {/* Double-Struck Caseback */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg",
-                            alt: "BUND Double-Struck Caseback",
-                            title: "BUND Double-Struck Caseback",
-                            subtitle: "Original NSN Crossed Out, New NSN Added",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg"
-                          alt="BUND Double-Struck Caseback"
-                          className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-80 rounded-lg"
-                        />
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg",
+                          alt: "BUND Double-Struck Caseback",
+                          title: "BUND Double-Struck Caseback",
+                          subtitle: "Original NSN Crossed Out, New NSN Added",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg"
+                        alt="BUND Double-Struck Caseback"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
                         </div>
                       </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        BUND Double-Struck Caseback
-                      </span>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      BUND Double-Struck Caseback
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Dial Variations */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Dial Variations
-                </h2>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
-                        alt: "BUND with Baseline Dial",
-                        title: "BUND with Baseline Dial",
-                        subtitle: "Original Configuration",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg"
-                      alt="BUND with Baseline Dial"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center font-medium">
-                    BUND with Baseline Dial
-                  </span>
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
+              <SectionHeading 
+                title="Dial Variations" 
+                variant="elegant-dark" 
+              />
+              
+              <div className="space-y-8">
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  <ul className="space-y-4 text-gray-700">
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        BUND examples have been found to be produced with both the Baseline Mk. 1 Dial and Baseline Mk. 2 Dials
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        The Baseline Mk. 2 Dials Dials lacked "Porsche Design" text, which was replaced with "CHRONOGRAPH" text and these examples bear double-struck casebacks.
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        In addition, some BUND examples also sent in for service, had their dials replaced with Service Dials. These used early Luminova and lacked "Porsche Design" text, again replaced by "CHRONOGRAPH" text, but also lacked the "3H" marking because the dials did not use tritium. Luminova dial examples will also bear double-struck casebacks.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
 
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg",
-                        alt: "Mk. 2 Service Dial",
-                        title: "Mk. 2 Service Dial",
-                        subtitle: "Porsche Design Replaced with CHRONOGRAPH",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg"
-                      alt="Mk. 2 Service Dial"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg",
+                          alt: "7177 BUND with Baseline Dial",
+                          title: "7177 BUND with Baseline Dial",
+                          subtitle: "Original Configuration",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-BUNDcrop.jpg"
+                        alt="7177 BUND with Baseline Dial"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
                       </div>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7177 BUND with Baseline Dial
+                    </span>
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center font-medium">
-                    Mk. 2 Service Dial
-                  </span>
-                </div>
 
-                <div className="space-y-6">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg",
-                        alt: "Service Dial with Luminova",
-                        title: "Service Dial with Luminova",
-                        subtitle: "Luminova, No 3H Marking",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ByOrfinacrop.jpg"
-                      alt="Service Dial with Luminova"
-                      className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
+                          alt: "Mk. 1 Service Dial",
+                          title: "Mk. 1 Service Dial",
+                          subtitle: "Porsche Design Replaced with CHRONOGRAPH",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg"
+                        alt="Mk. 1 Service Dial"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
                       </div>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      Mk. 1 Service Dial
+                    </span>
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center font-medium">
-                    Service Dial with Luminova
-                  </span>
+
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg",
+                          alt: "7177 BUND with Mk. 2 Service Dial",
+                          title: "7177 BUND with Mk. 2 Service Dial",
+                          subtitle: "Luminova, No 3H Marking",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MK2-ServiceDialcrop.jpg"
+                        alt="7177 BUND with Mk. 2 Service Dial"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7177 BUND with Mk. 2 Service Dial
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* BUND Boxes */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
+            {/* Accessories */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+              <SectionHeading 
+                title="Accessories" 
+                variant="elegant-dark" 
+              />
+              
+              <div className="space-y-8">
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  <ul className="space-y-4 text-gray-700">
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        The BUND examples were also issued in a box that bore the initial NSN 6645-12-182-1763.
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        There are also a variety of BUND straps found across examples. Please refer to the Components - BUND page for more information on these straps.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Accessories
-                </h2>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div
-                  className="relative group cursor-pointer"
-                  onClick={() =>
-                    setFullScreenImage({
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg",
-                      alt: "BUND Box Exterior",
-                      title: "BUND Box",
-                      subtitle: "NSN 6645-12-182-1763",
-                    })
-                  }
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                  <ImageWithLoader
-                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg"
-                    alt="BUND Box Exterior"
-                    className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                    skeletonClassName="w-full h-80 rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                      Click to zoom
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg",
+                          alt: "7177 BUND Box 1",
+                          title: "7177 BUND Box 1",
+                          subtitle: "NSN 6645-12-182-1763",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-2crop.jpg"
+                        alt="7177 BUND Box 1"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                    7177 BUND Box 1
+                    </span>
                   </div>
-                </div>
-                
-                <div
-                  className="relative group cursor-pointer"
-                  onClick={() =>
-                    setFullScreenImage({
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg",
-                      alt: "BUND Box Interior",
-                      title: "BUND Box Interior",
-                      subtitle: "Military Issue Packaging",
-                    })
-                  }
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                  <ImageWithLoader
-                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg"
-                    alt="BUND Box Interior"
-                    className="relative w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                    skeletonClassName="w-full h-80 rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                    <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                      Click to zoom
+                  
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg",
+                          alt: "7177 BUND Box 2",
+                          title: "7177 BUND Box 2",
+                          subtitle: "Military Issue Packaging",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Bund-Box-3crop.jpg"
+                        alt="7177 BUND Box 2"
+                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
                     </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7177 BUND Box 2
+                    </span>
                   </div>
                 </div>
               </div>
