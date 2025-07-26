@@ -3,6 +3,8 @@ import { Clock, Calendar, Settings, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import ExploreDetailsCard from "../components/ExploreDetailsCard";
+import ReferenceVariantCard from "../components/ReferenceVariantCard";
 
 const Reference7176 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -159,149 +161,23 @@ const Reference7176 = () => {
             {/* All References Displayed */}
             <div className="space-y-24 sm:space-y-32 lg:space-y-40">
               {references.map((ref, index) => (
-                <div
+                <ReferenceVariantCard
                   key={ref.id}
-                  className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
-                >
-                  <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      {index + 1}
-                    </div>
-                    <div>
-                      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                        {ref.title}
-                      </h2>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start mb-12">
-                    {/* Image Section */}
-                    <div className="relative group lg:w-auto lg:flex-shrink-0">
-                      <div
-                        className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: ref.image,
-                            alt: ref.title,
-                            title: ref.title,
-                            subtitle: "Reference 7176",
-                          })
-                        }
-                      >
-                        <div className="w-full max-w-md mx-auto lg:mx-0">
-                          <ImageWithLoader
-                            src={ref.image}
-                            alt={ref.title}
-                            className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                            skeletonClassName="w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
-                          />
-                        </div>
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Image Title Below */}
-                      <div className="mt-4 text-center">
-                        <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
-                          {ref.title}
-                        </h3>
-                      </div>
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="space-y-8 lg:flex-1">
-                      {/* Specifications Table */}
-                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                        <table className="w-full">
-                          <tbody className="divide-y divide-gray-200">
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Production Years
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                {ref.years}
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Case
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                7176
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Finishes
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                {ref.finishes}
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Caseback
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                {ref.caseback}
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Rehaut
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                {ref.rehaut}
-                              </td>
-                            </tr>
-                            <tr className="hover:bg-gray-50 transition-colors duration-200">
-                              <td className="px-6 py-4">
-                                <div className="flex items-center">
-                                  <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                                  <span className="font-medium text-gray-900">
-                                    Dial
-                                  </span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-gray-700 text-right">
-                                {ref.dial}
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  index={index + 1}
+                  title={ref.title}
+                  imageSrc={ref.image}
+                  imageAlt={ref.title}
+                  subtitle="Reference 7176"
+                  specifications={[
+                    { label: "Production Years", value: ref.years, icon: Calendar },
+                    { label: "Case", value: "7176", icon: Settings },
+                    { label: "Finishes", value: ref.finishes, icon: Layers },
+                    { label: "Caseback", value: ref.caseback, icon: Settings },
+                    { label: "Rehaut", value: ref.rehaut, icon: Settings },
+                    { label: "Dial", value: ref.dial, icon: Clock },
+                  ]}
+                  onImageClick={setFullScreenImage}
+                />
               ))}
             </div>
           </div>
@@ -316,154 +192,34 @@ const Reference7176 = () => {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-PVD.jpg",
-                        alt: "Case & Finishes",
-                        title: "Case & Finishes",
-                        subtitle: "Reference 7176",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-PVD.jpg"
-                      alt="Case & Finishes"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7176/case-finishes" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Case & Finishes
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Caseback.jpg",
-                        alt: "Caseback",
-                        title: "Caseback",
-                        subtitle: "Reference 7176",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Caseback.jpg"
-                      alt="Caseback"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7176/caseback" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Caseback
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg",
-                        alt: "Rehaut Variations",
-                        title: "Rehaut Variations",
-                        subtitle: "Reference 7176",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg"
-                      alt="Rehaut Variations"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7176/rehaut" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Rehaut Variations
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Dial.jpg",
-                        alt: "Dial Variations",
-                        title: "Dial Variations",
-                        subtitle: "Reference 7176",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Dial.jpg"
-                      alt="Dial Variations"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7176/dial" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Dial Variations
-                    </h3>
-                  </Link>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <ExploreDetailsCard
+                title="Case & Finishes"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-PVD.jpg"
+                imageAlt="Case & Finishes"
+                linkTo="/references/7176/case-finishes"
+              />
+              
+              <ExploreDetailsCard
+                title="Caseback"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Caseback.jpg"
+                imageAlt="Caseback"
+                linkTo="/references/7176/caseback"
+              />
+              
+              <ExploreDetailsCard
+                title="Rehaut Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg"
+                imageAlt="Rehaut Variations"
+                linkTo="/references/7176/rehaut"
+              />
+              
+              <ExploreDetailsCard
+                title="Dial Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Dial.jpg"
+                imageAlt="Dial Variations"
+                linkTo="/references/7176/dial"
+              />
             </div>
           </div>
         </section>

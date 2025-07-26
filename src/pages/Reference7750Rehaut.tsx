@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7750Rehaut = () => {
@@ -67,34 +68,22 @@ const Reference7750Rehaut = () => {
 
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300 mb-8">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               There are three known variations of Rehaut found in the 7750 model
               range. These can be found across all 7750 case marks and dial
               variations.
             </p>
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Despite being different measurements - the 1Mile and 1km have the same marks throughout
-                their rehaut. This lack of detail might explain that in the next
-                reference of Orfina Porsche Design watches, the manufacturer
-                just put "Tachymetre" solely on the rehaut without either "unit"
-                designation.
-              </p>
-            </div>
           </div>
 
           {/* Rehaut Variations */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {/* 1 Mile Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  1 Mile Rehaut
-                </h2>
-              </div>
+              <SectionHeading 
+                title="1 Mile Rehaut" 
+                variant="numbered" 
+                number={1} 
+              />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
                 <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
@@ -114,7 +103,7 @@ const Reference7750Rehaut = () => {
                       <img
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg"
                         alt="7750 1Mile Rehaut"
-                        className="relative w-full h-48 sm:h-56 lg:h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
 
                       {/* Click indicator */}
@@ -144,7 +133,7 @@ const Reference7750Rehaut = () => {
                       <img
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
                         alt="7750 1Mile Rehaut Close-Up"
-                        className="relative w-full h-48 sm:h-56 lg:h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
 
                       {/* Click indicator */}
@@ -171,16 +160,34 @@ const Reference7750Rehaut = () => {
               </div>
             </div>
 
+            {/* Callout between 1 Mile and 1 KM */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-450">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+                {/* Empty space to match image columns */}
+                <div className="lg:col-span-2"></div>
+                
+                {/* Callout aligned with other callouts */}
+                <div className="flex items-center justify-center">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      Despite being different measurements - the 1Mile and 1km have the same marks throughout
+                      their rehaut. This lack of detail might explain that in the next
+                      reference of Orfina Porsche Design watches, the manufacturer
+                      just put "Tachymetre" solely on the rehaut without either "unit"
+                      designation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* 1 KM Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  1 KM Rehaut
-                </h2>
-              </div>
+              <SectionHeading 
+                title="1 KM Rehaut" 
+                variant="numbered" 
+                number={2} 
+              />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
                 <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
@@ -200,7 +207,7 @@ const Reference7750Rehaut = () => {
                       <img
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
                         alt="7750 1km Rehaut"
-                        className="relative w-full h-48 sm:h-56 lg:h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
 
                       {/* Click indicator */}
@@ -230,7 +237,7 @@ const Reference7750Rehaut = () => {
                       <img
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1KM.jpg"
                         alt="7750 1km Rehaut Close-Up"
-                        className="relative w-full h-48 sm:h-56 lg:h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
 
                       {/* Click indicator */}
@@ -259,14 +266,11 @@ const Reference7750Rehaut = () => {
 
             {/* Advertisement Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Advertisement Rehaut
-                </h2>
-              </div>
+              <SectionHeading 
+                title="Advertisement Rehaut" 
+                variant="numbered" 
+                number={3} 
+              />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
                 <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
@@ -286,7 +290,7 @@ const Reference7750Rehaut = () => {
                       <img
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Advertisement%20Rehaut.jpg"
                         alt="7750 Advertisement Rehaut"
-                        className="relative w-full h-48 sm:h-56 lg:h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
 
                       {/* Click indicator */}
@@ -301,10 +305,10 @@ const Reference7750Rehaut = () => {
                     </span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <div className="relative group">
+                    <div className="relative group max-w-sm mx-auto">
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 transition-transform duration-300"></div>
-                      <div className="relative w-full h-48 sm:h-56 lg:h-64 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 shadow-lg flex items-center justify-center">
-                        <div className="text-center text-gray-500">
+                      <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 shadow-lg flex items-center justify-center">
+                        <div className="text-center text-gray-500 p-6">
                           <div className="text-sm font-medium mb-2">
                             Photo Coming Soon
                           </div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7750CaseFinishes = () => {
@@ -83,8 +84,8 @@ const Reference7750CaseFinishes = () => {
         <ImageWithLoader
           src={image.src}
           alt={image.alt}
-          className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-          skeletonClassName="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg"
+          className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+          skeletonClassName="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg"
         />
 
         {/* Click indicator */}
@@ -102,7 +103,7 @@ const Reference7750CaseFinishes = () => {
       <div className="max-w-xs w-full">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1"></div>
-          <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+          <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
             <div className="text-center text-gray-500">
               <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
               <div className="text-xs">Silver/Sable Example</div>
@@ -184,14 +185,11 @@ const Reference7750CaseFinishes = () => {
           <div className="space-y-24 sm:space-y-32 lg:space-y-40">
             {/* Mk. 1 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Orfina 7750 Flat Top – Mk. 1
-                </h2>
-              </div>
+              <SectionHeading 
+                title="Orfina 7750 Flat Top – Mk. 1" 
+                variant="numbered" 
+                number={1} 
+              />
 
               {/* Measurements */}
               <div className="mb-8 sm:mb-12">
@@ -311,14 +309,11 @@ const Reference7750CaseFinishes = () => {
 
             {/* Mk. 2 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Orfina 7750 Transitional Thin Top – Mk. 2
-                </h2>
-              </div>
+              <SectionHeading 
+                title="Orfina 7750 Transitional Thin Top – Mk. 2" 
+                variant="numbered" 
+                number={2} 
+              />
 
               {/* Measurements */}
               <div className="mb-8 sm:mb-12">
@@ -422,14 +417,11 @@ const Reference7750CaseFinishes = () => {
 
             {/* Mk. 3 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Orfina 7750 Flat-Face Service – Mk. 3
-                </h2>
-              </div>
+              <SectionHeading 
+                title="Orfina 7750 Flat-Face Service – Mk. 3" 
+                variant="numbered" 
+                number={3} 
+              />
 
               {/* Measurements */}
               <div className="mb-8 sm:mb-12">

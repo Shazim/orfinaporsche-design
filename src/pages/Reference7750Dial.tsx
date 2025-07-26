@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7750Dial = () => {
@@ -78,14 +79,11 @@ const Reference7750Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Orfina Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Orfina Dial" 
+                    variant="numbered" 
+                    number={1} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -122,7 +120,7 @@ const Reference7750Dial = () => {
                     <img
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
                       alt="7750 Orfina Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
 
                     {/* Click indicator */}
@@ -158,7 +156,7 @@ const Reference7750Dial = () => {
                     <img
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg"
                       alt="7750 PD Dial"
-                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                     />
 
                     {/* Click indicator */}
@@ -174,14 +172,11 @@ const Reference7750Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      PD Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="PD Dial" 
+                    variant="numbered" 
+                    number={2} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">

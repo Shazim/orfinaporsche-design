@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
+import ImageSlider from "../components/ImageSlider";
 import { useState, useEffect } from "react";
 
 const Reference7750Caseback = () => {
@@ -81,14 +83,11 @@ const Reference7750Caseback = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Caseback Mk. 1
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Caseback Mk. 1" 
+                    variant="numbered" 
+                    number={1} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -134,35 +133,23 @@ const Reference7750Caseback = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
+                  <ImageSlider
+                    images={[
+                      {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg",
                         alt: "7750 Caseback Mk. 1",
-                        title: "Caseback Mk. 1",
+                        title: "7750 Caseback Mk. 1",
                         subtitle: "Reference 7750",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg"
-                      alt="7750 Caseback Mk. 1"
-                      className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative max-w-sm h-80 rounded-lg"
-                    />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7750 Caseback Mk. 1
-                  </span>
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750Mk1Casebackcrop.jpg",
+                        alt: "7750 Caseback Mk. 1 - View 2",
+                        title: "7750 Caseback Mk. 1 - View 2",
+                        subtitle: "Reference 7750",
+                      },
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
               </div>
             </div>
@@ -171,46 +158,31 @@ const Reference7750Caseback = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
+                  <ImageSlider
+                    images={[
+                      {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
                         alt: "7750 Caseback Mk. 2",
-                        title: "Caseback Mk. 2",
+                        title: "7750 Caseback Mk. 2",
                         subtitle: "Reference 7750",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
-                      alt="7750 Caseback Mk. 2"
-                      className="relative max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative max-w-sm h-80 rounded-lg"
-                    />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7750 Caseback Mk. 2
-                  </span>
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
+                        alt: "7750 Caseback Mk. 2 - View 2",
+                        title: "7750 Caseback Mk. 2 - View 2",
+                        subtitle: "Reference 7750",
+                      },
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Caseback Mk. 2
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Caseback Mk. 2" 
+                    variant="numbered" 
+                    number={2} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">

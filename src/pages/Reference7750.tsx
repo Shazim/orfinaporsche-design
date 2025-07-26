@@ -3,6 +3,9 @@ import { Clock, Calendar, Settings, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import ExploreDetailsCard from "../components/ExploreDetailsCard";
+import ReferenceVariantCard from "../components/ReferenceVariantCard";
+import SectionHeading from "../components/SectionHeading";
 
 const Reference7750 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -146,159 +149,23 @@ const Reference7750 = () => {
             {/* All Generations Displayed */}
             <div className="space-y-24 sm:space-y-32 lg:space-y-40">
               {generations.map((gen, index) => (
-                <div
+                <ReferenceVariantCard
                   key={gen.id}
-                  className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000"
-                >
-                  <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      {index + 1}
-                    </div>
-                    <div>
-                      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                        {gen.title}
-                      </h2>
-                      {/* <p className="text-lg text-gray-600 font-light">
-                        {gen.subtitle}
-                      </p> */}
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start mb-12">
-                    {/* Image Section */}
-                    <div className="relative group lg:w-auto lg:flex-shrink-0">
-                      <div
-                        className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: gen.image,
-                            alt: `${gen.title} ${gen.subtitle}`,
-                            title: gen.title,
-                            subtitle: '',
-                          })
-                        }
-                      >
-                        <div className="w-full max-w-md mx-auto lg:mx-0">
-                          <ImageWithLoader
-                            src={gen.image}
-                            alt={`${gen.title}`}
-                            className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                            skeletonClassName="w-full max-w-md h-80 sm:h-96 lg:h-[450px] rounded-lg"
-                          />
-                        </div>
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Image Title Below */}
-                      <div className="mt-4 text-center">
-                        <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
-                          {gen.title}
-                        </h3>
-                        {/* <p className="text-sm text-gray-600">{gen.subtitle}</p> */}
-                      </div>
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="space-y-8 lg:flex-1">
-                      {/* <div className="transform transition-all duration-500 delay-100">
-                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
-                          {gen.description}
-                        </p>
-                      </div> */}
-
-                      {/* Specifications Table */}
-                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                        <table className="w-full">
-                           <tbody className="divide-y divide-gray-200">
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Calendar className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Production Years
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.years}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Case
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.case}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Layers className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Finishes
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.finishes}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Caseback
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.caseback}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Settings className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Rehaut
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.rehaut}
-                               </td>
-                             </tr>
-                             <tr className="hover:bg-gray-50 transition-colors duration-200">
-                               <td className="px-6 py-4">
-                                 <div className="flex items-center">
-                                   <Clock className="w-5 h-5 text-gray-600 mr-3" />
-                                   <span className="font-medium text-gray-900">
-                                     Dial
-                                   </span>
-                                 </div>
-                               </td>
-                               <td className="px-6 py-4 text-gray-700 text-right">
-                                 {gen.dial}
-                               </td>
-                             </tr>
-                           </tbody>
-                         </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  index={index + 1}
+                  title={gen.title}
+                  imageSrc={gen.image}
+                  imageAlt={gen.title}
+                  subtitle="Reference 7750"
+                  specifications={[
+                    { label: "Production Years", value: gen.years, icon: Calendar },
+                    { label: "Case", value: gen.case, icon: Settings },
+                    { label: "Finishes", value: gen.finishes, icon: Layers },
+                    { label: "Caseback", value: gen.caseback, icon: Settings },
+                    { label: "Rehaut", value: gen.rehaut, icon: Settings },
+                    { label: "Dial", value: gen.dial, icon: Clock },
+                  ]}
+                  onImageClick={setFullScreenImage}
+                />
               ))}
             </div>
           </div>
@@ -317,154 +184,34 @@ const Reference7750 = () => {
               </p> */}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
-                        alt: "Case & Finishes",
-                        title: "Case & Finishes",
-                        subtitle: "Reference 7750",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg"
-                      alt="Case & Finishes"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7750/case-finishes" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Case & Finishes
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg",
-                        alt: "Caseback",
-                        title: "Caseback",
-                        subtitle: "Reference 7750",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
-                      alt="Caseback"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7750/caseback" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Caseback
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg",
-                        alt: "Rehaut Variations",
-                        title: "Rehaut Variations",
-                        subtitle: "Reference 7750",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
-                      alt="Rehaut Variations"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7750/rehaut" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Rehaut Variations
-                    </h3>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="group h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-200/50 group-hover:border-gray-300 rounded-lg transform group-hover:-translate-y-1 h-full flex flex-col">
-                  <div 
-                    className="h-48 bg-gray-50 relative overflow-hidden flex-shrink-0 cursor-pointer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg",
-                        alt: "Dial Variations",
-                        title: "Dial Variations",
-                        subtitle: "Reference 7750",
-                      });
-                    }}
-                  >
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
-                      alt="Dial Variations"
-                      className="w-full h-full object-cover object-center"
-                      skeletonClassName="w-full h-full"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Click to zoom indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <Link to="/references/7750/dial" className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg font-normal text-black mb-2 uppercase tracking-wide transition-colors duration-300 group-hover:text-gray-800">
-                      Dial Variations
-                    </h3>
-                  </Link>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <ExploreDetailsCard
+                title="Case & Finishes"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg"
+                imageAlt="Case & Finishes"
+                linkTo="/references/7750/case-finishes"
+              />
+              
+              <ExploreDetailsCard
+                title="Caseback"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
+                imageAlt="Caseback"
+                linkTo="/references/7750/caseback"
+              />
+              
+              <ExploreDetailsCard
+                title="Rehaut Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
+                imageAlt="Rehaut Variations"
+                linkTo="/references/7750/rehaut"
+              />
+              
+              <ExploreDetailsCard
+                title="Dial Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
+                imageAlt="Dial Variations"
+                linkTo="/references/7750/dial"
+              />
             </div>
           </div>
         </section>
