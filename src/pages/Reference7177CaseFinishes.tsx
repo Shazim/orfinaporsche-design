@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import SectionHeading from "../components/SectionHeading";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -111,14 +112,17 @@ const Reference7177CaseFinishes = () => {
             </p>
           </div>
 
-          {/* Case Design */}
+          {/* Measurements */}
           <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400 mb-20 sm:mb-24 lg:mb-32">
+            <SectionHeading 
+              title="Measurements" 
+              variant="numbered" 
+              number={1} 
+            />
+
             <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12 items-center">
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                  <h3 className="text-lg sm:text-xl font-semibold text-black mb-4">
-                    Measurements
-                  </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm sm:text-base">
                     <div className="text-center">
                       <div className="font-bold text-black">40.6mm</div>
@@ -140,14 +144,11 @@ const Reference7177CaseFinishes = () => {
 
           {/* Finishes */}
           <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-            <div className="flex items-center space-x-4 mb-12 sm:mb-16">
-              <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                2
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                Five Produced Finishes
-              </h2>
-            </div>
+            <SectionHeading 
+              title="Five Produced Finishes" 
+              variant="numbered" 
+              number={2} 
+            />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Callouts on the left */}

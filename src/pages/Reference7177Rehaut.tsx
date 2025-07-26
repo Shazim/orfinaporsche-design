@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -118,155 +119,125 @@ const Reference7177Rehaut = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Rehaut Design Philosophy
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Rehaut Variations" 
+                    variant="numbered" 
+                    number={1} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      Military vs. Civilian specifications determine rehaut type
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      All 7177 or "military" variants have a 12-hr rehaut ring, while the non-military civilian variants have a tachymetric rehaut ring.
                     </p>
                   </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Distinctions:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>
-                            Two known variations of the 12-hr rehaut ring:
-                          </strong>{" "}
-                          a slightly larger font "crooked seven rehaut" found on
-                          the first 7177’s ever produced, and a slightly smaller
-                          rehaut found on all other 7177 variants.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          There are a variety of prototype rehauts that have
-                          been seen on examples over the years, but these were
-                          not configured on any "production" watches and thus
-                          will not be discussed here.
-                        </span>
-                      </li>
-                    </ul>
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                        Moreover, there are two known variations of the 12-hr rehaut ring: a slightly larger font "crooked seven rehaut" found on the first 7177's ever produced, and a slightly smaller rehaut found on all other 7177 variants.
+                      </p>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      There are a variety of prototype rehauts that have been seen on examples over the years, but these were not configured on any "production" watches and thus will not be discussed here.
+                    </p>
                   </div>
                 </div>
-                {/* Image grid */}
-                <div className="space-y-8">
+                {/* Images layout - first 2 side by side, third below */}
+                <div className="space-y-12">
                   {/* First two images side by side */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="flex flex-col items-center">
-                      <div className="relative group">
-                        <div className="flex flex-col items-center justify-center">
-                          <div
-                            className="relative group cursor-pointer"
-                            onClick={() =>
-                              setFullScreenImage({
-                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
-                                alt: "7177 Standard Rehaut",
-                                title: "7177 Standard Rehaut",
-                                subtitle: "Reference 7177",
-                              })
-                            }
-                          >
-                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                            <img
-                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg"
-                              alt="7177 Standard Rehaut"
-                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                            />
-                            {/* Click indicator */}
-                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                                Click to zoom
-                              </div>
-                            </div>
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg",
+                            alt: "7177 Standard Rehaut",
+                            title: "7177 Standard Rehaut",
+                            subtitle: "Reference 7177",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <img
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Silvercrop.jpg"
+                          alt="7177 Standard Rehaut"
+                          className="relative w-full max-w-sm h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
                           </div>
-                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                            7177 Standard Rehaut{" "}
-                          </span>
                         </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Standard Rehaut
+                      </span>
                     </div>
+
                     <div className="flex flex-col items-center">
-                      <div className="relative group">
-                        <div className="flex flex-col items-center justify-center">
-                          <div
-                            className="relative group cursor-pointer"
-                            onClick={() =>
-                              setFullScreenImage({
-                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
-                                alt: "7177 Crooked Seven Rehaut",
-                                title: "7177 Crooked Seven Rehaut",
-                                subtitle: "Reference 7177",
-                              })
-                            }
-                          >
-                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                            <img
-                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
-                              alt="7177 Crooked Seven Rehaut"
-                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                            />
-                            {/* Click indicator */}
-                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                                Click to zoom
-                              </div>
-                            </div>
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg",
+                            alt: "7177 Crooked Seven Rehaut",
+                            title: "7177 Crooked Seven Rehaut",
+                            subtitle: "Reference 7177",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                        <img
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-4Logocrop.jpg"
+                          alt="7177 Crooked Seven Rehaut"
+                          className="relative w-full max-w-sm h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
                           </div>
-                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                            7177 Crooked Seven Rehaut{" "}
-                          </span>
                         </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Crooked Seven Rehaut
+                      </span>
                     </div>
                   </div>
-                  
+
                   {/* Third image centered below */}
                   <div className="flex justify-center">
                     <div className="flex flex-col items-center">
-                      <div className="relative group">
-                        <div className="flex flex-col items-center justify-center">
-                          <div
-                            className="relative group cursor-pointer"
-                            onClick={() =>
-                              setFullScreenImage({
-                                src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg",
-                                alt: "7177 Crooked Seven Rehaut - Close-Up",
-                                title: "7177 Crooked Seven Rehaut - Close-Up",
-                                subtitle: "Reference 7177",
-                              })
-                            }
-                          >
-                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                            <img
-                              src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
-                              alt="7177 Crooked Seven Rehaut - Close-Up"
-                              className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                            />
-                            {/* Click indicator */}
-                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                                Click to zoom
-                              </div>
-                            </div>
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() =>
+                          setFullScreenImage({
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg",
+                            alt: "7177 Crooked Seven Rehaut - Close-Up",
+                            title: "7177 Crooked Seven Rehaut - Close-Up",
+                            subtitle: "Reference 7177",
+                          })
+                        }
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <img
+                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
+                          alt="7177 Crooked Seven Rehaut - Close-Up"
+                          className="relative w-full max-w-sm h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        />
+                        {/* Click indicator */}
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            Click to zoom
                           </div>
-                          <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                            7177 Crooked Seven Rehaut - Close-Up{" "}
-                          </span>
                         </div>
                       </div>
+                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                        7177 Crooked Seven Rehaut - Close-Up
+                      </span>
                     </div>
                   </div>
                 </div>

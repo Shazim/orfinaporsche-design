@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Clock, Calendar, Settings, Layers, Shield, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import ExploreDetailsCard from "../components/ExploreDetailsCard";
 
 const Reference7177 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,15 +130,15 @@ const Reference7177 = () => {
                   className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg"
                   onClick={() =>
                     setFullScreenImage({
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg",
+                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Group-1.jpg",
                       alt: "Reference 7177 Military Variants Group Photo",
                       title: "Reference 7177",
-                      subtitle: "Military Variants Collection",
+                      subtitle: "7177 Military Variants",
                     })
                   }
                 >
                   <ImageWithLoader
-                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
+                    src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Group-1.jpg"
                     alt="Reference 7177 Military Variants Group Photo"
                     className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
                     skeletonClassName="w-full h-80 sm:h-96 lg:h-[500px] rounded-lg"
@@ -154,11 +154,8 @@ const Reference7177 = () => {
                 {/* Image Caption */}
                 <div className="mt-4 text-center">
                   <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
-                    Military Variants Collection
+                    7177 Military Variants
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Ten distinguished variants of the Reference 7177
-                  </p>
                 </div>
               </div>
             </div>
@@ -174,74 +171,31 @@ const Reference7177 = () => {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/references/7177/case-finishes" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-2.jpg"
-                      alt="Case & Finishes"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
-                      Case & Finishes
-                    </h3>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/references/7177/caseback" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Black-Casebackcrop.jpg"
-                      alt="Caseback"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
-                      Caseback
-                    </h3>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/references/7177/rehaut" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
-                      alt="Rehaut Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
-                      Rehaut Variations
-                    </h3>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/references/7177/dial" className="group">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <img
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MilitaryGroup-2crop.jpg"
-                      alt="Dial Variations"
-                      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6 ">
-                    <h3 className="font-medium text-gray-900 text-center group-hover:text-gray-700 transition-colors">
-                      Dial Variations
-                    </h3>
-                  </div>
-                </div>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <ExploreDetailsCard
+                title="Case & Finishes"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-ColorGroup-1.jpg"
+                imageAlt="Case & Finishes"
+                linkTo="/references/7177/case-finishes"
+              />
+              <ExploreDetailsCard
+                title="Caseback"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Black-Casebackcrop.jpg"
+                imageAlt="Caseback"
+                linkTo="/references/7177/caseback"
+              />
+              <ExploreDetailsCard
+                title="Rehaut Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Crooked%20Seven%20Rehaut-Close-Up-.jpg"
+                imageAlt="Rehaut Variations"
+                linkTo="/references/7177/rehaut"
+              />
+              <ExploreDetailsCard
+                title="Dial Variations"
+                imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-MilitaryGroup-2crop.jpg"
+                imageAlt="Dial Variations"
+                linkTo="/references/7177/dial"
+              />
             </div>
           </div>
         </section>

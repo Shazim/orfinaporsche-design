@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import SectionHeading from "../components/SectionHeading";
 import { useState } from "react";
 
 const dialVariations = [
@@ -124,46 +125,57 @@ const Reference7177Dial = () => {
 
           {/* Dial Variations Grid */}
           <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-            <div className="flex items-center space-x-4 mb-12 sm:mb-16">
-              <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                10
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                Dial Variations
-              </h2>
-            </div>
+            {/* <SectionHeading 
+              title="Dial Variations" 
+              variant="solid" 
+            /> */}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
               {dialVariations.map((variation, idx) => (
                 <Link key={variation.path} to={variation.path}>
                   <div 
-                    className="bg-white border border-gray-200 shadow-md overflow-hidden group"
+                    className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 hover:border-gray-200"
                     onMouseEnter={() => setHoveredCard(idx)}
                     onMouseLeave={() => setHoveredCard(null)}
                   >
-                    <div className="flex flex-col items-center text-center">
-                      <div className="relative w-full h-64 overflow-hidden rounded-lg">
+                    <div className="relative">
+                      {/* Image container with larger height */}
+                      <div className="relative w-full h-80 sm:h-96 overflow-hidden">
                         {/* Default image */}
                         <img
                           src={variation.img1}
                           alt={`${variation.name} Dial`}
-                          className={`absolute inset-0 w-full h-full object-cover shadow-lg transition-all duration-300 ${
-                            hoveredCard === idx ? 'opacity-0' : 'opacity-100'
-                          } group-hover:scale-105`}
+                          className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
+                            hoveredCard === idx ? 'opacity-0 scale-110' : 'opacity-100 scale-100'
+                          }`}
                         />
                         {/* Hover image */}
                         <img
                           src={variation.img2}
                           alt={`${variation.name} Dial Hover`}
-                          className={`absolute inset-0 w-full h-full object-cover shadow-lg transition-all duration-300 ${
-                            hoveredCard === idx ? 'opacity-100' : 'opacity-0'
-                          } group-hover:scale-105`}
+                          className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
+                            hoveredCard === idx ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
+                          }`}
                         />
+                        
+                        {/* Overlay gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Hover indicator */}
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          {/* <div className="bg-black/80 text-white px-6 py-3 rounded-full text-sm font-medium backdrop-blur-sm">
+                            View Details
+                          </div> */}
+                        </div>
                       </div>
-                      <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gray-700 transition-colors mt-2">
-                        {variation.name}
-                      </h3>
-                      <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent group-hover:via-black transition-colors duration-300"></div>
+                      
+                      {/* Content */}
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-black transition-colors">
+                          {variation.name}
+                        </h3>
+                        <div className="w-16 h-1 bg-gradient-to-r from-gray-300 to-gray-100 group-hover:from-black group-hover:to-gray-400 transition-all duration-300 rounded-full"></div>
+                      </div>
                     </div>
                   </div>
                 </Link>

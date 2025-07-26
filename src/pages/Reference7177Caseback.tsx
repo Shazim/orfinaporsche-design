@@ -127,12 +127,13 @@ const Reference7177Caseback = () => {
                 </div>
               </div>
 
-              {/* Images Side by Side */}
-              <div className="space-y-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="flex flex-col items-center">
+              {/* Images Arranged Vertically */}
+              <div className="space-y-12">
+                {/* First image */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center max-w-lg w-full">
                     <div
-                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg"
+                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg w-full"
                       onClick={() =>
                         setFullScreenImage({
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg",
@@ -145,8 +146,8 @@ const Reference7177Caseback = () => {
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg"
                         alt="7176S Caseback"
-                        className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                        skeletonClassName="w-full h-64 rounded-lg"
+                        className="w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                       />
                       {/* Click indicator */}
                       <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -155,12 +156,15 @@ const Reference7177Caseback = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-center text-gray-600 font-medium mt-3">7176S Caseback</p>
+                    <p className="text-center text-gray-600 font-medium mt-4 text-base sm:text-lg">7176S Caseback</p>
                   </div>
+                </div>
 
-                  <div className="flex flex-col items-center">
+                {/* Second image */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center max-w-lg w-full">
                     <div
-                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg"
+                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg w-full"
                       onClick={() =>
                         setFullScreenImage({
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg",
@@ -173,8 +177,8 @@ const Reference7177Caseback = () => {
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg"
                         alt="7177 Caseback"
-                        className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                        skeletonClassName="w-full h-64 rounded-lg"
+                        className="w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                       />
                       {/* Click indicator */}
                       <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
@@ -183,7 +187,7 @@ const Reference7177Caseback = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-center text-gray-600 font-medium mt-3">7177 Caseback</p>
+                    <p className="text-center text-gray-600 font-medium mt-4 text-base sm:text-lg">7177 Caseback</p>
                   </div>
                 </div>
               </div>
