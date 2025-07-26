@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navigation from "../components/Navigation";
+import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 
 const Reference7176Rehaut = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -97,16 +99,14 @@ const Reference7176Rehaut = () => {
           <div className="space-y-20 sm:space-y-24 lg:space-y-32">
             {/* Yellow Triangle Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
+              <SectionHeading 
+                title="Yellow Triangle Rehaut" 
+                variant="numbered" 
+                number={1} 
+              />
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Yellow Triangle Rehaut
-                    </h2>
-                  </div>
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176, 7176 Military
@@ -185,6 +185,12 @@ const Reference7176Rehaut = () => {
 
             {/* TACHYMETRE Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
+              <SectionHeading 
+                title="TACHYMETRE Rehaut" 
+                variant="numbered" 
+                number={2} 
+              />
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
                   <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
@@ -224,14 +230,6 @@ const Reference7176Rehaut = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      TACHYMETRE Rehaut
-                    </h2>
-                  </div>
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 D, 7176 S

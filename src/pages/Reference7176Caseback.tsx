@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7176Caseback = () => {
@@ -79,17 +80,14 @@ const Reference7176Caseback = () => {
           <div className="space-y-20 sm:space-y-24 lg:space-y-32">
             {/* 7176 Mk. 1 Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
+              <SectionHeading 
+                title="7176 Mk. 1 Caseback" 
+                variant="numbered" 
+                number={1} 
+              />
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      7176 Mk. 1 Caseback
-                    </h2>
-                  </div>
-
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 and 7176 Military
@@ -141,8 +139,8 @@ const Reference7176Caseback = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
                       alt="7176 Mk. 1 Caseback"
-                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -161,6 +159,12 @@ const Reference7176Caseback = () => {
 
             {/* 7176 D Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
+              <SectionHeading 
+                title="7176 D Caseback" 
+                variant="numbered" 
+                number={2} 
+              />
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
                   <div
@@ -178,8 +182,8 @@ const Reference7176Caseback = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg"
                       alt="7176 D Caseback"
-                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -195,14 +199,6 @@ const Reference7176Caseback = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      7176 D Caseback
-                    </h2>
-                  </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -235,16 +231,14 @@ const Reference7176Caseback = () => {
 
             {/* 7176 S Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+              <SectionHeading 
+                title="7176 S Caseback" 
+                variant="numbered" 
+                number={3} 
+              />
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      3
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      7176 S Caseback
-                    </h2>
-                  </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -289,8 +283,8 @@ const Reference7176Caseback = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg"
                       alt="7176 S Caseback"
-                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -326,8 +320,8 @@ const Reference7176Caseback = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg"
                       alt="7176 Prototype Caseback"
-                      className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
+                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
                     />
 
                     {/* Click indicator */}
@@ -343,13 +337,12 @@ const Reference7176Caseback = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      P
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Prototype Caseback
-                    </h2>
+                  <div className="mb-6">
+                    <SectionHeading 
+                      title="Prototype Caseback" 
+                      variant="numbered" 
+                      number={4} 
+                    />
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7176CaseFinishes = () => {
@@ -44,8 +45,8 @@ const Reference7176CaseFinishes = () => {
         <ImageWithLoader
           src={image.src}
           alt={image.alt}
-          className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-          skeletonClassName="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg"
+          className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+          skeletonClassName="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg"
         />
 
         {/* Click indicator */}
@@ -61,10 +62,10 @@ const Reference7176CaseFinishes = () => {
   const PlaceholderImage = ({ title }) => (
     <div className="flex justify-center">
       <div className="max-w-xs w-full">
-        <div className="relative">
+        <div className="relative group">
           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1"></div>
-          <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
-            <div className="text-center text-gray-500">
+          <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+            <div className="text-center text-gray-500 p-6">
               <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
               <div className="text-xs">{title}</div>
             </div>
@@ -155,13 +156,12 @@ const Reference7176CaseFinishes = () => {
           <div className="space-y-24 sm:space-y-32 lg:space-y-40">
             {/* Black PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Black PVD
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Black PVD" 
+                  variant="numbered" 
+                  number={1} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -174,27 +174,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-PVDcrop.jpg",
-                      alt: "7176 S Black PVD",
-                      title: "Black PVD",
-                    }}
-                    sectionTitle="7176 S Black PVD"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-PVDcrop.jpg",
+                        alt: "7176 S Black PVD",
+                        title: "Black PVD",
+                      }}
+                      sectionTitle="7176 S Black PVD"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 S Black PVD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Silver/Sablé */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Silver/Sablé
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Silver/Sablé" 
+                  variant="numbered" 
+                  number={2} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -207,27 +211,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176Scrop.jpg",
-                      alt: "7176 S Silver/Sablé",
-                      title: "Silver/Sablé",
-                    }}
-                    sectionTitle="7176 S Silver/Sablé"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176Scrop.jpg",
+                        alt: "7176 S Silver/Sablé",
+                        title: "Silver/Sablé",
+                      }}
+                      sectionTitle="7176 S Silver/Sablé"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 S Silver/Sablé
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Polished */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Polished
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Polished" 
+                  variant="numbered" 
+                  number={3} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -245,27 +253,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20-%20Polished%20-3crop.jpg",
-                      alt: "7176 S Polished",
-                      title: "Polished",
-                    }}
-                    sectionTitle="7176 S Polished"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20-%20Polished%20-3crop.jpg",
+                        alt: "7176 S Polished",
+                        title: "Polished",
+                      }}
+                      sectionTitle="7176 S Polished"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 Polished
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  4
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Grey PVD
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Grey PVD" 
+                  variant="numbered" 
+                  number={4} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -277,27 +289,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-Militarycrop.jpg",
-                      alt: "7176 Military Grey PVD",
-                      title: "Grey PVD",
-                    }}
-                    sectionTitle="7176 Military Grey PVD"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-Militarycrop.jpg",
+                        alt: "7176 Military Grey PVD",
+                        title: "Grey PVD",
+                      }}
+                      sectionTitle="7176 Military Grey PVD"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 Military Grey PVD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Green PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  5
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Green PVD
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Green PVD" 
+                  variant="numbered" 
+                  number={5} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -309,27 +325,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20Military.png",
-                      alt: "7176 Military Green PVD",
-                      title: "Green PVD",
-                    }}
-                    sectionTitle="7176 Military Green PVD"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176%20Military.png",
+                        alt: "7176 Military Green PVD",
+                        title: "Green PVD",
+                      }}
+                      sectionTitle="7176 Military Green PVD"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 Military Green PVD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Cadet Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-900">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  6
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  Cadet Grey PVD
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="Cadet Grey PVD" 
+                  variant="numbered" 
+                  number={6} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -341,27 +361,31 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Bluecrop.jpg",
-                      alt: "7176 D Cadet Grey PVD",
-                      title: "Cadet Grey PVD",
-                    }}
-                    sectionTitle="7176 D Cadet Grey PVD"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Bluecrop.jpg",
+                        alt: "7176 D Cadet Grey PVD",
+                        title: "Cadet Grey PVD",
+                      }}
+                      sectionTitle="7176 D Cadet Grey PVD"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 D Cadet Grey PVD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* NTS PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-1000">
-              <div className="flex items-center space-x-4 mb-8 sm:mb-12">
-                <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  7
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                  NTS PVD
-                </h2>
+              <div className="mb-8">
+                <SectionHeading 
+                  title="NTS PVD" 
+                  variant="numbered" 
+                  number={7} 
+                />
               </div>
 
               <div className="space-y-12">
@@ -373,14 +397,19 @@ const Reference7176CaseFinishes = () => {
                       </p>
                     </div>
                   </div>
-                  <FinishImage
-                    image={{
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-NTS.jpg",
-                      alt: "7176 S NTS PVD",
-                      title: "NTS PVD",
-                    }}
-                    sectionTitle="7176 S NTS PVD"
-                  />
+                  <div className="flex flex-col items-center">
+                    <FinishImage
+                      image={{
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176S-NTS.jpg",
+                        alt: "7176 S NTS PVD",
+                        title: "NTS PVD",
+                      }}
+                      sectionTitle="7176 S NTS PVD"
+                    />
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      7176 S NTS PVD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

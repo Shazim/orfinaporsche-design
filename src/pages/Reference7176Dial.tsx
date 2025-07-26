@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
+import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
 
 const Reference7176Dial = () => {
@@ -30,10 +31,10 @@ const Reference7176Dial = () => {
   const PlaceholderImage = ({ title }) => (
     <div className="flex justify-center">
       <div className="max-w-xs w-full">
-        <div className="relative">
+        <div className="relative group">
           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1"></div>
-          <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
-            <div className="text-center text-gray-500">
+          <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+            <div className="text-center text-gray-500 p-6">
               <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
               <div className="text-xs">{title}</div>
             </div>
@@ -105,14 +106,11 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Civilian Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Civilian Dial" 
+                    variant="numbered" 
+                    number={1} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -255,14 +253,11 @@ const Reference7176Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      2
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Civilian Dial - "Short Lume"
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Civilian Dial - &quot;Short Lume&quot;" 
+                    variant="numbered" 
+                    number={2} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -287,14 +282,11 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      3
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Military Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Military Dial" 
+                    variant="numbered" 
+                    number={3} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -326,15 +318,6 @@ const Reference7176Dial = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
-                    <h4 className="font-semibold text-black mb-2">
-                      Specific Note - 7176 D:
-                    </h4>
-                    <p className="text-sm sm:text-base text-gray-700">
-                      The 7176 D exclusively features German Day/Date Wheels, as
-                      it was only sold in German Markets.
-                    </p>
-                  </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
@@ -407,14 +390,11 @@ const Reference7176Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      4
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Blue by Orfina Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Blue by Orfina Dial" 
+                    variant="numbered" 
+                    number={4} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -440,14 +420,11 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      5
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      Black by Orfina Dial
-                    </h2>
-                  </div>
+                  <SectionHeading 
+                    title="Black by Orfina Dial" 
+                    variant="numbered" 
+                    number={5} 
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -480,8 +457,8 @@ const Reference7176Dial = () => {
                       onClick={() =>
                         setFullScreenImage({
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176-byOrfina-Black-Dial.jpg",
-                          alt: "7176 D with Blue by Orfina Dial",
-                          title: "7176 D with Blue by Orfina Dial",
+                          alt: "7176 D with Black by Orfina Dial",
+                          title: "7176 D with Black by Orfina Dial",
                           subtitle: "Reference 7176",
                         })
                       }
@@ -489,7 +466,7 @@ const Reference7176Dial = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176-byOrfina-Black-Dial.jpg"
-                        alt="7176 D with Blue by Orfina Dial"
+                        alt="7176 D with Black by Orfina Dial"
                         className="relative w-full max-w-sm h-80 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                         skeletonClassName="relative w-full max-w-sm h-80 rounded-lg"
                       />
@@ -502,7 +479,7 @@ const Reference7176Dial = () => {
                       </div>
                     </div>
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 D with Blue by Orfina Dial
+                      7176 D with Black by Orfina Dial
                     </span>
                   </div>
                 </div>
