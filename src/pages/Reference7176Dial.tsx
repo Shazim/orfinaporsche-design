@@ -95,7 +95,8 @@ const Reference7176Dial = () => {
                 subdial placement of the Lemania 5100. Notable changes include a
                 12-o'clock 24-hour dial, no lume or marker at 12 o'clock because
                 of the position of the subdial, and different ring printing of
-                the small seconds subdial at 9 o'clock.
+                the small seconds subdial at 9 o'clock. There is additionally no
+                lume at 3 o’clock.
               </p>
             </div>
           </div>
@@ -106,10 +107,10 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Civilian Dial" 
-                    variant="numbered" 
-                    number={1} 
+                  <SectionHeading
+                    title="Civilian Dial"
+                    variant="numbered"
+                    number={1}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
@@ -130,9 +131,27 @@ const Reference7176Dial = () => {
                       </p>
                       <p>
                         The also 7176 ushered in a new hand set differentiated
-                        from the 7750 with new hour and pointed minute hands,
-                        red central chrono sweep hand, and "Lollipop" chrono
-                        totalizer hand.
+                        from the 7750 with
+                        <ul className="space-y-3 text-gray-700 ml-4">
+                          <li className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-sm sm:text-base leading-relaxed">
+                              New hour and pointed minute hands.{" "}
+                            </span>
+                          </li>
+                          <li className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-sm sm:text-base leading-relaxed">
+                              Orange central chrono sweep hand{" "}
+                            </span>
+                          </li>
+                          <li className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-sm sm:text-base leading-relaxed">
+                              <strong>Lollipop</strong> chrono totalizer hand
+                            </span>
+                          </li>
+                        </ul>
                       </p>
                     </div>
                   </div>
@@ -142,8 +161,10 @@ const Reference7176Dial = () => {
                       Specific Note - 7176 D:
                     </h4>
                     <p className="text-sm sm:text-base text-gray-700">
-                      The 7176 D exclusively features German Day/Date Wheels, as
-                      it was only sold in German Markets.
+                      There exists rare ‘factory custom made’ variants of 7176D
+                      and 7176S watches with military chrono hands, some with
+                      white day/date wheels and the non-logo NSA
+                      spring-bracelet.
                     </p>
                   </div>
                 </div>
@@ -253,10 +274,10 @@ const Reference7176Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <SectionHeading 
-                    title="Civilian Dial - &quot;Short Lume&quot;" 
-                    variant="numbered" 
-                    number={2} 
+                  <SectionHeading
+                    title='Civilian Dial - "Short Lume"'
+                    variant="numbered"
+                    number={2}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
@@ -282,10 +303,10 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Military Dial" 
-                    variant="numbered" 
-                    number={3} 
+                  <SectionHeading
+                    title="Military Dial"
+                    variant="numbered"
+                    number={3}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
@@ -300,24 +321,44 @@ const Reference7176Dial = () => {
                     </h3>
                     <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                       <p>
-                        The 7176 Military features the first appearance of the
-                        Military dial. The dial is an update of the 7176
+                        The 7176 Military is features the fiirst appearance of
+                        the Military dial. The dial is an update of the 7176
                         Civilian dial. Notable changes include the introduction
-                        of the 3H logo to meet military specifications, watches
-                        in the field utilizing Tritium (3H) lume must carry a
-                        marking on the dial indicating its use. This logo is
-                        printed in RED at 1:30 on the dial.
+                        of the 3H logo as to meet military specifications,
+                        watches in the field utilizing Tritium (3H) lume must
+                        carry a marking on the dial indicating its use. This
+                        logo is printed in RED at 1:30 on the dial. The Military
+                        dial also includes a Military handset with
                       </p>
-                      <p>
-                        The Military dial also includes a Military handset with
-                        hour and minutes hands same as 7176 Civilian, red
-                        central chrono sweep hand, red painted "Airplane" on a
-                        black chrono totalizer hand, and red hand used for 6
-                        o'clock subdial.
-                      </p>
+                      <ul className="space-y-3 text-gray-700 ml-4">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            Hour and minutes hands same as 7176 Civilian{" "}
+                          </span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            Orange central chrono sweep hand{" "}
+                          </span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            Orange painted “Airplane” on a black chrono
+                            totalizer hand
+                          </span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            Orange hand used for 6 o'clock subdial{" "}
+                          </span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
@@ -390,10 +431,10 @@ const Reference7176Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <SectionHeading 
-                    title="Blue by Orfina Dial" 
-                    variant="numbered" 
-                    number={4} 
+                  <SectionHeading
+                    title="Blue by Orfina Dial"
+                    variant="numbered"
+                    number={4}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
@@ -408,7 +449,12 @@ const Reference7176Dial = () => {
                     </h3>
                     <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                       <p>
-                        It is worth noting that Blue by Orfina Dials have been found on the market. These exist on both 7176 D and 7176 S variants. They feature two common traits found on 7177 examples. The additional "by ORFINA" text under PORSCHE DESIGN and their Cadet Grey PVD coating, which differs from that of the 7176 Military's Grey PVD coating.
+                        It is worth noting that Blue by Orfina Dials have been
+                        found on the market. These exist on both 7176 D and 7176
+                        S variants. They feature two common traits found on 7177
+                        examples. The additional "by ORFINA" text under PORSCHE
+                        DESIGN and their Cadet Grey PVD coating, which differs
+                        from that of the 7176 Military's Grey PVD coating.
                       </p>
                     </div>
                   </div>
@@ -420,10 +466,10 @@ const Reference7176Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Black by Orfina Dial" 
-                    variant="numbered" 
-                    number={5} 
+                  <SectionHeading
+                    title="Black by Orfina Dial"
+                    variant="numbered"
+                    number={5}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">

@@ -79,10 +79,10 @@ const Reference7750Dial = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Orfina Dial" 
-                    variant="numbered" 
-                    number={1} 
+                  <SectionHeading
+                    title="Orfina Dial"
+                    variant="numbered"
+                    number={1}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
@@ -92,10 +92,14 @@ const Reference7750Dial = () => {
                   </div>
 
                   <div className="prose prose-gray max-w-none space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       The First is the Orfina Dial, and this is the dial that
-                      started it all. "ORFINA" is printed above the Day/Date
-                      windows and "PORSCHE DESIGN" is printed below the windows.
+                      started it all. “ORFINA” is printed above the Day/Date
+                      windows, and “PORSCHE DESIGN” is printed below the
+                      windows.
                     </p>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       It is solely found on the Mk. 1 Case with a Mk. 1 Caseback
@@ -172,10 +176,10 @@ const Reference7750Dial = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-                  <SectionHeading 
-                    title="PD Dial" 
-                    variant="numbered" 
-                    number={2} 
+                  <SectionHeading
+                    title="PD Dial"
+                    variant="numbered"
+                    number={2}
                   />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-6">
@@ -185,9 +189,12 @@ const Reference7750Dial = () => {
                   </div>
 
                   <div className="prose prose-gray max-w-none space-y-4">
+                    <h3 className="text-lg sm:text-xl font-semibold text-black">
+                      Description:
+                    </h3>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      "PD" is printed above the Day/Date windows and "PORSCHE
-                      DESIGN" is printed below the windows.
+                      “PD” is printed above the Day/Date windows and “PORSCHE
+                      DESIGN” is printed below the windows.
                     </p>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       This dial can be found on any 7750 case, caseback or

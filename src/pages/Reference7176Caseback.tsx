@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import ImageWithLoader from "../components/ImageWithLoader";
 import SectionHeading from "../components/SectionHeading";
 import { useState, useEffect } from "react";
+import ImageSlider from "@/components/ImageSlider";
 
 const Reference7176Caseback = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -80,18 +81,23 @@ const Reference7176Caseback = () => {
           <div className="space-y-20 sm:space-y-24 lg:space-y-32">
             {/* 7176 Mk. 1 Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <SectionHeading 
-                title="7176 Mk. 1 Caseback" 
-                variant="numbered" 
-                number={1} 
+              <SectionHeading
+                title="7176 Mk. 1 Caseback"
+                variant="numbered"
+                number={1}
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 and 7176 Military
                     </p>
+                  </div> */}
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    The 7176 and 7176 Military casebacks follow the design
+                    language change of the caseback first seen on the 7750 Mk. 2
+                    caseback - the caseback is marked
                   </div>
 
                   <div className="space-y-4">
@@ -102,15 +108,20 @@ const Reference7176Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter text: "7176 CHRONOGRAPH AUTOMATIC
-                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS
-                          STEEL SWISS MADE" in one continuous circle
+                          Perimeter Text:{" "}
+                          <strong>
+                            7176 CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10
+                            ATM SHOCKPROTECTED STAINLESS STEEL SWISS MADE
+                          </strong>{" "}
+                          in one continuous circle at the perimeter of the back.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Center: PD logo with "PORSCHE DESIGN" curved above
+                          Center Text: The PD logo is accompanied by the words
+                          <strong> PORSCHE DESIGN</strong> curved around it
+                          above.{" "}
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
@@ -124,74 +135,55 @@ const Reference7176Caseback = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
+                  <ImageSlider
+                    images={[
+                      {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg",
                         alt: "7176 Mk. 1 Caseback",
                         title: "7176 Mk. 1 Caseback",
                         subtitle: "Reference 7176",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Casebackcrop.jpg"
-                      alt="7176 Mk. 1 Caseback"
-                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
-                    />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176 Mk. 1 Caseback
-                  </span>
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/Alan-7176-Military-Caseback%20Frame.jpg",
+                        alt: "7176 Mk. 1 Caseback - View 2",
+                        title: "7176 Mk. 1 Caseback - View 2",
+                        subtitle: "Reference 7176",
+                      },
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
               </div>
             </div>
 
             {/* 7176 D Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <SectionHeading 
-                title="7176 D Caseback" 
-                variant="numbered" 
-                number={2} 
+              <SectionHeading
+                title="7176 D Caseback"
+                variant="numbered"
+                number={2}
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg",
-                        alt: "7176 D Caseback",
-                        title: "7176 D Caseback",
-                        subtitle: "Reference 7176",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg"
-                      alt="7176 D Caseback"
-                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
+                  <div className="flex flex-col items-center justify-center">
+                    <ImageSlider
+                      images={[
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop.jpg",
+                          alt: "7176 Mk. 1 Caseback",
+                          title: "7176 Mk. 1 Caseback",
+                          subtitle: "Reference 7176",
+                        },
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176D-Blue-Casebackcrop%20Frame.jpg",
+                          alt: "7176 Mk. 1 Caseback - View 2",
+                          title: "7176 Mk. 1 Caseback - View 2",
+                          subtitle: "Reference 7176",
+                        },
+                      ]}
+                      onImageClick={setFullScreenImage}
                     />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7176 D Caseback
@@ -199,12 +191,15 @@ const Reference7176Caseback = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 D
                     </p>
-                  </div>
+                  </div> */}
+                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    For the 7176 D, the casebacks are identical to that of the
+                    7176 Mk. 1, but with an additional “D” next to 7176.
+                  </div> */}
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
@@ -231,20 +226,19 @@ const Reference7176Caseback = () => {
 
             {/* 7176 S Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <SectionHeading 
-                title="7176 S Caseback" 
-                variant="numbered" 
-                number={3} 
+              <SectionHeading
+                title="7176 S Caseback"
+                variant="numbered"
+                number={3}
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> 7176 S
                     </p>
-                  </div>
+                  </div> */}
 
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-semibold text-black">
@@ -268,31 +262,24 @@ const Reference7176Caseback = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg",
-                        alt: "7176 S Caseback",
-                        title: "7176 S Caseback",
-                        subtitle: "Reference 7176",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg"
-                      alt="7176 S Caseback"
-                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
+                  <div className="flex flex-col items-center justify-center">
+                    <ImageSlider
+                      images={[
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback.jpg",
+                          alt: "7176 S Caseback",
+                          title: "7176 S Caseback",
+                          subtitle: "Reference 7176",
+                        },
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback%20Frame.jpg",
+                          alt: "7176 S Caseback - View 2",
+                          title: "7176 S Caseback - View 2",
+                          subtitle: "Reference 7176",
+                        },
+                      ]}
+                      onImageClick={setFullScreenImage}
                     />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
                   </div>
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7176 S Caseback
@@ -304,52 +291,45 @@ const Reference7176Caseback = () => {
             {/* Prototype Caseback */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() =>
-                      setFullScreenImage({
+                <div className="flex flex-col items-center justify-center">
+                  <ImageSlider
+                    images={[
+                      {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg",
-                        alt: "7176 Prototype Caseback",
-                        title: "7176 Prototype Caseback",
+                        alt: "Prototype Caseback",
+                        title: "Prototype Caseback",
                         subtitle: "Reference 7176",
-                      })
-                    }
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                    <ImageWithLoader
-                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg"
-                      alt="7176 Prototype Caseback"
-                      className="relative w-full max-w-sm h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="relative w-full max-w-sm h-96 rounded-lg"
-                    />
-
-                    {/* Click indicator */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                        Click to zoom
-                      </div>
-                    </div>
-                  </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176 Prototype Caseback
-                  </span>
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback%20-1%20Frame.jpg",
+                        alt: "Prototype Caseback - View 2",
+                        title: "Prototype Caseback - View 2",
+                        subtitle: "Reference 7176",
+                      },
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
                 </div>
-
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="mb-6">
-                    <SectionHeading 
-                      title="Prototype Caseback" 
-                      variant="numbered" 
-                      number={4} 
+                    <SectionHeading
+                      title="Prototype Caseback"
+                      variant="numbered"
+                      number={4}
                     />
                   </div>
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       <strong>Found On:</strong> Select 7176 variants (usually
                       prototypes)
                     </p>
+                  </div> */}
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    On select 7176 variants, usually those identified as
+                    prototypes, a different caseback has been identified. It
+                    features a black acrylic disk that is embedded into the
+                    steel caseback.
                   </div>
 
                   <div className="space-y-4">
@@ -360,23 +340,24 @@ const Reference7176Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Unique design: Features a black acrylic disk embedded
-                          into the steel caseback
+                          Perimeter Text:{" "}
+                          <strong>
+                            7176 S{" "}
+                            <strong>
+                              CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10 ATM
+                              SHOCKPROTECTED STAINLESS STEEL SWISS MADE{" "}
+                            </strong>{" "}
+                            in one continuous circle at the perimeter of the
+                            back.
+                          </strong>
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter text: "7176 S CHRONOGRAPH AUTOMATIC
-                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS
-                          STEEL SWISS MADE" in one continuous circle
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Center: Sizeable PD logo with "PORSCHE DESIGN" curved
-                          above
+                          Center Text: A sizeable PD logo is accompanied by the
+                          words <strong>PORSCHE DESIGN</strong> curved around it
+                          above.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
