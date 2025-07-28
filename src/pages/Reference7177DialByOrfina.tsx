@@ -122,7 +122,7 @@ const Reference7177DialByOrfina = () => {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="Key Notes" 
+                    title="By Orfina Dial" 
                     variant="elegant-dark" 
                   />
 

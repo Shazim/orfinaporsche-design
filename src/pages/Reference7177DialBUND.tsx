@@ -119,7 +119,7 @@ const Reference7177DialBUND = () => {
             {/* Key Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <SectionHeading 
-                title="Key Notes" 
+                title="BUND Dial" 
                 variant="elegant-dark" 
               />
               

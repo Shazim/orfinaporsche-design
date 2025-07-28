@@ -119,7 +119,7 @@ const Reference7177DialVenezuelanMOD = () => {
             {/* Key Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <SectionHeading 
-                title="Key Notes" 
+                title="Venezuelan MOD Dial" 
                 variant="elegant-dark" 
               />
               

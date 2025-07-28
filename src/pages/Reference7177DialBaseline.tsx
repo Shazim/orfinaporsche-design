@@ -122,7 +122,7 @@ const Reference7177DialBaseline = () => {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="The Baseline Configuration" 
+                    title="The Baseline Dial" 
                     variant="elegant-dark" 
                   />
 

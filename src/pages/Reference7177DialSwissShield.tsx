@@ -122,7 +122,7 @@ const Reference7177DialSwissShield = () => {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="Key Notes" 
+                    title="Swiss Shield Dial" 
                     variant="elegant-dark" 
                   />
 

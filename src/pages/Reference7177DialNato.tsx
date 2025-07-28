@@ -122,7 +122,7 @@ const Reference7177DialNato = () => {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="Key Notes" 
+                    title="NATO Dial" 
                     variant="elegant-dark" 
                   />
 

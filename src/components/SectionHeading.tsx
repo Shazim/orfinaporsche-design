@@ -51,11 +51,11 @@ const SectionHeading = ({
               {title}
             </h2>
           </div>
-          <div className="flex items-center space-x-3 mt-3">
+          {/* <div className="flex items-center space-x-3 mt-3">
             <div className="w-16 h-0.5 bg-black"></div>
             <div className="w-2 h-2 bg-black rounded-full"></div>
             <div className="w-8 h-0.5 bg-gray-300"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     );

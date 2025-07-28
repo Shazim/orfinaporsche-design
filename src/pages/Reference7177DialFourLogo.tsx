@@ -119,7 +119,7 @@ const Reference7177DialFourLogo = () => {
             {/* Overview */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <SectionHeading 
-                title="Four-Logo Configuration" 
+                title="Four-Logo Dial" 
                 variant="elegant-dark" 
               />
               
@@ -134,10 +134,12 @@ const Reference7177DialFourLogo = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Key Characteristics:
-                    </h3>
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="Key Characteristics" 
+                      variant="elegant-dark" 
+                    />  
+                    
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
