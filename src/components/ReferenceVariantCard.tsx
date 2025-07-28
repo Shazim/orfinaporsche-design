@@ -35,11 +35,12 @@ const ReferenceVariantCard = ({
 }: ReferenceVariantCardProps) => {
   return (
     <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000">
-      <SectionHeading 
-        title={title} 
-        variant="numbered" 
-        number={index} 
+      <SectionHeading
+        title={title}
+        variant="numbered"
+        number={index}
         // variant="solid"
+        subtitle={subtitle}
       />
 
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start mb-12">
@@ -116,4 +117,4 @@ const ReferenceVariantCard = ({
   );
 };
 
-export default ReferenceVariantCard; 
+export default ReferenceVariantCard;

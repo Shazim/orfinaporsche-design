@@ -59,12 +59,12 @@ const Reference7750 = () => {
       case: "Mk. 1",
       finishes: "Powder Coat Black, Silver/Sable",
       caseback: "Mk. 2",
-      rehaut: "1Mile, 1KM, Advertisement",
+      rehaut: "1Mile, 1KM",
       dial: "PD Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
       description:
-        "A refined iteration with enhanced dial configuration and improved mechanics.",
+        "The first evolution of the 7750 generation and the first emergence of the PD dial.",
     },
     {
       id: 3,
@@ -73,13 +73,13 @@ const Reference7750 = () => {
       years: "1975-1976",
       case: "Mk. 2",
       finishes: "Black PVD, Silver/Sable",
-      caseback: "Mk. 2, Mk. 3",
-      rehaut: "1Mile, 1KM, Advertisement",
+      caseback: "Mk. 2",
+      rehaut: "1Mile, 1KM",
       dial: "PD Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
       description:
-        "The pinnacle of 7750 engineering with advanced PVD coating technology.",
+        "The emergence of PVD coating technology on the chronograph one, and the 7176 case design.",
     },
   ];
 
@@ -141,8 +141,9 @@ const Reference7750 = () => {
                 Three Generations
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                There are three “hero” generations of the Reference 7750. We will outline a brief
-                overview below, before going into deeper variations across all generations
+                There are three “hero” generations of the Reference 7750. We
+                will outline a brief overview below, before going into deeper
+                variations across all generations
               </p>
             </div>
 
@@ -155,9 +156,13 @@ const Reference7750 = () => {
                   title={gen.title}
                   imageSrc={gen.image}
                   imageAlt={gen.title}
-                  subtitle="Reference 7750"
+                  subtitle={gen.description}
                   specifications={[
-                    { label: "Production Years", value: gen.years, icon: Calendar },
+                    {
+                      label: "Production Years",
+                      value: gen.years,
+                      icon: Calendar,
+                    },
                     { label: "Case", value: gen.case, icon: Settings },
                     { label: "Finishes", value: gen.finishes, icon: Layers },
                     { label: "Caseback", value: gen.caseback, icon: Settings },
@@ -191,21 +196,21 @@ const Reference7750 = () => {
                 imageAlt="Case & Finishes"
                 linkTo="/references/7750/case-finishes"
               />
-              
+
               <ExploreDetailsCard
                 title="Caseback"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-1.jpg"
                 imageAlt="Caseback"
                 linkTo="/references/7750/caseback"
               />
-              
+
               <ExploreDetailsCard
                 title="Rehaut Variations"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Rehaut-1mile.jpg"
                 imageAlt="Rehaut Variations"
                 linkTo="/references/7750/rehaut"
               />
-              
+
               <ExploreDetailsCard
                 title="Dial Variations"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg"
@@ -308,14 +313,14 @@ const Reference7750 = () => {
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
                       <span className="font-medium text-gray-700">Jewels</span>
-                      <span className="text-gray-900">25</span>
+                      <span className="text-gray-900">17</span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
                       <span className="font-medium text-gray-700">
                         Functions
                       </span>
                       <span className="text-gray-900">
-                        Hours, Minutes, Seconds, Chronograph, Date
+                        Hours, Minutes, Seconds, Chronograph, Day, Date
                       </span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">

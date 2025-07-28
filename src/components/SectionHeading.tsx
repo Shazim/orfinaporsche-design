@@ -5,13 +5,15 @@ interface SectionHeadingProps {
   variant?: "numbered" | "solid" | "elegant" | "elegant-dark";
   number?: number;
   className?: string;
+  subtitle?: string;
 }
 
-const SectionHeading = ({ 
-  title, 
-  variant = "numbered", 
-  number, 
-  className = "" 
+const SectionHeading = ({
+  title,
+  variant = "numbered",
+  number,
+  className = "",
+  subtitle,
 }: SectionHeadingProps) => {
   if (variant === "solid") {
     return (
@@ -71,9 +73,12 @@ const SectionHeading = ({
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
           {title}
         </h2>
+        {subtitle && (
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
+        )}
       </div>
     </div>
   );
 };
 
-export default SectionHeading; 
+export default SectionHeading;

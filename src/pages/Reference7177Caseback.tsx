@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
 import { useEffect, useState } from "react";
+import ImageSlider from "@/components/ImageSlider";
 
 const Reference7177Caseback = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,44 +60,34 @@ const Reference7177Caseback = () => {
       </div>
 
       <div className="bg-gradient-to-br from-gray-50 to-gray-100">
-        {/* Hero Section */}
-        <section className="relative pt-16 pb-12 overflow-hidden">
-          <div className="absolute inset-0 bg-black/5"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-              className={`transform transition-all duration-1000 ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-            >
-              <div className="text-center mb-8">
-                <h1 className="font-light text-5xl md:text-7xl text-gray-900 mb-6 tracking-tight">
-                  Reference{" "}
-                  <span className="font-normal text-gray-700">7177</span>
-                </h1>
-                <div className="w-24 h-1 bg-gray-900 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-600 font-light">
-                  Caseback
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Main Content Section */}
-        <section className="py-16 bg-white">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-black mb-4 sm:mb-6 uppercase tracking-wider animate-in fade-in-0 slide-in-from-bottom-4 duration-1000">
+                Reference 7177
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
+                Caseback Variations
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
+              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+                The caseback engravings on the 7177 differ entirely from those
+                of the 7176 variants.
+              </p>
+            </div>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Text Content */}
               <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  The caseback engravings on the 7177 differ entirely from those of the 7176 variants.
-                </p>
-
                 <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    For the center of the caseback, the 7177 swapped a large Porsche Design logo for a smaller one, added Orfina to the text, and had "Military Chronograph 7177 MOD. DEP. INT." stamped on the back.
+                    Center Text: The 7177 swapped a large Porsche Design logo
+                    for a smaller one, added Orfina to the text, and had
+                    <strong>
+                      “Military Chronograph 7177 MOD. DEP. INT.”
+                    </strong>{" "}
+                    stamped on the back.
                   </p>
                 </div>
 
@@ -104,25 +95,56 @@ const Reference7177Caseback = () => {
                   <p className="text-lg text-gray-700 leading-relaxed font-semibold">
                     For the outer engraving, the text differed as well:
                   </p>
-                  
+
                   <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
-                    <p className="text-sm font-semibold text-gray-900 mb-2">1. 7176S Outer Engraving:</p>
+                    <p className="text-sm font-semibold text-gray-900 mb-2">
+                      1. 7176S Outer Engraving:
+                    </p>
                     <p className="text-sm text-gray-700 font-mono">
-                      "7176 S CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED STAINLESS STEEL SWISS MADE"
+                      "7176 S CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10 ATM
+                      SHOCKPROTECTED STAINLESS STEEL SWISS MADE"
                     </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
-                    <p className="text-sm font-semibold text-gray-900 mb-2">2. 7177 Outer Engraving:</p>
+                    <p className="text-sm font-semibold text-gray-900 mb-2">
+                      2. 7177 Outer Engraving:
+                    </p>
                     <p className="text-sm text-gray-700 font-mono">
-                      "WATERRESISTANT TESTED 10 ATM AUTOMATIC SHOCKPROTECTED STAINLESS STEEL SWISS MADE"
+                      "WATERRESISTANT TESTED 10 ATM AUTOMATIC SHOCKPROTECTED
+                      STAINLESS STEEL SWISS MADE"
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
+                <div className="">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    All 7177 variants also include a stamped serial number, which is found in groupings for particular dial configurations. Specifically for the Venezuelan, UAE, and BUND-issued variants, there are unique caseback engravings, which will be discussed in their respective headings.
+                    Serial Numbers: Present on these models.
+                    <ul className="space-y-3 text-gray-700 ml-4">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          All 7177 variants also include a stamped serial
+                          number, which is found in groupings for particular
+                          dial configurations.{" "}
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          All serial numbers across all 7177 variants are
+                          sequential.{" "}
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Specifically for the Venezuelan, UAE, and BUND-issued
+                          variants, there are unique caseback engravings, which
+                          will be discussed in their respective headings.
+                        </span>
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -131,63 +153,49 @@ const Reference7177Caseback = () => {
               <div className="space-y-12">
                 {/* First image */}
                 <div className="flex justify-center">
-                  <div className="flex flex-col items-center max-w-lg w-full">
-                    <div
-                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg w-full"
-                      onClick={() =>
-                        setFullScreenImage({
+                  <div className="flex flex-col items-center justify-center">
+                    <ImageSlider
+                      images={[
+                        {
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg",
-                          alt: "7176S Caseback",
-                          title: "7176S Caseback",
-                          subtitle: "Reference 7176S",
-                        })
-                      }
-                    >
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback.jpg"
-                        alt="7176S Caseback"
-                        className="w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
-                      />
-                      {/* Click indicator */}
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-black px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
-                      </div>
-                    </div>
-                    <p className="text-center text-gray-600 font-medium mt-4 text-base sm:text-lg">7176S Caseback</p>
+                          alt: "Ref. 7176S Caseback",
+                          title: "Ref. 7176S Caseback",
+                          subtitle: "Reference 7177",
+                        },
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7176s-caseback%20Frame%20(1).jpg",
+                          alt: "Ref. 7176S Caseback - View 2",
+                          title: "Ref. 7176S Caseback - View 2",
+                          subtitle: "Reference 7177",
+                        },
+                      ]}
+                      onImageClick={setFullScreenImage}
+                    />
                   </div>
                 </div>
 
                 {/* Second image */}
                 <div className="flex justify-center">
                   <div className="flex flex-col items-center max-w-lg w-full">
-                    <div
-                      className="relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg w-full"
-                      onClick={() =>
-                        setFullScreenImage({
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg",
-                          alt: "7177 Caseback",
-                          title: "7177 Caseback",
-                          subtitle: "Reference 7177",
-                        })
-                      }
-                    >
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg"
-                        alt="7177 Caseback"
-                        className="w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                    <div className="flex flex-col items-center justify-center">
+                      <ImageSlider
+                        images={[
+                          {
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop.jpg",
+                            alt: "Ref. 7177 Caseback",
+                            title: "Ref. 7177 Caseback",
+                            subtitle: "Reference 7177",
+                          },
+                          {
+                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-SilverCase-3crop%20Frame.jpg",
+                            alt: "Ref. 7177 Caseback - View 2",
+                            title: "Ref. 7177 Caseback - View 2",
+                            subtitle: "Reference 7177",
+                          },
+                        ]}
+                        onImageClick={setFullScreenImage}
                       />
-                      {/* Click indicator */}
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-black px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
-                      </div>
                     </div>
-                    <p className="text-center text-gray-600 font-medium mt-4 text-base sm:text-lg">7177 Caseback</p>
                   </div>
                 </div>
               </div>

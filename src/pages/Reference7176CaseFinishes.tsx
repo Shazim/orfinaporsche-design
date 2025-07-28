@@ -122,15 +122,15 @@ const Reference7176CaseFinishes = () => {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm sm:text-base max-w-2xl">
                 <div className="text-center">
-                  <div className="font-bold text-black">TBD</div>
+                  <div className="font-bold text-black">40.6mm</div>
                   <div className="text-gray-600">Diameter</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-bold text-black">TBD</div>
+                  <div className="font-bold text-black">44.2mm</div>
                   <div className="text-gray-600">Lug-To-Lug</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-bold text-black">TBD</div>
+                  <div className="font-bold text-black">15.3mm</div>
                   <div className="text-gray-600">Height</div>
                 </div>
               </div>
@@ -157,10 +157,10 @@ const Reference7176CaseFinishes = () => {
             {/* Black PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Black PVD" 
-                  variant="numbered" 
-                  number={1} 
+                <SectionHeading
+                  title="Black PVD"
+                  variant="numbered"
+                  number={1}
                 />
               </div>
 
@@ -194,10 +194,10 @@ const Reference7176CaseFinishes = () => {
             {/* Silver/Sablé */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Silver/Sablé" 
-                  variant="numbered" 
-                  number={2} 
+                <SectionHeading
+                  title="Silver/Sablé"
+                  variant="numbered"
+                  number={2}
                 />
               </div>
 
@@ -231,10 +231,10 @@ const Reference7176CaseFinishes = () => {
             {/* Polished */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Polished" 
-                  variant="numbered" 
-                  number={3} 
+                <SectionHeading
+                  title="Polished"
+                  variant="numbered"
+                  number={3}
                 />
               </div>
 
@@ -273,10 +273,10 @@ const Reference7176CaseFinishes = () => {
             {/* Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Grey PVD" 
-                  variant="numbered" 
-                  number={4} 
+                <SectionHeading
+                  title="Grey PVD"
+                  variant="numbered"
+                  number={4}
                 />
               </div>
 
@@ -309,10 +309,10 @@ const Reference7176CaseFinishes = () => {
             {/* Green PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-800">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Green PVD" 
-                  variant="numbered" 
-                  number={5} 
+                <SectionHeading
+                  title="Green PVD"
+                  variant="numbered"
+                  number={5}
                 />
               </div>
 
@@ -345,10 +345,10 @@ const Reference7176CaseFinishes = () => {
             {/* Cadet Grey PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-900">
               <div className="mb-8">
-                <SectionHeading 
-                  title="Cadet Grey PVD" 
-                  variant="numbered" 
-                  number={6} 
+                <SectionHeading
+                  title="Cadet Grey PVD"
+                  variant="numbered"
+                  number={6}
                 />
               </div>
 
@@ -357,7 +357,7 @@ const Reference7176CaseFinishes = () => {
                   <div className="space-y-6 text-center lg:text-left">
                     <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                       <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                        <strong>Found On:</strong> 7176 D (Exclusive)
+                        <strong>Found On:</strong> 7176 D and 7176 S
                       </p>
                     </div>
                   </div>
@@ -381,11 +381,7 @@ const Reference7176CaseFinishes = () => {
             {/* NTS PVD */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-1000">
               <div className="mb-8">
-                <SectionHeading 
-                  title="NTS PVD" 
-                  variant="numbered" 
-                  number={7} 
-                />
+                <SectionHeading title="NTS PVD" variant="numbered" number={7} />
               </div>
 
               <div className="space-y-12">

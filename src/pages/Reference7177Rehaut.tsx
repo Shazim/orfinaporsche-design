@@ -119,27 +119,52 @@ const Reference7177Rehaut = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Rehaut Variations" 
-                    variant="numbered" 
-                    number={1} 
+                  <SectionHeading
+                    title="Rehaut Variations"
+                    variant="numbered"
+                    number={1}
                   />
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  <div className="">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      All 7177 or "military" variants have a 12-hr rehaut ring, while the non-military civilian variants have a tachymetric rehaut ring.
+                      All 7177 or "military" variants have a 12-hr rehaut ring,
+                      while the non-military civilian variants have a
+                      tachymetric rehaut ring. There are two known variations of
+                      the 12-hr rehaut ring.
                     </p>
                   </div>
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                        Moreover, there are two known variations of the 12-hr rehaut ring: a slightly larger font "crooked seven rehaut" found on the first 7177's ever produced, and a slightly smaller rehaut found on all other 7177 variants.
-                      </p>
+                      Crooked-Seven 12-hr Rehaut
+                      <ul className="space-y-3 text-gray-700 ml-4">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            A slightly larger font rehaut found on the first
+                            circa ~500 7177’s ever produced. This rehaut’s seven
+                            features a crooked corner, hence the name.{" "}
+                          </span>
+                        </li>
+                      </ul>
+                      Standard 12-hr Rehaut
+                      <ul className="space-y-3 text-gray-700 ml-4">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-sm sm:text-base leading-relaxed">
+                            A slightly smaller font rehaut is found on all other
+                            7177 variants.
+                          </span>
+                        </li>
+                      </ul>
+                    </p>
                   </div>
-
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      There are a variety of prototype rehauts that have been seen on examples over the years, but these were not configured on any "production" watches and thus will not be discussed here.
+                      Note: There are a variety of prototype rehauts that have
+                      been seen on examples over the years, but these were not
+                      configured on any "production" watches and thus will not
+                      be discussed here.
                     </p>
                   </div>
                 </div>

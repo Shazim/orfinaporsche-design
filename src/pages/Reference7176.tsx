@@ -42,7 +42,7 @@ const Reference7176 = () => {
       finishes: "Black PVD, Silver/Sablé, and Polished",
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
-      dial: "Civilian Dial",
+      dial: "Civilian Dial, and Civilian Dial - Short Lume",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-1crop.jpg",
     },
@@ -64,7 +64,7 @@ const Reference7176 = () => {
       finishes: "Black PVD, Silver/Sablé, and Cadet Grey PVD",
       caseback: "7176 D Caseback",
       rehaut: "Yellow Triangle and Tachymetre",
-      dial: "Civilian Dial, Military Dial, and Blue by Orfina Dial",
+      dial: "Civilian Dial, and Blue by Orfina Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D%20Front%20(wes)crop.jpg",
     },
@@ -138,16 +138,18 @@ const Reference7176 = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed text-center mb-10">
               <p>
-                The reference 7176 entered production in circa 1976 and continued onward. The
-                new model (ref: 7176) came in a variety of finishes including Black PVD,
-                Silver/Sablé, Grey PVD and Green PVD.
+                The reference 7176 entered production in circa 1976 and
+                continued onward. The new model (ref: 7176) came in a variety of
+                finishes, including Black PVD, Silver/Sablé, Polished, Grey PVD
+                and Green PVD.
               </p>
               <p>
-                The "upgraded" Lemania 5100 movement also featured a 24-hour totalizer at 12
-                and a white central minutes hand with a lollipop tip.
+                The “upgraded” Lemania 5100 movement also featured a 24-hour
+                totalizer at 12 and a white central minutes hand with a lollipop
+                tip.
               </p>
             </div>
-              
+
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
                 There Are Four Known References
@@ -167,10 +169,14 @@ const Reference7176 = () => {
                   title={ref.title}
                   imageSrc={ref.image}
                   imageAlt={ref.title}
-                  subtitle="Reference 7176"
+                  // subtitle="Reference 7176"
                   specifications={[
-                    { label: "Production Years", value: ref.years, icon: Calendar },
-                    { label: "Case", value: "7176", icon: Settings },
+                    {
+                      label: "Production Years",
+                      value: ref.years,
+                      icon: Calendar,
+                    },
+                    // { label: "Case", value: "7176", icon: Settings },
                     { label: "Finishes", value: ref.finishes, icon: Layers },
                     { label: "Caseback", value: ref.caseback, icon: Settings },
                     { label: "Rehaut", value: ref.rehaut, icon: Settings },
@@ -199,21 +205,21 @@ const Reference7176 = () => {
                 imageAlt="Case & Finishes"
                 linkTo="/references/7176/case-finishes"
               />
-              
+
               <ExploreDetailsCard
                 title="Caseback"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Caseback.jpg"
                 imageAlt="Caseback"
                 linkTo="/references/7176/caseback"
               />
-              
+
               <ExploreDetailsCard
                 title="Rehaut Variations"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg"
                 imageAlt="Rehaut Variations"
                 linkTo="/references/7176/rehaut"
               />
-              
+
               <ExploreDetailsCard
                 title="Dial Variations"
                 imageSrc="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Button-Dial.jpg"
@@ -250,7 +256,7 @@ const Reference7176 = () => {
                       <span className="font-medium text-gray-700">
                         Production Years
                       </span>
-                      <span className="text-gray-900">1976-1983</span>
+                      <span className="text-gray-900">1976-1991</span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
                       <span className="font-medium text-gray-700">
@@ -281,7 +287,8 @@ const Reference7176 = () => {
                         Functions
                       </span>
                       <span className="text-gray-900">
-                        Hours, Minutes, Seconds, Chronograph, 24h
+                        Hours, Minutes, Seconds, Chronograph, 24H Totalizer,
+                        Day, Date
                       </span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
