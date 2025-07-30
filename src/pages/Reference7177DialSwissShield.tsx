@@ -227,40 +227,6 @@ const Reference7177DialSwissShield = () => {
                       </span>
                     </div>
                   </div>
-
-                  {/* 7177 Olive Green PVD Baseline below */}
-                  <div className="flex justify-center">
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg",
-                            alt: "7177 Olive Green PVD Baseline",
-                            title: "7177 Olive Green PVD Baseline",
-                            subtitle: "Baseline Configuration",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Green-2crop.jpg"
-                          alt="7177 Olive Green PVD Baseline"
-                          className="relative w-full max-w-sm h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full max-w-sm h-80 sm:h-96 lg:h-[400px] rounded-lg"
-                        />
-                        {/* Click indicator */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Olive Green PVD Baseline
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

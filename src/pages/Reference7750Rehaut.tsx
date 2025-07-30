@@ -162,17 +162,11 @@ const Reference7750Rehaut = () => {
 
             {/* Callout between 1 Mile and 1 KM */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-450">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-                {/* Empty space to match image columns */}
-                <div className="lg:col-span-2"></div>
-                
-                {/* Callout aligned with other callouts */}
-                <div className="flex items-center justify-center">
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              <div className="flex items-center justify-center w-full">
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black w-full">
+                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                     An interesting comparison is that despite being different measurements, the 1Mile and 1km have the same marks throughout their rehaut. This lack of detail might explain that in the next reference of Orfina Porsche Design watches, the manufacturer just put "Tachymetre" solely on the rehaut without either "unit" designation.  
-                    </p>
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
