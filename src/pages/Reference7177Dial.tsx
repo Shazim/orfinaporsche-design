@@ -59,7 +59,7 @@ const dialVariations = [
     name: "UAE",
     path: "/references/7177/dial/uae",
     img1: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/Pasted Graphic 17crop.jpg",
-    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Dial%20Cover%20Photos/7177-UAE-Mk.2crop.jpg",
+    img2: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Gold-Coloredcrop.jpg",
   },
 
   {

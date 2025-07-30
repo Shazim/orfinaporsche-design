@@ -84,9 +84,7 @@ const Reference7177Caseback = () => {
                   <p className="text-lg text-gray-700 leading-relaxed">
                     Center Text: The 7177 swapped a large Porsche Design logo
                     for a smaller one, added Orfina to the text, and had
-                    <strong>
-                      “Military Chronograph 7177 MOD. DEP. INT.”
-                    </strong>{" "}
+                    "Military Chronograph 7177 MOD. DEP. INT."
                     stamped on the back.
                   </p>
                 </div>
