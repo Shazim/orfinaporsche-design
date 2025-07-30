@@ -122,12 +122,12 @@ const Reference7177DialByOrfina = () => {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="By Orfina Dial" 
+                    title="General Notes:" 
                     variant="elegant-dark" 
                   />
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="">
+                    <ul className="space-y-4">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">

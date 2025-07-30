@@ -121,29 +121,39 @@ const Reference7177DialNato = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="NATO Dial" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="Distinguishing Characteristics:" 
+                      variant="elegant-dark" 
+                    />
+                    
+                    <ul className="space-y-3 ">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The 7177 NATO variant was reportedly issued to individuals at NATO headquarters in Brussels and features a Baseline dial, with the addition of "NATO" at 4 O'Clock.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Issued: </strong>
+                          The 7177 NATO variant was reportedly issued to individuals at NATO headquarters in Brussels.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>NATO Dial: </strong>
+                          Features a Baseline dial, with the addition of "NATO" at 4 O'Clock.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Finish: </strong>
                           The NATO variant was always coated in Cadet Grey PVD and came on a matching grey BUND-style leather strap.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          A noteworthy detail is that the 7177 NATO Dial is believed to be the only variant of the 7177 reference to feature a factory white day and date wheel - a characteristic observed on select examples of this model.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Day/Date Wheel: </strong>
+                          The 7177 NATO Dial is believed to be the only variant of the 7177 reference to feature a factory white day/date wheel - a characteristic observed on select examples of this model.
                         </span>
                       </li>
                     </ul>

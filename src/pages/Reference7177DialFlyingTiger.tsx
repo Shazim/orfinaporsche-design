@@ -161,34 +161,32 @@ const Reference7177DialFlyingTiger = () => {
                     variant="elegant-dark" 
                   />
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The Flying Tiger Watches were Issued for the U.S. Air Force's 23rd Tactical Fighter Group.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The 23rd Fighter Group is the home of the Air Force's legendary Flying Tigers and is stationed at Moody Air Force Base. The 23rd Fighter Group's primary mission is forward air control, close-air support, interdiction, and combat search and rescue operations.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The 23rd Fighter Group traces its roots back to the 23rd Pursuit Group, which was formed on December 17, 1941, just 10 days after the Japanese attack on Pearl Harbor. The group had three squadrons assigned to carry out their mission: the 74th, 75th, and 76th Fighter Squadrons.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          A particularly interesting note is that the aircraft assigned to the group has the unique "Shark Teeth" nose art. The Flying Tigers are the only Air Force unit authorized to carry this distinctive and historical aircraft marking.
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul className="space-y-4">
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        The Flying Tiger Watches were Issued for the U.S. Air Force's 23rd Tactical Fighter Group.
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        The 23rd Fighter Group is the home of the Air Force's legendary Flying Tigers and is stationed at Moody Air Force Base. The 23rd Fighter Group's primary mission is forward air control, close-air support, interdiction, and combat search and rescue operations.
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        The 23rd Fighter Group traces its roots back to the 23rd Pursuit Group, which was formed on December 17, 1941, just 10 days after the Japanese attack on Pearl Harbor. The group had three squadrons assigned to carry out their mission: the 74th, 75th, and 76th Fighter Squadrons.
+                      </span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-base sm:text-lg leading-relaxed">
+                        A particularly interesting note is that the aircraft assigned to the group has the unique "Shark Teeth" nose art. The Flying Tigers are the only Air Force unit authorized to carry this distinctive and historical aircraft marking.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Flying Tiger Crest */}
@@ -230,12 +228,14 @@ const Reference7177DialFlyingTiger = () => {
             {/* Two Production Batches */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <SectionHeading 
-                title="Two Production Batches" 
+                title="Dial Variations" 
                 variant="elegant-dark" 
               />
 
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black mb-8">
-                <ul className="space-y-4 text-gray-700">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-base sm:text-lg leading-relaxed">
@@ -245,26 +245,30 @@ const Reference7177DialFlyingTiger = () => {
                   <li className="flex items-start space-x-3 ml-4">
                     <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-base sm:text-lg leading-relaxed">
-                      <strong>Batch 1:</strong> The Mk. 1 Flying Tiger Dial possessing "U.S. Airforce" printing and the "Flying Tiger logo"
+                    The first with the Mk. 1 Flying Tiger Dial possessing “U.S. Airforce”
+                    printing and the “Flying Tiger logo"
                     </span>
                   </li>
                   <li className="flex items-start space-x-3 ml-4">
                     <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-base sm:text-lg leading-relaxed">
-                      <strong>Batch 2:</strong> The Mk. 2 Flying Tiger Dial without "U.S. Airforce" printing but still retaining the "Flying Tiger logo"
+                    The second with the Mk. 2 Flying Tiger Dial without “U.S. Airforce”
+                    printing but still retaining the “Flying Tiger logo”
                     </span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-base sm:text-lg leading-relaxed">
-                      The casebacks of these watches were identical to that of the baseline 7177, and the majority of these watches were finished in either Sandblasted Steel, Black PVD, or NTS PVD.
+                    The casebacks of these watches were identical to that of the baseline
+                    7177, and the majority of these watches were finished in either
+                    Sandblasted Steel, Black PVD, or NTS PVD.
                     </span>
                   </li>
-                </ul>
-              </div>
+                  </ul>
+                </div>
 
-              {/* Batch Examples */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Images Side by Side */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col items-center">
                   <div
                     className="relative group cursor-pointer"
@@ -281,8 +285,8 @@ const Reference7177DialFlyingTiger = () => {
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Mk. 2crop.jpg"
                       alt="Flying Tiger Mk. 1 Dial"
-                      className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full h-64 sm:h-80 lg:h-96 rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
                       <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
@@ -307,12 +311,12 @@ const Reference7177DialFlyingTiger = () => {
                       })
                     }
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
                     <ImageWithLoader
                       src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-Tiger-Silvercrop.jpg"
                       alt="Flying Tiger Mk. 2 Dial"
-                      className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                      skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
+                      className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full h-64 sm:h-80 lg:h-96 rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
                       <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
@@ -325,6 +329,7 @@ const Reference7177DialFlyingTiger = () => {
                   </span>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

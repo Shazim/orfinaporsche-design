@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
+import ImageSlider from "../components/ImageSlider";
 import SectionHeading from "../components/SectionHeading";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
@@ -118,22 +119,22 @@ const Reference7177DialBUND = () => {
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {/* Key Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              <SectionHeading 
-                title="BUND Dial" 
-                variant="elegant-dark" 
-              />
-              
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                <ul className="space-y-4 text-gray-700">
+              <div className="space-y-5">
+                <SectionHeading 
+                  title="General Notes:" 
+                  variant="elegant-dark" 
+                />
+                
+                <ul className="space-y-3 ">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-base sm:text-lg leading-relaxed">
+                    <span className="text-sm sm:text-lg leading-relaxed">
                       The BUND variant is short for "Bundeswehr", the German Federal Defense Force to whom they were issued.
                     </span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-base sm:text-lg leading-relaxed">
+                    <span className="text-sm sm:text-lg leading-relaxed">
                       BUND examples are seen in a variety of finishes and were always issued on a BUND-style strap.
                     </span>
                   </li>
@@ -143,131 +144,94 @@ const Reference7177DialBUND = () => {
 
             {/* Caseback Markings */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <SectionHeading 
-                title="Caseback Markings" 
-                variant="elegant-dark" 
-              />
-              
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-                <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+              <div className="space-y-5">
+                <SectionHeading 
+                  title="Caseback Markings:" 
+                  variant="elegant-dark" 
+                />
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                  <div className="space-y-6">
+                    <ul className="space-y-3 ">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                        <span className="text-sm sm:text-lg leading-relaxed">
                           On these examples, the caseback does have "BUND" and an appropriate NSN engraving.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                        <span className="text-sm sm:text-lg leading-relaxed">
                           Two known NSNs are found on the BUND variant: the initial NSN is 6645-12-182-1763, and the second is 6645-12-194-8642.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                        <span className="text-sm sm:text-lg leading-relaxed">
                           Some BUND examples are "double-struck," meaning the initial NSN is crossed out, and the second NSN is added. This was presumably done at some maintenance event during the watch's lifetime. BUND variants also do not have the "7177" ref# engraving on the caseback.
                         </span>
                       </li>
                     </ul>
                   </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  <div className="flex flex-col items-center">
-                    <div
-                      className="relative group cursor-pointer"
-                      onClick={() =>
-                        setFullScreenImage({
+                  
+                  <div className="flex flex-col items-center justify-center">
+                    <ImageSlider
+                      images={[
+                        {
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg",
                           alt: "BUND Single-Struck Caseback",
                           title: "BUND Single-Struck Caseback",
                           subtitle: "Initial NSN 6645-12-182-1763",
-                        })
-                      }
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20BUND%20Singe-Struck%20Caseback.jpg"
-                        alt="BUND Single-Struck Caseback"
-                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      BUND Single-Struck Caseback
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center">
-                    <div
-                      className="relative group cursor-pointer"
-                      onClick={() =>
-                        setFullScreenImage({
+                        },
+                        {
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177 BUND Singe-Struck Caseback Frame.jpg",
+                          alt: "BUND Single-Struck Caseback",
+                          title: "BUND Single-Struck Caseback",
+                          subtitle: "Initial NSN 6645-12-182-1763",
+                        },
+                        {
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg",
                           alt: "BUND Double-Struck Caseback",
                           title: "BUND Double-Struck Caseback",
                           subtitle: "Original NSN Crossed Out, New NSN Added",
-                        })
-                      }
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
-                      <ImageWithLoader
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/Double-Strike-Bundcrop.jpg"
-                        alt="BUND Double-Struck Caseback"
-                        className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                        skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                          Click to zoom
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      BUND Double-Struck Caseback
-                    </span>
+                        },
+                      ]}
+                      onImageClick={setFullScreenImage}
+                    />
                   </div>
-                </div>
               </div>
+            </div>
             </div>
 
             {/* Dial Variations */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <SectionHeading 
-                title="Dial Variations" 
-                variant="elegant-dark" 
-              />
-              
-              <div className="space-y-8">
-                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                  <ul className="space-y-4 text-gray-700">
+              <div className="space-y-5">
+                <SectionHeading 
+                  title="Dial Variations:" 
+                  variant="elegant-dark" 
+                />
+                
+                <div className="space-y-8">
+                  <ul className="space-y-3 ">
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base sm:text-lg leading-relaxed">
+                      <span className="text-sm sm:text-lg leading-relaxed">
                         BUND examples have been found to be produced with both the Baseline Mk. 1 Dial and Baseline Mk. 2 Dials
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base sm:text-lg leading-relaxed">
-                        The Baseline Mk. 2 Dials Dials lacked "Porsche Design" text, which was replaced with "CHRONOGRAPH" text and these examples bear double-struck casebacks.
+                      <span className="text-sm sm:text-lg leading-relaxed">
+                        <strong>Baseline Mk. 2 Dial:</strong> Lacked "Porsche Design" text, which was replaced with "CHRONOGRAPH" text.
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base sm:text-lg leading-relaxed">
-                        In addition, some BUND examples also sent in for service, had their dials replaced with Service Dials. These used early Luminova and lacked "Porsche Design" text, again replaced by "CHRONOGRAPH" text, but also lacked the "3H" marking because the dials did not use tritium. Luminova dial examples will also bear double-struck casebacks.
+                      <span className="text-sm sm:text-lg leading-relaxed">
+                        <strong>Service Dial:</strong> Some BUND examples sent in for service, had their dials replaced with Service Dials. These used early Luminova and lacked "Porsche Design" text, again replaced by "CHRONOGRAPH" text, but also lacked the "3H" marking because the dials did not use tritium. Luminova dial examples will also bear double-struck casebacks.
                       </span>
                     </li>
                   </ul>
-                </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   <div className="flex flex-col items-center">
@@ -362,31 +326,31 @@ const Reference7177DialBUND = () => {
                 </div>
               </div>
             </div>
+            </div>
 
             {/* Accessories */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <SectionHeading 
-                title="Accessories" 
-                variant="elegant-dark" 
-              />
-              
-              <div className="space-y-8">
-                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                  <ul className="space-y-4 text-gray-700">
+              <div className="space-y-5">
+                <SectionHeading 
+                  title="Accessories:" 
+                  variant="elegant-dark" 
+                />
+                
+                <div className="space-y-8">
+                  <ul className="space-y-3 ">
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base sm:text-lg leading-relaxed">
+                      <span className="text-sm sm:text-lg leading-relaxed">
                         The BUND examples were also issued in a box that bore the initial NSN 6645-12-182-1763.
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base sm:text-lg leading-relaxed">
+                      <span className="text-sm sm:text-lg leading-relaxed">
                         There are also a variety of BUND straps found across examples. Please refer to the Components - BUND page for more information on these straps.
                       </span>
                     </li>
                   </ul>
-                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="flex flex-col items-center">
@@ -450,6 +414,7 @@ const Reference7177DialBUND = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
 import SectionHeading from "../components/SectionHeading";
+import ImageSlider from "../components/ImageSlider";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
@@ -116,44 +117,120 @@ const Reference7177DialUAE = () => {
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Dial Variations */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+          <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
                   <SectionHeading 
-                    title="Dial Variations" 
+                    title="General Notes:" 
                     variant="elegant-dark" 
                   />
 
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="">
+                    <ul className="space-y-4">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          The 7177 UAE variant was ordered by the UAE's Air Force and came in two dial variations:
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          A UAE Mk. 1 Dial stamped with "UAE AIR FORCE" at four o'clock and a tricolor motif at the six o'clock subdial.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3 ml-4">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          A UAE Mk. 2 Dial stamped with "UAE AIR FORCE" at four o'clock as well, but "CENTRAL AIR BASE" stamped at the six o'clock subdial instead of a motif.
+                          Both of the UAE dial variants came in a variety of finishes. However, a
+                          small batch of circa ~25 watches featuring gold-colored cases has been
+                          identified. It is unclear whether these watches were simply customized by
+                          their owners or were initially produced in this manner
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                {/* UAE Dial Images */}
+              </div>
+            </div>
+            {/* Dial Variations */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <SectionHeading 
+                    title="CaseBack:" 
+                    variant="elegant-dark" 
+                  />
+
+                  <div className="">
+                    <ul className="space-y-4 ">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          There is a very small batch of casebacks in which the serial number's
+                          location shifted to the middle of the caseback. This is found on
+                          UAE-issued examples, in the low ~3000 serial range.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* UAE Caseback Slider */}
+                <div className="flex flex-col items-center justify-center">
+                  <ImageSlider
+                    images={[
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg",
+                        alt: "UAE Mid-Caseback Serial - 1",
+                        title: "UAE Mid-Caseback Serial - 1",
+                        subtitle: "Mid-Caseback Serial Number"
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial-frame.jpg",
+                        alt: "UAE Mid-Caseback Serial - 2",
+                        title: "UAE Mid-Caseback Serial - 2",
+                        subtitle: "Low 3000 Serial Range"
+                      }
+                    ]}
+                    onImageClick={setFullScreenImage}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Key Notes */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <SectionHeading 
+                    title="Dial Variations:" 
+                    variant="elegant-dark" 
+                  />
+
+                  <div className="">
+                    <ul className="space-y-4">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          The 7177 UAE variant was ordered by the UAE’s Air Force and came in
+                          two dial variations:
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                        <strong>Mk. 1 Dial:</strong> Stamped with “UAE AIR FORCE” at four o'clock and a tricolor
+                        motif at the six o’clock subdial.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-base sm:text-lg leading-relaxed">
+                          <strong>Mk. 2 Dial:</strong> Stamped with “UAE AIR FORCE” at four o'clock as well, but
+                          “CENTRAL AIR BASE" stamped at the six o’clock subdial instead of a
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Additional Images */}
                 <div className="space-y-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {/* UAE Mk. 1 Dial */}
+                    {/* Mid-Caseback Serial */}
                     <div className="flex flex-col items-center">
                       <div
                         className="relative group cursor-pointer"
@@ -162,7 +239,7 @@ const Reference7177DialUAE = () => {
                             src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177%20UAE%20Mk.%201%20Dial.jpg",
                             alt: "UAE Mk. 1 Dial",
                             title: "UAE Mk. 1 Dial",
-                            subtitle: "With Tricolor Motif",
+                            subtitle: "Unique Serial Number Placement",
                           })
                         }
                       >
@@ -180,110 +257,7 @@ const Reference7177DialUAE = () => {
                         </div>
                       </div>
                       <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 UAE Mk. 1 Dial
-                      </span>
-                    </div>
-
-                    {/* UAE Mk. 2 Dial */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg",
-                            alt: "UAE Mk. 2 Dial",
-                            title: "UAE Mk. 2 Dial",
-                            subtitle: "With Central Air Base Text",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Mk.2crop.jpg"
-                          alt="UAE Mk. 2 Dial"
-                          className="relative w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-80 sm:h-96 rounded-lg"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 UAE Mk. 2 Dial
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Key Notes */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-                {/* Text Content */}
-                <div className="space-y-6">
-                  <SectionHeading 
-                    title="Key Notes" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          Both of the UAE dial variants came in a variety of the 7177 finishes.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          There is a very small batch of casebacks in which the serial number's location shifted to the middle of the caseback. This is found on UAE issued examples, in the low ~3000 serial range.
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          An important note is that some claim there is a UAE variant with 25 watches featuring gold-colored cases. We believe this is not the case and that these watches were simply customized by their owners.
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Additional Images */}
-                <div className="space-y-8">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {/* Mid-Caseback Serial */}
-                    <div className="flex flex-col items-center">
-                      <div
-                        className="relative group cursor-pointer"
-                        onClick={() =>
-                          setFullScreenImage({
-                            src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg",
-                            alt: "UAE Mid-Caseback Serial",
-                            title: "UAE Mid-Caseback Serial",
-                            subtitle: "Unique Serial Number Placement",
-                          })
-                        }
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <ImageWithLoader
-                          src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg"
-                          alt="UAE Mid-Caseback Serial"
-                          className="relative w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          skeletonClassName="w-full h-80 sm:h-96 rounded-lg"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
-                          <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                            Click to zoom
-                          </div>
-                        </div>
-                      </div>
-                      <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 Mid-Caseback Serial
+                        UAE Mk. 1 Dial
                       </span>
                     </div>
 
@@ -294,8 +268,8 @@ const Reference7177DialUAE = () => {
                         onClick={() =>
                           setFullScreenImage({
                             src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Gold-Coloredcrop.jpg",
-                            alt: "UAE Gold Colored",
-                            title: "UAE Gold Colored",
+                            alt: "UAE Mk. 2 Dial and Gold Colored Case",
+                            title: "UAE Mk. 2 Dial and Gold Colored Case",
                             subtitle: "Believed to be Owner Customized",
                           })
                         }
@@ -303,7 +277,7 @@ const Reference7177DialUAE = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Gold-Coloredcrop.jpg"
-                          alt="UAE Gold Colored"
+                          alt="UAE Mk. 2 Dial and Gold Colored Case"
                           className="relative w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           skeletonClassName="w-full h-80 sm:h-96 rounded-lg"
                         />
@@ -314,7 +288,7 @@ const Reference7177DialUAE = () => {
                         </div>
                       </div>
                       <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        7177 UAE Gold Colored
+                        UAE Mk. 2 Dial and Gold Colored Case
                       </span>
                     </div>
                   </div>

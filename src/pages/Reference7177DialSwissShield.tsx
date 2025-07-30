@@ -121,29 +121,39 @@ const Reference7177DialSwissShield = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Swiss Shield Dial" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="Distinguishing Characteristics:" 
+                      variant="elegant-dark" 
+                    />
+                    
+                    <ul className="space-y-3 ">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The Swiss Military variant was supposedly issued to Switzerland's military. The dial of this variant bears a "Swiss Coat of Arms" as well as an additional line of text "by ORFINA".
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Issued: </strong>
+                          The Swiss Military variant was supposedly issued to Switzerland's military.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          This variant was always produced in Olive Green PVD, and bears a German Day Disk.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Swiss Coat of Arms Dial: </strong>
+                          Bears a "Swiss Coat of Arms" as well as an additional line of text "by ORFINA".
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          It is estimated that a total of 200-500 Olive Green PVD 7177s were produced, with approximately 33 bearing a Swiss Coat of Arms.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Finish: </strong>
+                          Produced only in Olive Green PVD.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Day/Date Wheel: </strong>
+                          Produced with German Day Disk.
                         </span>
                       </li>
                     </ul>

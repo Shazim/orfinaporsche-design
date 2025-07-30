@@ -117,27 +117,32 @@ const Reference7177DialRoyalNavy = () => {
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-            {/* Two Debated Origins */}
+            {/* General Notes */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Two Debated Origins" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="General Notes:" 
+                      variant="elegant-dark" 
+                    />
+                    <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          The Royal Navy variant has two debated origins.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-4">
+                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
                           <strong>Theory 1: Quasi-Issued</strong> - the first is that these are quasi-issued and were not issued to NATO stock, as they lack the traditional caseback broad arrow marking and any typical MOD markings.
                         </span>
                       </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
+                      <li className="flex items-start space-x-3 ml-4">
+                        <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
                           <strong>Theory 2: Issued</strong> - the other theory is that they were, in fact, issued to NATO stock but only a small number for evaluation by the Royal Navy - all of which were marked and issued with a NATO stock code on their caseback.
                         </span>
                       </li>
@@ -163,28 +168,33 @@ const Reference7177DialRoyalNavy = () => {
               </div>
             </div>
 
-            {/* Key Notes */}
+            {/* Distinguishing Characteristics */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Royal Navy Dial" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <ul className="space-y-4 text-gray-700">
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="Distinguishing Characteristics:" 
+                      variant="elegant-dark" 
+                    />
+                    <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          The dial of this variant bears the inscription "Royal Navy" below the PORSCHE DESIGN text at 3 o'clock.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Royal Navy Dial:</strong> The dial of this variant bears the inscription "Royal Navy" below the PORSCHE DESIGN text at 3 o'clock.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base sm:text-lg leading-relaxed">
-                          It is believed that most, if not all, were issued on the following style bracelet and have a sandblasted steel finish. However, examples have been seen in an NTS PVD case.
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Finishes:</strong> It is believed that most, if not all, were produced in Silver/Sablé, but examples have been seen in an NTS PVD case.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Bracelet:</strong> Royal Navy examples are commonly found, with an Orfina signed "lobster" bracelet instead of the standard NSA bracelet.
                         </span>
                       </li>
                     </ul>

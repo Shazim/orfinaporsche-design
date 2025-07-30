@@ -121,21 +121,35 @@ const Reference7177DialBaseline = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="The Baseline Dial" 
-                    variant="elegant-dark" 
-                  />
-
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      All 7177 or military variants have "MILITARY", "PORSCHE DESIGN", and the "circle-3H logo" printed on the dial. This dial is considered the Baseline Mk. 1 variation.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                      There are ten main 7177 or military variants. These variants feature the three elements noted on the Baseline dial, plus dial printing, and/or caseback engraving unique to each.
-                    </p>
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      The Baseline dial is found in all five of the 7177 finishes.
-                    </p>
+                  <div className="space-y-5">
+                    <SectionHeading 
+                      title="Distinguishing Characteristics:" 
+                      variant="elegant-dark" 
+                    />
+                    
+                    <ul className="space-y-">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Baseline Mk. 1 Dial: </strong>
+                          All 7177 or military variants have "MILITARY", "PORSCHE DESIGN", and the "circle-3H logo" printed on the dial. This dial is considered the Baseline Mk. 1 variation.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Finishes: </strong>
+                          Found in all five of the 7177 finishes.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-lg leading-relaxed">
+                          <strong>Military Variants: </strong>
+                          There are ten main 7177 or military variants. These variants feature the three elements noted on the Baseline dial, plus dial printing, and/or caseback engraving unique to each.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
@@ -238,7 +252,7 @@ const Reference7177DialBaseline = () => {
                       </div>
                     </div>
                     <div className="mt-3 text-center">
-                      <span className="block text-sm sm:text-base font-medium text-gray-800">
+                      <span className="block text-sm sm:text-lg font-medium text-gray-800">
                         {image.title}
                       </span>
                     </div>
