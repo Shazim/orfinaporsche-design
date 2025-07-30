@@ -287,15 +287,15 @@ const Reference7176 = () => {
                         Functions
                       </span>
                       <span className="text-gray-900">
-                        Hours, Minutes, Seconds, Chronograph, 24H Totalizer,
-                        Day, Date
+                      Hours, Minutes, Seconds, Chronograph, 
+                      <br />24H Totalizer, Day, Date
                       </span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
                       <span className="font-medium text-gray-700">
                         Serial Range
                       </span>
-                      <span className="text-gray-900">1000–3000 (approx.)</span>
+                      <span className="text-gray-900">X-X (approx.)</span>
                     </div>
                   </div>
                 </div>

@@ -72,13 +72,6 @@ const Reference7750Rehaut = () => {
               There are three known variations of Rehaut found in the 7750 model
               range. These can be found across all 7750 case marks and dial
               variations.
-              <br />
-              An interesting comparison is that despite being different
-              measurements, the 1Mile and 1km have the same marks throughout
-              their rehaut. This lack of detail might explain that in the next
-              reference of Orfina Porsche Design watches, the manufacturer just
-              put "Tachymetre" solely on the rehaut without either “unit”
-              designation.
             </p>
           </div>
 
@@ -86,10 +79,10 @@ const Reference7750Rehaut = () => {
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {/* 1 Mile Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
-              <SectionHeading
-                title="1 Mile Rehaut"
-                variant="numbered"
-                number={1}
+              <SectionHeading 
+                title="1 Mile Rehaut" 
+                variant="numbered" 
+                number={1} 
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
@@ -99,7 +92,7 @@ const Reference7750Rehaut = () => {
                       className="relative group cursor-pointer"
                       onClick={() =>
                         setFullScreenImage({
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
                           alt: "7750 1Mile Rehaut",
                           title: "1 Mile Rehaut",
                           subtitle: "Reference 7750",
@@ -108,7 +101,7 @@ const Reference7750Rehaut = () => {
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                       <img
-                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg  "
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg"
                         alt="7750 1Mile Rehaut"
                         className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                       />
@@ -155,7 +148,7 @@ const Reference7750Rehaut = () => {
                     </span>
                   </div>
                 </div>
-                {/* <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       The 1Mile rehaut features tachymetric markings calibrated
@@ -163,7 +156,7 @@ const Reference7750Rehaut = () => {
                       following imperial measurement systems.
                     </p>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -172,29 +165,24 @@ const Reference7750Rehaut = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
                 {/* Empty space to match image columns */}
                 <div className="lg:col-span-2"></div>
-
+                
                 {/* Callout aligned with other callouts */}
-                {/* <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      Despite being different measurements - the 1Mile and 1km
-                      have the same marks throughout their rehaut. This lack of
-                      detail might explain that in the next reference of Orfina
-                      Porsche Design watches, the manufacturer just put
-                      "Tachymetre" solely on the rehaut without either "unit"
-                      designation.
+                    An interesting comparison is that despite being different measurements, the 1Mile and 1km have the same marks throughout their rehaut. This lack of detail might explain that in the next reference of Orfina Porsche Design watches, the manufacturer just put "Tachymetre" solely on the rehaut without either "unit" designation.  
                     </p>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
             {/* 1 KM Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
-              <SectionHeading
-                title="1 KM Rehaut"
-                variant="numbered"
-                number={2}
+              <SectionHeading 
+                title="1 KM Rehaut" 
+                variant="numbered" 
+                number={2} 
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
@@ -261,23 +249,23 @@ const Reference7750Rehaut = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       The 1KM rehaut features tachymetric markings calibrated
                       for kilometer-based measurements, designed for markets
                       using the metric system.
                     </p>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Advertisement Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
-              <SectionHeading
-                title="Advertisement Rehaut"
-                variant="numbered"
-                number={3}
+              <SectionHeading 
+                title="Advertisement Rehaut" 
+                variant="numbered" 
+                number={3} 
               />
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
@@ -347,9 +335,9 @@ const Reference7750Rehaut = () => {
                 <div className="flex items-center justify-center">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      The Advertisement version had neither 1Mile nor 1km marks,
+                      The Advertisement version had neither 1Mile or 1km marks,
                       but all tach scale markings. Likely unreleased in this way
-                      and possibly done to serve multiple markets with a single
+                      and possibly done to serve multiple markets with single
                       advertisement.
                     </p>
                   </div>

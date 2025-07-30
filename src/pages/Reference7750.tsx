@@ -327,7 +327,7 @@ const Reference7750 = () => {
                       <span className="font-medium text-gray-700">
                         Serial Range
                       </span>
-                      <span className="text-gray-900">6000–9000 (approx.)</span>
+                      <span className="text-gray-900">X-X (approx.)</span>
                     </div>
                   </div>
                 </div>

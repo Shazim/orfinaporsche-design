@@ -95,9 +95,7 @@ const Reference7176Caseback = () => {
                     </p>
                   </div> */}
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    The 7176 and 7176 Military casebacks follow the design
-                    language change of the caseback first seen on the 7750 Mk. 2
-                    caseback - the caseback is marked
+                    The 7176 and 7176 Military casebacks follow the design language change of the caseback first seen on the 7750 Mk. 2 caseback
                   </div>
 
                   <div className="space-y-4">
@@ -108,26 +106,23 @@ const Reference7176Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter Text:{" "}
-                          <strong>
-                            7176 CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10
-                            ATM SHOCKPROTECTED STAINLESS STEEL SWISS MADE
-                          </strong>{" "}
-                          in one continuous circle at the perimeter of the back.
+                          Perimeter Text: “7176 CHRONOGRAPH AUTOMATIC
+                          WATERRESISTANT TESTED 10 ATM SHOCKPROTECTED
+                          STAINLESS STEEL SWISS MADE” in one continuous circle at the
+                          perimeter of the back.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           Center Text: The PD logo is accompanied by the words
-                          <strong> PORSCHE DESIGN</strong> curved around it
-                          above.{" "}
+                          “PORSCHE DESIGN” curved around it above.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Serial numbers: Present on all variations
+                          Serial Numbers: Present on these models.
                         </span>
                       </li>
                     </ul>
@@ -176,7 +171,7 @@ const Reference7176Caseback = () => {
                           subtitle: "Reference 7176",
                         },
                         {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176D-Blue-Casebackcrop%20Frame.jpg",
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D-Blue-Casebackcrop Frame.jpg",
                           alt: "7176 Mk. 1 Caseback - View 2",
                           title: "7176 Mk. 1 Caseback - View 2",
                           subtitle: "Reference 7176",
@@ -185,9 +180,7 @@ const Reference7176Caseback = () => {
                       onImageClick={setFullScreenImage}
                     />
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176 D Caseback
-                  </span>
+                  
                 </div>
 
                 <div className="order-1 lg:order-2 space-y-6">
@@ -272,7 +265,7 @@ const Reference7176Caseback = () => {
                           subtitle: "Reference 7176",
                         },
                         {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176s-caseback%20Frame.jpg",
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176s-caseback Frame.jpg",
                           alt: "7176 S Caseback - View 2",
                           title: "7176 S Caseback - View 2",
                           subtitle: "Reference 7176",
@@ -281,9 +274,7 @@ const Reference7176Caseback = () => {
                       onImageClick={setFullScreenImage}
                     />
                   </div>
-                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                    7176 S Caseback
-                  </span>
+                  
                 </div>
               </div>
             </div>
@@ -295,7 +286,7 @@ const Reference7176Caseback = () => {
                   <ImageSlider
                     images={[
                       {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176 Prototype Caseback.jpg",
                         alt: "Prototype Caseback",
                         title: "Prototype Caseback",
                         subtitle: "Reference 7176",
@@ -326,10 +317,9 @@ const Reference7176Caseback = () => {
                     </p>
                   </div> */}
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    On select 7176 variants, usually those identified as
-                    prototypes, a different caseback has been identified. It
-                    features a black acrylic disk that is embedded into the
-                    steel caseback.
+                    On select 7176 variants, usually those identified as prototypes, a
+                    different caseback has been identified. It features a black acrylic
+                    disk that is embedded into the steel caseback.
                   </div>
 
                   <div className="space-y-4">
@@ -340,30 +330,23 @@ const Reference7176Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter Text:{" "}
-                          <strong>
-                            7176 S{" "}
-                            <strong>
-                              CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10 ATM
-                              SHOCKPROTECTED STAINLESS STEEL SWISS MADE{" "}
-                            </strong>{" "}
-                            in one continuous circle at the perimeter of the
-                            back.
-                          </strong>
+                          Perimeter Text: “7176 S CHRONOGRAPH AUTOMATIC
+                          WATERRESISTANT TESTED 10 ATM
+                          SHOCKPROTECTED STAINLESS STEEL SWISS MADE”
+                          in one continuous circle at the perimeter of the back
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           Center Text: A sizeable PD logo is accompanied by the
-                          words <strong>PORSCHE DESIGN</strong> curved around it
-                          above.
+                          words “PORSCHE DESIGN” curved around it above
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Serial numbers: Not present on these variants
+                          Serial Numbers: Not present on these models
                         </span>
                       </li>
                     </ul>

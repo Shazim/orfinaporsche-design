@@ -103,34 +103,25 @@ const Reference7750Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Top Text:{" "}
-                          <strong>CHRONOGRAPH PORSCHE DESIGN 7750</strong> in
-                          the top surrounding text. Followed by another line
-                          under it marked{" "}
-                          <strong>WATERRESISTANT TESTED 10 ATM</strong>
+                          Top Text: "* CHRONOGRAPH PORSCHE DESIGN 7750 *" in the top surrounding text. Followed by another line under it marked "WATERRESISTANT TESTED 10 ATM"
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Center Text: Orfina <strong>Flame</strong> logo over
-                          the ORFINA brand name. Above the logo the words{" "}
-                          <strong>PORSCHE DESIGN</strong> are curved around it.
+                          Center Text: Orfina "Flame" logo over the ORFINA brand name. Above the logo the words "PORSCHE DESIGN" are curved around it.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Bottom Text:{" "}
-                          <strong>
-                            INCABLOC AUTOMATIC ALL STAINLESS STEEL SWISS-MADE
-                          </strong>
+                          Bottom Text: INCABLOC AUTOMATIC ALL STAINLESS STEEL SWISS-MADE
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Serial numbers: Not present on these models
+                          Serial Numbers: Not present on these models
                         </span>
                       </li>
                     </ul>
@@ -172,7 +163,7 @@ const Reference7750Caseback = () => {
                         subtitle: "Reference 7750",
                       },
                       {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750%20Mk.%201%20Caseback%20Frame.jpg",
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.2-Caseback-3.jpg",
                         alt: "7750 Caseback Mk. 2 - View 2",
                         title: "7750 Caseback Mk. 2 - View 2",
                         subtitle: "Reference 7750",
@@ -204,35 +195,27 @@ const Reference7750Caseback = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter Text:{" "}
-                          <strong>
-                            7750 CHRONOGRAPH AUTOMATIC WATERRESISTANT TESTED 10
-                            ATM INCABLOC ALL STAINLESS STEEL SWISS MADE
-                          </strong>{" "}
-                          in the top surrounding text.
+                          Perimeter Text: “7750 CHRONOGRAPH AUTOMATIC<br />
+                          WATERRESISTANT TESTED 10 ATM INCABLOC ALL<br />
+                          STAINLESS STEEL SWISS MADE” in the top surrounding text.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Center Text: The PD logo is accompanied by the words
-                          <strong> PORSCHE DESIGN</strong> curved around it
-                          above.{" "}
+                          Center Text: The PD logo is accompanied by the words “PORSCHE DESIGN” curved around it above.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Serial numbers: Present on these models
+                          Serial Numbers: Present on these models.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Note: The design language change of the caseback is
-                          significant and sets the tone for the caseback design
-                          language that would go on to be used in 7176, 7176
-                          Military, 7176 D, and 7176 S.
+                          Note: The design language change of the caseback is significant and sets the tone for the caseback design language that would go on to be used in 7176, 7176 Military, 7176 D, and 7176 S.
                         </span>
                       </li>
                     </ul>

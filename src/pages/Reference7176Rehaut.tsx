@@ -115,12 +115,8 @@ const Reference7176Rehaut = () => {
 
                   <div className="">
                     <p className="text-base sm:text-lg leading-relaxed mb-4">
-                      The Yellow Triangle rehaut features a Yellow Triangle
-                      Rehaut with the word "TACHYMETER" printed between 12 and 2
-                      O'clock<br></br>
-                      Yellow Triangle Rehaut found on original 7176 and 7176
-                      Military models, featuring distinctive yellow triangle
-                      marker and standard typography.
+                      The Yellow Triangle rehaut features a Yellow Triangle Rehaut with the
+                      word “TACHYMETER” printed between 12 and 2 O'clock.
                     </p>
                   </div>
 
