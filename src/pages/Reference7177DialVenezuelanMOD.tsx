@@ -157,6 +157,7 @@ const Reference7177DialVenezuelanMOD = () => {
                 />
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                  {/* Text Content */}
                   <div className="space-y-6">
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
@@ -167,31 +168,63 @@ const Reference7177DialVenezuelanMOD = () => {
                       </li>
                     </ul>
                   </div>
-                  
-                  <div className="flex flex-col items-center justify-center">
-                    <ImageSlider
-                      images={[
-                        {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMOD-Casebackcrop.jpg",
-                          alt: "EJERCITO DE VENEZUELA Caseback",
-                          title: "EJERCITO DE VENEZUELA Caseback",
-                          subtitle: "First Batch - Army Issue",
-                        },
-                        {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMOD-Casebackcrop Frame.jpg",
-                          alt: "EJERCITO DE VENEZUELA Caseback",
-                          title: "EJERCITO DE VENEZUELA Caseback",
-                          subtitle: "First Batch - Army Issue",
-                        },
-                        {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/MINISTERIO%20VMOD%20Caseback.jpg",
-                          alt: "MINISTERIO DE VENEZUELA Caseback",
-                          title: "MINISTERIO DE VENEZUELA Caseback",
-                          subtitle: "Second Batch - Ministry Issue",
-                        },
-                      ]}
-                      onImageClick={setFullScreenImage}
-                    />
+
+                  {/* Images Side by Side */}
+                  <div className="space-y-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {/* Image Slider - First 2 Images */}
+                      <div className="flex flex-col items-center">
+                        <ImageSlider
+                          images={[
+                            {
+                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMOD-Casebackcrop.jpg",
+                              alt: "EJERCITO DE VENEZUELA Caseback",
+                              title: "EJERCITO DE VENEZUELA Caseback",
+                              subtitle: "First Batch - Army Issue",
+                            },
+                            {
+                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMOD-Casebackcrop Frame.jpg",
+                              alt: "EJERCITO DE VENEZUELA Caseback - Closeup",
+                              title: "EJERCITO DE VENEZUELA Caseback - Closeup",
+                              subtitle: "First Batch - Army Issue",
+                            },
+                          ]}
+                          onImageClick={setFullScreenImage}
+                        />
+                        
+                      </div>
+
+                      {/* Separate Third Image */}
+                      <div className="flex flex-col items-center">
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() =>
+                            setFullScreenImage({
+                              src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/MINISTERIO VMOD Caseback-1.jpg",
+                              alt: "REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA Caseback",
+                              title: "REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA Caseback",
+                              subtitle: "Second Batch - Ministry Issue",
+                            })
+                          }
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                          <ImageWithLoader
+                            src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/MINISTERIO VMOD Caseback-1.jpg"
+                            alt="REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA Caseback"
+                            className="relative w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            skeletonClassName="w-full h-64 sm:h-80 lg:h-96 rounded-lg"
+                          />
+                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                              Click to zoom
+                            </div>
+                          </div>
+                        </div>
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          REPUBLICA DE VENEZUELA MINISTERIO DE LA DEFENSA Caseback
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -241,8 +274,8 @@ const Reference7177DialVenezuelanMOD = () => {
                         onClick={() =>
                           setFullScreenImage({
                             src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg",
-                            alt: "Venezuelan MOD Dial Example",
-                            title: "Venezuelan MOD Dial Example",
+                            alt: "Baseline Mk. 2 Dial",
+                            title: "Baseline Mk. 2 Dial",
                             subtitle: "VZMOD Dial Variation",
                           })
                         }
@@ -250,7 +283,7 @@ const Reference7177DialVenezuelanMOD = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                         <ImageWithLoader
                           src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-VMODcrop.jpg"
-                          alt="Venezuelan MOD Dial Example"
+                          alt="Baseline Mk. 2 Dial"
                           className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                           skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                         />
@@ -261,7 +294,7 @@ const Reference7177DialVenezuelanMOD = () => {
                         </div>
                       </div>
                       <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                        Venezuelan MOD Dial Example
+                        Baseline Mk. 2 Dial
                       </span>
                     </div>
                   </div>
@@ -296,8 +329,8 @@ const Reference7177DialVenezuelanMOD = () => {
                       onClick={() =>
                         setFullScreenImage({
                           src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/VMOD%20Boxcrop.jpg",
-                          alt: "Venezuelan Variant Box",
-                          title: "Venezuelan Variant Box",
+                          alt: "Venezuelan Ministry of Defense Box",
+                          title: "Venezuelan Ministry of Defense Box",
                           subtitle: "Unique Printed Packaging",
                         })
                       }
@@ -305,7 +338,7 @@ const Reference7177DialVenezuelanMOD = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/VMOD%20Boxcrop.jpg"
-                        alt="Venezuelan Variant Box"
+                        alt="Venezuelan Ministry of Defense Box"
                         className="relative w-full h-80 sm:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                         skeletonClassName="w-full h-80 sm:h-96 lg:h-[400px] rounded-lg"
                       />
@@ -316,7 +349,7 @@ const Reference7177DialVenezuelanMOD = () => {
                       </div>
                     </div>
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      Venezuelan Variant Box
+                      Venezuelan Ministry of Defense Box
                     </span>
                   </div>
                 </div>
