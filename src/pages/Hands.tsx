@@ -3,6 +3,8 @@ import Navigation from "../components/Navigation";
 import ImageWithLoader from "@/components/ImageWithLoader";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
+import ImageSlider from "@/components/ImageSlider";
 
 // Full Screen Modal Component
 const FullScreenModal = ({ image, onClose }) => {
@@ -67,6 +69,14 @@ const Hands = () => {
     };
   }, [fullScreenImage]);
 
+  const handleImageClick = (src: string) => {
+    setFullScreenImage({
+      src,
+      alt: "Full Screen Image",
+      title: "Full Screen Image",
+    });
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -95,16 +105,8 @@ const Hands = () => {
               Hands
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Three Main Hand Variations
-            </p>
-          </div>
-
-          {/* Overview */}
-          <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               There are three main hand variations across all Orfina Porsche
-              Design references, each with distinct characteristics and
-              evolution.
+              Design references.{" "}
             </p>
           </div>
 
@@ -114,14 +116,11 @@ const Hands = () => {
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
-                      7750 Handset
-                    </h2>
-                  </div>
+                  <SectionHeading
+                    title="7750 Handset"
+                    variant="numbered"
+                    number={1}
+                  />
 
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <h3 className="text-lg font-semibold text-black mb-4">
@@ -138,7 +137,7 @@ const Hands = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Red second-hand
+                          Orange second-hand
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
@@ -243,13 +242,13 @@ const Hands = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Red central chrono sweep hand
+                          Orange central chrono sweep hand
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          "Lollipop" chrono totalizer hand
+                          <strong>Lollipop</strong> chrono totalizer hand
                         </span>
                       </li>
                     </ul>
@@ -276,27 +275,37 @@ const Hands = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Hour and minute hands that are the same as the 7176
-                          Civilian
+                          Hour and minute hands identical to the 7176 Civilian
+                          hands
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Red central chrono sweep hand
+                          Orange central chrono sweep hand{" "}
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Red painted "Airplane" on a black chrono totalizer
+                          Orange painted “Airplane” on a black chrono totalizer
                           hand
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          Red hand used for 6 o'clock subdial
+                          Orange hand used for 6 o'clock subdial{" "}
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Note: There exists rare ‘factory custom made’ variants
+                          of 7176D and 7176S watches with military chrono hands,
+                          some with white day/date wheels and the non-logo NSA
+                          spring-bracelet. These will be presented at a later
+                          point in time{" "}
                         </span>
                       </li>
                     </ul>
@@ -332,6 +341,56 @@ const Hands = () => {
                   <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                     7176/7177 Military Handset
                   </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      4
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-black">
+                      Note{" "}
+                    </h2>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          7177 hands tend to fade over time when exposed to
+                          sunlight. On the left is a NOS vibrant orange handset,
+                          whereas on the right is a faded handset.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                  <ImageSlider
+                    images={[
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/Militaryhandset.jpg",
+                        alt: "7177 Faded Handset",
+                        title: "7177 Faded Handset",
+                        subtitle: "7177 Faded Handset",
+                      },
+                      {
+                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/7177-Non-Faded.jpg",
+                        alt: "7177 Non-Faded Handset",
+                        title: "7177 Non-Faded Handset",
+                        subtitle: "7177 Non-Faded Handset",
+                      },
+                    ]}
+                    onImageClick={(imageData) =>
+                      handleImageClick(imageData.src)
+                    }
+                  />
                 </div>
               </div>
             </div>
