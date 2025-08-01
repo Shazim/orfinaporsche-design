@@ -154,27 +154,50 @@ const Movements = () => {
               </div>
 
               <div className="space-y-12">
-                {/* Rotor Images */}
+                {/* Valjoux 7750 Rotor Mk. 1 */}
                 <div className="flex justify-center">
-                  <ImageSlider
-                    images={[
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.1.jpg",
-                        alt: "Valjoux 7750 Rotor Mk. 1",
-                        title: "Valjoux 7750 Rotor Mk. 1",
-                        subtitle: "Valjoux 7750 Rotor Mk. 1",
-                      },
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.%201-1.jpg",
-                        alt: "Valjoux 7750 Rotor Mk. 2",
-                        title: "Valjoux 7750 Rotor Mk. 2",
-                        subtitle: "Valjoux 7750 Rotor Mk. 2",
-                      },
-                    ]}
-                    onImageClick={(imageData) =>
-                      handleImageClick(imageData.src)
-                    }
-                  />
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.1.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.1.jpg"
+                        alt="Valjoux 7750 Rotor Mk. 1"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Valjoux 7750 Rotor Mk. 1
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Valjoux 7750 Rotor Mk. 2 */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.%201-1.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Movement-7750-Mk.%201-1.jpg"
+                        alt="Valjoux 7750 Rotor Mk. 2"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Valjoux 7750 Rotor Mk. 2
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,27 +324,51 @@ const Movements = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center">
-                <div className="flex flex-col items-center justify-center max-w-lg w-full group">
-                  <ImageSlider
-                    images={[
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.1.jpg",
-                        alt: "Serial Type 1",
-                        title: "Serial Type 1",
-                        subtitle: "Serial Type 1",
-                      },
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.2.jpg",
-                        alt: "Serial Type 2",
-                        title: "Serial Type 2",
-                        subtitle: "Serial Type 2",
-                      },
-                    ]}
-                    onImageClick={(imageData) =>
-                      handleImageClick(imageData.src)
-                    }
-                  />
+              <div className="space-y-12">
+                {/* Serial Type 1 */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.1.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.1.jpg"
+                        alt="Serial Type 1"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Serial Type 1
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Serial Type 2 */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.2.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/L5100-Serial-Mk.2.jpg"
+                        alt="Serial Type 2"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Serial Type 2
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -398,30 +445,75 @@ const Movements = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center">
-                <ImageSlider
-                  images={[
-                    {
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.1Lemania%205100Rotor.jpg",
-                      alt: "Mk. 1 Lemania 5100 Rotor",
-                      title: "Mk. 1 Lemania 5100 Rotor",
-                      subtitle: "Mk. 1 Lemania 5100 Rotor",
-                    },
-                    {
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.2Lemania%205100Rotor.jpg",
-                      alt: "Mk. 2 Lemania 5100 Rotor",
-                      title: "Mk. 2 Lemania 5100 Rotor",
-                      subtitle: "Mk. 2 Lemania 5100 Rotor",
-                    },
-                    {
-                      src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.3Lemania%205100Rotor.jpg",
-                      alt: "Mk. 3 Lemania 5100 Rotor",
-                      title: "Mk. 3 Lemania 5100 Rotor",
-                      subtitle: "Mk. 3 Lemania 5100 Rotor",
-                    },
-                  ]}
-                  onImageClick={(imageData) => handleImageClick(imageData.src)}
-                />
+              <div className="space-y-12">
+                {/* Mk. 1 Lemania 5100 Rotor */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.1Lemania%205100Rotor.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.1Lemania%205100Rotor.jpg"
+                        alt="Mk. 1 Lemania 5100 Rotor"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Mk. 1 Lemania 5100 Rotor
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Mk. 2 Lemania 5100 Rotor */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.2Lemania%205100Rotor.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.2Lemania%205100Rotor.jpg"
+                        alt="Mk. 2 Lemania 5100 Rotor"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Mk. 2 Lemania 5100 Rotor
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Mk. 3 Lemania 5100 Rotor */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-sm w-full group">
+                    <div
+                      className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.3Lemania%205100Rotor.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Movements/Mk.3Lemania%205100Rotor.jpg"
+                        alt="Mk. 3 Lemania 5100 Rotor"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Mk. 3 Lemania 5100 Rotor
+                    </h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -446,7 +538,7 @@ const Movements = () => {
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
           onClick={handleCloseFullScreen}
         >
-          <div className="max-w-full max-h-full">
+          <div className="max-w-2xl max-h-2xl">
             <img
               src={fullScreenImage}
               alt="Full screen view"

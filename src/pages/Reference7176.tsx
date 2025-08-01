@@ -63,7 +63,7 @@ const Reference7176 = () => {
       years: "1976-On",
       finishes: "Black PVD, Silver/Sablé, and Cadet Grey PVD",
       caseback: "7176 D Caseback",
-      rehaut: "Yellow Triangle and Tachymetre",
+      rehaut: "Tachymetre",
       dial: "Civilian Dial, and Blue by Orfina Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176D%20Front%20(wes)crop.jpg",
@@ -287,8 +287,9 @@ const Reference7176 = () => {
                         Functions
                       </span>
                       <span className="text-gray-900">
-                      Hours, Minutes, Seconds, Chronograph, 
-                      <br />24H Totalizer, Day, Date
+                        Hours, Minutes, Seconds, Chronograph,
+                        <br />
+                        24H Totalizer, Day, Date
                       </span>
                     </div>
                     <div className="flex justify-between py-3 border-b border-gray-200">
