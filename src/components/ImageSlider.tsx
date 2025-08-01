@@ -18,17 +18,21 @@ interface ImageSliderProps {
   className?: string;
 }
 
-const ImageSlider = ({ images, onImageClick, className = "" }: ImageSliderProps) => {
+const ImageSlider = ({
+  images,
+  onImageClick,
+  className = "",
+}: ImageSliderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -102,9 +106,9 @@ const ImageSlider = ({ images, onImageClick, className = "" }: ImageSliderProps)
                   setCurrentIndex(index);
                 }}
                 className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                  index === currentIndex 
-                    ? 'bg-white' 
-                    : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+                  index === currentIndex
+                    ? "bg-white"
+                    : "bg-white bg-opacity-50 hover:bg-opacity-75"
                 }`}
               />
             ))}
@@ -129,4 +133,4 @@ const ImageSlider = ({ images, onImageClick, className = "" }: ImageSliderProps)
   );
 };
 
-export default ImageSlider; 
+export default ImageSlider;

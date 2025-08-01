@@ -86,15 +86,17 @@ const Reference7176Dial = () => {
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              There are multiple dial variations found across the 7176 generation
+              There are multiple dial variations found across the 7176
+              generation
             </p>
             <div className="mt-8 bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                The 7176 dial is an update of the 7750 PD dial to match the subdial placement of
-                the Lemania 5100. Notable changes include a 12-o'clock 24-hour dial, no lume or
-                marker at 12 o'clock because of the position of the subdial, and different ring
-                printing of the small seconds subdial at 9 o'clock. There is additionally no lume at
-                3 o'clock.
+                The 7176 dial is an update of the 7750 PD dial to match the
+                subdial placement of the Lemania 5100. Notable changes include a
+                12-o'clock 24-hour dial, no lume or marker at 12 o'clock because
+                of the position of the subdial, and different ring printing of
+                the small seconds subdial at 9 o'clock. There is additionally no
+                lume at 3 o'clock.
               </p>
             </div>
           </div>
@@ -123,12 +125,13 @@ const Reference7176Dial = () => {
                     </h3>
                     <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                       <p>
-                        As with the 7750 PD dial, the PD logo is printed above Day/Date windows
-                        and PORSCHE DESIGN is printed below Day/Date windows.
+                        As with the 7750 PD dial, the PD logo is printed above
+                        Day/Date windows and PORSCHE DESIGN is printed below
+                        Day/Date windows.
                       </p>
                       <p>
-                        The also 7176 ushered in a new hand set differentiated from the 7750
-                        with,
+                        The also 7176 ushered in a new hand set differentiated
+                        from the 7750 with,
                         <ul className="space-y-3 text-gray-700 ml-4">
                           <li className="flex items-start space-x-3">
                             <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
@@ -154,13 +157,12 @@ const Reference7176Dial = () => {
                   </div>
 
                   <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
-                    <h4 className="font-semibold text-black mb-2">
-                      Note:
-                    </h4>
+                    <h4 className="font-semibold text-black mb-2">Note:</h4>
                     <p className="text-sm sm:text-base text-gray-700">
                       There exists rare ‘factory custom made’ variants of 7176D
-                      and 7176S watches with military chrono hands, some with white
-                      day/date wheels and the non-logo NSA spring-bracelet.
+                      and 7176S watches with military chrono hands, some with
+                      white day/date wheels and the non-logo NSA
+                      spring-bracelet.
                     </p>
                   </div>
                 </div>
@@ -233,8 +235,8 @@ const Reference7176Dial = () => {
                           Special Note:
                         </h4>
                         <p className="text-sm sm:text-base text-gray-700">
-                          The 7176 D exclusively features German
-                          Day/Date Wheels, as it was only sold in German Markets.
+                          The 7176 D exclusively features German Day/Date
+                          Wheels, as it was only sold in German Markets.
                         </p>
                       </div>
                     </div>
@@ -456,12 +458,14 @@ const Reference7176Dial = () => {
                     </h3>
                     <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                       <p>
-                        It is worth noting that Blue by Orfina Dials have been
-                        found on the market. These exist on both 7176 D and 7176
-                        S variants. They feature two common traits found on 7177
-                        examples. The additional "by ORFINA" text under PORSCHE
-                        DESIGN and their Cadet Grey PVD coating, which differs
-                        from that of the 7176 Military's Grey PVD coating.
+                        Blue by Orfina Dials have appeared on the market only
+                        rarely. These can be found on both the 7176 D and 7176 S
+                        references and share two key traits with the later 7177
+                        models: the added “by ORFINA” inscription beneath the
+                        PORSCHE DESIGN branding, and the use of a Cadet Grey PVD
+                        finish - distinct from the Grey PVD used on the 7176
+                        Military. On 7176 S variants, the Blue dial can also be
+                        found with a Silver/Sablé case finish.
                       </p>
                     </div>
                   </div>

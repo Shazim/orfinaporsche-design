@@ -116,11 +116,11 @@ const Crowns = () => {
               </div>
 
               <div className="space-y-12">
-                {/* Placeholder images for crown variants */}
+                {/* Orfina Crown Image */}
                 <div className="flex justify-center">
                   <div className="flex flex-col items-center justify-center max-w-lg w-full group">
                     <div
-                      className="w-full aspect-video bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 overflow-hidden"
                       onClick={() =>
                         handleImageClick(
                           "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750-OrfinaCrown.jpg"
@@ -129,7 +129,7 @@ const Crowns = () => {
                     >
                       <ImageWithLoader
                         src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750-OrfinaCrown.jpg"
-                        alt="Group BUND Straps"
+                        alt="Orfina Crown"
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
@@ -138,28 +138,50 @@ const Crowns = () => {
                     </h4>
                   </div>
                 </div>
+
+                {/* PD Crown Image */}
                 <div className="flex justify-center">
                   <div className="flex flex-col items-center justify-center max-w-lg w-full group">
-                    <ImageSlider
-                      images={[
-                        {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750%20Crown.jpg",
-                          alt: "PD Crown (Found on Gen. 2 & 3 7750s)",
-                          title: "PD Crown (Found on Gen. 2 & 3 7750s)",
-                          subtitle: "PD Crown (Found on Gen. 2 & 3 7750s)",
-                        },
-                        {
-                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750-Mk.3-Case-2crop.jpg",
-                          alt: "Orfina 7750 [FLAT-FACE - Service]",
-                          title: "Orfina 7750 [FLAT-FACE - Service]",
-                          subtitle: "Orfina 7750 [FLAT-FACE - Service]",
-                        },
-                      ]}
-                      onImageClick={(imageData) =>
-                        handleImageClick(imageData.src)
+                    <div
+                      className="w-full aspect-video bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750%20Crown.jpg"
+                        )
                       }
-                      className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
-                    />
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750%20Crown.jpg"
+                        alt="PD Crown"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      PD Crown (Found on Gen. 2 & 3 7750s)
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Orfina 7750 [FLAT-FACE - Service] Image */}
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center justify-center max-w-lg w-full group">
+                    <div
+                      className="w-full aspect-video bg-gray-100 rounded-lg flex items-center justify-center cursor-zoom-in shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105"
+                      onClick={() =>
+                        handleImageClick(
+                          "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750-Mk.3-Case-2crop.jpg"
+                        )
+                      }
+                    >
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Crown/7750-Mk.3-Case-2crop.jpg"
+                        alt="Orfina 7750 [FLAT-FACE - Service]"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-lg text-center font-semibold text-gray-900 mt-4">
+                      Orfina 7750 [FLAT-FACE - Service]
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -325,7 +347,7 @@ const Crowns = () => {
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
           onClick={handleCloseFullScreen}
         >
-          <div className="max-w-full max-h-full">
+          <div className="max-w-2xl max-h-2xl">
             <img
               src={fullScreenImage}
               alt="Full screen view"

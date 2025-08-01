@@ -153,25 +153,24 @@ const Straps = () => {
                   images={[
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Green-Bundcrop.jpg",
-                      alt: "Green BUND Strap - View 1",
-                      title: "Green BUND Strap - View 1",
+                      alt: "Green BUND Strap",
+                      title: "Green BUND Strap",
                       subtitle: "Type 1 (OG) Green BUND",
                     },
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Green-Loosecrop.jpg",
-                      alt: "Green BUND Strap - View 2",
-                      title: "Green BUND Strap - View 2",
+                      alt: "Green BUND Strap",
+                      title: "Green BUND Strap",
                       subtitle: "Type 1 (OG) Green BUND",
                     },
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Green-BackLoosecrop.jpg",
-                      alt: "Green BUND Strap - View 3",
-                      title: "Green BUND Strap - View 3",
+                      alt: "Green BUND Strap",
+                      title: "Green BUND Strap",
                       subtitle: "Type 1 (OG) Green BUND",
                     },
                   ]}
                   onImageClick={(imageData) => handleImageClick(imageData.src)}
-                  className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
                 />
               </div>
               <div className="flex flex-col items-center justify-center max-w-lg w-full group">
@@ -179,19 +178,18 @@ const Straps = () => {
                   images={[
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Black-BUNDcrop.jpg",
-                      alt: "Black BUND Strap - View 1",
-                      title: "Black BUND Strap - View 1",
+                      alt: "Black BUND Strap",
+                      title: "Black BUND Strap",
                       subtitle: "Type 1 (OG) Black BUND",
                     },
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Black-Loosecrop.jpg",
-                      alt: "Black BUND Strap - View 2",
-                      title: "Black BUND Strap - View 2",
+                      alt: "Black BUND Strap",
+                      title: "Black BUND Strap",
                       subtitle: "Type 1 (OG) Black BUND",
                     },
                   ]}
                   onImageClick={(imageData) => handleImageClick(imageData.src)}
-                  className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
                 />
               </div>
               <div className="flex flex-col items-center justify-center max-w-lg w-full group">
@@ -199,19 +197,18 @@ const Straps = () => {
                   images={[
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Nato-Proper-BUNDcrop.jpg",
-                      alt: "Grey BUND Strap - View 1",
-                      title: "Grey BUND Strap - View 1",
+                      alt: "Grey BUND Strap",
+                      title: "Grey BUND Strap",
                       subtitle: "Type 1 (OG) Grey BUND",
                     },
                     {
                       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Grey-Loosecrop.jpg",
-                      alt: "Grey BUND Strap - View 2",
-                      title: "Grey BUND Strap - View 2",
+                      alt: "Grey BUND Strap",
+                      title: "Grey BUND Strap",
                       subtitle: "Type 1 (OG) Grey BUND",
                     },
                   ]}
                   onImageClick={(imageData) => handleImageClick(imageData.src)}
-                  className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
                 />
               </div>
             </div>
@@ -256,21 +253,20 @@ const Straps = () => {
                     images={[
                       {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-BUNDcrop.jpg",
-                        alt: "Type 2 - View 1",
-                        title: "Type 2 - View 1",
-                        subtitle: "Type 2 - View 1",
+                        alt: "Type 2",
+                        title: "Type 2",
+                        subtitle: "Type 2",
                       },
                       {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Staple-2crop.jpg",
-                        alt: "Type 2 - View 2",
-                        title: "Type 2 - View 2",
-                        subtitle: "Type 2 - View 2",
+                        alt: "Type 2",
+                        title: "Type 2",
+                        subtitle: "Type 2",
                       },
                     ]}
                     onImageClick={(imageData) =>
                       handleImageClick(imageData.src)
                     }
-                    className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
                   />
                 </div>
               </div>
@@ -292,21 +288,20 @@ const Straps = () => {
                     images={[
                       {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Natocrop.jpg",
-                        alt: "Type 3 - View 1",
-                        title: "Type 3 - View 1",
-                        subtitle: "Type 3 - View 1",
+                        alt: "Type 3",
+                        title: "Type 3",
+                        subtitle: "Type 3",
                       },
                       {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/BUND/7177-Bund-Stitchedcrop.jpg",
-                        alt: "Type 3 - View 2",
-                        title: "Type 3 - View 2",
-                        subtitle: "Type 3 - View 2",
+                        alt: "Type 3",
+                        title: "Type 3",
+                        subtitle: "Type 3",
                       },
                     ]}
                     onImageClick={(imageData) =>
                       handleImageClick(imageData.src)
                     }
-                    className="shadow-lg rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-zoom-in"
                   />
                 </div>
               </div>
@@ -373,7 +368,7 @@ const Straps = () => {
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
           onClick={handleCloseFullScreen}
         >
-          <div className="max-w-full max-h-full">
+          <div className="max-w-2xl max-h-2xl">
             <img
               src={fullScreenImage}
               alt="Full screen view"

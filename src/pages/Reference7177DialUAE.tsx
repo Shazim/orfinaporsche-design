@@ -117,13 +117,13 @@ const Reference7177DialUAE = () => {
 
           {/* Main Content */}
           <div className="space-y-16 sm:space-y-20 lg:space-y-24">
-          <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="General Notes:" 
-                    variant="elegant-dark" 
+                  <SectionHeading
+                    title="General Notes:"
+                    variant="elegant-dark"
                   />
 
                   <div className="">
@@ -131,16 +131,15 @@ const Reference7177DialUAE = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          Both of the UAE dial variants came in a variety of finishes. However, a
-                          small batch of circa ~25 watches featuring gold-colored cases has been
-                          identified. It is unclear whether these watches were simply customized by
-                          their owners or were initially produced in this manner
+                          Both of the UAE dial variants came in a variety of the
+                          7177 finishes. Interestingly, a small batch of circa
+                          ~25 watches featuring gold-colored cases were
+                          produced.
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
             {/* Dial Variations */}
@@ -148,19 +147,17 @@ const Reference7177DialUAE = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="CaseBack:" 
-                    variant="elegant-dark" 
-                  />
+                  <SectionHeading title="CaseBack:" variant="elegant-dark" />
 
                   <div className="">
                     <ul className="space-y-4 ">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          There is a very small batch of casebacks in which the serial number's
-                          location shifted to the middle of the caseback. This is found on
-                          UAE-issued examples, in the low ~3000 serial range.
+                          There is a very small batch of casebacks in which the
+                          serial number's location shifted to the middle of the
+                          caseback. This is found on UAE-issued examples, in the
+                          low ~3000 serial range.
                         </span>
                       </li>
                     </ul>
@@ -175,14 +172,14 @@ const Reference7177DialUAE = () => {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial.jpg",
                         alt: "UAE Mid-Caseback Serial - 1",
                         title: "UAE Mid-Caseback Serial - 1",
-                        subtitle: "Mid-Caseback Serial Number"
+                        subtitle: "Mid-Caseback Serial Number",
                       },
                       {
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7177%20Photos/7177-UAE-Midcaseserial-frame.jpg",
                         alt: "UAE Mid-Caseback Serial - 2",
                         title: "UAE Mid-Caseback Serial - 2",
-                        subtitle: "Low 3000 Serial Range"
-                      }
+                        subtitle: "Low 3000 Serial Range",
+                      },
                     ]}
                     onImageClick={setFullScreenImage}
                   />
@@ -195,9 +192,9 @@ const Reference7177DialUAE = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <SectionHeading 
-                    title="Dial Variations:" 
-                    variant="elegant-dark" 
+                  <SectionHeading
+                    title="Dial Variations:"
+                    variant="elegant-dark"
                   />
 
                   <div className="">
@@ -205,22 +202,24 @@ const Reference7177DialUAE = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          The 7177 UAE variant was ordered by the UAE’s Air Force and came in
-                          two dial variations:
+                          The 7177 UAE variant was ordered by the UAE’s Air
+                          Force and came in two dial variations:
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                        <strong>Mk. 1 Dial:</strong> Stamped with “UAE AIR FORCE” at four o'clock and a tricolor
-                        motif at the six o’clock subdial.
+                          <strong>Mk. 1 Dial:</strong> Stamped with “UAE AIR
+                          FORCE” at four o'clock and a tricolor motif at the six
+                          o’clock subdial.
                         </span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-base sm:text-lg leading-relaxed">
-                          <strong>Mk. 2 Dial:</strong> Stamped with “UAE AIR FORCE” at four o'clock as well, but
-                          “CENTRAL AIR BASE" stamped at the six o’clock subdial instead of a
+                          <strong>Mk. 2 Dial:</strong> Stamped with “UAE AIR
+                          FORCE” at four o'clock as well, but “CENTRAL AIR BASE"
+                          stamped at the six o’clock subdial instead of a
                         </span>
                       </li>
                     </ul>

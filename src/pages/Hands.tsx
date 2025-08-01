@@ -21,11 +21,11 @@ const FullScreenModal = ({ image, onClose }) => {
       </button>
 
       {/* Image container */}
-      <div className="relative max-w-full max-h-full flex flex-col items-center">
+      <div className="relative max-w-2xl max-h-2xl flex flex-col items-center">
         <img
           src={image.src}
           alt={image.alt}
-          className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+          className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
         />
 
         {/* Image info */}
@@ -248,7 +248,7 @@ const Hands = () => {
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
-                          <strong>Lollipop</strong> chrono totalizer hand
+                          Lollipop chrono totalizer hand
                         </span>
                       </li>
                     </ul>
@@ -372,25 +372,64 @@ const Hands = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <ImageSlider
-                    images={[
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/Militaryhandset.jpg",
-                        alt: "7177 Faded Handset",
-                        title: "7177 Faded Handset",
-                        subtitle: "7177 Faded Handset",
-                      },
-                      {
+                  <div className="flex flex-col items-center justify-center">
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() =>
+                        setFullScreenImage({
+                          src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/Militaryhandset.jpg",
+                          alt: "Faded Handset",
+                          title: "Faded Handset",
+                          subtitle: "Faded Handset",
+                        })
+                      }
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                      <ImageWithLoader
+                        src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/Militaryhandset.jpg"
+                        alt="Faded Handset"
+                        className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                        skeletonClassName="w-full max-w-sm h-80 rounded-lg"
+                      />
+                      {/* Click indicator */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                          Click to zoom
+                        </div>
+                      </div>
+                    </div>
+                    <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                      Faded Handset
+                    </span>
+                  </div>
+                  <div
+                    className="relative group cursor-pointer"
+                    onClick={() =>
+                      setFullScreenImage({
                         src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/7177-Non-Faded.jpg",
-                        alt: "7177 Non-Faded Handset",
-                        title: "7177 Non-Faded Handset",
-                        subtitle: "7177 Non-Faded Handset",
-                      },
-                    ]}
-                    onImageClick={(imageData) =>
-                      handleImageClick(imageData.src)
+                        alt: "Non-Faded Handset",
+                        title: "Non-Faded Handset",
+                        subtitle: "Non-Faded Handset",
+                      })
                     }
-                  />
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                    <ImageWithLoader
+                      src="https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/Hands/7177-Non-Faded.jpg"
+                      alt="Non-Faded Handset"
+                      className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                      skeletonClassName="w-full max-w-sm h-80 rounded-lg"
+                    />
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                        Click to zoom
+                      </div>
+                    </div>
+                  </div>
+                  <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                    Non-Faded Handset
+                  </span>
                 </div>
               </div>
             </div>
