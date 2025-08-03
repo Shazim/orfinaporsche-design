@@ -84,15 +84,17 @@ const ReferenceVariantCard = ({
         {/* Content Section */}
         <div className="space-y-8 lg:flex-1">
           {/* Specifications Table */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="rounded-xl shadow-sm border overflow-hidden" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
             <table className="w-full">
-              <tbody className="divide-y divide-gray-200">
+                              <tbody className="divide-y" style={{ borderColor: '#D4CFC4' }}>
                 {specifications.map((spec, idx) => {
                   const IconComponent = spec.icon;
                   return (
                     <tr
                       key={idx}
-                      className="hover:bg-gray-50 transition-colors duration-200"
+                      className="transition-colors duration-200"
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                     >
                       <td className="px-6 py-4">
                         <div className="flex items-center">

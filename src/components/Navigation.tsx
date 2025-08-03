@@ -109,7 +109,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav className="sticky top-0 z-50 border-b" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
           {/* Logo */}
@@ -148,24 +148,26 @@ const Navigation = () => {
               </button>
 
               {referencesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl border border-gray-200 rounded-lg z-50 animate-in fade-in-0 zoom-in-95 duration-200">
+                <div className="absolute top-full left-0 mt-2 w-64 shadow-2xl border rounded-lg z-50 animate-in fade-in-0 zoom-in-95 duration-200" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
                   <div className="py-2">
                     {/* Reference 7750 */}
                     <div className="relative">
                       <div
-                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
-                        onMouseEnter={() =>
+                        className="flex items-center justify-between px-4 py-3 transition-colors duration-200"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#E8E4DB';
                           handleSubDropdownEnter(
                             setRef7750Open,
                             ref7750TimeoutRef
-                          )
-                        }
-                        onMouseLeave={() =>
+                          );
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
                           handleSubDropdownLeave(
                             setRef7750Open,
                             ref7750TimeoutRef
-                          )
-                        }
+                          );
+                        }}
                       >
                         <Link
                           to="/references/7750"
@@ -178,7 +180,8 @@ const Navigation = () => {
 
                       {ref7750Open && (
                         <div
-                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          className="absolute left-full top-0 ml-1 w-48 shadow-2xl border rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}
                           onMouseEnter={() =>
                             handleSubDropdownEnter(
                               setRef7750Open,
@@ -195,25 +198,33 @@ const Navigation = () => {
                           <div className="py-2">
                             <Link
                               to="/references/7750/case-finishes"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Case & Finishes
                             </Link>
                             <Link
                               to="/references/7750/caseback"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Caseback
                             </Link>
                             <Link
                               to="/references/7750/rehaut"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Rehaut Variations
                             </Link>
                             <Link
                               to="/references/7750/dial"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Dial Variations
                             </Link>
@@ -225,19 +236,21 @@ const Navigation = () => {
                     {/* Reference 7176 */}
                     <div className="relative">
                       <div
-                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
-                        onMouseEnter={() =>
+                        className="flex items-center justify-between px-4 py-3 transition-colors duration-200"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#E8E4DB';
                           handleSubDropdownEnter(
                             setRef7176Open,
                             ref7176TimeoutRef
-                          )
-                        }
-                        onMouseLeave={() =>
+                          );
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
                           handleSubDropdownLeave(
                             setRef7176Open,
                             ref7176TimeoutRef
-                          )
-                        }
+                          );
+                        }}
                       >
                         <Link
                           to="/references/7176"
@@ -250,7 +263,8 @@ const Navigation = () => {
 
                       {ref7176Open && (
                         <div
-                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          className="absolute left-full top-0 ml-1 w-48 shadow-2xl border rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}
                           onMouseEnter={() =>
                             handleSubDropdownEnter(
                               setRef7176Open,
@@ -267,25 +281,33 @@ const Navigation = () => {
                           <div className="py-2">
                             <Link
                               to="/references/7176/case-finishes"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Case & Finishes
                             </Link>
                             <Link
                               to="/references/7176/caseback"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Caseback
                             </Link>
                             <Link
                               to="/references/7176/rehaut"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Rehaut Variations
                             </Link>
                             <Link
                               to="/references/7176/dial"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Dial Variations
                             </Link>
@@ -297,19 +319,21 @@ const Navigation = () => {
                     {/* Reference 7177 */}
                     <div className="relative">
                       <div
-                        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
-                        onMouseEnter={() =>
+                        className="flex items-center justify-between px-4 py-3 transition-colors duration-200"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#E8E4DB';
                           handleSubDropdownEnter(
                             setRef7177Open,
                             ref7177TimeoutRef
-                          )
-                        }
-                        onMouseLeave={() =>
+                          );
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
                           handleSubDropdownLeave(
                             setRef7177Open,
                             ref7177TimeoutRef
-                          )
-                        }
+                          );
+                        }}
                       >
                         <Link
                           to="/references/7177"
@@ -322,7 +346,8 @@ const Navigation = () => {
 
                       {ref7177Open && (
                         <div
-                          className="absolute left-full top-0 ml-1 w-48 bg-white shadow-2xl border border-gray-200 rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          className="absolute left-full top-0 ml-1 w-48 shadow-2xl border rounded-lg z-[60] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
+                          style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}
                           onMouseEnter={() =>
                             handleSubDropdownEnter(
                               setRef7177Open,
@@ -339,25 +364,33 @@ const Navigation = () => {
                           <div className="py-2">
                             <Link
                               to="/references/7177/case-finishes"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Case & Finishes
                             </Link>
                             <Link
                               to="/references/7177/caseback"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Caseback
                             </Link>
                             <Link
                               to="/references/7177/rehaut"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Rehaut Variations
                             </Link>
                             <Link
                               to="/references/7177/dial"
-                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-600 hover:text-black transition-colors"
+                              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                             >
                               Dial Variations
                             </Link>
@@ -387,9 +420,9 @@ const Navigation = () => {
               </button>
 
               {componentsOpen && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-2xl border border-gray-200 rounded-lg z-50 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200">
+                <div className="absolute top-full left-0 mt-2 w-72 shadow-2xl border rounded-lg z-50 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
                   <div className="py-4">
-                    <div className="px-6 py-2 border-b border-gray-100">
+                                          <div className="px-6 py-2 border-b" style={{ borderColor: '#E8E4DB' }}>
                       <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
                         Watch Components
                       </h3>
@@ -398,7 +431,9 @@ const Navigation = () => {
                     <div className="px-4 py-2">
                       <Link
                         to="/components/bracelets"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Bracelets</span>
@@ -406,7 +441,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/straps"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Bund Straps</span>
@@ -414,7 +451,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/hands"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Hands</span>
@@ -422,7 +461,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/crowns"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Crowns</span>
@@ -430,7 +471,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/movements"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Movements</span>
@@ -438,7 +481,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/date-wheels"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Date Wheels</span>
@@ -446,7 +491,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/boxes"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Boxes</span>
@@ -454,7 +501,9 @@ const Navigation = () => {
 
                       <Link
                         to="/components/crystals"
-                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-black rounded-md transition-all duration-200"
+                        className="group flex items-center px-3 py-3 text-sm text-gray-700 hover:text-black rounded-md transition-all duration-200"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="w-2 h-2 bg-gray-400 rounded-full mr-3 group-hover:bg-gray-900 transition-colors"></div>
                         <span className="font-medium">Crystals</span>
@@ -488,7 +537,9 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-black hover:bg-gray-100 transition-colors touch-manipulation"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-black transition-colors touch-manipulation"
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
             onClick={handleMobileMenuToggle}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle mobile menu"
@@ -504,7 +555,7 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg animate-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden border-t shadow-lg animate-in slide-in-from-top-2 duration-200" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
           <div className="px-4 py-4 space-y-4">
             <Link
               to="/story"
@@ -521,6 +572,8 @@ const Navigation = () => {
             <div className="space-y-2">
               <button
                 className="flex items-center justify-between w-full py-3 px-4 text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-colors touch-manipulation"
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                 onClick={handleMobileReferencesToggle}
                 aria-expanded={mobileReferencesOpen}
                 aria-label="Toggle references menu"
@@ -534,7 +587,7 @@ const Navigation = () => {
               </button>
 
               {mobileReferencesOpen && (
-                <div className="pl-4 space-y-2 bg-gray-50 rounded-md py-3 animate-in slide-in-from-top-1 duration-200">
+                <div className="pl-4 space-y-2 rounded-md py-3 animate-in slide-in-from-top-1 duration-200" style={{ backgroundColor: '#E8E4DB' }}>
                   <Link
                     to="/references/7750"
                     className="block py-3 px-3 text-sm font-medium text-black hover:bg-gray-100 rounded-md transition-colors touch-manipulation"
@@ -570,6 +623,8 @@ const Navigation = () => {
             <div className="space-y-2">
               <button
                 className="flex items-center justify-between w-full py-3 px-4 text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-colors touch-manipulation"
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E8E4DB'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                 onClick={handleMobileComponentsToggle}
                 aria-expanded={mobileComponentsOpen}
                 aria-label="Toggle components menu"
@@ -583,7 +638,7 @@ const Navigation = () => {
               </button>
 
               {mobileComponentsOpen && (
-                <div className="pl-4 space-y-2 bg-gray-50 rounded-md py-3 animate-in slide-in-from-top-1 duration-200">
+                <div className="pl-4 space-y-2 rounded-md py-3 animate-in slide-in-from-top-1 duration-200" style={{ backgroundColor: '#E8E4DB' }}>
                   <div className="grid grid-cols-2 gap-2">
                     <Link
                       to="/components/bracelets"
@@ -650,7 +705,7 @@ const Navigation = () => {
             </Link>
 
             {/* Mobile Logo */}
-            <div className="pt-4 border-t border-gray-200 flex justify-center">
+            <div className="pt-4 border-t flex justify-center" style={{ borderColor: '#D4CFC4' }}>
               <Link to="/">
                 <img
                   src="/lovable-uploads/opd-watch.png"

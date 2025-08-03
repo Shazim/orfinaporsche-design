@@ -82,11 +82,11 @@ const Reference7176 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#F1EFE8' }}>
       <Navigation />
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4 border-b border-gray-200">
+      <div className="py-4 border-b" style={{ backgroundColor: '#E8E4DB', borderColor: '#D4CFC4' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm">
             <Link
@@ -103,10 +103,10 @@ const Reference7176 = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100">
+      <div style={{ background: 'linear-gradient(to bottom right, #F7F5F0, #E8E4DB)' }}>
         {/* Hero Section */}
         <section className="relative pt-16 pb-12 overflow-hidden">
-          <div className="absolute inset-0 bg-black/5"></div>
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.03)' }}></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
               className={`transform transition-all duration-1000 ${
@@ -134,7 +134,7 @@ const Reference7176 = () => {
           </div>
         </section>
         {/* Four Known References */}
-        <section className="py-16 bg-white">
+        <section className="py-16" style={{ backgroundColor: '#F1EFE8' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed text-center mb-10">
               <p>
@@ -190,7 +190,7 @@ const Reference7176 = () => {
         </section>
 
         {/* Sub-Pages Navigation */}
-        <section className="py-20 bg-white">
+        <section className="py-20" style={{ backgroundColor: '#F1EFE8' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 uppercase tracking-wider">
@@ -231,14 +231,14 @@ const Reference7176 = () => {
         </section>
 
         {/* Technical Specifications */}
-        <section className="py-16 bg-white">
+        <section className="py-16" style={{ backgroundColor: '#F1EFE8' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
               Technical Specifications
             </h2>
 
-            <div className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
-              <div className="px-8 py-6 bg-gray-900">
+            <div className="rounded-2xl shadow-lg overflow-hidden" style={{ backgroundColor: '#E8E4DB' }}>
+              <div className="px-8 py-6" style={{ backgroundColor: '#3D3934' }}>
                 <h3 className="text-2xl font-light text-white">
                   Reference 7176 Specifications
                 </h3>
@@ -246,25 +246,25 @@ const Reference7176 = () => {
               <div className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4">
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Reference Number
                       </span>
                       <span className="text-gray-900">7176</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Production Years
                       </span>
                       <span className="text-gray-900">1976-1991</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Case Material
                       </span>
                       <span className="text-gray-900">Stainless Steel</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Water Resistance
                       </span>
@@ -272,17 +272,17 @@ const Reference7176 = () => {
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Movement
                       </span>
                       <span className="text-gray-900">Lemania 5100</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">Jewels</span>
                       <span className="text-gray-900">17</span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Functions
                       </span>
@@ -292,7 +292,7 @@ const Reference7176 = () => {
                         24H Totalizer, Day, Date
                       </span>
                     </div>
-                    <div className="flex justify-between py-3 border-b border-gray-200">
+                    <div className="flex justify-between py-3 border-b" style={{ borderColor: '#D4CFC4' }}>
                       <span className="font-medium text-gray-700">
                         Serial Range
                       </span>
@@ -309,7 +309,7 @@ const Reference7176 = () => {
       </div>
 
       {/* Back to References */}
-      <div className="py-8 bg-white border-t border-gray-200">
+      <div className="py-8 border-t" style={{ backgroundColor: '#F1EFE8', borderColor: '#D4CFC4' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/"
