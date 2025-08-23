@@ -50,6 +50,7 @@ const Reference7750 = () => {
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Orfina.jpg",
       description:
         "The inaugural generation that established the legendary 7750 lineage.",
+      imageCaption: '7750 Generation 1 "Orfina"',
     },
     {
       id: 2,
@@ -65,6 +66,7 @@ const Reference7750 = () => {
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Flat-PD.jpg",
       description:
         "The first evolution of the 7750 generation and the first emergence of the PD dial.",
+      imageCaption: '7750 Generation 2 "Flat PD Dial"',
     },
     {
       id: 3,
@@ -80,6 +82,7 @@ const Reference7750 = () => {
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
       description:
         "The emergence of PVD coating technology on the chronograph one, and the 7176 case design.",
+      imageCaption: '7750 Generation 3 "Round PD Dial"',
     },
   ];
 
@@ -157,6 +160,7 @@ const Reference7750 = () => {
                   imageSrc={gen.image}
                   imageAlt={gen.title}
                   subtitle={gen.description}
+                  imageCaption={gen.imageCaption}
                   specifications={[
                     {
                       label: "Production Years",
@@ -172,6 +176,16 @@ const Reference7750 = () => {
                   onImageClick={setFullScreenImage}
                 />
               ))}
+            </div>
+
+            {/* Note Section */}
+            <div className="mt-16 max-w-4xl mx-auto">
+              <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                <h3 className="text-lg font-semibold text-black mb-4">Note:</h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  This case and dial are the exact Top Gun watch. While it's unclear whether the movie prop used a 1Mile or 1KM Rehaut, we suspect it was a 1Mile version given the filming's geographic setting.
+                </p>
+              </div>
             </div>
           </div>
         </section>

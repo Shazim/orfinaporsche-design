@@ -22,6 +22,7 @@ interface ReferenceVariantCardProps {
     subtitle: string;
   }) => void;
   subtitle?: string;
+  imageCaption?: string;
 }
 
 const ReferenceVariantCard = ({
@@ -32,6 +33,7 @@ const ReferenceVariantCard = ({
   specifications,
   onImageClick,
   subtitle = "",
+  imageCaption,
 }: ReferenceVariantCardProps) => {
   return (
     <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000">
@@ -76,7 +78,7 @@ const ReferenceVariantCard = ({
           {/* Image Title Below */}
           <div className="mt-4 text-center">
             <h3 className="text-lg sm:text-xl font-semibold text-black mb-1">
-              {title}
+              {imageCaption || title}
             </h3>
           </div>
         </div>
