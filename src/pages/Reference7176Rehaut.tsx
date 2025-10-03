@@ -34,6 +34,12 @@ const Reference7176Rehaut = () => {
       alt: "Yellow Triangle Rehaut",
       caption: "Yellow Triangle Rehaut",
     },
+    {
+      src: "",
+      alt: "Yellow Triangle Rehaut - Close-Up",
+      caption: "Yellow Triangle Rehaut - Close-Up",
+      placeholder: true,
+    },
   ];
 
   const tachymetreImages = [
@@ -46,6 +52,36 @@ const Reference7176Rehaut = () => {
       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/TACHYMETRE%20Rehaut%20-%20Close-Up.jpg",
       alt: "TACHYMETRE Rehaut Close-Up",
       caption: "TACHYMETRE Rehaut Close-Up",
+    },
+  ];
+
+  const oneKmImages = [
+    {
+      src: "",
+      alt: "7176 - 1km Rehaut",
+      caption: "7176 - 1km Rehaut",
+      placeholder: true,
+    },
+    {
+      src: "",
+      alt: "7176 - 1km Rehaut - Close-Up",
+      caption: "7176 - 1km Rehaut - Close-Up",
+      placeholder: true,
+    },
+  ];
+
+  const oneMileImages = [
+    {
+      src: "",
+      alt: "7176 - 1Mile Rehaut",
+      caption: "7176 - 1Mile Rehaut - To Be Updated",
+      placeholder: true,
+    },
+    {
+      src: "",
+      alt: "7176 - 1Mile Rehaut - Close-Up",
+      caption: "7176 - 1Mile Rehaut - Close-Up - To Be Updated",
+      placeholder: true,
     },
   ];
 
@@ -71,7 +107,7 @@ const Reference7176Rehaut = () => {
               Reference 7176
             </Link>
             <span className="mx-2 text-gray-400">/</span>
-            <span className="text-black font-medium">Rehaut Variations</span>
+            <span className="text-black font-medium">Rehaut</span>
           </nav>
         </div>
       </div>
@@ -84,14 +120,14 @@ const Reference7176Rehaut = () => {
               Reference 7176
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Rehaut Variations
+              Rehaut
             </p>
           </div>
 
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
-              There are two variations of Rehaut found across the 7176 range.
+              There are multiple variations of Rehaut found across the 7176 range.
             </p>
           </div>
 
@@ -142,33 +178,43 @@ const Reference7176Rehaut = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
-                  <div className="flex flex-col gap-6 justify-center items-center">
+                  <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
                     {yellowTriangleImages.map((image, index) => (
                       <div key={index} className="flex flex-col items-center">
-                        <div
-                          className="relative group cursor-pointer"
-                          onClick={() =>
-                            setFullScreenImage({
-                              src: image.src,
-                              alt: image.alt,
-                              title: image.caption,
-                              subtitle: "Reference 7176 Rehaut",
-                            })
-                          }
-                        >
-                          <img
-                            src={image.src}
-                            alt={image.alt}
-                            className="relative w-full max-w-sm h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
-                          />
-
-                          {/* Click indicator */}
-                          <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
-                              Click to zoom
+                        {image.placeholder ? (
+                          <div className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+                            <div className="text-center text-gray-500 p-6">
+                              <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
+                              <div className="text-xs">{image.caption}</div>
                             </div>
                           </div>
-                        </div>
+                        ) : (
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: image.src,
+                                alt: image.alt,
+                                title: image.caption,
+                                subtitle: "Reference 7176 Rehaut",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
+                            </div>
+                          </div>
+                        )}
                         <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
                           {image.caption}
                         </span>
@@ -233,8 +279,14 @@ const Reference7176Rehaut = () => {
                   </div>
 
                   <div className="">
-                    <p className="text-base sm:text-lg  leading-relaxed mb-4">
-                      The TACHYMETRE rehaut removes the triangle at twelve o'clock, possesses an overall thicker font, and the word "TACHYMETRE" is printed between 12 and 2 O'clock. Additionally, the number 500 is included in the Rehaut count, while the numbers 65 and 75 are excluded. The yellow triangle above 60 is replaced with a white dot.
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      The TACHYMETRE rehaut removes the triangle at twelve o'clock, possesses an overall thicker font, and the word "TACHYMETRE" is printed between 12 and 2 O'clock.
+                    </p>
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      Additionally, the number 500 is included in the Rehaut count, while the numbers 65 and 75 are excluded.
+                    </p>
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      The yellow triangle above 60 is replaced with a white dot.
                     </p>
                   </div>
 
@@ -257,6 +309,148 @@ const Reference7176Rehaut = () => {
                       </li>
                     </ul>
                   </div> */}
+                </div>
+              </div>
+            </div>
+
+            {/* 1km Rehaut */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
+              <SectionHeading 
+                title="1km Rehaut" 
+                variant="numbered" 
+                number={3} 
+              />
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 S
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      Some examples of the 7176 S have surfaced featuring a 1km rehaut, stamped identically to that of the 7550 reference, though made thicker in height to accommodate the new case. These are most commonly observed on civilian dials, particularly those with a "messy" Porsche Design signature. While it is established that such 7176 S variants with civilian "messy" dials and 1km rehauts do exist, additional examples are needed to confirm this with greater certainty and to better define the scope of their production.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                  <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
+                    {oneKmImages.map((image, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        {image.placeholder ? (
+                          <div className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+                            <div className="text-center text-gray-500 p-6">
+                              <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
+                              <div className="text-xs">{image.caption}</div>
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: image.src,
+                                alt: image.alt,
+                                title: image.caption,
+                                subtitle: "Reference 7176 Rehaut",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          {image.caption}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1Mile Rehaut */}
+            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
+              <SectionHeading 
+                title="1Mile Rehaut" 
+                variant="numbered" 
+                number={4} 
+              />
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
+                  <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 justify-center items-start">
+                    {oneMileImages.map((image, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        {image.placeholder ? (
+                          <div className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
+                            <div className="text-center text-gray-500 p-6">
+                              <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
+                              <div className="text-xs">{image.caption}</div>
+                            </div>
+                          </div>
+                        ) : (
+                          <div
+                            className="relative group cursor-pointer"
+                            onClick={() =>
+                              setFullScreenImage({
+                                src: image.src,
+                                alt: image.alt,
+                                title: image.caption,
+                                subtitle: "Reference 7176 Rehaut",
+                              })
+                            }
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="relative w-full max-w-xs h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                            />
+
+                            {/* Click indicator */}
+                            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
+                              <div className="bg-white bg-opacity-90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                                Click to zoom
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
+                          {image.caption}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                      <strong>Found On:</strong> 7176 S
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      Several examples of the 7176 S have surfaced featuring a 1Mile Rehaut, stamped identically to that of the 7550 reference, though made thicker in height to accommodate the new case. These have most often appeared on civilian dials, though further examples are needed to confirm this with certainty and to better understand the full scope of production for these rehauts.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

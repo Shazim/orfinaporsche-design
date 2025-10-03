@@ -64,7 +64,7 @@ const Reference7176Caseback = () => {
               Reference 7176
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Caseback Variations
+              Caseback
             </p>
           </div>
 
@@ -123,6 +123,18 @@ const Reference7176Caseback = () => {
                         <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-sm sm:text-base leading-relaxed">
                           Serial Numbers: Present on these models.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-6">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed text-gray-600">
+                          7176 Civilian: Serial range is 8 digits and starts with 00xxxxxx and rises sequentially.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-6">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed text-gray-600">
+                          7176 Military: Serial range is 8 digits and starts with 00xxxxxx and rises sequentially.
                         </span>
                       </li>
                     </ul>
@@ -211,6 +223,18 @@ const Reference7176Caseback = () => {
                           Distinction: Additional "D" designation next to 7176
                         </span>
                       </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Serial Numbers: Present on these models.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-6">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed text-gray-600">
+                          7176 D: Serial range is 8 digits and starts with 2031xxxx and rises sequentially.
+                        </span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -250,6 +274,18 @@ const Reference7176Caseback = () => {
                           Distinction: Additional "S" designation next to 7176
                         </span>
                       </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed">
+                          Serial Numbers: Present on these models.
+                        </span>
+                      </li>
+                      <li className="flex items-start space-x-3 ml-6">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base leading-relaxed text-gray-600">
+                          7176 S: Serial range is 5 or 6 digits with no leading numbers and rises sequentially.
+                        </span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -276,33 +312,12 @@ const Reference7176Caseback = () => {
                   </div>
                   
                 </div>
-              </div>
-            </div>
 
-            {/* Prototype Caseback */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-700">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="flex flex-col items-center justify-center">
-                  <ImageSlider
-                    images={[
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176 Prototype Caseback.jpg",
-                        alt: "Prototype Caseback",
-                        title: "Prototype Caseback",
-                        subtitle: "Reference 7176",
-                      },
-                      {
-                        src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback%20-1%20Frame.jpg",
-                        alt: "Prototype Caseback - View 2",
-                        title: "Prototype Caseback - View 2",
-                        subtitle: "Reference 7176",
-                      },
-                    ]}
-                    onImageClick={setFullScreenImage}
-                  />
-                </div>
-                <div className="order-1 lg:order-2 space-y-6">
-                  <div className="mb-6">
+                
+              </div>
+              {/* Prototype Caseback - Subsection under 7176 S */}
+              <div className="mt-16 pt-8">
+                  <div className="mb-8">
                     <SectionHeading
                       title="Prototype Caseback"
                       variant="numbered"
@@ -310,49 +325,68 @@ const Reference7176Caseback = () => {
                     />
                   </div>
 
-                  {/* <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      <strong>Found On:</strong> Select 7176 variants (usually
-                      prototypes)
-                    </p>
-                  </div> */}
-                  <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
-                    On select 7176 variants, usually those identified as prototypes, a
-                    different caseback has been identified. It features a black acrylic
-                    disk that is embedded into the steel caseback.
-                  </div>
+                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                     <div className="order-2 lg:order-1 flex flex-col items-center justify-center">
+                       <ImageSlider
+                         images={[
+                           {
+                             src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176 Prototype Caseback.jpg",
+                             alt: "7176 Prototype Caseback",
+                             title: "7176 Prototype Caseback",
+                             subtitle: "Reference 7176",
+                           },
+                           {
+                             src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176-photos/7176%20Prototype%20Caseback%20-1%20Frame.jpg",
+                             alt: "7176 Prototype Caseback - View 2",
+                             title: "7176 Prototype Caseback - View 2",
+                             subtitle: "Reference 7176",
+                           },
+                         ]}
+                         onImageClick={setFullScreenImage}
+                       />
+                     </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-black">
-                      Caseback Markings:
-                    </h3>
-                    <ul className="space-y-3 text-gray-700">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Perimeter Text: “7176 S CHRONOGRAPH AUTOMATIC
-                          WATERRESISTANT TESTED 10 ATM
-                          SHOCKPROTECTED STAINLESS STEEL SWISS MADE”
-                          in one continuous circle at the perimeter of the back
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Center Text: A sizeable PD logo is accompanied by the
-                          words “PORSCHE DESIGN” curved around it above
-                        </span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm sm:text-base leading-relaxed">
-                          Serial Numbers: Not present on these models
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                     <div className="order-1 lg:order-2 space-y-6">
+                       <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
+                         <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                           On select 7176 variants, usually those identified as prototypes, a
+                           different caseback has been identified. It features a black acrylic
+                           disk that is embedded into the steel caseback.
+                         </p>
+                       </div>
+
+                       <div className="space-y-4">
+                         <h4 className="text-lg sm:text-xl font-semibold text-black">
+                           Caseback Markings:
+                         </h4>
+                         <ul className="space-y-3 text-gray-700">
+                           <li className="flex items-start space-x-3">
+                             <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                             <span className="text-sm sm:text-base leading-relaxed">
+                               Perimeter Text: "7176 S CHRONOGRAPH AUTOMATIC
+                               WATERRESISTANT TESTED 10 ATM
+                               SHOCKPROTECTED STAINLESS STEEL SWISS MADE"
+                               in one continuous circle at the perimeter of the back.
+                             </span>
+                           </li>
+                           <li className="flex items-start space-x-3">
+                             <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                             <span className="text-sm sm:text-base leading-relaxed">
+                               Center Text: A sizeable PD logo is accompanied by the
+                               words "PORSCHE DESIGN" curved around it above
+                             </span>
+                           </li>
+                           <li className="flex items-start space-x-3">
+                             <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                             <span className="text-sm sm:text-base leading-relaxed">
+                               Serial Numbers: Not present on these models
+                             </span>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

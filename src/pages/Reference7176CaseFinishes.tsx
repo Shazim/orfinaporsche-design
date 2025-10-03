@@ -140,14 +140,18 @@ const Reference7176CaseFinishes = () => {
           {/* Main Description */}
           <div className="mb-12 sm:mb-16">
             <div className="prose prose-gray max-w-none">
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
                 All 7176 variants feature a "Round Top" / "Round Face" outfitted
-                to fit the, at the time, new Lemania 5100 movement. As stated
-                with the 7750 Gen 3 case, the new case has a rounded face, and
-                is thicker than the 7750 cases in order to house the taller new
-                movement. In particular, the case has a longer extension of the
-                hidden lugs than the Transitional case. ____mm Lug-to-lug. There
-                are a variety of finishes found across all 7176 variants.
+                to fit the, at the time, new Lemania 5100 movement. The round
+                nature of this case is seen as a direct evolution of the 7750 Mk. 2
+                case, but it is thicker to accommodate the taller new movement.
+              </p>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+                In particular, the case has a longer extension of the hidden lugs
+                than the Transitional case. ____mm Lug-to-lug.
+              </p>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                There are a variety of finishes found across all 7176 variants.
               </p>
             </div>
           </div>
@@ -184,7 +188,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 S Black PVD"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 S Black PVD
+                      7176 S - Black PVD
                     </span>
                   </div>
                 </div>
@@ -221,7 +225,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 S Silver/Sablé"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 S Silver/Sablé
+                      7176 S - Silver/Sablé
                     </span>
                   </div>
                 </div>
@@ -249,7 +253,7 @@ const Reference7176CaseFinishes = () => {
                         <strong>Note:</strong> Throughout the 7176 production, a
                         variation was offered in the Silver finish production.
                         This was offered as "Polished," and examples retain a
-                        higher polished finish.
+                        higher, mirror-like, polished finish.
                       </p>
                     </div>
                   </div>
@@ -263,7 +267,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 S Polished"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 Polished
+                      7176 - Polished
                     </span>
                   </div>
                 </div>
@@ -299,7 +303,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 Military Grey PVD"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 Military Grey PVD
+                      7176 - Grey PVD
                     </span>
                   </div>
                 </div>
@@ -335,7 +339,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 Military Green PVD"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 Military Green PVD
+                      7176 Military - Green PVD
                     </span>
                   </div>
                 </div>
@@ -371,7 +375,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 D Cadet Grey PVD"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 D Cadet Grey PVD
+                      7176 D - Cadet Grey PVD
                     </span>
                   </div>
                 </div>
@@ -403,7 +407,7 @@ const Reference7176CaseFinishes = () => {
                       sectionTitle="7176 S NTS PVD"
                     />
                     <span className="block text-base sm:text-lg text-gray-600 text-center mt-4 font-medium">
-                      7176 S NTS PVD
+                      7176 S - NTS PVD
                     </span>
                   </div>
                 </div>

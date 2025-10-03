@@ -42,7 +42,7 @@ const Reference7176 = () => {
       finishes: "Black PVD, Silver/Sablé, and Polished",
       caseback: "7176 Mk. 1 Caseback",
       rehaut: "Yellow Triangle",
-      dial: "Civilian Dial, and Civilian Dial - Short Lume",
+      dial: "Civilian Dial, and Civilian Dial - \"Short Lume\"",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/Alan-7176-1crop.jpg",
     },
@@ -72,10 +72,10 @@ const Reference7176 = () => {
       id: 4,
       title: "7176 S",
       years: "1976-On",
-      finishes: "Black PVD, Silver/Sablé, and NTS PVD",
+      finishes: "Black PVD, Silver/Sablé, Cadet Grey PVD, and NTS PVD",
       caseback: "7176 S Caseback",
-      rehaut: "Tachymetre",
-      dial: "Civilian Dial and Blue by Orfina Dial",
+      rehaut: "Tachymetre, 1km, 1Mile",
+      dial: "Civilian Dial, and Blue by Orfina Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7176%20Photos/7176Scrop.jpg",
     },
