@@ -42,7 +42,7 @@ const Reference7750 = () => {
       subtitle: "The Original Pioneer",
       years: "1973-1974",
       case: "Mk. 1",
-      finishes: "Powder Coat Black, Silver/Sable",
+      finishes: "Powder Coat Black, Silver/Sablé",
       caseback: "Mk. 1",
       rehaut: "1Mile, 1KM, Advertisement",
       dial: "Orfina Dial",
@@ -55,10 +55,10 @@ const Reference7750 = () => {
     {
       id: 2,
       title: "Generation 2",
-      subtitle: "The Evolution",
+      subtitle: "The First Evolution",
       years: "1974-1974",
       case: "Mk. 1",
-      finishes: "Powder Coat Black, Silver/Sable",
+      finishes: "Powder Coat Black, Silver/Sablé",
       caseback: "Mk. 2",
       rehaut: "1Mile, 1KM",
       dial: "PD Dial",
@@ -71,17 +71,17 @@ const Reference7750 = () => {
     {
       id: 3,
       title: "Generation 3",
-      subtitle: "The Perfection",
+      subtitle: "The Top Gun Watch",
       years: "1975-1976",
       case: "Mk. 2",
-      finishes: "Black PVD, Silver/Sable",
+      finishes: "Black PVD, Silver/Sablé",
       caseback: "Mk. 2",
       rehaut: "1Mile, 1KM",
       dial: "PD Dial",
       image:
         "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-PD-Thin.jpg",
       description:
-        "The emergence of PVD coating technology on the chronograph one, and the 7176 case design.",
+        "The Top Gun Watch.",
       imageCaption: '7750 Generation 3 "Round PD Dial"',
     },
   ];

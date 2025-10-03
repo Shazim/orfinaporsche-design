@@ -49,7 +49,7 @@ const Reference7750Dial = () => {
               Reference 7750
             </Link>
             <span className="mx-2 text-gray-400">/</span>
-            <span className="text-black font-medium">Dial Variations</span>
+            <span className="text-black font-medium">Dial</span>
           </nav>
         </div>
       </div>
@@ -62,7 +62,7 @@ const Reference7750Dial = () => {
               Reference 7750
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Dial Variations
+              Dial
             </p>
           </div>
 
@@ -96,10 +96,9 @@ const Reference7750Dial = () => {
                       Description:
                     </h3>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      The First is the Orfina Dial, and this is the dial that
-                      started it all. “ORFINA” is printed above the Day/Date
-                      windows, and “PORSCHE DESIGN” is printed below the
-                      windows.
+                      The First is the Orfina Dial, the dial that started it all.
+                      "ORFINA" is printed above the Day/Date windows, and "PORSCHE
+                      DESIGN" is printed below the windows.
                     </p>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                       It is solely found on the Mk. 1 Case with a Mk. 1 Caseback
@@ -177,7 +176,7 @@ const Reference7750Dial = () => {
 
                 <div className="order-1 lg:order-2 space-y-6">
                   <SectionHeading
-                    title="PD Dial"
+                    title="PD Dial (Found across all case marks and Mk. 2 Casebacks)"
                     variant="numbered"
                     number={2}
                   />

@@ -49,7 +49,7 @@ const Reference7750Rehaut = () => {
               Reference 7750
             </Link>
             <span className="mx-2 text-gray-400">/</span>
-            <span className="text-black font-medium">Rehaut Variations</span>
+            <span className="text-black font-medium">Rehaut</span>
           </nav>
         </div>
       </div>
@@ -62,17 +62,26 @@ const Reference7750Rehaut = () => {
               Reference 7750
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-light animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
-              Rehaut Variations
+              Rehaut
             </p>
           </div>
 
           {/* Overview */}
           <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20 lg:mb-24">
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300 mb-8">
               There are three known variations of Rehaut found in the 7750 model
               range. These can be found across all 7750 case marks and dial
               variations.
             </p>
+            <div className="bg-blue-50 p-6 sm:p-8 rounded-lg border-l-4 border-blue-500">
+              <p className="text-base sm:text-lg text-blue-800 leading-relaxed">
+                An interesting comparison is that despite being different measurements, the
+                1Mile and 1km have the same marks throughout their rehaut. This lack of detail
+                might explain that in the next reference of Orfina Porsche Design watches, the
+                manufacturer just put "Tachymetre" solely on the rehaut without either "unit"
+                designation.
+              </p>
+            </div>
           </div>
 
           {/* Rehaut Variations */}
@@ -160,16 +169,6 @@ const Reference7750Rehaut = () => {
               </div>
             </div>
 
-            {/* Callout between 1 Mile and 1 KM */}
-            <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-450">
-              <div className="flex items-center justify-center w-full">
-                <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black w-full">
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    An interesting comparison is that despite being different measurements, the 1Mile and 1km have the same marks throughout their rehaut. This lack of detail might explain that in the next reference of Orfina Porsche Design watches, the manufacturer just put "Tachymetre" solely on the rehaut without either "unit" designation.  
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* 1 KM Rehaut */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
@@ -329,9 +328,9 @@ const Reference7750Rehaut = () => {
                 <div className="flex items-center justify-center">
                   <div className="bg-gray-50 p-6 sm:p-8 rounded-lg border-l-4 border-black">
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      The Advertisement version had neither 1Mile or 1km marks,
-                      but all tach scale markings. Likely unreleased in this way
-                      and possibly done to serve multiple markets with single
+                      The Advertisement version had neither 1Mile nor 1km marks,
+                      but all tachymetric scale markings. Likely unreleased in this way
+                      and possibly done to serve multiple markets with a single
                       advertisement.
                     </p>
                   </div>

@@ -49,8 +49,8 @@ const Reference7750CaseFinishes = () => {
     },
     silverSable: {
       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Thin-Silver.jpg",
-      alt: "7750 Mk. 2 Silver/Sable",
-      title: "Silver/Sable",
+      alt: "7750 Mk. 2 Silver/Sablé",
+      title: "Silver/Sablé",
     },
   };
 
@@ -62,8 +62,8 @@ const Reference7750CaseFinishes = () => {
     },
     silverSable: {
       src: "https://pub-393db0e6c92e43b780b2b552918d6106.r2.dev/images/7750-photos/7750-Mk.3-Case-2crop.jpg",
-      alt: "7750 Mk. 3 Silver/Sable",
-      title: "Silver/Sable",
+      alt: "7750 Mk. 3 Silver/Sablé",
+      title: "Silver/Sablé",
     },
   };
 
@@ -106,7 +106,7 @@ const Reference7750CaseFinishes = () => {
           <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
             <div className="text-center text-gray-500">
               <div className="text-sm font-medium mb-2">Photo Coming Soon</div>
-              <div className="text-xs">Silver/Sable Example</div>
+              <div className="text-xs">Silver/Sablé Example</div>
             </div>
           </div>
         </div>
@@ -158,17 +158,17 @@ const Reference7750CaseFinishes = () => {
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-300 mb-8">
               There are three main case variations for the 7750. The three marks
               of the 7750 case were produced in a mix of Powder Coat Black,
-              Black PVD, and Silver/Sable finishes.
+              Black PVD, and Silver/Sablé finishes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
                 <h3 className="font-semibold text-black mb-2">Mk. 1</h3>
-                <p className="text-sm text-gray-600">Orfina 7750 Flat Top</p>
+                <p className="text-sm text-gray-600">Orfina 7750 Flat Top – a.k.a Mk.1</p>
               </div>
               <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
                 <h3 className="font-semibold text-black mb-2">Mk. 2</h3>
                 <p className="text-sm text-gray-600">
-                  Orfina 7750 Transitional Round Top{" "}
+                  Orfina 7750 Transitional Round Top – a.k.a Mk. 2
                 </p>
               </div>
               <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border-l-4 border-black">
@@ -176,7 +176,7 @@ const Reference7750CaseFinishes = () => {
                   Mk. 3 / Orfina Swiss S.A
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Orfina 7750 [FLAT-FACE - MODERN]{" "}
+                  Orfina 7750 [FLAT-FACE - MODERN] - a.k.a Mk. 3 a.k.a Revised by Orfina Swiss S.A
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ const Reference7750CaseFinishes = () => {
             {/* Mk. 1 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-400">
               <SectionHeading
-                title="Orfina 7750 Flat Top – Mk. 1"
+                title="7750 Flat Top – a.k.a Mk. 1"
                 variant="numbered"
                 number={1}
               />
@@ -219,21 +219,21 @@ const Reference7750CaseFinishes = () => {
               <div className="mb-12 sm:mb-16">
                 <div className="prose prose-gray max-w-none">
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    The “Flat Top” / “Flat Face” is the case that started it
+                    The "Flat Top" / "Flat Face" is the case that started it
                     all. The timeless design of the Porsche Design Chronograph
-                    starts its story here. Dr. Ferdinand Alexander “Butzi”
-                    Porsche’s initial design, which as legend has it took
+                    starts its story here. Dr. Ferdinand Alexander "Butzi"
+                    Porsche's initial design, which as legend has it took
                     inspiration from the gauges of the original 911 that he had
-                    designed in 1963. Dr. Porsche’s credo was “Design must be
+                    designed in 1963. Dr. Porsche's credo was "Design must be
                     functional and functionality has to be translated visually
                     into aesthetics, without gags that have to be explained
-                    first. ” This is often stated as “form follows function” .
-                    With this visual translation from a 911’s gauges to a watch
+                    first." This is often stated as "form follows function".
+                    With this visual translation from a 911's gauges to a watch
                     face with a simple bezel surrounding it we see the rest of
                     the case design continue to follow this design principle.
-                    The height of the “flat” face (which mimics the simple
+                    The height of the "flat" face (which mimics the simple
                     bezels of VDO gauges of the day) rises from the base of the
-                    case just enough to fit the hand set and rehaut. The overall
+                    case just enough to fit the handset and rehaut. The overall
                     body of the case then extends out to provide a proper
                     presence on the wrist and include integrated hidden lugs.
                     Because of the use of hidden lugs it could be machined from
@@ -260,12 +260,8 @@ const Reference7750CaseFinishes = () => {
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                        the original units produced between 1973 – 1975 are
+                        The original units produced between 1973 – 1975 are
                         often mistakenly believed to be the first black PVD
-                        chronograph, they were in fact powder coated with black
-                        paint. This coating is thicker and more easily "flaked"
-                        than PVD.the original units produced between 1973 – 1975
-                        are often mistakenly believed to be the first black PVD
                         chronograph, they were in fact powder coated with black
                         paint. This coating is thicker and more easily "flaked"
                         than PVD.
@@ -277,7 +273,7 @@ const Reference7750CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={mk1Images.powderCoat}
-                    sectionTitle="Orfina 7750 Flat Top – Mk. 1"
+                    sectionTitle="7750 Flat Top – a.k.a Mk. 1"
                   />
                 </div>
 
@@ -288,20 +284,18 @@ const Reference7750CaseFinishes = () => {
                         <div className="w-3 h-3 bg-white rounded-full"></div>
                       </div>
                       <h3 className="text-lg sm:text-xl font-semibold text-black">
-                        Silver/Sable
+                        Silver/Sablé
                       </h3>
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                        Sandblasted Silver similar to that seen on the 7176 and
-                        7177. <em>NOTE:</em> we don’t have an example of these.
-                        It’s possible that Silver/Sable only became available
+                        In a Sandblasted Silver similar to that seen on the 7176 and
+                        7177. <em>NOTE:</em> we don't have an example of these.
+                        It's possible that Silver/Sablé only became available
                         with the PD dials. Thus, we are unsure of the exact
-                        timeline of the 7750 Mk. 1 Silver/Sable, but one can
+                        timeline of the 7750 Mk. 1 Silver/Sablé, but one can
                         assume they were made in a similar timeline to that of
-                        the 7750 Mk. 1 Powder Coat Black cases. were made in a
-                        similar timeline to that of the 7750 Mk. 1 Powder Coat
-                        Black cases.
+                        the 7750 Mk. 1 Powder Coat Black cases.
                       </p>
                       <p className="text-sm text-gray-600">
                         <strong>Production Years:</strong> 1973-1975 (Not
@@ -317,7 +311,7 @@ const Reference7750CaseFinishes = () => {
             {/* Mk. 2 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-500">
               <SectionHeading
-                title="Orfina 7750 Transitional Thin Top – Mk. 2"
+                title="7750 Transitional Round Top – a.k.a Mk. 2"
                 variant="numbered"
                 number={2}
               />
@@ -330,15 +324,15 @@ const Reference7750CaseFinishes = () => {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm sm:text-base max-w-2xl">
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Diameter</div>
                     </div>
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Lug-To-Lug</div>
                     </div>
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Height</div>
                     </div>
                   </div>
@@ -362,7 +356,7 @@ const Reference7750CaseFinishes = () => {
                     Some cases were produced (whether the same case vendor was
                     used or not is unknown) with the new design, but thinned to
                     fit a Valjoux 7750, which Orfina still had some inventory
-                    of. Given the design similarities it is believed that these
+                    of. Given the design similarities, it is believed that these
                     cases would date to later in 1975 - 1976.
                   </p>
                 </div>
@@ -391,7 +385,7 @@ const Reference7750CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={mk2Images.blackPvd}
-                    sectionTitle="Orfina 7750 Transitional Thin Top – Mk. 2"
+                    sectionTitle="7750 Transitional Round Top – a.k.a Mk. 2"
                   />
                 </div>
 
@@ -402,7 +396,7 @@ const Reference7750CaseFinishes = () => {
                         <div className="w-3 h-3 bg-white rounded-full"></div>
                       </div>
                       <h3 className="text-lg sm:text-xl font-semibold text-black">
-                        Silver/Sable
+                        Silver/Sablé
                       </h3>
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
@@ -410,13 +404,13 @@ const Reference7750CaseFinishes = () => {
                         Matte finished stainless steel.
                       </p>
                       <p className="text-sm text-gray-600">
-                        <strong>Production Years:</strong> 1975-1976
+                        <strong>Production Years:</strong> 1975-1975
                       </p>
                     </div>
                   </div>
                   <FinishImage
                     image={mk2Images.silverSable}
-                    sectionTitle="Orfina 7750 Transitional Thin Top – Mk. 2"
+                    sectionTitle="7750 Transitional Round Top – a.k.a Mk. 2"
                   />
                 </div>
               </div>
@@ -425,7 +419,7 @@ const Reference7750CaseFinishes = () => {
             {/* Mk. 3 Section */}
             <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-600">
               <SectionHeading
-                title="Orfina 7750 Flat-Face Service – Mk. 3 - Orfina Swiss S.A"
+                title="Orfina 7750 [FLAT-FACE - Service] - a.k.a Mk. 3, a.k.a Revised by Orfina Swiss S.A"
                 variant="numbered"
                 number={3}
               />
@@ -438,15 +432,15 @@ const Reference7750CaseFinishes = () => {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm sm:text-base max-w-2xl">
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Diameter</div>
                     </div>
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Lug-To-Lug</div>
                     </div>
                     <div className="text-center">
-                      <div className="font-bold text-black">TBD</div>
+                      <div className="font-bold text-black">To Be Updated</div>
                       <div className="text-gray-600">Height</div>
                     </div>
                   </div>
@@ -467,8 +461,8 @@ const Reference7750CaseFinishes = () => {
 
                 <div className="prose prose-gray max-w-none">
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    Similar in design and aesthetic to the Mk. 1 “Flat Top” /
-                    “Flat Face” , it has a flat face. Orfina Swiss SA offers it
+                    Similar in design and aesthetic to the Mk. 1 "Flat Top" /
+                    "Flat Face", it has a flat face. Orfina Swiss SA offers it
                     as a replacement for original damaged, or otherwise unusable
                     cases as a modern replacement. These cases feature a larger
                     crown as the replacement crown produced for Orfina Swiss SA
@@ -503,7 +497,7 @@ const Reference7750CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={mk3Images.blackPvd}
-                    sectionTitle="Orfina 7750 Flat-Face Service – Mk. 3"
+                    sectionTitle="Orfina 7750 [FLAT-FACE - Service] - a.k.a Mk. 3, a.k.a Revised by Orfina Swiss S.A"
                   />
                 </div>
 
@@ -514,7 +508,7 @@ const Reference7750CaseFinishes = () => {
                         <div className="w-3 h-3 bg-white rounded-full"></div>
                       </div>
                       <h3 className="text-lg sm:text-xl font-semibold text-black">
-                        Silver/Sable
+                        Silver/Sablé
                       </h3>
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
@@ -528,7 +522,7 @@ const Reference7750CaseFinishes = () => {
                   </div>
                   <FinishImage
                     image={mk3Images.silverSable}
-                    sectionTitle="Orfina 7750 Flat-Face Service – Mk. 3"
+                    sectionTitle="Orfina 7750 [FLAT-FACE - Service] - a.k.a Mk. 3, a.k.a Revised by Orfina Swiss S.A"
                   />
                 </div>
               </div>
